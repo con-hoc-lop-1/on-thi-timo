@@ -1,0 +1,736 @@
+[
+  {
+    "stem": {
+      "en": "If the next month is August, find the last month.",
+      "vi": "Nếu tháng sau là tháng Tám, hỏi tháng trước là tháng nào?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "June",
+        "vi": "Tháng Sáu"
+      },
+      {
+        "id": "B",
+        "en": "July",
+        "vi": "Tháng Bảy"
+      },
+      {
+        "id": "C",
+        "en": "August",
+        "vi": "Tháng Tám"
+      },
+      {
+        "id": "D",
+        "en": "December",
+        "vi": "Tháng Mười hai"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    }
+  },
+  {
+    "stem": {
+      "en": "From the pattern shown below, what is the animal figure in the blank?",
+      "vi": "Dựa vào quy luật dưới đây, tìm hình con vật thích hợp để điền vào chỗ trống."
+    },
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "▲",
+            "●",
+            "▲",
+            "●"
+          ],
+          [
+            "●",
+            "▲",
+            "●",
+            "▲"
+          ],
+          [
+            "▲",
+            "●",
+            "▲",
+            "?"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "symbol": "▲",
+        "label": "Triangle"
+      },
+      {
+        "id": "B",
+        "symbol": "●",
+        "label": "Circle"
+      },
+      {
+        "id": "C",
+        "symbol": "■",
+        "label": "Square"
+      },
+      {
+        "id": "D",
+        "symbol": "◆",
+        "label": "Diamond"
+      }
+    ]
+  },
+  {
+    "stem": {
+      "en": "Mr. David has a farm. His farm has 5 cows and 5 chickens. How many legs do these animals have in total?",
+      "vi": "Bác David có một nông trại. Trong nông trại có 5 con bò và 5 con gà. Hỏi tổng số chân của những con vật là bao nhiêu?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "29"
+      },
+      {
+        "id": "B",
+        "en": "30"
+      },
+      {
+        "id": "C",
+        "en": "31"
+      },
+      {
+        "id": "D",
+        "en": "32"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "stem": {
+      "en": "From the pattern shown below, what is the number in the blank? 12, 13, 11, 14, 10, 15, __",
+      "vi": "Dựa vào quy luật dưới đây, tìm số điền vào chỗ trống: 12, 13, 11, 14, 10, 15, __"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "7"
+      },
+      {
+        "id": "B",
+        "en": "8"
+      },
+      {
+        "id": "C",
+        "en": "9"
+      },
+      {
+        "id": "D",
+        "en": "10"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    }
+  },
+  {
+    "stem": {
+      "en": "From the pattern below, how many symbols ⊕ are there in the 5th group?",
+      "vi": "Dựa theo quy luật, hỏi có bao nhiêu kí hiệu ⊕ trong nhóm thứ 5?"
+    },
+    "figure": {
+      "renderer": "groupRepeats",
+      "params": {
+        "symbol": "⊕",
+        "groups": [
+          1,
+          2,
+          3,
+          4,
+          "?"
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "2"
+      },
+      {
+        "id": "B",
+        "en": "3"
+      },
+      {
+        "id": "C",
+        "en": "4"
+      },
+      {
+        "id": "D",
+        "en": "5"
+      }
+    ]
+  },
+  {
+    "stem": {
+      "en": "5 years later, Alice will be 12 years old. Alice's father is 23 years older than her. How old is Alice's father now?",
+      "vi": "5 năm nữa thì Alice 12 tuổi. Bố của Alice hơn cô bé 23 tuổi. Hỏi bây giờ bố của Alice bao nhiêu tuổi?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "40",
+        "vi": "40"
+      },
+      {
+        "id": "B",
+        "en": "30",
+        "vi": "30"
+      },
+      {
+        "id": "C",
+        "en": "20",
+        "vi": "20"
+      },
+      {
+        "id": "D",
+        "en": "35",
+        "vi": "35"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "stem": {
+      "en": "By observing the pattern, what is the English letter in the space provided?  C, E, G, I, __, M, O",
+      "vi": "Quan sát quy luật dưới đây để điền chữ cái Tiếng Anh thích hợp vào chỗ trống:  C, E, G, I, __, M, O"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "N"
+      },
+      {
+        "id": "B",
+        "en": "J"
+      },
+      {
+        "id": "C",
+        "en": "L"
+      },
+      {
+        "id": "D",
+        "en": "K"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    }
+  },
+  {
+    "stem": {
+      "en": "Observe the sequence below to replace the flag with a suitable number. 3, 4, 6, 9, 13, ?, …",
+      "vi": "Quan sát dãy số dưới đây để thay thế lá cờ bằng số thích hợp. 3, 4, 6, 9, 13, ?, …"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "18"
+      },
+      {
+        "id": "B",
+        "en": "17"
+      },
+      {
+        "id": "C",
+        "en": "14"
+      },
+      {
+        "id": "D",
+        "en": "15"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    }
+  },
+  {
+    "stem": {
+      "en": "Refer to the figure below, how many circles are there in the 5th group?",
+      "vi": "Dựa vào hình dưới đây, hỏi có bao nhiêu hình tròn trong nhóm thứ 5?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "4"
+      },
+      {
+        "id": "B",
+        "en": "8"
+      },
+      {
+        "id": "C",
+        "en": "12"
+      },
+      {
+        "id": "D",
+        "en": "16"
+      }
+    ],
+    "requires_image": true,
+    "image_ref": "image1_q4"
+  },
+  {
+    "stem": {
+      "en": "Students in a class form a line. Kim sees that there are 5 students in front of her and 3 students behind her. How many students are there in Kim's class?",
+      "vi": "Học sinh trong một lớp xếp thành một hàng dọc. Kim thấy rằng phía trước mình có 5 bạn và phía sau mình có 3 bạn. Hỏi lớp của Kim có bao nhiêu học sinh?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "7"
+      },
+      {
+        "id": "B",
+        "en": "9"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "2"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "stem": {
+      "en": "If tomorrow will be Thursday, which day of the week will be 6 days later?",
+      "vi": "Nếu ngày mai là Thứ Năm, hỏi 6 ngày nữa là thứ mấy?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Friday (Thứ Sáu)"
+      },
+      {
+        "id": "B",
+        "en": "Wednesday (Thứ Tư)"
+      },
+      {
+        "id": "C",
+        "en": "Tuesday (Thứ Ba)"
+      },
+      {
+        "id": "D",
+        "en": "Saturday (Thứ Bảy)"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "stem": {
+      "en": "Peter is the youngest boy in his family. Given that his father has 4 sons and Peter has 5 brother(s) and sister(s) in total. How many daughter(s) does Peter’s father have?",
+      "vi": "Peter là cậu bé nhỏ nhất trong gia đình. Bố của Peter có 4 người con trai. Peter có tất cả 5 anh chị em. Vậy bố của Peter có bao nhiêu con gái?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "1"
+      },
+      {
+        "id": "B",
+        "en": "2"
+      },
+      {
+        "id": "C",
+        "en": "3"
+      },
+      {
+        "id": "D",
+        "en": "4"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "stem": {
+      "en": "20 children form a column. Alice is the 5th starting from the front. How many children behind her?",
+      "vi": "20 bạn nhỏ xếp thành một hàng dọc. Alice là người thứ 5 tính từ đầu hàng. Hỏi có bao nhiêu người phía sau bạn ấy?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "15"
+      },
+      {
+        "id": "B",
+        "en": "14"
+      },
+      {
+        "id": "C",
+        "en": "16"
+      },
+      {
+        "id": "D",
+        "en": "5"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    }
+  },
+  {
+    "stem": {
+      "en": "From the pattern shown below, what is the number in the blank? 9, 17, 25, 33, 41, 49, __",
+      "vi": "Dựa vào quy luật dưới đây, tìm số thích hợp điền vào chỗ trống: 9, 17, 25, 33, 41, 49, __"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "58"
+      },
+      {
+        "id": "B",
+        "en": "57"
+      },
+      {
+        "id": "C",
+        "en": "56"
+      },
+      {
+        "id": "D",
+        "en": "55"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "stem": {
+      "en": "Refer the pattern below, how many ⊙ are there in the 13th group?",
+      "vi": "Dựa vào quy luật dưới đây, có bao nhiêu kí hiệu ⊙ trong hình thứ 13?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "20"
+      },
+      {
+        "id": "B",
+        "en": "22"
+      },
+      {
+        "id": "C",
+        "en": "23"
+      },
+      {
+        "id": "D",
+        "en": "24"
+      }
+    ],
+    "requires_image": true,
+    "image_ref": "image2_q5"
+  },
+  {
+    "stem": {
+      "en": "Given that the day before yesterday was Saturday, which day of the week will it be tomorrow?",
+      "vi": "Biết rằng ngày hôm kia là Thứ Bảy, vậy ngày mai là thứ mấy?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Friday (Thứ Sáu)"
+      },
+      {
+        "id": "B",
+        "en": "Tuesday (Thứ Ba)"
+      },
+      {
+        "id": "C",
+        "en": "Monday (Thứ Hai)"
+      },
+      {
+        "id": "D",
+        "en": "Saturday (Thứ Bảy)"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "stem": {
+      "en": "What is the greatest possible number of Fridays during February?",
+      "vi": "Trong tháng Hai có nhiều nhất bao nhiêu thứ Sáu?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "2"
+      },
+      {
+        "id": "B",
+        "en": "3"
+      },
+      {
+        "id": "C",
+        "en": "4"
+      },
+      {
+        "id": "D",
+        "en": "5"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    }
+  },
+  {
+    "stem": {
+      "en": "Tommy needs 5 minutes to cook a bowl of noodles. He can cook at most 2 bowls of noodles at the same time. At least how many minutes does he need to cook 3 bowls of noodles?",
+      "vi": "Tommy cần 5 phút để nấu một bát mì. Bạn ấy có thể nấu nhiều nhất 2 bát mì cùng lúc. Hỏi Tommy cần ít nhất bao nhiêu phút để nấu 3 bát mì?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "10"
+      },
+      {
+        "id": "B",
+        "en": "8"
+      },
+      {
+        "id": "C",
+        "en": "15"
+      },
+      {
+        "id": "D",
+        "en": "11"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    }
+  },
+  {
+    "stem": {
+      "en": "According to the pattern shown below, what is the number in the blank (“?”)? 55, 45, 36, 28, 21, 15, ?",
+      "vi": "Dựa vào quy luật dưới đây, tìm số thích hợp điền vào dấu “?”: 55, 45, 36, 28, 21, 15, ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "8"
+      },
+      {
+        "id": "B",
+        "en": "9"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "11"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    }
+  },
+  {
+    "stem": {
+      "en": "Consider the pattern below. How many ⊙ are there in the next group?",
+      "vi": "Dựa vào quy luật dưới đây, hỏi có bao nhiêu dấu ⊙ trong hình tiếp theo?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "8"
+      },
+      {
+        "id": "B",
+        "en": "9"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "11"
+      }
+    ],
+    "requires_image": true,
+    "image_ref": "image3_q5"
+  },
+  {
+    "stem": {
+      "en": "Given two balances below, find the heaviest type of fruit.",
+      "vi": "Cho hai chiếc cân thăng bằng dưới đây, tìm loại quả nặng nhất."
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Apple"
+      },
+      {
+        "id": "B",
+        "en": "Orange"
+      },
+      {
+        "id": "C",
+        "en": "Mango"
+      },
+      {
+        "id": "D",
+        "en": "None of them"
+      }
+    ],
+    "requires_image": true,
+    "image_ref": "image4_q1"
+  },
+  {
+    "stem": {
+      "en": "In the family, Mina has 3 sisters in total. How many children does Mina’s mother have?",
+      "vi": "Mina có tất cả 3 người chị, em gái. Hỏi mẹ của Mina có bao nhiêu người con?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "2"
+      },
+      {
+        "id": "B",
+        "en": "3"
+      },
+      {
+        "id": "C",
+        "en": "4"
+      },
+      {
+        "id": "D",
+        "en": "5"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    }
+  },
+  {
+    "stem": {
+      "en": "Mary looks at the calendar. Her birthday is 2 days after today and it is on Friday. What day of the week is today?",
+      "vi": "Mary nhìn vào quyển lịch. Còn 2 ngày nữa là đến sinh nhật của cô ấy và nó đúng vào ngày thứ Sáu. Hỏi hôm nay là thứ mấy?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Wednesday"
+      },
+      {
+        "id": "B",
+        "en": "Thursday"
+      },
+      {
+        "id": "C",
+        "en": "Friday"
+      },
+      {
+        "id": "D",
+        "en": "Tuesday"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    }
+  },
+  {
+    "stem": {
+      "en": "By observing the pattern, what is the number in the space (“…”) provided? 0, 5, 10, 15, …",
+      "vi": "Quan sát quy luật, tìm số thích hợp để điền vào dấu “…” phía dưới: 0, 5, 10, 15, …"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "20"
+      },
+      {
+        "id": "B",
+        "en": "16"
+      },
+      {
+        "id": "C",
+        "en": "19"
+      },
+      {
+        "id": "D",
+        "en": "17"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    }
+  },
+  {
+    "stem": {
+      "en": "Ken is 15 years old and Ken’s sister is 5 years younger than him. How old is Ken’s sister now?",
+      "vi": "Ken 15 tuổi và em gái của Ken ít hơn anh ấy 5 tuổi. Hỏi hiện nay em gái của Ken mấy tuổi?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "20"
+      },
+      {
+        "id": "B",
+        "en": "10"
+      },
+      {
+        "id": "C",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "en": "15"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  }
+]

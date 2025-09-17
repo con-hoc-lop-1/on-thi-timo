@@ -1,0 +1,150 @@
+[
+  {
+    "id": "TIMO-G1-PRELIM-SET1-Q21",
+    "stem": {
+      "en": "Which number below is the smallest even number? 20203924, 20110019, 20211014, 20101030",
+      "vi": "Số nào sau đây là số chẵn nhỏ nhất? 20203924, 20110019, 20211014, 20101030"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "20203924"
+      },
+      {
+        "id": "B",
+        "en": "20110019"
+      },
+      {
+        "id": "C",
+        "en": "20211014"
+      },
+      {
+        "id": "D",
+        "en": "20101030"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    }
+  },
+  {
+    "id": "TIMO-G1-PRELIM-SET1-Q22",
+    "stem": {
+      "en": "Form two-digit numbers from digits 0, 1, 2, 3 that are greater than 11 and smaller than 30. Each number uses two different digits. How many such numbers are there?",
+      "vi": "Sử dụng các chữ số 0, 1, 2, 3 để tạo thành các số có 2 chữ số lớn hơn 11 và nhỏ hơn 30. Mỗi số gồm hai chữ số phân biệt. Hỏi có bao nhiêu số như vậy?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "10"
+      },
+      {
+        "id": "B",
+        "en": "4"
+      },
+      {
+        "id": "C",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "en": "7"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    }
+  },
+  {
+    "id": "TIMO-G1-PRELIM-SET1-Q23",
+    "stem": {
+      "en": "Among the following numbers, how many are odd? 12, 45, 7, 16, 22, 15, 10, 68",
+      "vi": "Trong các số sau đây có bao nhiêu số lẻ? 12, 45, 7, 16, 22, 15, 10, 68"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "1"
+      },
+      {
+        "id": "B",
+        "en": "2"
+      },
+      {
+        "id": "C",
+        "en": "3"
+      },
+      {
+        "id": "D",
+        "en": "4"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    }
+  },
+  {
+    "id": "TIMO-G1-PRELIM-SET1-Q24",
+    "stem": {
+      "en": "What is the smallest 3-digit number formed by digits 0, 2, 3 and 7 (each used at most once)?",
+      "vi": "Số nhỏ nhất có 3 chữ số được tạo bởi các chữ số 0, 2, 3 và 7 (mỗi chữ số dùng không quá 1 lần) là số nào?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "203"
+      },
+      {
+        "id": "B",
+        "en": "302"
+      },
+      {
+        "id": "C",
+        "en": "320"
+      },
+      {
+        "id": "D",
+        "en": "730"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    }
+  },
+  {
+    "id": "TIMO-G1-PRELIM-SET1-Q25",
+    "stem": {
+      "en": "Find the value of the marked symbol (ê).",
+      "vi": "Tìm giá trị của kí hiệu ê."
+    },
+    "figure": {
+      "renderer": "symbolEquation",
+      "params": {
+        "equation": "▲ = 2, ■ = 3, ▲ + ■ = ê"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "symbol": "4"
+      },
+      {
+        "id": "B",
+        "symbol": "6"
+      },
+      {
+        "id": "C",
+        "symbol": "5"
+      },
+      {
+        "id": "D",
+        "symbol": "3"
+      }
+    ],
+    "requires_image": true
+  }
+]

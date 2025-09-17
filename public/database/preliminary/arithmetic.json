@@ -1,0 +1,144 @@
+[
+  {
+    "id": "TIMO-G1-PRELIM-SET1-Q06",
+    "stem": {
+      "en": "Find the value of 2 + 4 + 6 + 8 + 10.",
+      "vi": "Tìm giá trị của 2 + 4 + 6 + 8 + 10."
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "10"
+      },
+      {
+        "id": "B",
+        "en": "20"
+      },
+      {
+        "id": "C",
+        "en": "30"
+      },
+      {
+        "id": "D",
+        "en": "40"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    }
+  },
+  {
+    "id": "TIMO-G1-PRELIM-SET1-Q07",
+    "stem": {
+      "en": "Find the value of 10 – 8 + 6 – 4 + 2.",
+      "vi": "Tìm giá trị của 10 – 8 + 6 – 4 + 2."
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "6"
+      },
+      {
+        "id": "B",
+        "en": "4"
+      },
+      {
+        "id": "C",
+        "en": "8"
+      },
+      {
+        "id": "D",
+        "en": "10"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    }
+  },
+  {
+    "id": "TIMO-G1-PRELIM-SET1-Q08",
+    "stem": {
+      "en": "Find the value of 9 + 2 + 1 + 8 + 3.",
+      "vi": "Tìm giá trị của 9 + 2 + 1 + 8 + 3."
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "20"
+      },
+      {
+        "id": "B",
+        "en": "22"
+      },
+      {
+        "id": "C",
+        "en": "23"
+      },
+      {
+        "id": "D",
+        "en": "21"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    }
+  },
+  {
+    "id": "TIMO-G1-PRELIM-SET1-Q09",
+    "stem": {
+      "en": "What number should be filled in the blank? 18 - __ = 4",
+      "vi": "Tìm số thích hợp để điền vào chỗ trống. 18 - __ = 4"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "15"
+      },
+      {
+        "id": "B",
+        "en": "14"
+      },
+      {
+        "id": "C",
+        "en": "16"
+      },
+      {
+        "id": "D",
+        "en": "12"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "id": "TIMO-G1-PRELIM-SET1-Q10",
+    "stem": {
+      "en": "What is the value of A + B if the equation below is correct?",
+      "vi": "Tìm giá trị của A + B biết rằng phép tính dưới đây là đúng."
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "1"
+      },
+      {
+        "id": "B",
+        "en": "4"
+      },
+      {
+        "id": "C",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
+    ],
+    "requires_image": true
+  }
+]
