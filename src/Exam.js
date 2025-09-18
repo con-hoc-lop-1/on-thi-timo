@@ -1,102 +1,153 @@
-import React, {useEffect, useState} from "react";
-import {loadAllQuestions} from "./utils";
+import React, { useEffect, useState } from "react";
+import { formatTime, loadAllQuestions } from "./utils";
+import { Form } from "react-bootstrap";
+import { renderFigure } from "./figure";
 
-function formatTime(s) {
-    const m = Math.floor(s / 60);
-    const sec = s % 60;
-    return m + ":" + String(sec).padStart(2, "0");
-}
+function Exam({ name, mode, onFinish }) {
+  const [questions, setQuestions] = useState([]);
+  const [index, setIndex] = useState(0);
+  const [secondsLeft, setSecondsLeft] = useState(
+    mode === "heat" ? 90 * 60 : 60 * 60
+  );
 
-function Exam({name, mode, onFinish}) {
-    const [questions, setQuestions] = useState([]);
-    const [index, setIndex] = useState(0);
-    const [secondsLeft, setSecondsLeft] = useState(mode === 'heat' ? 90 * 60 : 60 * 60);
+  useEffect(() => {
+    loadAllQuestions().then(setQuestions);
+    const timer = setInterval(() => {
+      setSecondsLeft((prev) => {
+        if (prev <= 1) {
+          clearInterval(timer);
+          handleSubmit();
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+    return () => clearInterval(timer);
+  }, []);
 
-    useEffect(() => {
-        loadAllQuestions().then(setQuestions);
-        const timer = setInterval(() => {
-            setSecondsLeft(prev => {
-                if (prev <= 1) {
-                    clearInterval(timer);
-                    handleSubmit();
-                    return 0;
-                }
-                return prev - 1;
-            });
-        }, 1000);
-        return () => clearInterval(timer);
-    }, []);
+  const handleAnswer = (val) => {
+    const updated = [...questions];
+    updated[index].userAnswer = val;
+    setQuestions(updated);
+  };
 
-    const handleAnswer = val => {
-        const updated = [...questions];
-        updated[index].userAnswer = val;
-        setQuestions(updated);
-    };
+  const handleSubmit = () => {
+    const unanswered = questions.filter(
+      (q) => !q.userAnswer || q.userAnswer === ""
+    ).length;
+    if (unanswered > 0) {
+      const confirmSubmit = window.confirm(
+        `⚠️ Còn ${unanswered} câu chưa chọn đáp án. Bạn có chắc muốn nộp bài không?`
+      );
+      if (!confirmSubmit) return;
+    }
 
-    const handleSubmit = () => {
-        const correct = questions.filter(q => q.answer === q.userAnswer).length;
-        const history = JSON.parse(localStorage.getItem('timo-history') || '[]');
-        history.unshift({
-            name,
-            mode,
-            score: correct * 5,
-            duration: (mode === 'heat' ? 90 : 60) * 60 - secondsLeft,
-            timestamp: Date.now()
-        });
-        localStorage.setItem('timo-history', JSON.stringify(history.slice(0, 20)));
-        onFinish();
-    };
+    const correct = questions.filter((q) => q.answer === q.userAnswer).length;
+    const history = JSON.parse(localStorage.getItem("timo-history") || "[]");
+    history.unshift({
+      name,
+      mode,
+      score: correct * 5,
+      duration: (mode === "heat" ? 90 : 60) * 60 - secondsLeft,
+      timestamp: Date.now(),
+    });
+    localStorage.setItem("timo-history", JSON.stringify(history.slice(0, 20)));
+    onFinish();
+  };
 
-    const q = questions[index];
+  const q = questions[index];
+  useEffect(() => {
+    function handleKey(e) {
+      if (e.key === "ArrowRight") {
+        // sang phải -> Next
+        setIndex((prev) => Math.min(prev + 1, questions.length - 1));
+      } else if (e.key === "ArrowLeft") {
+        // sang trái -> Back
+        setIndex((prev) => Math.max(prev - 1, 0));
+      }
+    }
+    window.addEventListener("keydown", handleKey);
+    return () => window.removeEventListener("keydown", handleKey);
+  }, [questions.length]);
 
-    return questions.length === 0 ? <p>Đang tải đề...</p> : (
-        <div>
-            <div className="d-flex justify-content-between align-items-center mb-3">
-                <h4 className="m-0">🧠 Đề thi {mode}</h4>
-                <div>
-                    <span className="badge bg-warning text-dark me-2">⏰ {formatTime(secondsLeft)}</span>
-                    <button className="btn btn-danger" onClick={handleSubmit}>Nộp bài</button>
-                </div>
-            </div>
-
-            <div className="mb-2"><strong>Câu {index + 1}:</strong></div>
-            <div className="border rounded p-3 bg-light mb-3" dangerouslySetInnerHTML={{__html: q.question}}/>
-
-            <div className="mb-4">
-                {q.choices ? q.choices.map((c, i) => (
-                    <div className="form-check" key={i}>
-                        <input
-                            type="radio"
-                            name={`q${q.id}`}
-                            className="form-check-input"
-                            checked={q.userAnswer === c}
-                            onChange={() => handleAnswer(c)}
-                            id={`q${q.id}-c${i}`}
-                        />
-                        <label className="form-check-label" htmlFor={`q${q.id}-c${i}`}>{c}</label>
-                    </div>
-                )) : (
-                    <input
-                        type="text"
-                        className="form-control"
-                        placeholder="Nhập đáp án"
-                        value={q.userAnswer}
-                        onChange={e => handleAnswer(e.target.value)}
-                    />
-                )}
-            </div>
-
-            <div className="d-flex justify-content-between">
-                <button className="btn btn-secondary" disabled={index === 0} onClick={() => setIndex(i => i - 1)}>◀
-                    Trước
-                </button>
-                <button className="btn btn-primary" disabled={index === questions.length - 1}
-                        onClick={() => setIndex(i => i + 1)}>Tiếp ▶
-                </button>
-            </div>
+  return questions.length === 0 ? (
+    <p>Đang tải đề...</p>
+  ) : (
+    <div className="container mt-5">
+      <div className="d-flex justify-content-between align-items-center mb-3">
+        <h4 className="m-0">
+          🧠 Đề thi <b>{mode}</b> - Phần <strong>{q.type}</strong>
+        </h4>
+        <div className="d-flex justify-content-between">
+          <span className="badge bg-warning text-dark me-2 fs-5">
+            ⏰ {formatTime(secondsLeft)}
+          </span>
+          <button className="btn btn-danger" onClick={handleSubmit}>
+            Nộp bài
+          </button>
         </div>
-    );
-}
+      </div>
 
+      <div className="mb-2">
+        <strong>Câu {index + 1}:</strong>
+      </div>
+      <div className="border rounded p-3 bg-light mb-3">
+        <div dangerouslySetInnerHTML={{ __html: q.stem.en }} />
+        {mode === "preliminary" ? (
+          <div
+            style={{ fontStyle: "italic" }}
+            dangerouslySetInnerHTML={{ __html: q.stem.vi }}
+          />
+        ) : (
+          ""
+        )}
+        {renderFigure(q)}
+      </div>
+
+      <div className="mb-4">
+        {q.choices && q.choices.length > 0 ? (
+          <div>
+            {q.choices.map((choice, i) => (
+              <Form.Check
+                key={i}
+                type="radio"
+                id={`q-${q.id}-choice-${i}`}
+                name={`q-${q.id}`}
+                value={choice.id}
+                checked={q.userAnswer === choice.id}
+                onChange={() => handleAnswer(choice.id)}
+                label={`${choice.en}`}
+              />
+            ))}
+          </div>
+        ) : (
+          <input
+            type="text"
+            className="form-control"
+            placeholder="Nhập đáp án"
+            value={q.userAnswer}
+            onChange={(e) => handleAnswer(e.target.value)}
+          />
+        )}
+      </div>
+      <div className="d-flex justify-content-between">
+        <button
+          className="btn btn-secondary"
+          disabled={index === 0}
+          onClick={() => setIndex((i) => i - 1)}
+        >
+          ◀ Trước
+        </button>
+        <button
+          className="btn btn-primary"
+          disabled={index === questions.length - 1}
+          onClick={() => setIndex((i) => i + 1)}
+        >
+          Tiếp ▶
+        </button>
+      </div>
+    </div>
+  );
+}
 
 export default Exam;

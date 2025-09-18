@@ -3,15 +3,16 @@
     "figure": {
       "renderer": "twoBins",
       "params": {
-        "left": 7,
-        "right": 3,
-        "symbol": "●",
+        "left": 16,
+        "right": 12,
+        "symbol": "\uD83D\uDC30",
         "labels": [
           "Left garden",
           "Right garden"
         ]
       }
     },
+    "type": "Number Theory",
     "stem": {
       "en": "How many rabbits should be moved from left to right to get the same number of rabbits in both gardens?",
       "vi": "Cần chuyển bao nhiêu con thỏ từ bên trái sang bên phải để hai khu vườn có số thỏ bằng nhau?"
@@ -33,9 +34,14 @@
         "id": "D",
         "en": "4"
       }
-    ]
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
   },
   {
+    "type": "Number Theory",
     "stem": {
       "en": "Fill the lines with '+' and '−' to make the equation below correct: 3 _ 6 _ 4 _ 7 = 12",
       "vi": "Điền các dấu '+' và '−' vào chỗ trống để được phép tính đúng: 3 _ 6 _ 4 _ 7 = 12"
@@ -64,6 +70,7 @@
     }
   },
   {
+    "type": "Number Theory",
     "stem": {
       "en": "Fill the lines with '+' and '−' to make the equation below correct: 2 _ 5 _ 6 _ 1 _ 3 = 15",
       "vi": "Điền các dấu '+' và '−' vào chỗ trống để được phép tính đúng: 2 _ 5 _ 6 _ 1 _ 3 = 15"
@@ -92,6 +99,7 @@
     }
   },
   {
+    "type": "Number Theory",
     "stem": {
       "en": "Four of five numbers 2, 4, 5, 6, 9 are written into four boxes so that the calculation below is correct. Which number was not used?",
       "vi": "Bốn trong năm số 2, 4, 5, 6, 9 được viết vào bốn ô dưới đây để được phép tính đúng. Hỏi số nào không được sử dụng?"
@@ -113,9 +121,14 @@
         "id": "D",
         "en": "9"
       }
-    ]
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    }
   },
   {
+    "type": "Number Theory",
     "stem": {
       "en": "Determine whether the result of 8 + 5 + 6 − 4 − 3 + 2 − 7 is odd or even.",
       "vi": "Hỏi kết quả của phép tính 8 + 5 + 6 − 4 − 3 + 2 − 7 là số lẻ hay số chẵn?"

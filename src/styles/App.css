@@ -1,0 +1,20 @@
+.form-check label {
+  padding: 5px 10px;
+  background: #ddd;
+  border-radius: 5px;
+  width: auto;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.form-check {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.form-check .form-check-input:checked + label {
+  background: #89bfe5;
+}

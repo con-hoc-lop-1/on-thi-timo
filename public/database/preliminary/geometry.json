@@ -1,11 +1,35 @@
 [
   {
-    "id": "TIMO-G1-PRELIM-SET1-Q16",
+    "type": "Geometry",
     "figure": {
-      "renderer": "gridSquares",
+      "renderer": "gridSquareTables",
       "params": {
-        "rows": 4,
-        "cols": 4
+        "data": [
+          [
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            0
+          ]
+        ]
       }
     },
     "stem": {
@@ -30,24 +54,52 @@
         "en": "18"
       }
     ],
-    "requires_image": true
+    "answer": {
+      "type": "single",
+      "key": "D"
+    }
   },
   {
-    "id": "TIMO-G1-PRELIM-SET1-Q17",
+    "type": "Geometry",
     "figure": {
       "renderer": "isoCubes",
       "params": {
         "layout": [
           [
-            2,
-            1
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
           ],
           [
-            3,
-            2
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ]
           ]
-        ],
-        "unit": 28
+        ]
       }
     },
     "stem": {
@@ -71,21 +123,20 @@
         "id": "D",
         "en": "14"
       }
-    ],
-    "requires_image": true
+    ]
   },
   {
-    "id": "TIMO-G1-PRELIM-SET1-Q18",
+    "type": "Geometry",
+    "stem": {
+      "en": "How many sides are there in the polygon below?",
+      "vi": "Đa giác dưới đây có bao nhiêu cạnh?"
+    },
     "figure": {
       "renderer": "regularPolygon",
       "params": {
         "sides": 7,
-        "size": 140
+        "size": 280
       }
-    },
-    "stem": {
-      "en": "How many sides are there in the polygon below?",
-      "vi": "Đa giác dưới đây có bao nhiêu cạnh?"
     },
     "choices": [
       {
@@ -105,28 +156,34 @@
         "en": "8"
       }
     ],
-    "requires_image": true
+    "answer": {
+      "type": "single",
+      "key": "C"
+    }
   },
   {
-    "id": "TIMO-G1-PRELIM-SET1-Q19",
+    "type": "Geometry",
     "figure": {
       "renderer": "stackPattern",
       "params": {
         "stacks": [
           [
-            "■",
-            "●"
+            "◆",
+            "●",
+            "▲",
+            "■"
           ],
           [
+            "■",
+            "◆",
             "●",
             "▲"
           ],
           [
             "▲",
-            "■"
-          ],
-          [
-            "?"
+            "■",
+            "◆",
+            "●"
           ]
         ]
       }
@@ -137,63 +194,72 @@
     },
     "choices": [
       {
-        "id": "A"
+        "id": "A",
+        "en": "■"
       },
       {
-        "id": "B"
+        "id": "B",
+        "en": "▲"
       },
       {
         "id": "C",
         "en": "●"
       },
       {
-        "id": "D"
+        "id": "D",
+        "en": "◆"
       }
     ],
-    "requires_image": true
+    "answer": {
+      "type": "single",
+      "key": "D"
+    }
   },
   {
-    "id": "TIMO-G1-PRELIM-SET1-Q20",
     "figure": {
       "renderer": "symbolPattern",
       "params": {
         "grid": [
           [
-            "■",
-            "●",
-            "▲"
-          ],
-          [
-            "●",
-            "▲",
-            "■"
-          ],
-          [
-            "▲",
-            "■",
+            "△",
+            "▽",
+            "▽",
+            "△",
+            "▽",
+            "▽",
+            "△",
+            "▽",
             "?"
           ]
         ]
       }
     },
+    "type": "Geometry",
     "stem": {
       "en": "According to the pattern shown below, what is the figure in the blank?",
       "vi": "Dựa vào quy luật dưới đây, tìm hình vẽ thích hợp điền vào chỗ trống."
     },
     "choices": [
       {
-        "id": "A"
+        "id": "A",
+        "en": "△"
       },
       {
-        "id": "B"
+        "id": "B",
+        "en": "▽"
       },
       {
-        "id": "C"
+        "id": "C",
+        "en": "◆"
       },
       {
-        "id": "D"
+        "id": "D",
+        "en": "■"
       }
     ],
-    "requires_image": true
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
   }
 ]

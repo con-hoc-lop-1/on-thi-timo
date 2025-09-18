@@ -1,6 +1,6 @@
 [
   {
-    "id": "TIMO-G1-PRELIM-SET1-Q21",
+    "type": "Combinatorics",
     "stem": {
       "en": "Which number below is the smallest even number? 20203924, 20110019, 20211014, 20101030",
       "vi": "Số nào sau đây là số chẵn nhỏ nhất? 20203924, 20110019, 20211014, 20101030"
@@ -29,7 +29,7 @@
     }
   },
   {
-    "id": "TIMO-G1-PRELIM-SET1-Q22",
+    "type": "Combinatorics",
     "stem": {
       "en": "Form two-digit numbers from digits 0, 1, 2, 3 that are greater than 11 and smaller than 30. Each number uses two different digits. How many such numbers are there?",
       "vi": "Sử dụng các chữ số 0, 1, 2, 3 để tạo thành các số có 2 chữ số lớn hơn 11 và nhỏ hơn 30. Mỗi số gồm hai chữ số phân biệt. Hỏi có bao nhiêu số như vậy?"
@@ -58,7 +58,7 @@
     }
   },
   {
-    "id": "TIMO-G1-PRELIM-SET1-Q23",
+    "type": "Combinatorics",
     "stem": {
       "en": "Among the following numbers, how many are odd? 12, 45, 7, 16, 22, 15, 10, 68",
       "vi": "Trong các số sau đây có bao nhiêu số lẻ? 12, 45, 7, 16, 22, 15, 10, 68"
@@ -87,7 +87,7 @@
     }
   },
   {
-    "id": "TIMO-G1-PRELIM-SET1-Q24",
+    "type": "Combinatorics",
     "stem": {
       "en": "What is the smallest 3-digit number formed by digits 0, 2, 3 and 7 (each used at most once)?",
       "vi": "Số nhỏ nhất có 3 chữ số được tạo bởi các chữ số 0, 2, 3 và 7 (mỗi chữ số dùng không quá 1 lần) là số nào?"
@@ -116,35 +116,48 @@
     }
   },
   {
-    "id": "TIMO-G1-PRELIM-SET1-Q25",
+    "type": "Combinatorics",
     "stem": {
-      "en": "Find the value of the marked symbol (ê).",
-      "vi": "Tìm giá trị của kí hiệu ê."
+      "en": "Find the value of ✮.",
+      "vi": "Tìm giá trị của ✮."
     },
     "figure": {
-      "renderer": "symbolEquation",
+      "renderer": "table",
       "params": {
-        "equation": "▲ = 2, ■ = 3, ▲ + ■ = ê"
+        "data": [
+          [
+            "✮ + ▲ = 7"
+          ],
+          [
+            "✮ + ■ + ▲ = 12"
+          ],
+          [
+            "■ + ✮ = 8"
+          ]
+        ]
       }
     },
     "choices": [
       {
         "id": "A",
-        "symbol": "4"
+        "en": "4"
       },
       {
         "id": "B",
-        "symbol": "6"
+        "en": "6"
       },
       {
         "id": "C",
-        "symbol": "5"
+        "en": "5"
       },
       {
         "id": "D",
-        "symbol": "3"
+        "en": "3"
       }
     ],
-    "requires_image": true
+    "answer": {
+      "type": "single",
+      "key": "D"
+    }
   }
 ]
