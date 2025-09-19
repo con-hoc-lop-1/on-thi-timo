@@ -11,7 +11,8 @@ function Exam({ name, mode, onFinish }) {
   );
 
   useEffect(() => {
-    loadAllQuestions().then(setQuestions);
+    // loadAllQuestions().then(setQuestions);
+    loadAllQuestions(["combinatorics"], 50).then(setQuestions);
     const timer = setInterval(() => {
       setSecondsLeft((prev) => {
         if (prev <= 1) {

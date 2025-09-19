@@ -591,8 +591,87 @@ function Balances({ balances = [] }) {
     </div>
   );
 }
+// Qxx: Square with 8 points and connecting lines
+function SquareConnect({ data = [] }) {
+  // Tọa độ 8 điểm (1 ở giữa cạnh trên, rồi đi vòng)
+  const points = [
+    [50, 0], // 1 top middle
+    [100, 0], // 2 top right
+    [100, 50], // 3 right middle
+    [100, 100], // 4 bottom right
+    [50, 100], // 5 bottom middle
+    [0, 100], // 6 bottom left
+    [0, 50], // 7 left middle
+    [0, 0], // 8 top left
+  ];
 
-// Registry các renderer theo tên trong JSON
+  return (
+    <div className="d-flex flex-wrap gap-4 justify-content-center">
+      {data.map((pair, idx) => (
+        <svg
+          key={idx}
+          width={120}
+          height={120}
+          viewBox="0 0 100 100"
+          className="border rounded bg-white"
+        >
+          {/* vẽ khung vuông */}
+          <rect
+            x={0}
+            y={0}
+            width={100}
+            height={100}
+            stroke="black"
+            fill="none"
+          />
+          {/* vẽ các điểm */}
+          {points.map(([x, y], i) => (
+            <circle key={i} cx={x} cy={y} r={3} fill="black">
+              <title>{i + 1}</title>
+            </circle>
+          ))}
+          {/* vẽ đường nối */}
+          {Array.isArray(pair) && pair.length === 2 ? (
+            <line
+              x1={points[pair[0] - 1][0]}
+              y1={points[pair[0] - 1][1]}
+              x2={points[pair[1] - 1][0]}
+              y2={points[pair[1] - 1][1]}
+              stroke="red"
+              strokeWidth={2}
+            />
+          ) : (
+            <text x={40} y={55} fontSize={20} fill="red">
+              ?
+            </text>
+          )}
+        </svg>
+      ))}
+    </div>
+  );
+}
+function CharGrid({ data = [[]] }) {
+  return (
+    <table
+      className="mx-auto text-center"
+      style={{ borderCollapse: "collapse" }}
+    >
+      <tbody>
+        {data.map((row, i) => (
+          <tr key={i}>
+            {row.map((cell, j) => (
+              <td key={j} style={{ width: 28, height: 28, padding: 2 }}>
+                {cell || ""}
+              </td>
+            ))}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  );
+}
+
+// Thêm vào registry
 const FIGURES = {
   symbolPattern: (p) => <SymbolPattern {...p} />,
   groupRepeats: (p) => <GroupRepeats {...p} />,
@@ -604,7 +683,9 @@ const FIGURES = {
   columnAddition: (p) => <ColumnAddition {...p} />,
   table: (p) => <TableFigure {...p} />,
   groupMatrices: (p) => <GroupMatrices {...p} />,
-  balances: (p) => <Balances {...p} />, // 👈 thêm dòng này
+  balances: (p) => <Balances {...p} />,
+  squareConnect: (p) => <SquareConnect {...p} />,
+  charGrid: (p) => <CharGrid {...p} />,
 };
 
 // Hàm hiển thị figure theo schema dữ liệu

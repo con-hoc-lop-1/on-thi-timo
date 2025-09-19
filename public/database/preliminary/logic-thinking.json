@@ -35,6 +35,138 @@
   {
     "type": "Logic Thinking",
     "stem": {
+      "en": "If the next day is Wednesday, what is the day before yesterday?",
+      "vi": "Nếu ngày mai là Thứ Tư, hỏi ngày hôm kia là thứ mấy?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Sunday",
+        "vi": "Chủ Nhật"
+      },
+      {
+        "id": "B",
+        "en": "Monday",
+        "vi": "Thứ Hai"
+      },
+      {
+        "id": "C",
+        "en": "Tuesday",
+        "vi": "Thứ Ba"
+      },
+      {
+        "id": "D",
+        "en": "Saturday",
+        "vi": "Thứ Bảy"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "If the time now is 3 o'clock, what will the time be 2 hours later?",
+      "vi": "Nếu bây giờ là 3 giờ, hỏi 2 giờ sau sẽ là mấy giờ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "4 o'clock",
+        "vi": "4 giờ"
+      },
+      {
+        "id": "B",
+        "en": "5 o'clock",
+        "vi": "5 giờ"
+      },
+      {
+        "id": "C",
+        "en": "6 o'clock",
+        "vi": "6 giờ"
+      },
+      {
+        "id": "D",
+        "en": "2 o'clock",
+        "vi": "2 giờ"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "If today is the 10th of the month, what day will it be 5 days later?",
+      "vi": "Nếu hôm nay là ngày 10 trong tháng, thì 5 ngày sau sẽ là ngày bao nhiêu?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "12th",
+        "vi": "Ngày 12"
+      },
+      {
+        "id": "B",
+        "en": "14th",
+        "vi": "Ngày 14"
+      },
+      {
+        "id": "C",
+        "en": "15th",
+        "vi": "Ngày 15"
+      },
+      {
+        "id": "D",
+        "en": "16th",
+        "vi": "Ngày 16"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    }
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "If the current year is 2025, what year was it 3 years ago?",
+      "vi": "Nếu năm nay là năm 2025, thì 3 năm trước là năm nào?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "2021",
+        "vi": "Năm 2021"
+      },
+      {
+        "id": "B",
+        "en": "2022",
+        "vi": "Năm 2022"
+      },
+      {
+        "id": "C",
+        "en": "2023",
+        "vi": "Năm 2023"
+      },
+      {
+        "id": "D",
+        "en": "2020",
+        "vi": "Năm 2020"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
       "en": "From the pattern shown below, what is the animal figure in the blank?",
       "vi": "Dựa vào quy luật dưới đây, tìm hình con vật thích hợp để điền vào chỗ trống."
     },
@@ -50,7 +182,7 @@
             "\uD83D\uDC2E",
             "\uD83D\uDC36",
             "\uD83D\uDC37",
-            "_______",
+            "____",
             "\uD83D\uDC36",
             "\uD83D\uDC37"
           ]
@@ -83,6 +215,187 @@
   {
     "type": "Logic Thinking",
     "stem": {
+      "en": "From the pattern below, what is the symbol in the blank?",
+      "vi": "Dựa vào quy luật dưới đây, tìm ký hiệu thích hợp để điền vào chỗ trống."
+    },
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "🍎",
+            "🍊",
+            "🍇",
+            "🍎",
+            "🍊",
+            "____",
+            "🍎",
+            "🍊"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "🍎"
+      },
+      {
+        "id": "B",
+        "en": "🍊"
+      },
+      {
+        "id": "C",
+        "en": "🍇"
+      },
+      {
+        "id": "D",
+        "en": "🍉"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    }
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Complete the sequence with the missing animal.",
+      "vi": "Hoàn thành dãy với con vật còn thiếu."
+    },
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "🐶",
+            "🐱",
+            "🐰",
+            "🐶",
+            "🐱",
+            "____",
+            "🐶"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "🐶"
+      },
+      {
+        "id": "B",
+        "en": "🐱"
+      },
+      {
+        "id": "C",
+        "en": "🐰"
+      },
+      {
+        "id": "D",
+        "en": "🐻"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    }
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Fill in the blank with the correct flower symbol.",
+      "vi": "Điền ký hiệu bông hoa đúng vào chỗ trống."
+    },
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "🌼",
+            "🌸",
+            "🌼",
+            "🌸",
+            "____",
+            "🌼",
+            "🌸"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "🌼"
+      },
+      {
+        "id": "B",
+        "en": "🌸"
+      },
+      {
+        "id": "C",
+        "en": "🌺"
+      },
+      {
+        "id": "D",
+        "en": "🌻"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    }
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Look at the sequence and choose the right special character to replace the blank.",
+      "vi": "Quan sát quy luật và chọn ký tự đặc biệt thích hợp điền vào chỗ trống."
+    },
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "★",
+            "☆",
+            "★",
+            "☆",
+            "★",
+            "____",
+            "☆"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "★"
+      },
+      {
+        "id": "B",
+        "en": "☆"
+      },
+      {
+        "id": "C",
+        "en": "◆"
+      },
+      {
+        "id": "D",
+        "en": "▲"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    }
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
       "en": "Mr. David has a farm. His farm has 5 cows and 5 chickens. How many legs do these animals have in total?",
       "vi": "Bác David có một nông trại. Trong nông trại có 5 con bò và 5 con gà. Hỏi tổng số chân của những con vật là bao nhiêu?"
     },
@@ -107,6 +420,122 @@
     "answer": {
       "type": "single",
       "key": "B"
+    }
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "In the garden there are 3 ants and 2 spiders. How many legs do they have in total?",
+      "vi": "Trong vườn có 3 con kiến và 2 con nhện. Hỏi tổng số chân của chúng là bao nhiêu?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "22"
+      },
+      {
+        "id": "B",
+        "en": "24"
+      },
+      {
+        "id": "C",
+        "en": "26"
+      },
+      {
+        "id": "D",
+        "en": "28"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    }
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "There are 4 chairs and 1 table in the room. How many legs do they have altogether?",
+      "vi": "Trong phòng có 4 cái ghế và 1 cái bàn. Hỏi tất cả có bao nhiêu chân?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "18"
+      },
+      {
+        "id": "B",
+        "en": "20"
+      },
+      {
+        "id": "C",
+        "en": "22"
+      },
+      {
+        "id": "D",
+        "en": "24"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "A family has 2 parents and 2 children. How many legs do they have together?",
+      "vi": "Một gia đình có 2 bố mẹ và 2 đứa con. Hỏi tất cả có bao nhiêu cái chân?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "6"
+      },
+      {
+        "id": "B",
+        "en": "8"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "12"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "There are 2 bicycles and 1 car in the garage. How many wheels in total?",
+      "vi": "Trong gara có 2 chiếc xe đạp và 1 chiếc ô tô. Hỏi tất cả có bao nhiêu bánh xe?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "6"
+      },
+      {
+        "id": "B",
+        "en": "8"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "12"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
     }
   },
   {
@@ -178,6 +607,167 @@
     "answer": {
       "type": "single",
       "key": "D"
+    }
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Observe the groups of 🐱 below. How many are there in group 7?",
+      "vi": "Quan sát các nhóm 🐱 dưới đây. Có bao nhiêu con ở nhóm thứ 7?"
+    },
+    "figure": {
+      "renderer": "groupRepeats",
+      "params": {
+        "symbol": "🐱",
+        "groups": [
+          1,
+          2,
+          3
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    }
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Look at the sequence of 🍌. The missing group is marked with ?. How many 🍌 should be there?",
+      "vi": "Quan sát dãy 🍌. Nhóm bị thiếu được đánh dấu ?. Có bao nhiêu quả 🍌 trong nhóm đó?"
+    },
+    "figure": {
+      "renderer": "groupRepeats",
+      "params": {
+        "symbol": "🍌",
+        "groups": [
+          2,
+          "?",
+          4,
+          5
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "2"
+      },
+      {
+        "id": "B",
+        "en": "3"
+      },
+      {
+        "id": "C",
+        "en": "4"
+      },
+      {
+        "id": "D",
+        "en": "5"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "From the groups of ▲ shown, how many ▲ are in group 3?",
+      "vi": "Từ các nhóm ▲ đã cho, có bao nhiêu ▲ trong nhóm thứ 3?"
+    },
+    "figure": {
+      "renderer": "groupRepeats",
+      "params": {
+        "symbol": "▲",
+        "groups": [
+          5,
+          6,
+          7
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "3"
+      },
+      {
+        "id": "B",
+        "en": "4"
+      },
+      {
+        "id": "C",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    }
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Check the pattern of 🍓. How many will appear in group 8?",
+      "vi": "Kiểm tra quy luật của 🍓. Có bao nhiêu quả trong nhóm thứ 8?"
+    },
+    "figure": {
+      "renderer": "groupRepeats",
+      "params": {
+        "symbol": "🍓",
+        "groups": [
+          3,
+          4,
+          5
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "6"
+      },
+      {
+        "id": "B",
+        "en": "7"
+      },
+      {
+        "id": "C",
+        "en": "8"
+      },
+      {
+        "id": "D",
+        "en": "9"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
     }
   },
   {
@@ -957,6 +1547,662 @@
       {
         "id": "D",
         "en": "15"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Given two balances, which animal is the heaviest?",
+      "vi": "Cho hai cái cân, con vật nào nặng nhất?"
+    },
+    "figure": {
+      "renderer": "balances",
+      "params": {
+        "balances": [
+          [
+            [
+              "🐶",
+              "🐶",
+              "🐱"
+            ],
+            [
+              "🐰"
+            ]
+          ],
+          [
+            [
+              "🐶"
+            ],
+            [
+              "🐱",
+              "🐱"
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Rabbit",
+        "vi": "Thỏ"
+      },
+      {
+        "id": "B",
+        "en": "Cat",
+        "vi": "Mèo"
+      },
+      {
+        "id": "C",
+        "en": "Dog",
+        "vi": "Chó"
+      },
+      {
+        "id": "D",
+        "en": "None",
+        "vi": "Không có"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    }
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "With the same balances, which animal is the lightest?",
+      "vi": "Với các cân trên, con vật nào nhẹ nhất?"
+    },
+    "figure": {
+      "renderer": "balances",
+      "params": {
+        "balances": [
+          [
+            [
+              "🐶",
+              "🐶",
+              "🐱"
+            ],
+            [
+              "🐰"
+            ]
+          ],
+          [
+            [
+              "🐶"
+            ],
+            [
+              "🐱",
+              "🐱"
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Dog",
+        "vi": "Chó"
+      },
+      {
+        "id": "B",
+        "en": "Rabbit",
+        "vi": "Thỏ"
+      },
+      {
+        "id": "C",
+        "en": "Cat",
+        "vi": "Mèo"
+      },
+      {
+        "id": "D",
+        "en": "All equal",
+        "vi": "Bằng nhau"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    }
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Look at the balances below. Which vegetable is the heaviest?",
+      "vi": "Xem các cân dưới đây. Loại rau củ nào nặng nhất?"
+    },
+    "figure": {
+      "renderer": "balances",
+      "params": {
+        "balances": [
+          [
+            [
+              "🥕",
+              "🥕",
+              "🍆"
+            ],
+            [
+              "🌽"
+            ]
+          ],
+          [
+            [
+              "🍆",
+              "🌽"
+            ],
+            [
+              "🥕",
+              "🥕",
+              "🥕"
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Eggplant",
+        "vi": "Cà tím"
+      },
+      {
+        "id": "B",
+        "en": "Carrot",
+        "vi": "Cà rốt"
+      },
+      {
+        "id": "C",
+        "en": "All equal",
+        "vi": "Bằng nhau"
+      },
+      {
+        "id": "D",
+        "en": "Corn",
+        "vi": "Ngô"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    }
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Using the same balances, which vegetable is the lightest?",
+      "vi": "Dựa trên các cân đó, loại rau củ nào nhẹ nhất?"
+    },
+    "figure": {
+      "renderer": "balances",
+      "params": {
+        "balances": [
+          [
+            [
+              "🥕",
+              "🥕",
+              "🍆"
+            ],
+            [
+              "🌽"
+            ]
+          ],
+          [
+            [
+              "🍆",
+              "🌽"
+            ],
+            [
+              "🥕",
+              "🥕",
+              "🥕"
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Eggplant",
+        "vi": "Cà tím"
+      },
+      {
+        "id": "B",
+        "en": "Carrot",
+        "vi": "Cà rốt"
+      },
+      {
+        "id": "C",
+        "en": "Corn",
+        "vi": "Ngô"
+      },
+      {
+        "id": "D",
+        "en": "All equal",
+        "vi": "Bằng nhau"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    }
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "How many \uD83C\uDF4E in group 7?",
+      "vi": "Nhóm 7 có bao nhiêu quả \uD83C\uDF4E?"
+    },
+    "figure": {
+      "renderer": "groupRepeats",
+      "params": {
+        "symbol": "🍎",
+        "groups": [
+          1,
+          2,
+          4,
+          8,
+          16
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "32"
+      },
+      {
+        "id": "B",
+        "en": "48"
+      },
+      {
+        "id": "C",
+        "en": "64"
+      },
+      {
+        "id": "D",
+        "en": "128"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    }
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Which animal should go into the blank space? Sequence alternates three animals.",
+      "vi": "Con vật nào nên điền vào chỗ trống? Dãy xen kẽ 3 con vật."
+    },
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "🐸",
+            "🐢",
+            "🐍",
+            "🐸",
+            "🐢",
+            "🐍",
+            "____"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "🐸"
+      },
+      {
+        "id": "B",
+        "en": "🐢"
+      },
+      {
+        "id": "C",
+        "en": "🐍"
+      },
+      {
+        "id": "D",
+        "en": "🐟"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    }
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "In the figure, there are two symbols ♥ and ✖. How many ♥ are there in the 5th group?",
+      "vi": "Trong hình có hai ký hiệu ♥ và ✖. Hỏi có bao nhiêu ♥ trong nhóm thứ 5?"
+    },
+    "figure": {
+      "renderer": "groupMatrices",
+      "params": {
+        "data": [
+          [
+            [
+              "♥"
+            ]
+          ],
+          [
+            [
+              "♥",
+              "✖"
+            ],
+            [
+              "✖",
+              "♥"
+            ]
+          ],
+          [
+            [
+              "♥",
+              "✖",
+              "♥"
+            ],
+            [
+              "✖",
+              "♥",
+              "✖"
+            ],
+            [
+              "♥",
+              "✖",
+              "♥"
+            ]
+          ],
+          [
+            [
+              "♥",
+              "✖",
+              "♥",
+              "✖"
+            ],
+            [
+              "✖",
+              "♥",
+              "✖",
+              "♥"
+            ],
+            [
+              "♥",
+              "✖",
+              "♥",
+              "✖"
+            ],
+            [
+              "✖",
+              "♥",
+              "✖",
+              "♥"
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "10"
+      },
+      {
+        "id": "B",
+        "en": "11"
+      },
+      {
+        "id": "C",
+        "en": "13"
+      },
+      {
+        "id": "D",
+        "en": "15"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    }
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Count only the black stars ★ in the 6th group (ignore ☆). How many are there?",
+      "vi": "Đếm riêng số ngôi sao đen ★ trong nhóm thứ 6 (bỏ qua ☆). Có bao nhiêu?"
+    },
+    "figure": {
+      "renderer": "groupMatrices",
+      "params": {
+        "data": [
+          [
+            [
+              "★"
+            ]
+          ],
+          [
+            [
+              "★",
+              "☆"
+            ],
+            [
+              "☆",
+              "★"
+            ]
+          ],
+          [
+            [
+              "★",
+              "☆",
+              "★"
+            ],
+            [
+              "☆",
+              "★",
+              "☆"
+            ],
+            [
+              "★",
+              "☆",
+              "★"
+            ]
+          ],
+          [
+            [
+              "★",
+              "☆",
+              "★",
+              "☆"
+            ],
+            [
+              "☆",
+              "★",
+              "☆",
+              "★"
+            ],
+            [
+              "★",
+              "☆",
+              "★",
+              "☆"
+            ],
+            [
+              "☆",
+              "★",
+              "☆",
+              "★"
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "8"
+      },
+      {
+        "id": "B",
+        "en": "12"
+      },
+      {
+        "id": "C",
+        "en": "16"
+      },
+      {
+        "id": "D",
+        "en": "18"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    }
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Look at the sequence. Fill the missing symbol correctly.",
+      "vi": "Quan sát dãy. Điền ký hiệu còn thiếu."
+    },
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "🍉",
+            "🍌",
+            "🍇",
+            "🍉",
+            "🍌",
+            "____",
+            "🍉",
+            "🍌",
+            "🍇"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "🍌"
+      },
+      {
+        "id": "B",
+        "en": "🍇"
+      },
+      {
+        "id": "C",
+        "en": "🍉"
+      },
+      {
+        "id": "D",
+        "en": "🍓"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "In the 6th group, how many circles ⭕ are surrounded by 4 squares ◼?",
+      "vi": "Trong nhóm thứ 6, có bao nhiêu hình tròn ⭕ được bao quanh bởi 4 hình vuông ◼?"
+    },
+    "figure": {
+      "renderer": "groupMatrices",
+      "params": {
+        "data": [
+          [
+            [
+              "⭕"
+            ]
+          ],
+          [
+            [
+              "⭕",
+              "◼"
+            ],
+            [
+              "◼",
+              "⭕"
+            ]
+          ],
+          [
+            [
+              "⭕",
+              "◼",
+              "⭕"
+            ],
+            [
+              "◼",
+              "⭕",
+              "◼"
+            ],
+            [
+              "⭕",
+              "◼",
+              "⭕"
+            ]
+          ],
+          [
+            [
+              "⭕",
+              "◼",
+              "⭕",
+              "◼"
+            ],
+            [
+              "◼",
+              "⭕",
+              "◼",
+              "⭕"
+            ],
+            [
+              "⭕",
+              "◼",
+              "⭕",
+              "◼"
+            ],
+            [
+              "◼",
+              "⭕",
+              "◼",
+              "⭕"
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "6"
+      },
+      {
+        "id": "B",
+        "en": "8"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "12"
       }
     ],
     "answer": {
