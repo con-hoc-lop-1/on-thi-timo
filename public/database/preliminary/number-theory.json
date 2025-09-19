@@ -1,50 +1,15 @@
 [
   {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Fill the lines with '+' and '−' to make the equation below correct:",
+      "vi": "Điền các dấu '+' và '−' vào chỗ trống để được phép tính đúng:"
+    },
     "figure": {
-      "renderer": "twoBins",
+      "renderer": "text",
       "params": {
-        "left": 16,
-        "right": 12,
-        "symbol": "\uD83D\uDC30",
-        "labels": [
-          "Left garden",
-          "Right garden"
-        ]
+        "content": "3 _ 6 _ 4 _ 7 = 12"
       }
-    },
-    "type": "Number Theory",
-    "stem": {
-      "en": "How many rabbits should be moved from left to right to get the same number of rabbits in both gardens?",
-      "vi": "Cần chuyển bao nhiêu con thỏ từ bên trái sang bên phải để hai khu vườn có số thỏ bằng nhau?"
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "1"
-      },
-      {
-        "id": "B",
-        "en": "2"
-      },
-      {
-        "id": "C",
-        "en": "3"
-      },
-      {
-        "id": "D",
-        "en": "4"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "B"
-    }
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Fill the lines with '+' and '−' to make the equation below correct: 3 _ 6 _ 4 _ 7 = 12",
-      "vi": "Điền các dấu '+' và '−' vào chỗ trống để được phép tính đúng: 3 _ 6 _ 4 _ 7 = 12"
     },
     "choices": [
       {
@@ -72,37 +37,14 @@
   {
     "type": "Number Theory",
     "stem": {
-      "en": "Fill the lines with '+' and '−' to make the equation below correct: 2 _ 5 _ 6 _ 1 _ 3 = 15",
-      "vi": "Điền các dấu '+' và '−' vào chỗ trống để được phép tính đúng: 2 _ 5 _ 6 _ 1 _ 3 = 15"
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "2 + 5 − 6 + 1 − 3 = 15"
-      },
-      {
-        "id": "B",
-        "en": "2 + 5 + 6 − 1 − 3 = 15"
-      },
-      {
-        "id": "C",
-        "en": "2 + 5 + 6 − 1 + 3 = 15"
-      },
-      {
-        "id": "D",
-        "en": "2 + 5 − 6 + 1 + 3 = 15"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "C"
-    }
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
       "en": "Four of five numbers 2, 4, 5, 6, 9 are written into four boxes so that the calculation below is correct. Which number was not used?",
       "vi": "Bốn trong năm số 2, 4, 5, 6, 9 được viết vào bốn ô dưới đây để được phép tính đúng. Hỏi số nào không được sử dụng?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "□ + □ − □ = □"
+      }
     },
     "choices": [
       {
@@ -130,8 +72,14 @@
   {
     "type": "Number Theory",
     "stem": {
-      "en": "Determine whether the result of 8 + 5 + 6 − 4 − 3 + 2 − 7 is odd or even.",
-      "vi": "Hỏi kết quả của phép tính 8 + 5 + 6 − 4 − 3 + 2 − 7 là số lẻ hay số chẵn?"
+      "en": "Determine whether the result of below is odd or even.",
+      "vi": "Hỏi kết quả của phép tính dưới đây là số lẻ hay số chẵn?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "8 + 5 + 6 − 4 − 3 + 2 − 7"
+      }
     },
     "choices": [
       {
@@ -154,6 +102,1685 @@
     "answer": {
       "type": "single",
       "key": "B"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Find the 6th number of the sequence:",
+      "vi": "Tìm số thứ 6 trong dãy:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "24, 29, 34, 39, 44, ..."
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "39"
+      },
+      {
+        "id": "B",
+        "en": "44"
+      },
+      {
+        "id": "C",
+        "en": "49"
+      },
+      {
+        "id": "D",
+        "en": "54"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Fill '+' and '−' to make correct:",
+      "vi": "Điền '+' và '−' để phép tính đúng:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "5 _ 4 _ 2 _ 3 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "5+4-2+3"
+      },
+      {
+        "id": "B",
+        "en": "5+4+2-3"
+      },
+      {
+        "id": "C",
+        "en": "5-4+2+3"
+      },
+      {
+        "id": "D",
+        "en": "5-4-2+3"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Which number was not used in the equation?",
+      "vi": "Số nào không được dùng trong phép tính?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "□ + □ − □ = □"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "2"
+      },
+      {
+        "id": "B",
+        "en": "3"
+      },
+      {
+        "id": "C",
+        "en": "4"
+      },
+      {
+        "id": "D",
+        "en": "5"
+      },
+      {
+        "id": "E",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Is the result of operation odd or even?",
+      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "9 + 2 + 1 + 8 + 4"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Even"
+      },
+      {
+        "id": "B",
+        "en": "Odd"
+      },
+      {
+        "id": "C",
+        "en": "Neither"
+      },
+      {
+        "id": "D",
+        "en": "Both"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "How many numbers between 1 and 50 end with digit 2?",
+      "vi": "Có bao nhiêu số từ 1 đến 50 tận cùng bằng 2?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "4"
+      },
+      {
+        "id": "B",
+        "en": "5"
+      },
+      {
+        "id": "C",
+        "en": "9"
+      },
+      {
+        "id": "D",
+        "en": "10"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "If A + A + A = BA, what is digit B?",
+      "vi": "Nếu A + A + A = BA, chữ số B là gì?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "1"
+      },
+      {
+        "id": "B",
+        "en": "2"
+      },
+      {
+        "id": "C",
+        "en": "3"
+      },
+      {
+        "id": "D",
+        "en": "4"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    }
+  },
+  {
+    "figure": {
+      "renderer": "twoBins",
+      "params": {
+        "left": 16,
+        "right": 12,
+        "symbol": "🍎",
+        "labels": [
+          "Left garden",
+          "Right garden"
+        ]
+      }
+    },
+    "type": "Number Theory",
+    "stem": {
+      "en": "Move how many items from left(16) to right(12) to balance?",
+      "vi": "Phải chuyển bao nhiêu vật từ trái(16) sang phải(12) để bằng nhau?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "1"
+      },
+      {
+        "id": "B",
+        "en": "2"
+      },
+      {
+        "id": "C",
+        "en": "3"
+      },
+      {
+        "id": "D",
+        "en": "4"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Move how many items from left(11) to right(11) to balance?",
+      "vi": "Phải chuyển bao nhiêu vật từ trái(11) sang phải(11) để bằng nhau?"
+    },
+    "figure": {
+      "renderer": "twoBins",
+      "params": {
+        "left": 11,
+        "right": 11,
+        "symbol": "🐟",
+        "labels": [
+          "Left garden",
+          "Right garden"
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "-1"
+      },
+      {
+        "id": "B",
+        "en": "0"
+      },
+      {
+        "id": "C",
+        "en": "1"
+      },
+      {
+        "id": "D",
+        "en": "2"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Move how many items from left(12) to right(10) to balance?",
+      "vi": "Phải chuyển bao nhiêu vật từ trái(12) sang phải(10) để bằng nhau?"
+    },
+    "figure": {
+      "renderer": "twoBins",
+      "params": {
+        "left": 12,
+        "right": 10,
+        "symbol": "⚽",
+        "labels": [
+          "Left garden",
+          "Right garden"
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "0"
+      },
+      {
+        "id": "B",
+        "en": "1"
+      },
+      {
+        "id": "C",
+        "en": "2"
+      },
+      {
+        "id": "D",
+        "en": "3"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Move how many items from left(21) to right(7) to balance?",
+      "vi": "Phải chuyển bao nhiêu vật từ trái(21) sang phải(7) để bằng nhau?"
+    },
+    "figure": {
+      "renderer": "twoBins",
+      "params": {
+        "left": 21,
+        "right": 7,
+        "symbol": "🍪",
+        "labels": [
+          "Left garden",
+          "Right garden"
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "6"
+      },
+      {
+        "id": "B",
+        "en": "7"
+      },
+      {
+        "id": "C",
+        "en": "8"
+      },
+      {
+        "id": "D",
+        "en": "9"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Move how many items from left(20) to right(12) to balance?",
+      "vi": "Phải chuyển bao nhiêu vật từ trái(20) sang phải(12) để bằng nhau?"
+    },
+    "figure": {
+      "renderer": "twoBins",
+      "params": {
+        "left": 20,
+        "right": 12,
+        "symbol": "🪵",
+        "labels": [
+          "Left garden",
+          "Right garden"
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "3"
+      },
+      {
+        "id": "B",
+        "en": "4"
+      },
+      {
+        "id": "C",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Move how many items from left(14) to right(12) to balance?",
+      "vi": "Phải chuyển bao nhiêu vật từ trái(14) sang phải(12) để bằng nhau?"
+    },
+    "figure": {
+      "renderer": "twoBins",
+      "params": {
+        "left": 14,
+        "right": 12,
+        "symbol": "🐟",
+        "labels": [
+          "Left garden",
+          "Right garden"
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "0"
+      },
+      {
+        "id": "B",
+        "en": "1"
+      },
+      {
+        "id": "C",
+        "en": "2"
+      },
+      {
+        "id": "D",
+        "en": "3"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Move how many items from left(13) to right(11) to balance?",
+      "vi": "Phải chuyển bao nhiêu vật từ trái(13) sang phải(11) để bằng nhau?"
+    },
+    "figure": {
+      "renderer": "twoBins",
+      "params": {
+        "left": 13,
+        "right": 11,
+        "symbol": "🐸",
+        "labels": [
+          "Left garden",
+          "Right garden"
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "0"
+      },
+      {
+        "id": "B",
+        "en": "1"
+      },
+      {
+        "id": "C",
+        "en": "2"
+      },
+      {
+        "id": "D",
+        "en": "3"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Find the 9th number of the sequence:",
+      "vi": "Tìm số thứ 9 trong dãy:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "11, 16, 21, 26, 31, ..."
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "46"
+      },
+      {
+        "id": "B",
+        "en": "51"
+      },
+      {
+        "id": "C",
+        "en": "56"
+      },
+      {
+        "id": "D",
+        "en": "61"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Find the 9th number of the sequence:",
+      "vi": "Tìm số thứ 9 trong dãy:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "15, 20, 25, 30, 35, ..."
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "50"
+      },
+      {
+        "id": "B",
+        "en": "55"
+      },
+      {
+        "id": "C",
+        "en": "60"
+      },
+      {
+        "id": "D",
+        "en": "65"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Find the 10th number of the sequence:",
+      "vi": "Tìm số thứ 10 trong dãy:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "10, 12, 14, 16, 18, ..."
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "26"
+      },
+      {
+        "id": "B",
+        "en": "28"
+      },
+      {
+        "id": "C",
+        "en": "30"
+      },
+      {
+        "id": "D",
+        "en": "32"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Find the 9th number of the sequence:",
+      "vi": "Tìm số thứ 9 trong dãy:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "6, 10, 14, 18, 22, ..."
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "34"
+      },
+      {
+        "id": "B",
+        "en": "38"
+      },
+      {
+        "id": "C",
+        "en": "42"
+      },
+      {
+        "id": "D",
+        "en": "46"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Find the 9th number of the sequence:",
+      "vi": "Tìm số thứ 9 trong dãy:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "19, 24, 29, 34, 39, ..."
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "54"
+      },
+      {
+        "id": "B",
+        "en": "59"
+      },
+      {
+        "id": "C",
+        "en": "64"
+      },
+      {
+        "id": "D",
+        "en": "69"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Find the 7th number of the sequence:",
+      "vi": "Tìm số thứ 7 trong dãy:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "13, 16, 19, 22, 25, ..."
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "28"
+      },
+      {
+        "id": "B",
+        "en": "31"
+      },
+      {
+        "id": "C",
+        "en": "34"
+      },
+      {
+        "id": "D",
+        "en": "37"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Find the 8th number of the sequence:",
+      "vi": "Tìm số thứ 8 trong dãy:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "15, 18, 21, 24, 27, ..."
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "33"
+      },
+      {
+        "id": "B",
+        "en": "36"
+      },
+      {
+        "id": "C",
+        "en": "39"
+      },
+      {
+        "id": "D",
+        "en": "42"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Fill '+' and '−' to make correct:",
+      "vi": "Điền '+' và '−' để phép tính đúng:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "2 _ 4 _ 7 _ 3 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "2+4-7+3"
+      },
+      {
+        "id": "B",
+        "en": "2+4+7-3"
+      },
+      {
+        "id": "C",
+        "en": "2-4+7+3"
+      },
+      {
+        "id": "D",
+        "en": "2-4-7+3"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Fill '+' and '−' to make correct:",
+      "vi": "Điền '+' và '−' để phép tính đúng:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "1 _ 1 _ 4 _ 8 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "1+1-4+8"
+      },
+      {
+        "id": "B",
+        "en": "1+1+4-8"
+      },
+      {
+        "id": "C",
+        "en": "1-1+4+8"
+      },
+      {
+        "id": "D",
+        "en": "1-1-4+8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Fill '+' and '−' to make correct:",
+      "vi": "Điền '+' và '−' để phép tính đúng:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "4 _ 6 _ 9 _ 1 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "4+6-9+1"
+      },
+      {
+        "id": "B",
+        "en": "4+6+9-1"
+      },
+      {
+        "id": "C",
+        "en": "4-6+9+1"
+      },
+      {
+        "id": "D",
+        "en": "4-6-9+1"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Fill '+' and '−' to make correct:",
+      "vi": "Điền '+' và '−' để phép tính đúng:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "4 _ 1 _ 5 _ 6 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "4+1-5+6"
+      },
+      {
+        "id": "B",
+        "en": "4+1+5-6"
+      },
+      {
+        "id": "C",
+        "en": "4-1+5+6"
+      },
+      {
+        "id": "D",
+        "en": "4-1-5+6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Fill '+' and '−' to make correct:",
+      "vi": "Điền '+' và '−' để phép tính đúng:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "9 _ 2 _ 5 _ 6 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "9+2-5+6"
+      },
+      {
+        "id": "B",
+        "en": "9+2+5-6"
+      },
+      {
+        "id": "C",
+        "en": "9-2+5+6"
+      },
+      {
+        "id": "D",
+        "en": "9-2-5+6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Fill '+' and '−' to make correct:",
+      "vi": "Điền '+' và '−' để phép tính đúng:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "6 _ 7 _ 2 _ 6 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "6+7-2+6"
+      },
+      {
+        "id": "B",
+        "en": "6+7+2-6"
+      },
+      {
+        "id": "C",
+        "en": "6-7+2+6"
+      },
+      {
+        "id": "D",
+        "en": "6-7-2+6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Fill '+' and '−' to make correct:",
+      "vi": "Điền '+' và '−' để phép tính đúng:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "9 _ 7 _ 9 _ 8 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "9+7-9+8"
+      },
+      {
+        "id": "B",
+        "en": "9+7+9-8"
+      },
+      {
+        "id": "C",
+        "en": "9-7+9+8"
+      },
+      {
+        "id": "D",
+        "en": "9-7-9+8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Is the result of operation odd or even?",
+      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "5 + 8 + 1 + 2 + 2 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Even"
+      },
+      {
+        "id": "B",
+        "en": "Odd"
+      },
+      {
+        "id": "C",
+        "en": "Neither"
+      },
+      {
+        "id": "D",
+        "en": "Both"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Is the result of operation odd or even?",
+      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "2 + 4 + 5 − 5 − 4 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Even"
+      },
+      {
+        "id": "B",
+        "en": "Odd"
+      },
+      {
+        "id": "C",
+        "en": "Neither"
+      },
+      {
+        "id": "D",
+        "en": "Both"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Is the result of operation odd or even?",
+      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "1 + 4 + 6 − 8 + 7 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Even"
+      },
+      {
+        "id": "B",
+        "en": "Odd"
+      },
+      {
+        "id": "C",
+        "en": "Neither"
+      },
+      {
+        "id": "D",
+        "en": "Both"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Is the result of operation odd or even?",
+      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "5 + 8 + 8 + 3 − 8 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Even"
+      },
+      {
+        "id": "B",
+        "en": "Odd"
+      },
+      {
+        "id": "C",
+        "en": "Neither"
+      },
+      {
+        "id": "D",
+        "en": "Both"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Is the result of operation odd or even?",
+      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "8 + 4 + 3 + 4 − 5 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Even"
+      },
+      {
+        "id": "B",
+        "en": "Odd"
+      },
+      {
+        "id": "C",
+        "en": "Neither"
+      },
+      {
+        "id": "D",
+        "en": "Both"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Is the result of operation odd or even?",
+      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "1 + 9 + 9 − 9 + 6 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Even"
+      },
+      {
+        "id": "B",
+        "en": "Odd"
+      },
+      {
+        "id": "C",
+        "en": "Neither"
+      },
+      {
+        "id": "D",
+        "en": "Both"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Is the result of operation odd or even?",
+      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "6 − 4 + 7 + 8 − 2 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Even"
+      },
+      {
+        "id": "B",
+        "en": "Odd"
+      },
+      {
+        "id": "C",
+        "en": "Neither"
+      },
+      {
+        "id": "D",
+        "en": "Both"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "How many numbers between 1 and 100 end with digit 5?",
+      "vi": "Có bao nhiêu số từ 1 đến 100 có tận cùng là 5?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Numbers 1..100"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "10"
+      },
+      {
+        "id": "B",
+        "en": "15"
+      },
+      {
+        "id": "C",
+        "en": "20"
+      },
+      {
+        "id": "D",
+        "en": "25"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "How many numbers between 1 and 100 end with digit 3?",
+      "vi": "Có bao nhiêu số từ 1 đến 100 có tận cùng là 3?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Numbers 1..100"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "10"
+      },
+      {
+        "id": "B",
+        "en": "12"
+      },
+      {
+        "id": "C",
+        "en": "13"
+      },
+      {
+        "id": "D",
+        "en": "14"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "How many numbers between 1 and 50 end with digit 2?",
+      "vi": "Có bao nhiêu số từ 1 đến 50 tận cùng là 2?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Numbers 1..50"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "4"
+      },
+      {
+        "id": "B",
+        "en": "5"
+      },
+      {
+        "id": "C",
+        "en": "9"
+      },
+      {
+        "id": "D",
+        "en": "10"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "How many even numbers are there between 1 and 100?",
+      "vi": "Có bao nhiêu số chẵn từ 1 đến 100?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Numbers 1..100"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "48"
+      },
+      {
+        "id": "B",
+        "en": "49"
+      },
+      {
+        "id": "C",
+        "en": "50"
+      },
+      {
+        "id": "D",
+        "en": "51"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "How many odd numbers are there between 1 and 100?",
+      "vi": "Có bao nhiêu số lẻ từ 1 đến 100?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Numbers 1..100"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "49"
+      },
+      {
+        "id": "B",
+        "en": "50"
+      },
+      {
+        "id": "C",
+        "en": "51"
+      },
+      {
+        "id": "D",
+        "en": "52"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "How many numbers between 1 and 40 are multiples of 4?",
+      "vi": "Có bao nhiêu số từ 1 đến 40 là bội của 4?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Numbers 1..40"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "9"
+      },
+      {
+        "id": "B",
+        "en": "10"
+      },
+      {
+        "id": "C",
+        "en": "11"
+      },
+      {
+        "id": "D",
+        "en": "12"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "How many two-digit numbers end with 0?",
+      "vi": "Có bao nhiêu số có 2 chữ số tận cùng là 0?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Numbers 10..99"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "8"
+      },
+      {
+        "id": "B",
+        "en": "9"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "11"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "If A + B = 12 and A = 5, what is B?",
+      "vi": "Nếu A + B = 12 và A = 5, thì B là gì?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "A + B = 12"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "If A + B = 14 and A = 6, what is B?",
+      "vi": "Nếu A + B = 14 và A = 6, thì B là gì?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "A + B = 14"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "6"
+      },
+      {
+        "id": "B",
+        "en": "7"
+      },
+      {
+        "id": "C",
+        "en": "8"
+      },
+      {
+        "id": "D",
+        "en": "9"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "If A + B = 15 and B = 9, what is A?",
+      "vi": "Nếu A + B = 15 và B = 9, thì A là gì?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "A + B = 15"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "If A + A = 12, what is A?",
+      "vi": "Nếu A + A = 12, thì A là gì?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "A + A = 12"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "4"
+      },
+      {
+        "id": "B",
+        "en": "5"
+      },
+      {
+        "id": "C",
+        "en": "6"
+      },
+      {
+        "id": "D",
+        "en": "7"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "If A + A + A = 15, what is A?",
+      "vi": "Nếu A + A + A = 15, thì A là gì?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "A + A + A = 15"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "3"
+      },
+      {
+        "id": "B",
+        "en": "4"
+      },
+      {
+        "id": "C",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "If A + B − 3 = 8 and A = 4, what is B?",
+      "vi": "Nếu A + B − 3 = 8 và A = 4, thì B là gì?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "A + B − 3 = 8"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
     }
   }
 ]

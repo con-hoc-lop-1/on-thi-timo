@@ -10,14 +10,21 @@ export function loadAllQuestions(
     "logic-thinking",
     "number-theory",
   ],
-  maxQuestionPerTest = 5
+  maxQuestionPerTest = 5,
+  isRandom = true
 ) {
   const data = tests.map((test) => {
     return fetch(`database/preliminary/${test}.json`).then((res) => res.json());
   });
   return Promise.all(data).then((results) => {
     return results
-      .flatMap((questions) => getRandomFromArray(questions, maxQuestionPerTest))
+      .flatMap((questions) => {
+        if (isRandom) {
+          return getRandomFromArray(questions, maxQuestionPerTest);
+        } else {
+          return questions.slice(0, maxQuestionPerTest);
+        }
+      })
       .map((q, idx) => ({ ...q, id: "q" + (idx + 1), userAnswer: "" }));
   });
 }

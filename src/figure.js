@@ -1,5 +1,6 @@
 // ================== FIGURE RENDERERS (JS version) ==================
-import { useMemo } from "react";
+
+import { useRef } from "react";
 
 function SvgIcon({ kind, size = 48, className = "" }) {
   const s = size,
@@ -100,7 +101,6 @@ function SvgIcon({ kind, size = 48, className = "" }) {
         </svg>
       );
     default:
-      // fallback khi symbol là chữ/số khác
       return (
         <div
           className={`d-inline-flex align-items-center justify-content-center ${className}`}
@@ -111,7 +111,6 @@ function SvgIcon({ kind, size = 48, className = "" }) {
       );
   }
 }
-
 // Q2/Q20: ma trận biểu tượng
 function SymbolPattern({ grid }) {
   const cols = grid?.[0]?.length || 0;
@@ -174,22 +173,6 @@ function GroupRepeats({ symbol, groups }) {
 }
 
 // Q11: hai “thùng” để so sánh/move cho bằng
-function TwoBins({ left, right, symbol = "●", labels = ["Left", "Right"] }) {
-  return (
-    <div className="d-flex gap-3">
-      {[left, right].map((n, i) => (
-        <div key={i} className="rounded border p-3" style={{ minWidth: 180 }}>
-          <div className="mb-2 text-center fw-medium">{labels[i]}</div>
-          <div className="d-flex flex-wrap gap-2" style={{ maxWidth: 150 }}>
-            {Array.from({ length: n }).map((_, k) => (
-              <SvgIcon key={k} kind={symbol} size={28} />
-            ))}
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-}
 function GridSquareTables({ data = [[]] }) {
   if (!Array.isArray(data) || data.length === 0) return null;
 
@@ -216,6 +199,22 @@ function GridSquareTables({ data = [[]] }) {
         ))}
       </tbody>
     </table>
+  );
+}
+function TwoBins({ left, right, symbol = "●", labels = ["Left", "Right"] }) {
+  return (
+    <div className="d-flex gap-3">
+      {[left, right].map((n, i) => (
+        <div key={i} className="rounded border p-3" style={{ minWidth: 180 }}>
+          <div className="mb-2 text-center fw-medium">{labels[i]}</div>
+          <div className="d-flex flex-wrap gap-2" style={{ maxWidth: 150 }}>
+            {Array.from({ length: n }).map((_, k) => (
+              <SvgIcon key={k} kind={symbol} size={28} />
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
   );
 }
 
@@ -327,40 +326,38 @@ function RegularPolygon({
   const cy = size / 2;
   const baseR = size / 2 - 6;
 
-  const points = useMemo(() => {
+  const pointsRef = useRef(null);
+
+  if (!pointsRef.current) {
     const step = (2 * Math.PI) / sides;
     const pts = [];
 
     for (let i = 0; i < sides; i++) {
       const angle = -Math.PI / 2 + i * step;
-
-      // bán kính dao động mạnh để tạo lồi/lõm
-      const rr = baseR * (0.3 + Math.random() * radiusJitter); // 0.3..(0.3+jitter)
-
+      const rr = baseR * (0.3 + Math.random() * radiusJitter);
       let x = cx + rr * Math.cos(angle);
       let y = cy + rr * Math.sin(angle);
-
       pts.push({ x, y });
     }
 
-    // đảm bảo cạnh tối thiểu
     for (let i = 0; i < pts.length; i++) {
       const j = (i + 1) % pts.length;
       const dx = pts[j].x - pts[i].x;
       const dy = pts[j].y - pts[i].y;
       const dist = Math.sqrt(dx * dx + dy * dy);
       if (dist < minEdge) {
-        // kéo điểm j ra xa hơn một chút
         const factor = minEdge / (dist + 0.001);
         pts[j].x = cx + (pts[j].x - cx) * factor;
         pts[j].y = cy + (pts[j].y - cy) * factor;
       }
     }
 
-    return pts;
-  }, [sides, size, radiusJitter, minEdge]);
+    pointsRef.current = pts;
+  }
 
+  const points = pointsRef.current;
   const ptsStr = points.map((p) => `${p.x},${p.y}`).join(" ");
+
   return (
     <svg
       width={size}
@@ -376,7 +373,7 @@ function RegularPolygon({
       />
       {points.map((p, i) => (
         <circle key={i} cx={p.x} cy={p.y} r={3} fill="black" stroke="none" />
-      ))}{" "}
+      ))}
     </svg>
   );
 }
@@ -388,8 +385,8 @@ function StackPattern({ stacks }) {
       {stacks.map((stack, i) => (
         <div key={i} className="d-flex flex-column align-items-center">
           <div
-            className="border rounded d-flex flex-column-reverse align-items-center justify-content-start p-2 gap-2"
-            style={{ height: 160, width: 112 }}
+            className="border rounded d-flex flex-column align-items-center justify-content-start p-2 gap-2"
+            style={{ height: "auto", width: 112 }}
           >
             {stack[0] === "?" ? (
               <span className="fs-3 mt-auto">?</span>
@@ -670,7 +667,92 @@ function CharGrid({ data = [[]] }) {
     </table>
   );
 }
+// Qxx: Hình gồm nhiều đoạn thẳng
+function LineSegments({ points = [], segments = [] }) {
+  return (
+    <svg width={200} height={200} viewBox="0 0 100 100" className="mx-auto">
+      {/* Vẽ đoạn thẳng */}
+      {segments.map(([a, b], idx) => (
+        <line
+          key={idx}
+          x1={points[a][0]}
+          y1={points[a][1]}
+          x2={points[b][0]}
+          y2={points[b][1]}
+          stroke="black"
+          strokeWidth={2}
+        />
+      ))}
+      {/* Vẽ điểm */}
+      {points.map(([x, y], i) => (
+        <circle key={i} cx={x} cy={y} r={3} fill="red">
+          <title>{i}</title>
+        </circle>
+      ))}
+    </svg>
+  );
+}
+// Qxx: Vẽ nhiều hình tròn
+function MultiCircles({ circles = [] }) {
+  return (
+    <svg width={200} height={200} viewBox="0 0 200 200" className="mx-auto">
+      {circles.map((c, idx) => (
+        <circle
+          key={idx}
+          cx={c.cx}
+          cy={c.cy}
+          r={c.r}
+          stroke="black"
+          strokeWidth={2}
+          fill="none"
+        />
+      ))}
+    </svg>
+  );
+}
+// Qxx: Chuỗi hạt (⚪⚫ hoặc emoji)
+function GeometryOverlapFigure({ shapes }) {
+  const shapeToSvg = {
+    circle: <circle cx="0" cy="0" r="25" stroke="black" fill="none" />,
+    square: (
+      <rect x="-25" y="-25" width="50" height="50" stroke="black" fill="none" />
+    ),
+    triangle: (
+      <polygon points="0,-30 26,15 -26,15" stroke="black" fill="none" />
+    ),
+    hexagon: (
+      <polygon
+        points="25,0 12.5,22 -12.5,22 -25,0 -12.5,-22 12.5,-22"
+        stroke="black"
+        fill="none"
+      />
+    ),
+    dot: <circle cx="0" cy="0" r="8" fill="black" />,
+  };
 
+  const spacing = 30; // khoảng cách để chồng lấn vừa phải
+
+  return (
+    <svg
+      viewBox={`-20 -40 ${shapes.length * spacing + 60} 100`}
+      width={300}
+      height={120}
+    >
+      {shapes.map((s, i) => (
+        <g key={i} transform={`translate(${i * spacing}, 0)`}>
+          {shapeToSvg[s]}
+        </g>
+      ))}
+    </svg>
+  );
+}
+function TextFigure({ content }) {
+  return (
+    <div className="text-center">
+      <p className="fs-3">{content}</p>
+    </div>
+  );
+}
 // Thêm vào registry
 const FIGURES = {
   symbolPattern: (p) => <SymbolPattern {...p} />,
@@ -686,11 +768,14 @@ const FIGURES = {
   balances: (p) => <Balances {...p} />,
   squareConnect: (p) => <SquareConnect {...p} />,
   charGrid: (p) => <CharGrid {...p} />,
+  lineSegments: (p) => <LineSegments {...p} />,
+  multiCircles: (p) => <MultiCircles {...p} />,
+  geometryOverlapFigure: (p) => <GeometryOverlapFigure {...p} />,
+  text: (p) => <TextFigure {...p} />,
 };
 
 // Hàm hiển thị figure theo schema dữ liệu
 export function renderFigure(q) {
-  // 1) Có renderer + params (ưu tiên)
   if (q.figure && q.figure.renderer) {
     const { renderer, params = {} } = q.figure;
     const Comp = FIGURES[renderer];
@@ -701,19 +786,4 @@ export function renderFigure(q) {
       </div>
     );
   }
-
-  // 2) requires_image + image_ref (placeholder hoặc ảnh do bạn tự cắt)
-  if (q.requires_image) {
-    // Nếu đã có ảnh, thay src bên dưới cho đúng đường dẫn public của bạn:
-    // return <div className="text-center my-3"><img src={`/assets/${q.image_ref}.png`} alt={q.image_ref} style={{maxWidth:"100%",height:"auto"}}/></div>;
-    return (
-      <div className="alert alert-info my-3">
-        Câu này cần hình minh họa: <code>{q.image_ref || "unknown"}</code>. Hãy
-        đặt ảnh vào <code>public/assets/</code> và hiển thị lại.
-      </div>
-    );
-  }
-
-  // 3) Không có figure
-  return null;
 }
