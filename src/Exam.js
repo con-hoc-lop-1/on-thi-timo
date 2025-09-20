@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { formatTime, loadAllQuestions } from "./utils";
-import { Form } from "react-bootstrap";
 import { renderFigure } from "./figure";
 
 function Exam({ name, mode, onFinish }) {
@@ -57,19 +56,6 @@ function Exam({ name, mode, onFinish }) {
   };
 
   const q = questions[index];
-  useEffect(() => {
-    function handleKey(e) {
-      if (e.key === "ArrowRight") {
-        // sang phải -> Next
-        setIndex((prev) => Math.min(prev + 1, questions.length - 1));
-      } else if (e.key === "ArrowLeft") {
-        // sang trái -> Back
-        setIndex((prev) => Math.max(prev - 1, 0));
-      }
-    }
-    window.addEventListener("keydown", handleKey);
-    return () => window.removeEventListener("keydown", handleKey);
-  }, [questions.length]);
 
   return questions.length === 0 ? (
     <p>Đang tải đề...</p>
@@ -109,16 +95,21 @@ function Exam({ name, mode, onFinish }) {
         {q.choices && q.choices.length > 0 ? (
           <div>
             {q.choices.map((choice, i) => (
-              <Form.Check
-                key={i}
-                type="radio"
-                id={`q-${q.id}-choice-${i}`}
-                name={`q-${q.id}`}
-                value={choice.id}
-                checked={q.userAnswer === choice.id}
-                onChange={() => handleAnswer(choice.id)}
-                label={`${choice.en}`}
-              />
+              <div className="form-check" key={i}>
+                <input
+                  name={`q-${q.id}`}
+                  type="radio"
+                  id={`q-${q.id}-choice-${i}`}
+                  className="form-check-input"
+                  value={choice.id}
+                  checked={q.userAnswer === choice.id}
+                  onChange={() => handleAnswer(choice.id)}
+                />
+                <label htmlFor={`q-${q.id}-choice-${i}`}>
+                  <span className="form-check-label">{choice.id}.</span>
+                  <span className="form-check-label">{choice.en}</span>
+                </label>
+              </div>
             ))}
           </div>
         ) : (

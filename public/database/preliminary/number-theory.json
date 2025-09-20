@@ -142,41 +142,6 @@
   {
     "type": "Number Theory",
     "stem": {
-      "en": "Fill '+' and '−' to make correct:",
-      "vi": "Điền '+' và '−' để phép tính đúng:"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "5 _ 4 _ 2 _ 3 = ?"
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "5+4-2+3"
-      },
-      {
-        "id": "B",
-        "en": "5+4+2-3"
-      },
-      {
-        "id": "C",
-        "en": "5-4+2+3"
-      },
-      {
-        "id": "D",
-        "en": "5-4-2+3"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "A"
-    }
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
       "en": "Which number was not used in the equation?",
       "vi": "Số nào không được dùng trong phép tính?"
     },
@@ -836,251 +801,6 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Fill '+' and '−' to make correct:",
-      "vi": "Điền '+' và '−' để phép tính đúng:"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "2 _ 4 _ 7 _ 3 = ?"
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "2+4-7+3"
-      },
-      {
-        "id": "B",
-        "en": "2+4+7-3"
-      },
-      {
-        "id": "C",
-        "en": "2-4+7+3"
-      },
-      {
-        "id": "D",
-        "en": "2-4-7+3"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "A"
-    }
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Fill '+' and '−' to make correct:",
-      "vi": "Điền '+' và '−' để phép tính đúng:"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "1 _ 1 _ 4 _ 8 = ?"
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "1+1-4+8"
-      },
-      {
-        "id": "B",
-        "en": "1+1+4-8"
-      },
-      {
-        "id": "C",
-        "en": "1-1+4+8"
-      },
-      {
-        "id": "D",
-        "en": "1-1-4+8"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "A"
-    }
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Fill '+' and '−' to make correct:",
-      "vi": "Điền '+' và '−' để phép tính đúng:"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "4 _ 6 _ 9 _ 1 = ?"
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "4+6-9+1"
-      },
-      {
-        "id": "B",
-        "en": "4+6+9-1"
-      },
-      {
-        "id": "C",
-        "en": "4-6+9+1"
-      },
-      {
-        "id": "D",
-        "en": "4-6-9+1"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "A"
-    }
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Fill '+' and '−' to make correct:",
-      "vi": "Điền '+' và '−' để phép tính đúng:"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "4 _ 1 _ 5 _ 6 = ?"
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "4+1-5+6"
-      },
-      {
-        "id": "B",
-        "en": "4+1+5-6"
-      },
-      {
-        "id": "C",
-        "en": "4-1+5+6"
-      },
-      {
-        "id": "D",
-        "en": "4-1-5+6"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "A"
-    }
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Fill '+' and '−' to make correct:",
-      "vi": "Điền '+' và '−' để phép tính đúng:"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "9 _ 2 _ 5 _ 6 = ?"
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "9+2-5+6"
-      },
-      {
-        "id": "B",
-        "en": "9+2+5-6"
-      },
-      {
-        "id": "C",
-        "en": "9-2+5+6"
-      },
-      {
-        "id": "D",
-        "en": "9-2-5+6"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "A"
-    }
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Fill '+' and '−' to make correct:",
-      "vi": "Điền '+' và '−' để phép tính đúng:"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "6 _ 7 _ 2 _ 6 = ?"
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "6+7-2+6"
-      },
-      {
-        "id": "B",
-        "en": "6+7+2-6"
-      },
-      {
-        "id": "C",
-        "en": "6-7+2+6"
-      },
-      {
-        "id": "D",
-        "en": "6-7-2+6"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "A"
-    }
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Fill '+' and '−' to make correct:",
-      "vi": "Điền '+' và '−' để phép tính đúng:"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "9 _ 7 _ 9 _ 8 = ?"
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "9+7-9+8"
-      },
-      {
-        "id": "B",
-        "en": "9+7+9-8"
-      },
-      {
-        "id": "C",
-        "en": "9-7+9+8"
-      },
-      {
-        "id": "D",
-        "en": "9-7-9+8"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "A"
     }
   },
   {
@@ -1781,6 +1501,286 @@
     "answer": {
       "type": "single",
       "key": "C"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Fill '+' and '−' to make correct:",
+      "vi": "Điền '+' và '−' để phép tính đúng:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "5 _ 4 _ 2 _ 3 = 10"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "5-4+2+3"
+      },
+      {
+        "id": "B",
+        "en": "5+4-2+3"
+      },
+      {
+        "id": "C",
+        "en": "5-4-2+3"
+      },
+      {
+        "id": "D",
+        "en": "5+4+2-3"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Fill '+' and '−' to make correct:",
+      "vi": "Điền '+' và '−' để phép tính đúng:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "2 _ 4 _ 7 _ 3 = 2"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "2+4+7-3"
+      },
+      {
+        "id": "B",
+        "en": "2-4+7+3"
+      },
+      {
+        "id": "C",
+        "en": "2+4-7+3"
+      },
+      {
+        "id": "D",
+        "en": "2-4-7+3"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Fill '+' and '−' to make correct:",
+      "vi": "Điền '+' và '−' để phép tính đúng:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "1 _ 1 _ 4 _ 8 = 6"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "1+1+4-8"
+      },
+      {
+        "id": "B",
+        "en": "1-1-4+8"
+      },
+      {
+        "id": "C",
+        "en": "1+1-4+8"
+      },
+      {
+        "id": "D",
+        "en": "1-1+4+8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Fill '+' and '−' to make correct:",
+      "vi": "Điền '+' và '−' để phép tính đúng:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "4 _ 6 _ 9 _ 1 = 2"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "4-6-9+1"
+      },
+      {
+        "id": "B",
+        "en": "4+6+9-1"
+      },
+      {
+        "id": "C",
+        "en": "4+6-9+1"
+      },
+      {
+        "id": "D",
+        "en": "4-6+9+1"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Fill '+' and '−' to make correct:",
+      "vi": "Điền '+' và '−' để phép tính đúng:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "4 _ 1 _ 5 _ 6 = 6"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "4+1+5-6"
+      },
+      {
+        "id": "B",
+        "en": "4+1-5+6"
+      },
+      {
+        "id": "C",
+        "en": "4-1-5+6"
+      },
+      {
+        "id": "D",
+        "en": "4-1+5+6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Fill '+' and '−' to make correct:",
+      "vi": "Điền '+' và '−' để phép tính đúng:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "9 _ 2 _ 5 _ 6 = 12"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "9+2+5-6"
+      },
+      {
+        "id": "B",
+        "en": "9-2-5+6"
+      },
+      {
+        "id": "C",
+        "en": "9+2-5+6"
+      },
+      {
+        "id": "D",
+        "en": "9-2+5+6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Fill '+' and '−' to make correct:",
+      "vi": "Điền '+' và '−' để phép tính đúng:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "6 _ 7 _ 2 _ 6 = 17"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "6+7+2-6"
+      },
+      {
+        "id": "B",
+        "en": "6-7-2+6"
+      },
+      {
+        "id": "C",
+        "en": "6-7+2+6"
+      },
+      {
+        "id": "D",
+        "en": "6+7-2+6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    }
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Fill '+' and '−' to make correct:",
+      "vi": "Điền '+' và '−' để phép tính đúng:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "9 _ 7 _ 9 _ 8 = 15"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "9-7-9+8"
+      },
+      {
+        "id": "B",
+        "en": "9+7+9-8"
+      },
+      {
+        "id": "C",
+        "en": "9-7+9+8"
+      },
+      {
+        "id": "D",
+        "en": "9+7-9+8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
     }
   }
 ]
