@@ -33,7 +33,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "G01"
   },
   {
     "type": "Geometry",
@@ -103,7 +104,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "G02"
   },
   {
     "type": "Geometry",
@@ -181,7 +183,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "G03"
   },
   {
     "type": "Geometry",
@@ -267,7 +270,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "G04"
   },
   {
     "type": "Geometry",
@@ -389,7 +393,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "G05"
   },
   {
     "type": "Geometry",
@@ -440,7 +445,8 @@
           ]
         ]
       }
-    }
+    },
+    "id": "G06"
   },
   {
     "type": "Geometry",
@@ -491,7 +497,8 @@
           ]
         ]
       }
-    }
+    },
+    "id": "G07"
   },
   {
     "type": "Geometry",
@@ -542,7 +549,8 @@
           ]
         ]
       }
-    }
+    },
+    "id": "G08"
   },
   {
     "type": "Geometry",
@@ -613,7 +621,8 @@
           ]
         ]
       }
-    }
+    },
+    "id": "G09"
   },
   {
     "type": "Geometry",
@@ -684,7 +693,8 @@
           ]
         ]
       }
-    }
+    },
+    "id": "G10"
   },
   {
     "type": "Geometry",
@@ -755,7 +765,8 @@
           ]
         ]
       }
-    }
+    },
+    "id": "G11"
   },
   {
     "type": "Geometry",
@@ -791,7 +802,8 @@
         "sides": 3,
         "size": 280
       }
-    }
+    },
+    "id": "G12"
   },
   {
     "type": "Geometry",
@@ -827,7 +839,8 @@
         "sides": 7,
         "size": 280
       }
-    }
+    },
+    "id": "G13"
   },
   {
     "type": "Geometry",
@@ -863,7 +876,8 @@
         "sides": 6,
         "size": 280
       }
-    }
+    },
+    "id": "G14"
   },
   {
     "type": "Geometry",
@@ -899,7 +913,8 @@
         "sides": 7,
         "size": 280
       }
-    }
+    },
+    "id": "G15"
   },
   {
     "type": "Geometry",
@@ -935,7 +950,8 @@
         "sides": 4,
         "size": 280
       }
-    }
+    },
+    "id": "G16"
   },
   {
     "type": "Geometry",
@@ -979,7 +995,8 @@
           ]
         ]
       }
-    }
+    },
+    "id": "G17"
   },
   {
     "type": "Geometry",
@@ -1025,7 +1042,8 @@
           ]
         ]
       }
-    }
+    },
+    "id": "G18"
   },
   {
     "type": "Geometry",
@@ -1075,7 +1093,8 @@
           ]
         ]
       }
-    }
+    },
+    "id": "G19"
   },
   {
     "type": "Geometry",
@@ -1131,7 +1150,8 @@
           ]
         ]
       }
-    }
+    },
+    "id": "G20"
   },
   {
     "type": "Geometry",
@@ -1175,7 +1195,8 @@
           ]
         ]
       }
-    }
+    },
+    "id": "G21"
   },
   {
     "type": "Geometry",
@@ -1253,7 +1274,8 @@
           ]
         ]
       }
-    }
+    },
+    "id": "G22"
   },
   {
     "type": "Geometry",
@@ -1339,7 +1361,8 @@
           ]
         ]
       }
-    }
+    },
+    "id": "G23"
   },
   {
     "type": "Geometry",
@@ -1409,7 +1432,8 @@
           ]
         ]
       }
-    }
+    },
+    "id": "G24"
   },
   {
     "type": "Geometry",
@@ -1487,7 +1511,8 @@
           ]
         ]
       }
-    }
+    },
+    "id": "G25"
   },
   {
     "type": "Geometry",
@@ -1573,7 +1598,8 @@
           ]
         ]
       }
-    }
+    },
+    "id": "G26"
   },
   {
     "type": "Geometry",
@@ -1633,7 +1659,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "G27"
   },
   {
     "figure": {
@@ -1680,7 +1707,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "G28"
   },
   {
     "type": "Geometry",
@@ -1798,7 +1826,8 @@
     "answer": {
       "type": "single",
       "key": "D"
-    }
+    },
+    "id": "G29"
   },
   {
     "type": "Geometry",
@@ -1842,7 +1871,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "G30"
   },
   {
     "type": "Geometry",
@@ -1888,7 +1918,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "G31"
   },
   {
     "type": "Geometry",
@@ -1932,7 +1963,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "G32"
   },
   {
     "type": "Geometry",
@@ -1998,7 +2030,8 @@
         "id": "D",
         "en": "14"
       }
-    ]
+    ],
+    "id": "G33"
   },
   {
     "type": "Geometry",
@@ -2068,7 +2101,8 @@
           ]
         ]
       }
-    }
+    },
+    "id": "G34"
   },
   {
     "type": "Geometry",
@@ -2155,7 +2189,8 @@
           ]
         ]
       }
-    }
+    },
+    "id": "G35"
   },
   {
     "type": "Geometry",
@@ -2227,7 +2262,8 @@
           ]
         ]
       }
-    }
+    },
+    "id": "G36"
   },
   {
     "type": "Geometry",
@@ -2314,7 +2350,8 @@
           ]
         ]
       }
-    }
+    },
+    "id": "G37"
   },
   {
     "type": "Geometry",
@@ -2392,7 +2429,8 @@
           ]
         ]
       }
-    }
+    },
+    "id": "G38"
   },
   {
     "type": "Geometry",
@@ -2462,7 +2500,8 @@
           ]
         ]
       }
-    }
+    },
+    "id": "G39"
   },
   {
     "type": "Geometry",
@@ -2528,7 +2567,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "G40"
   },
   {
     "type": "Geometry",
@@ -2573,7 +2613,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "G41"
   },
   {
     "type": "Geometry",
@@ -2624,7 +2665,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "G42"
   },
   {
     "type": "Geometry",
@@ -2692,7 +2734,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "G43"
   },
   {
     "type": "Geometry",
@@ -2764,7 +2807,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "G44"
   },
   {
     "type": "Geometry",
@@ -2828,7 +2872,8 @@
     "answer": {
       "type": "single",
       "key": "D"
-    }
+    },
+    "id": "G45"
   },
   {
     "type": "Geometry",
@@ -2896,7 +2941,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "G46"
   },
   {
     "type": "Geometry",
@@ -2953,7 +2999,8 @@
     "answer": {
       "type": "single",
       "key": "D"
-    }
+    },
+    "id": "G47"
   },
   {
     "type": "Geometry",
@@ -3029,7 +3076,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "G48"
   },
   {
     "type": "Geometry",
@@ -3097,7 +3145,8 @@
     "answer": {
       "type": "single",
       "key": "D"
-    }
+    },
+    "id": "G49"
   },
   {
     "type": "Geometry",
@@ -3151,6 +3200,7 @@
     "answer": {
       "type": "single",
       "key": "D"
-    }
+    },
+    "id": "G50"
   }
 ]

@@ -10,8 +10,8 @@ function Exam({ name, mode, onFinish }) {
   );
 
   useEffect(() => {
-    // loadAllQuestions().then(setQuestions);
-    loadAllQuestions(["number-theory"], 50, false).then(setQuestions);
+    loadAllQuestions().then(setQuestions);
+    // loadAllQuestions(["number-theory"], 50, false).then(setQuestions);
     const timer = setInterval(() => {
       setSecondsLeft((prev) => {
         if (prev <= 1) {

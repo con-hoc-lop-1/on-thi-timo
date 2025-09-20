@@ -30,7 +30,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "L01"
   },
   {
     "type": "Logic Thinking",
@@ -63,7 +64,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "L02"
   },
   {
     "type": "Logic Thinking",
@@ -96,7 +98,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "L03"
   },
   {
     "type": "Logic Thinking",
@@ -129,7 +132,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "L04"
   },
   {
     "type": "Logic Thinking",
@@ -162,7 +166,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "L05"
   },
   {
     "type": "Logic Thinking",
@@ -175,16 +180,16 @@
       "params": {
         "grid": [
           [
-            "\uD83D\uDC37",
-            "\uD83D\uDC2E",
-            "\uD83D\uDC36",
-            "\uD83D\uDC37",
-            "\uD83D\uDC2E",
-            "\uD83D\uDC36",
-            "\uD83D\uDC37",
+            "🐷",
+            "🐮",
+            "🐶",
+            "🐷",
+            "🐮",
+            "🐶",
+            "🐷",
             "____",
-            "\uD83D\uDC36",
-            "\uD83D\uDC37"
+            "🐶",
+            "🐷"
           ]
         ]
       }
@@ -192,25 +197,26 @@
     "choices": [
       {
         "id": "A",
-        "en": "\uD83D\uDC37"
+        "en": "🐷"
       },
       {
         "id": "B",
-        "en": "\uD83D\uDC2E"
+        "en": "🐮"
       },
       {
         "id": "C",
-        "en": "\uD83D\uDC36"
+        "en": "🐶"
       },
       {
         "id": "D",
-        "en": "\uD83D\uDC3A"
+        "en": "🐺"
       }
     ],
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "L06"
   },
   {
     "type": "Logic Thinking",
@@ -256,7 +262,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "L07"
   },
   {
     "type": "Logic Thinking",
@@ -301,7 +308,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "L08"
   },
   {
     "type": "Logic Thinking",
@@ -346,7 +354,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "L09"
   },
   {
     "type": "Logic Thinking",
@@ -391,7 +400,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "L10"
   },
   {
     "type": "Logic Thinking",
@@ -420,7 +430,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "L11"
   },
   {
     "type": "Logic Thinking",
@@ -449,7 +460,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "L12"
   },
   {
     "type": "Logic Thinking",
@@ -478,7 +490,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "L13"
   },
   {
     "type": "Logic Thinking",
@@ -507,7 +520,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "L14"
   },
   {
     "type": "Logic Thinking",
@@ -536,7 +550,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "L15"
   },
   {
     "type": "Logic Thinking",
@@ -565,7 +580,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "L16"
   },
   {
     "type": "Logic Thinking",
@@ -607,7 +623,8 @@
     "answer": {
       "type": "single",
       "key": "D"
-    }
+    },
+    "id": "L17"
   },
   {
     "type": "Logic Thinking",
@@ -647,7 +664,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "L18"
   },
   {
     "type": "Logic Thinking",
@@ -688,7 +706,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "L19"
   },
   {
     "type": "Logic Thinking",
@@ -728,7 +747,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "L20"
   },
   {
     "type": "Logic Thinking",
@@ -768,7 +788,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "L21"
   },
   {
     "type": "Logic Thinking",
@@ -801,7 +822,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "L22"
   },
   {
     "type": "Logic Thinking",
@@ -830,7 +852,8 @@
     "answer": {
       "type": "single",
       "key": "D"
-    }
+    },
+    "id": "L23"
   },
   {
     "type": "Logic Thinking",
@@ -859,7 +882,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "L24"
   },
   {
     "type": "Logic Thinking",
@@ -953,7 +977,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "L25"
   },
   {
     "type": "Logic Thinking",
@@ -982,7 +1007,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "L26"
   },
   {
     "type": "Logic Thinking",
@@ -1011,7 +1037,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "L27"
   },
   {
     "type": "Logic Thinking",
@@ -1040,7 +1067,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "L28"
   },
   {
     "type": "Logic Thinking",
@@ -1069,7 +1097,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "L29"
   },
   {
     "type": "Logic Thinking",
@@ -1098,7 +1127,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "L30"
   },
   {
     "type": "Logic Thinking",
@@ -1182,7 +1212,8 @@
     "answer": {
       "type": "single",
       "key": "D"
-    }
+    },
+    "id": "L31"
   },
   {
     "type": "Logic Thinking",
@@ -1211,7 +1242,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "L32"
   },
   {
     "type": "Logic Thinking",
@@ -1240,7 +1272,8 @@
     "answer": {
       "type": "single",
       "key": "D"
-    }
+    },
+    "id": "L33"
   },
   {
     "type": "Logic Thinking",
@@ -1269,7 +1302,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "L34"
   },
   {
     "type": "Logic Thinking",
@@ -1298,7 +1332,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "L35"
   },
   {
     "type": "Logic Thinking",
@@ -1382,7 +1417,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "L36"
   },
   {
     "type": "Logic Thinking",
@@ -1396,20 +1432,20 @@
         "balances": [
           [
             [
-              "\uD83C\uDF4A",
-              "\uD83C\uDF4E"
+              "🍊",
+              "🍎"
             ],
             [
-              "\uD83E\uDD6D"
+              "🥭"
             ]
           ],
           [
             [
-              "\uD83C\uDF4E"
+              "🍎"
             ],
             [
-              "\uD83C\uDF4A",
-              "\uD83C\uDF4A"
+              "🍊",
+              "🍊"
             ]
           ]
         ]
@@ -1436,7 +1472,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "L37"
   },
   {
     "type": "Logic Thinking",
@@ -1465,7 +1502,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "L38"
   },
   {
     "type": "Logic Thinking",
@@ -1494,7 +1532,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "L39"
   },
   {
     "type": "Logic Thinking",
@@ -1523,7 +1562,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "L40"
   },
   {
     "type": "Logic Thinking",
@@ -1552,7 +1592,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "L41"
   },
   {
     "type": "Logic Thinking",
@@ -1611,7 +1652,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "L42"
   },
   {
     "type": "Logic Thinking",
@@ -1670,7 +1712,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "L43"
   },
   {
     "type": "Logic Thinking",
@@ -1731,7 +1774,8 @@
     "answer": {
       "type": "single",
       "key": "D"
-    }
+    },
+    "id": "L44"
   },
   {
     "type": "Logic Thinking",
@@ -1792,13 +1836,14 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "L45"
   },
   {
     "type": "Logic Thinking",
     "stem": {
-      "en": "How many \uD83C\uDF4E in group 7?",
-      "vi": "Nhóm 7 có bao nhiêu quả \uD83C\uDF4E?"
+      "en": "How many 🍎 in group 7?",
+      "vi": "Nhóm 7 có bao nhiêu quả 🍎?"
     },
     "figure": {
       "renderer": "groupRepeats",
@@ -1834,7 +1879,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "L46"
   },
   {
     "type": "Logic Thinking",
@@ -1879,7 +1925,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "L47"
   },
   {
     "type": "Logic Thinking",
@@ -1973,7 +2020,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "L48"
   },
   {
     "type": "Logic Thinking",
@@ -2067,7 +2115,8 @@
     "answer": {
       "type": "single",
       "key": "D"
-    }
+    },
+    "id": "L49"
   },
   {
     "type": "Logic Thinking",
@@ -2114,7 +2163,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "L50"
   },
   {
     "type": "Logic Thinking",
@@ -2208,6 +2258,7 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "L51"
   }
 ]

@@ -26,7 +26,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "A01"
   },
   {
     "type": "Arithmetic",
@@ -55,7 +56,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "A02"
   },
   {
     "type": "Arithmetic",
@@ -84,7 +86,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "A03"
   },
   {
     "type": "Arithmetic",
@@ -113,7 +116,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "A04"
   },
   {
     "type": "Arithmetic",
@@ -155,7 +159,8 @@
     "answer": {
       "type": "single",
       "key": "D"
-    }
+    },
+    "id": "A05"
   },
   {
     "type": "Arithmetic",
@@ -184,7 +189,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "A06"
   },
   {
     "type": "Arithmetic",
@@ -213,7 +219,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "A07"
   },
   {
     "type": "Arithmetic",
@@ -242,7 +249,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "A08"
   },
   {
     "type": "Arithmetic",
@@ -271,7 +279,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "A09"
   },
   {
     "type": "Arithmetic",
@@ -300,7 +309,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "A10"
   },
   {
     "type": "Arithmetic",
@@ -329,7 +339,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "A11"
   },
   {
     "type": "Arithmetic",
@@ -358,7 +369,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "A12"
   },
   {
     "type": "Arithmetic",
@@ -387,7 +399,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "A13"
   },
   {
     "type": "Arithmetic",
@@ -416,7 +429,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "A14"
   },
   {
     "type": "Arithmetic",
@@ -445,7 +459,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "A15"
   },
   {
     "type": "Arithmetic",
@@ -474,7 +489,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "A16"
   },
   {
     "type": "Arithmetic",
@@ -503,7 +519,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "A17"
   },
   {
     "type": "Arithmetic",
@@ -532,7 +549,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "A18"
   },
   {
     "type": "Arithmetic",
@@ -561,7 +579,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "A19"
   },
   {
     "type": "Arithmetic",
@@ -590,7 +609,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "A20"
   },
   {
     "type": "Arithmetic",
@@ -619,7 +639,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "A21"
   },
   {
     "type": "Arithmetic",
@@ -648,7 +669,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "A22"
   },
   {
     "type": "Arithmetic",
@@ -677,7 +699,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "A23"
   },
   {
     "type": "Arithmetic",
@@ -706,7 +729,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "A24"
   },
   {
     "type": "Arithmetic",
@@ -735,7 +759,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "A25"
   },
   {
     "type": "Arithmetic",
@@ -764,7 +789,8 @@
     "answer": {
       "type": "single",
       "key": "D"
-    }
+    },
+    "id": "A26"
   },
   {
     "type": "Arithmetic",
@@ -793,7 +819,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "A27"
   },
   {
     "type": "Arithmetic",
@@ -822,7 +849,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "A28"
   },
   {
     "type": "Arithmetic",
@@ -851,7 +879,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "A29"
   },
   {
     "type": "Arithmetic",
@@ -880,7 +909,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "A30"
   },
   {
     "type": "Arithmetic",
@@ -909,7 +939,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "A31"
   },
   {
     "type": "Arithmetic",
@@ -938,7 +969,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "A32"
   },
   {
     "type": "Arithmetic",
@@ -967,7 +999,8 @@
     "answer": {
       "type": "single",
       "key": "D"
-    }
+    },
+    "id": "A33"
   },
   {
     "type": "Arithmetic",
@@ -996,7 +1029,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "A34"
   },
   {
     "type": "Arithmetic",
@@ -1025,7 +1059,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "A35"
   },
   {
     "type": "Arithmetic",
@@ -1054,7 +1089,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "A36"
   },
   {
     "type": "Arithmetic",
@@ -1083,7 +1119,8 @@
     "answer": {
       "type": "single",
       "key": "D"
-    }
+    },
+    "id": "A37"
   },
   {
     "type": "Arithmetic",
@@ -1112,7 +1149,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "A38"
   },
   {
     "type": "Arithmetic",
@@ -1141,7 +1179,8 @@
     "answer": {
       "type": "single",
       "key": "D"
-    }
+    },
+    "id": "A39"
   },
   {
     "type": "Arithmetic",
@@ -1170,7 +1209,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "A40"
   },
   {
     "type": "Arithmetic",
@@ -1199,7 +1239,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "A41"
   },
   {
     "type": "Arithmetic",
@@ -1228,7 +1269,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "A42"
   },
   {
     "type": "Arithmetic",
@@ -1257,7 +1299,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "A43"
   },
   {
     "type": "Arithmetic",
@@ -1286,7 +1329,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "A44"
   },
   {
     "type": "Arithmetic",
@@ -1315,7 +1359,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "A45"
   },
   {
     "type": "Arithmetic",
@@ -1344,7 +1389,8 @@
     "answer": {
       "type": "single",
       "key": "D"
-    }
+    },
+    "id": "A46"
   },
   {
     "type": "Arithmetic",
@@ -1373,7 +1419,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "A47"
   },
   {
     "type": "Arithmetic",
@@ -1402,7 +1449,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "A48"
   },
   {
     "type": "Arithmetic",
@@ -1431,7 +1479,8 @@
     "answer": {
       "type": "single",
       "key": "D"
-    }
+    },
+    "id": "A49"
   },
   {
     "type": "Arithmetic",
@@ -1460,6 +1509,7 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "A50"
   }
 ]

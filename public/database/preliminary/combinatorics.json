@@ -48,7 +48,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "C01"
   },
   {
     "type": "Combinatorics",
@@ -99,7 +100,8 @@
     "answer": {
       "type": "single",
       "key": "D"
-    }
+    },
+    "id": "C02"
   },
   {
     "type": "Combinatorics",
@@ -150,7 +152,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "C03"
   },
   {
     "type": "Combinatorics",
@@ -201,7 +204,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "C04"
   },
   {
     "type": "Combinatorics",
@@ -252,7 +256,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "C05"
   },
   {
     "type": "Combinatorics",
@@ -281,7 +286,8 @@
     "answer": {
       "type": "single",
       "key": "D"
-    }
+    },
+    "id": "C06"
   },
   {
     "type": "Combinatorics",
@@ -310,7 +316,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "C07"
   },
   {
     "type": "Combinatorics",
@@ -339,7 +346,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "C08"
   },
   {
     "type": "Combinatorics",
@@ -384,7 +392,8 @@
     "answer": {
       "type": "single",
       "key": "D"
-    }
+    },
+    "id": "C09"
   },
   {
     "type": "Combinatorics",
@@ -413,7 +422,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "C10"
   },
   {
     "type": "Combinatorics",
@@ -442,7 +452,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "C11"
   },
   {
     "type": "Combinatorics",
@@ -471,7 +482,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "C12"
   },
   {
     "type": "Combinatorics",
@@ -500,7 +512,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "C13"
   },
   {
     "type": "Combinatorics",
@@ -554,7 +567,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "C14"
   },
   {
     "type": "Combinatorics",
@@ -599,7 +613,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "C15"
   },
   {
     "type": "Combinatorics",
@@ -628,7 +643,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "C16"
   },
   {
     "type": "Combinatorics",
@@ -657,7 +673,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "C17"
   },
   {
     "type": "Combinatorics",
@@ -686,7 +703,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "C18"
   },
   {
     "type": "Combinatorics",
@@ -715,7 +733,8 @@
     "answer": {
       "type": "single",
       "key": "D"
-    }
+    },
+    "id": "C19"
   },
   {
     "type": "Combinatorics",
@@ -744,7 +763,8 @@
     "answer": {
       "type": "single",
       "key": "D"
-    }
+    },
+    "id": "C20"
   },
   {
     "type": "Combinatorics",
@@ -789,7 +809,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "C21"
   },
   {
     "type": "Combinatorics",
@@ -818,7 +839,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "C22"
   },
   {
     "type": "Combinatorics",
@@ -863,7 +885,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "C23"
   },
   {
     "type": "Combinatorics",
@@ -892,7 +915,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "C24"
   },
   {
     "type": "Combinatorics",
@@ -921,7 +945,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "C25"
   },
   {
     "type": "Combinatorics",
@@ -950,7 +975,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "C26"
   },
   {
     "type": "Combinatorics",
@@ -979,7 +1005,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "C27"
   },
   {
     "type": "Combinatorics",
@@ -1024,7 +1051,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "C28"
   },
   {
     "type": "Combinatorics",
@@ -1053,7 +1081,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "C29"
   },
   {
     "type": "Combinatorics",
@@ -1098,7 +1127,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "C30"
   },
   {
     "type": "Combinatorics",
@@ -1127,7 +1157,8 @@
     "answer": {
       "type": "single",
       "key": "D"
-    }
+    },
+    "id": "C31"
   },
   {
     "type": "Combinatorics",
@@ -1172,7 +1203,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "C32"
   },
   {
     "type": "Combinatorics",
@@ -1201,7 +1233,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "C33"
   },
   {
     "type": "Combinatorics",
@@ -1230,7 +1263,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "C34"
   },
   {
     "type": "Combinatorics",
@@ -1259,7 +1293,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "C35"
   },
   {
     "type": "Combinatorics",
@@ -1288,7 +1323,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "C36"
   },
   {
     "type": "Combinatorics",
@@ -1317,7 +1353,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "C37"
   },
   {
     "type": "Combinatorics",
@@ -1346,7 +1383,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "C38"
   },
   {
     "type": "Combinatorics",
@@ -1375,7 +1413,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "C39"
   },
   {
     "type": "Combinatorics",
@@ -1404,7 +1443,8 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "C40"
   },
   {
     "type": "Combinatorics",
@@ -1433,7 +1473,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "C41"
   },
   {
     "type": "Combinatorics",
@@ -1462,7 +1503,8 @@
     "answer": {
       "type": "single",
       "key": "D"
-    }
+    },
+    "id": "C42"
   },
   {
     "type": "Combinatorics",
@@ -1491,7 +1533,8 @@
     "answer": {
       "type": "single",
       "key": "D"
-    }
+    },
+    "id": "C43"
   },
   {
     "type": "Combinatorics",
@@ -1536,7 +1579,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "C44"
   },
   {
     "type": "Combinatorics",
@@ -1565,7 +1609,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "C45"
   },
   {
     "type": "Combinatorics",
@@ -1594,7 +1639,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "C46"
   },
   {
     "type": "Combinatorics",
@@ -1645,7 +1691,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "C47"
   },
   {
     "type": "Combinatorics",
@@ -1699,7 +1746,8 @@
     "answer": {
       "type": "single",
       "key": "B"
-    }
+    },
+    "id": "C48"
   },
   {
     "type": "Combinatorics",
@@ -1753,7 +1801,8 @@
     "answer": {
       "type": "single",
       "key": "A"
-    }
+    },
+    "id": "C49"
   },
   {
     "type": "Combinatorics",
@@ -1812,6 +1861,7 @@
     "answer": {
       "type": "single",
       "key": "C"
-    }
+    },
+    "id": "C50"
   }
 ]
