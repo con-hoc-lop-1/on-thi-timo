@@ -1,5 +1,8 @@
-export function getRandomFromArray(arr, count) {
-  return arr.sort(() => 0.5 - Math.random()).slice(0, count);
+export function getRandomFromArray(arr, count, exclude = []) {
+  const filtered = arr.filter((q) => !exclude.includes(q.id));
+  // Nếu loại bỏ nhiều quá thì fallback lấy tất cả
+  const source = filtered.length >= count ? filtered : arr;
+  return source.sort(() => 0.5 - Math.random()).slice(0, count);
 }
 
 export function loadAllQuestions(
@@ -16,16 +19,27 @@ export function loadAllQuestions(
   const data = tests.map((test) => {
     return fetch(`database/preliminary/${test}.json`).then((res) => res.json());
   });
+
   return Promise.all(data).then((results) => {
-    return results
-      .flatMap((questions) => {
-        if (isRandom) {
-          return getRandomFromArray(questions, maxQuestionPerTest);
-        } else {
-          return questions.slice(0, maxQuestionPerTest);
-        }
-      })
-      .map((q, idx) => ({ ...q, id: "q" + (idx + 1), userAnswer: "" }));
+    // Đọc lịch sử id đã dùng trong 10 lần gần nhất
+    const history = JSON.parse(
+      localStorage.getItem("timo-question-history") || "[]"
+    );
+    const excludeIds = history.flat(); // gộp hết id các lần trước
+
+    const selected = results.flatMap((questions) => {
+      if (isRandom) {
+        return getRandomFromArray(questions, maxQuestionPerTest, excludeIds);
+      } else {
+        return questions.slice(0, maxQuestionPerTest);
+      }
+    });
+
+    // Lưu id của lần này vào history
+    const newHistory = [selected.map((q) => q.id), ...history].slice(0, 10);
+    localStorage.setItem("timo-question-history", JSON.stringify(newHistory));
+
+    return selected.map((q) => ({ ...q, userAnswer: "" }));
   });
 }
 
