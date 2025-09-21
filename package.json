@@ -1,5 +1,6 @@
 {
-  "name": "timo-grade1",
+  "name": "react-on-thi-timo-lop-1",
+  "homepage": "https://phuongdev89.github.io/react-on-thi-timo-lop-1",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -10,6 +11,7 @@
     "react-scripts": "5.0.1"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "prettier": "^3.6.2"
   },
   "scripts": {
@@ -17,7 +19,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prettier": "prettier --write \"src/**/*.{js,jsx,json,css,html}\""
+    "prettier": "prettier --write \"src/**/*.{js,jsx,json,css,html}\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
