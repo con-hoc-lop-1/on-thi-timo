@@ -34,3 +34,12 @@
 .form-check .form-check-input:checked + label .form-check-label {
   background: #89bfe5;
 }
+.review .form-check label {
+  padding-left: 5px;
+}
+.form-check-input[checked] ~ .form-check-label {
+  opacity: 1;
+}
+.review .form-check-label.text-success {
+  opacity: 1;
+}

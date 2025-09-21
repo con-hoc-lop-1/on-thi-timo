@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { formatTime, loadAllQuestions } from "./utils";
 import { renderFigure } from "./figure";
 
-function Exam({ name, mode, onFinish }) {
+function Exam({ mode, onFinish }) {
   const [questions, setQuestions] = useState([]);
   const [index, setIndex] = useState(0);
   const [secondsLeft, setSecondsLeft] = useState(
@@ -77,7 +77,7 @@ function Exam({ name, mode, onFinish }) {
 
   if (finished && reviewMode) {
     return (
-      <div className="container mt-5">
+      <div className="container mt-5 review">
         <h3 className="mb-4">Xem lại bài làm</h3>
         {questions.map((q, qi) => {
           const isCorrect = q.answer && q.answer.key === q.userAnswer;
@@ -128,7 +128,7 @@ function Exam({ name, mode, onFinish }) {
           );
         })}
 
-        <button className="btn btn-success mt-3" onClick={onFinish}>
+        <button className="btn btn-success mt-3 mb-3" onClick={onFinish}>
           Về trang chính
         </button>
       </div>
