@@ -2,17 +2,18 @@ import React, { useEffect, useState } from "react";
 import { formatTime, loadAllQuestions } from "./utils";
 import { renderFigure } from "./figure";
 
-function Exam({ mode, onFinish }) {
+function Exam({ name, onFinish }) {
   const [questions, setQuestions] = useState([]);
   const [index, setIndex] = useState(0);
-  const [secondsLeft, setSecondsLeft] = useState(
-    mode === "heat" ? 90 * 60 : 60 * 60
-  );
+  const [secondsLeft, setSecondsLeft] = useState(60 * 60);
   const [finished, setFinished] = useState(false);
   const [reviewMode, setReviewMode] = useState(false);
-
+  const [result, setResult] = useState(null);
+  const [startTime] = useState(Date.now());
+  const showVi = JSON.parse(localStorage.getItem("timo-show-vi") || "false");
   useEffect(() => {
-    loadAllQuestions().then(setQuestions);
+    // loadAllQuestions().then(setQuestions);
+    loadAllQuestions(["logic-thinking"], 50, false).then(setQuestions);
     const timer = setInterval(() => {
       setSecondsLeft((prev) => {
         if (prev <= 1) {
@@ -43,32 +44,53 @@ function Exam({ mode, onFinish }) {
       if (!confirmSubmit) return;
     }
 
+    const correctCount = questions.filter(
+      (q) => q.answer && q.answer.key === q.userAnswer
+    ).length;
+    const score = correctCount * 4;
+    const spentSeconds = Math.floor((Date.now() - startTime) / 1000);
+
+    const historyItem = {
+      name,
+      correct: correctCount,
+      total: questions.length,
+      score,
+      spent: formatTime(spentSeconds),
+      time: new Date().toLocaleString(),
+    };
+
+    setResult(historyItem);
+    onFinish(historyItem, true);
     setFinished(true);
   };
 
-  const correctCount = questions.filter(
-    (q) => q.answer && q.answer.key === q.userAnswer
-  ).length;
-
-  if (finished && !reviewMode) {
+  if (finished && result && !reviewMode) {
     return (
       <div className="container mt-5 text-center">
         <h3>Kết quả</h3>
         <p>
-          ✅ Đúng: <b>{correctCount}</b> / {questions.length}
+          ✅ Correct {showVi && <i>(Đúng)</i>}: <b>{result.correct}</b> /{" "}
+          {result.total}
         </p>
         <p>
-          ❌ Sai: <b>{questions.length - correctCount}</b>
+          ❌ Incorrect {showVi && <i>(Sai)</i>}:{" "}
+          <b>{result.total - result.correct}</b>
+        </p>
+        <p>
+          🎯 Points {showVi && <i>(Điểm)</i>}: <b>{result.score}</b> / 100
+        </p>
+        <p>
+          ⏱️ Testing time {showVi && <i>(Thời gian làm)</i>}: {result.spent}
         </p>
         <div className="mt-4">
           <button
             className="btn btn-primary me-3"
             onClick={() => setReviewMode(true)}
           >
-            Xem lại bài
+            Review your test {showVi && <i>(Xem lại bài)</i>}
           </button>
-          <button className="btn btn-success" onClick={onFinish}>
-            Về trang chính
+          <button className="btn btn-success" onClick={() => onFinish(null)}>
+            Go home {showVi && <i>(Về trang chủ)</i>}
           </button>
         </div>
       </div>
@@ -77,14 +99,25 @@ function Exam({ mode, onFinish }) {
 
   if (finished && reviewMode) {
     return (
-      <div className="container mt-5 review">
-        <h3 className="mb-4">Xem lại bài làm</h3>
+      <div className="container mt-5 question review">
+        <h3 className="mb-4">
+          Review your test {showVi && <i>(Xem lại bài)</i>}
+        </h3>
         {questions.map((q, qi) => {
           const isCorrect = q.answer && q.answer.key === q.userAnswer;
           return (
             <div key={qi} className="mb-4 border rounded p-3 bg-light">
               <div className="mb-2">
-                <strong>Câu {qi + 1}:</strong> {q.stem.en}
+                <strong>
+                  Question {qi + 1} {showVi && <i>(Câu {qi + 1})</i>}:
+                </strong>
+                <div dangerouslySetInnerHTML={{ __html: q.stem.en }} />
+                {showVi && (
+                  <div
+                    style={{ fontStyle: "italic" }}
+                    dangerouslySetInnerHTML={{ __html: q.stem.vi }}
+                  />
+                )}
               </div>
               {renderFigure(q)}
               <div className="mt-2">
@@ -104,7 +137,6 @@ function Exam({ mode, onFinish }) {
                       answeredAttr = { answered: "false" };
                       labelClass += " text-danger fw-bold";
                     } else if (!chosen && !isCorrect && isRightAnswer) {
-                      // highlight đáp án đúng nếu người làm sai
                       labelClass += " text-success fw-bold";
                     }
 
@@ -127,9 +159,11 @@ function Exam({ mode, onFinish }) {
             </div>
           );
         })}
-
-        <button className="btn btn-success mt-3 mb-3" onClick={onFinish}>
-          Về trang chính
+        <button
+          className="btn btn-success mt-3 mb-5"
+          onClick={() => onFinish(null)}
+        >
+          Go home {showVi && <i>(Về trang chủ)</i>}
         </button>
       </div>
     );
@@ -138,28 +172,36 @@ function Exam({ mode, onFinish }) {
   // Giao diện làm bài
   const q = questions[index];
   return questions.length === 0 ? (
-    <p>Đang tải đề...</p>
+    <p>Loading...</p>
   ) : (
-    <div className="container mt-5">
+    <div className="container mt-5 question">
       <div className="d-flex justify-content-between align-items-center mb-3">
         <h4 className="m-0">
-          🧠 Đề thi <b>{mode}</b> - Phần <strong>{q.type}</strong>
+          🧠 <strong>{q.type}</strong>
         </h4>
         <div className="d-flex justify-content-between">
           <span className="badge bg-warning text-dark me-2 fs-5">
             ⏰ {formatTime(secondsLeft)}
           </span>
           <button className="btn btn-danger" onClick={handleSubmit}>
-            Nộp bài
+            Finish Test {showVi && <i>(Nộp bài)</i>}
           </button>
         </div>
       </div>
 
       <div className="mb-2">
-        <strong>Câu {index + 1}:</strong>
+        <strong>
+          Question {index + 1} {showVi && <i>(Câu {index + 1})</i>}:
+        </strong>
       </div>
       <div className="border rounded p-3 bg-light mb-3">
         <div dangerouslySetInnerHTML={{ __html: q.stem.en }} />
+        {showVi && (
+          <div
+            style={{ fontStyle: "italic" }}
+            dangerouslySetInnerHTML={{ __html: q.stem.vi }}
+          />
+        )}
         {renderFigure(q)}
       </div>
 
@@ -194,20 +236,20 @@ function Exam({ mode, onFinish }) {
           />
         )}
       </div>
-      <div className="d-flex justify-content-between">
+      <div className="d-flex justify-content-between mb-3">
         <button
-          className="btn btn-secondary"
+          className="btn btn-secondary btn-lg"
           disabled={index === 0}
           onClick={() => setIndex((i) => i - 1)}
         >
-          ◀ Trước
+          ◀ Back {showVi && <i>(Trước)</i>}
         </button>
         <button
-          className="btn btn-primary"
+          className="btn btn-primary btn-lg"
           disabled={index === questions.length - 1}
           onClick={() => setIndex((i) => i + 1)}
         >
-          Tiếp ▶
+          Next ▶ {showVi && <i>(Tiếp)</i>}
         </button>
       </div>
     </div>

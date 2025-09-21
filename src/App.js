@@ -7,31 +7,38 @@ function App() {
   const [name, setName] = useState(
     localStorage.getItem("timo-user-name") || ""
   );
-  const [mode, setMode] = useState("");
-  const [done, setDone] = useState(false);
   const [isStarted, setIsStarted] = useState(false);
+  const [history, setHistory] = useState(
+    JSON.parse(localStorage.getItem("timo-history") || "[]")
+  );
+  const [showVi, setShowVi] = useState(
+    JSON.parse(localStorage.getItem("timo-show-vi") || "false")
+  );
+
   const handleStart = () => {
     if (!name.trim()) return alert("Vui lòng nhập tên");
     localStorage.setItem("timo-user-name", name.trim());
-    if (!mode) return alert("Chọn chế độ thi");
-    setMode(mode);
     setIsStarted(true);
   };
 
-  if (done)
-    return (
-      <div className="container py-5 text-center">
-        <h2>✅ Đã nộp bài! Xem điểm sau.</h2>
-      </div>
-    );
-  if (isStarted)
-    return <Exam name={name} mode={mode} onFinish={() => setDone(true)} />;
+  const handleFinish = (result, isStarted = false) => {
+    if (result) {
+      const newHistory = [result, ...history].slice(0, 10);
+      setHistory(newHistory);
+      localStorage.setItem("timo-history", JSON.stringify(newHistory));
+    }
+    if (!isStarted) setIsStarted(false);
+  };
+
+  if (isStarted) return <Exam name={name} onFinish={handleFinish} />;
 
   return (
-    <div className="container py-5" style={{ maxWidth: 500 }}>
-      <h1 className="text-center mb-4">Ôn luyện TIMO Lớp 1</h1>
+    <div className="container py-5" style={{ maxWidth: 700 }}>
+      <h1 className="text-center mb-4">TIMO 1</h1>
       <div className="mb-3">
-        <label className="form-label">Nhập tên học sinh:</label>
+        <label className="form-label">
+          Your name <i>(Nhập tên học sinh)</i>:
+        </label>
         <input
           type="text"
           className="form-control"
@@ -40,22 +47,95 @@ function App() {
         />
       </div>
       <div className="mb-3">
-        <label className="form-label">Chọn đề thi:</label>
-        <select
-          className="form-select"
-          onChange={(e) => setMode(e.target.value)}
-          value={mode}
-        >
-          <option value="">--</option>
-          <option value="preliminary">Preliminary</option>
-          <option value="heat" disabled={true}>
-            Heat
-          </option>
-        </select>
+        <label className="form-label">
+          Question language <i>(Tùy chọn đề bài)</i>:
+        </label>
+        <div className="form-check">
+          <input
+            className="form-check-input"
+            type="checkbox"
+            disabled={true}
+            id="showEn"
+            checked={true}
+          />
+          <label className="form-check-label" htmlFor="showVi">
+            English
+          </label>
+        </div>
+        <div className="form-check">
+          <input
+            className="form-check-input"
+            type="checkbox"
+            id="showVi"
+            checked={showVi}
+            onChange={(e) => {
+              setShowVi(e.target.checked);
+              localStorage.setItem(
+                "timo-show-vi",
+                JSON.stringify(e.target.checked)
+              );
+            }}
+          />
+          <label className="form-check-label" htmlFor="showVi">
+            Tiếng Việt
+          </label>
+        </div>
       </div>
       <button className="btn btn-primary w-100" onClick={handleStart}>
-        LÀM BÀI
+        STARTING TEST <i>(LÀM BÀI)</i>
       </button>
+
+      {history.length > 0 && (
+        <div className="mt-4">
+          <h5>
+            History <i>(Lịch sử làm bài)</i>
+          </h5>
+          <table className="table table-bordered text-center">
+            <thead>
+              <tr>
+                <th>
+                  Name
+                  <br />
+                  <i>(Tên thí sinh)</i>
+                </th>
+                <th>
+                  Corrects / Total
+                  <br />
+                  <i>(Số câu đúng)</i>
+                </th>
+                <th>
+                  Points
+                  <br />
+                  <i>(Điểm)</i>
+                </th>
+                <th>
+                  Testing time
+                  <br />
+                  <i>(Thời gian làm bài)</i>
+                </th>
+                <th>
+                  Timestamp
+                  <br />
+                  <i>(Ngày giờ)</i>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {history.map((h, i) => (
+                <tr key={i}>
+                  <td>{h.name}</td>
+                  <td>
+                    {h.correct} / {h.total}
+                  </td>
+                  <td>{h.score} / 100</td>
+                  <td>{h.spent}</td>
+                  <td>{h.time}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )}
     </div>
   );
 }

@@ -1,14 +1,14 @@
-.form-check label {
+.question .form-check label {
   padding: 7px 5px 7px 0;
   border: 2px solid #ddd;
   border-radius: 5px;
 }
-.form-check-label:first-child {
+.question .form-check-label:first-child {
   background: #aaa;
   padding: 5px 10px;
   font-weight: normal;
 }
-.form-check-label {
+.question .form-check-label {
   padding: 5px 15px;
   background: #ddd;
   border-radius: 5px;
@@ -16,10 +16,10 @@
   margin-left: 5px;
   font-weight: bold;
 }
-.form-check-input[type=radio] {
+.question .form-check-input[type=radio] {
   opacity: 0;
 }
-.form-check {
+.question .form-check {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -28,16 +28,16 @@
   margin-bottom: 5px;
 }
 
-.form-check .form-check-input:checked + label {
+.question .form-check .form-check-input:checked + label {
   border-color: #89bfe5;
 }
-.form-check .form-check-input:checked + label .form-check-label {
+.question .form-check .form-check-input:checked + label .form-check-label {
   background: #89bfe5;
 }
 .review .form-check label {
   padding-left: 5px;
 }
-.form-check-input[checked] ~ .form-check-label {
+.review .form-check-input[checked] ~ .form-check-label {
   opacity: 1;
 }
 .review .form-check-label.text-success {

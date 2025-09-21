@@ -327,6 +327,7 @@
             "🌼",
             "🌸",
             "____",
+            "🌸",
             "🌼",
             "🌸"
           ]
@@ -374,6 +375,7 @@
             "☆",
             "★",
             "____",
+            "★",
             "☆"
           ]
         ]
@@ -446,20 +448,20 @@
       },
       {
         "id": "B",
-        "en": "24"
+        "en": "34"
       },
       {
         "id": "C",
-        "en": "26"
+        "en": "46"
       },
       {
         "id": "D",
-        "en": "28"
+        "en": "58"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "C"
+      "key": "B"
     },
     "id": "L12"
   },
@@ -497,7 +499,7 @@
     "type": "Logic Thinking",
     "stem": {
       "en": "A family has 2 parents and 2 children. How many legs do they have together?",
-      "vi": "Một gia đình có 2 bố mẹ và 2 đứa con. Hỏi tất cả có bao nhiêu cái chân?"
+      "vi": "Một gia đình có 2 bố mẹ và 2 đứa con. Hỏi tất cả có bao nhiêu chân?"
     },
     "choices": [
       {
@@ -556,8 +558,8 @@
   {
     "type": "Logic Thinking",
     "stem": {
-      "en": "From the pattern shown below, what is the number in the blank? 12, 13, 11, 14, 10, 15, __",
-      "vi": "Dựa vào quy luật dưới đây, tìm số điền vào chỗ trống: 12, 13, 11, 14, 10, 15, __"
+      "en": "From the pattern shown below, what is the number in the blank? 12, 13, 11, 14, 10, 15, __, 16",
+      "vi": "Dựa vào quy luật dưới đây, tìm số điền vào chỗ trống: 12, 13, 11, 14, 10, 15, __, 16"
     },
     "choices": [
       {
@@ -712,8 +714,8 @@
   {
     "type": "Logic Thinking",
     "stem": {
-      "en": "From the groups of ▲ shown, how many ▲ are in group 3?",
-      "vi": "Từ các nhóm ▲ đã cho, có bao nhiêu ▲ trong nhóm thứ 3?"
+      "en": "From the groups of ▲ shown, how many ▲ are in group 5?",
+      "vi": "Từ các nhóm ▲ đã cho, có bao nhiêu ▲ trong nhóm thứ 5?"
     },
     "figure": {
       "renderer": "groupRepeats",
@@ -737,16 +739,16 @@
       },
       {
         "id": "C",
-        "en": "5"
+        "en": "9"
       },
       {
         "id": "D",
-        "en": "6"
+        "en": "16"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "A"
+      "key": "C"
     },
     "id": "L20"
   },
@@ -778,11 +780,11 @@
       },
       {
         "id": "C",
-        "en": "8"
+        "en": "10"
       },
       {
         "id": "D",
-        "en": "9"
+        "en": "14"
       }
     ],
     "answer": {
