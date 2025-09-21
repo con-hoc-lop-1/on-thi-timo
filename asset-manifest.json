@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-on-thi-timo-lop-1/static/css/main.1ec9e93c.css",
+    "main.js": "/react-on-thi-timo-lop-1/static/js/main.2b1c8fe7.js",
+    "index.html": "/react-on-thi-timo-lop-1/index.html",
+    "main.1ec9e93c.css.map": "/react-on-thi-timo-lop-1/static/css/main.1ec9e93c.css.map",
+    "main.2b1c8fe7.js.map": "/react-on-thi-timo-lop-1/static/js/main.2b1c8fe7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ec9e93c.css",
+    "static/js/main.2b1c8fe7.js"
+  ]
+}

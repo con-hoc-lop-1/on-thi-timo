@@ -1,0 +1,1867 @@
+[
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "The sequence alternates between horizontal and vertical lines. Which line should replace ?",
+      "vi": "Dãy đường nối luân phiên giữa đường ngang và đường dọc. Đường nào nên thay cho ?"
+    },
+    "figure": {
+      "renderer": "squareConnect",
+      "params": {
+        "data": [
+          [
+            1,
+            5
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            "?"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "│"
+      },
+      {
+        "id": "B",
+        "en": "—"
+      },
+      {
+        "id": "C",
+        "en": "╲"
+      },
+      {
+        "id": "D",
+        "en": "╱"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "C01"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "The sequence alternates between the two diagonals. Which line should replace ?",
+      "vi": "Dãy đường nối luân phiên giữa hai đường chéo. Đường nào nên thay cho ?"
+    },
+    "figure": {
+      "renderer": "squareConnect",
+      "params": {
+        "data": [
+          [
+            2,
+            6
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            "?"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "│"
+      },
+      {
+        "id": "B",
+        "en": "—"
+      },
+      {
+        "id": "C",
+        "en": "╲"
+      },
+      {
+        "id": "D",
+        "en": "╱"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "C02"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "The sequence rotates through four different lines in order. Which line should replace ?",
+      "vi": "Dãy đường nối xoay qua bốn ký hiệu khác nhau theo thứ tự. Đường nào nên thay cho ?"
+    },
+    "figure": {
+      "renderer": "squareConnect",
+      "params": {
+        "data": [
+          [
+            1,
+            5
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            "?"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "╱"
+      },
+      {
+        "id": "B",
+        "en": "│"
+      },
+      {
+        "id": "C",
+        "en": "—"
+      },
+      {
+        "id": "D",
+        "en": "╲"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "C03"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "The sequence of lines alternates between a symbol and its symmetric partner. Which line should replace ?",
+      "vi": "Dãy đường nối luân phiên giữa một ký hiệu và đối xứng của nó. Đường nào nên thay cho ?"
+    },
+    "figure": {
+      "renderer": "squareConnect",
+      "params": {
+        "data": [
+          [
+            1,
+            5
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            "?"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "│"
+      },
+      {
+        "id": "B",
+        "en": "—"
+      },
+      {
+        "id": "C",
+        "en": "╲"
+      },
+      {
+        "id": "D",
+        "en": "╱"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "C04"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "The sequence rotates through four different line symbols. What comes next?",
+      "vi": "Dãy đường nối luân phiên qua bốn ký hiệu khác nhau. Ký hiệu nào tiếp theo?"
+    },
+    "figure": {
+      "renderer": "squareConnect",
+      "params": {
+        "data": [
+          [
+            1,
+            5
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            "?"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "│"
+      },
+      {
+        "id": "B",
+        "en": "—"
+      },
+      {
+        "id": "C",
+        "en": "╲"
+      },
+      {
+        "id": "D",
+        "en": "╱"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "C05"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Which number below is the smallest even number? 20203924, 20110019, 20211014, 20101030",
+      "vi": "Số nào sau đây là số chẵn nhỏ nhất? 20203924, 20110019, 20211014, 20101030"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "20203924"
+      },
+      {
+        "id": "B",
+        "en": "20110019"
+      },
+      {
+        "id": "C",
+        "en": "20211014"
+      },
+      {
+        "id": "D",
+        "en": "20101030"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "C06"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Form two-digit numbers from digits 0, 1, 2, 3 that are greater than 11 and smaller than 30. Each number uses two different digits. How many such numbers are there?",
+      "vi": "Sử dụng các chữ số 0, 1, 2, 3 để tạo thành các số có 2 chữ số lớn hơn 11 và nhỏ hơn 30. Mỗi số gồm hai chữ số phân biệt. Hỏi có bao nhiêu số như vậy?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "10"
+      },
+      {
+        "id": "B",
+        "en": "4"
+      },
+      {
+        "id": "C",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "en": "7"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "C07"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "What is the smallest 3-digit number formed by digits 0, 2, 3 and 7 (each used at most once)?",
+      "vi": "Số nhỏ nhất có 3 chữ số được tạo bởi các chữ số 0, 2, 3 và 7 (mỗi chữ số dùng không quá 1 lần) là số nào?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "203"
+      },
+      {
+        "id": "B",
+        "en": "302"
+      },
+      {
+        "id": "C",
+        "en": "320"
+      },
+      {
+        "id": "D",
+        "en": "730"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "C08"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Find the value of ✮.",
+      "vi": "Tìm giá trị của ✮."
+    },
+    "figure": {
+      "renderer": "table",
+      "params": {
+        "data": [
+          [
+            "✮ + ▲ = 7"
+          ],
+          [
+            "✮ + ■ + ▲ = 12"
+          ],
+          [
+            "■ + ✮ = 8"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "4"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "en": "3"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "C09"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "What is the smallest 3-digit number formed by digits 0, 5, 7, 4 (use each at most once)?",
+      "vi": "Số nhỏ nhất có 3 chữ số tạo bởi các chữ số 0, 5, 7, 4 (mỗi chữ số dùng không quá 1 lần) là?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "421"
+      },
+      {
+        "id": "B",
+        "en": "362"
+      },
+      {
+        "id": "C",
+        "en": "405"
+      },
+      {
+        "id": "D",
+        "en": "479"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "C10"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Using digits [6, 4, 5, 3] (no repetition), how many two-digit numbers are between 12 and 88?",
+      "vi": "Sử dụng các chữ số [6, 4, 5, 3] (không lặp), có thể tạo ra bao nhiêu số hai chữ số nằm giữa 12 và 88?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "13"
+      },
+      {
+        "id": "B",
+        "en": "15"
+      },
+      {
+        "id": "C",
+        "en": "12"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "C11"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Using digits [1, 5, 7, 2] (no repetition), how many two-digit numbers are between 21 and 78?",
+      "vi": "Sử dụng các chữ số [1, 5, 7, 2] (không lặp), có thể tạo ra bao nhiêu số hai chữ số nằm giữa 21 và 78?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "8"
+      },
+      {
+        "id": "B",
+        "en": "7"
+      },
+      {
+        "id": "C",
+        "en": "11"
+      },
+      {
+        "id": "D",
+        "en": "10"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "C12"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "If 🚗 − 🌼 = 3 and 🌼 = 5, what is the value of 🚗?",
+      "vi": "Nếu 🚗 − 🌼 = 3 và 🌼 = 5, thì 🚗 bằng bao nhiêu?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "8"
+      },
+      {
+        "id": "B",
+        "en": "7"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "C13"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Mina wants to pick up all apples on the floor. What is the minimum number of steps she needs (move only up/down/left/right; start and end anywhere)?",
+      "vi": "Mina muốn nhặt hết các quả táo trên sàn. Cô ấy cần tối thiểu bao nhiêu bước (chỉ đi lên/xuống/trái/phải; được chọn điểm bắt đầu và kết thúc bất kỳ)?"
+    },
+    "figure": {
+      "renderer": "charGrid",
+      "params": {
+        "data": [
+          [
+            "🍎"
+          ],
+          [
+            "🍎"
+          ],
+          [
+            "🍎"
+          ],
+          [
+            "🍎"
+          ],
+          [
+            "🍎"
+          ],
+          [
+            "🍎"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "2"
+      },
+      {
+        "id": "B",
+        "en": "8"
+      },
+      {
+        "id": "C",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "en": "4"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "C14"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Find the value of 🌟.",
+      "vi": "Tìm giá trị của 🌟."
+    },
+    "figure": {
+      "renderer": "table",
+      "params": {
+        "data": [
+          [
+            "🌟 + 🍎 = 12"
+          ],
+          [
+            "🌟 + ⭐ + 🍎 = 16"
+          ],
+          [
+            "⭐ + 🍎 = 11"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "8"
+      },
+      {
+        "id": "C",
+        "en": "6"
+      },
+      {
+        "id": "D",
+        "en": "3"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "C15"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Using digits [7, 0, 1, 8] (no repetition), how many two-digit numbers are between 16 and 81?",
+      "vi": "Sử dụng các chữ số [7, 0, 1, 8] (không lặp), có thể tạo ra bao nhiêu số hai chữ số nằm giữa 16 và 81?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "6"
+      },
+      {
+        "id": "B",
+        "en": "2"
+      },
+      {
+        "id": "C",
+        "en": "3"
+      },
+      {
+        "id": "D",
+        "en": "10"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "C16"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Using digits [8, 2, 4, 7] (no repetition), how many two-digit numbers are between 16 and 84?",
+      "vi": "Sử dụng các chữ số [8, 2, 4, 7] (không lặp), có thể tạo ra bao nhiêu số hai chữ số nằm giữa 16 và 84?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "13"
+      },
+      {
+        "id": "B",
+        "en": "10"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "9"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "C17"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "What is the smallest 3-digit number formed by digits 1, 6, 9, 5 (use each at most once)?",
+      "vi": "Số nhỏ nhất có 3 chữ số tạo bởi các chữ số 1, 6, 9, 5 (mỗi chữ số dùng không quá 1 lần) là?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "146"
+      },
+      {
+        "id": "B",
+        "en": "156"
+      },
+      {
+        "id": "C",
+        "en": "242"
+      },
+      {
+        "id": "D",
+        "en": "244"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "C18"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "What is the smallest 3-digit number formed by digits 5, 0, 1, 6 (use each at most once)?",
+      "vi": "Số nhỏ nhất có 3 chữ số tạo bởi các chữ số 5, 0, 1, 6 (mỗi chữ số dùng không quá 1 lần) là?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "115"
+      },
+      {
+        "id": "B",
+        "en": "79"
+      },
+      {
+        "id": "C",
+        "en": "123"
+      },
+      {
+        "id": "D",
+        "en": "105"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "C19"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "If 🍔 − 🌼 = 9 and 🌼 = 2, what is the value of 🍔?",
+      "vi": "Nếu 🍔 − 🌼 = 9 và 🌼 = 2, thì 🍔 bằng bao nhiêu?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "10"
+      },
+      {
+        "id": "B",
+        "en": "13"
+      },
+      {
+        "id": "C",
+        "en": "9"
+      },
+      {
+        "id": "D",
+        "en": "11"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "C20"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Find the value of 🐼.",
+      "vi": "Tìm giá trị của 🐼."
+    },
+    "figure": {
+      "renderer": "table",
+      "params": {
+        "data": [
+          [
+            "🐼 + 🚗 = 14"
+          ],
+          [
+            "🐼 + 🐱 + 🚗 = 18"
+          ],
+          [
+            "🐱 + 🚗 = 9"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "11"
+      },
+      {
+        "id": "B",
+        "en": "9"
+      },
+      {
+        "id": "C",
+        "en": "8"
+      },
+      {
+        "id": "D",
+        "en": "7"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "C21"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "If 🚀 − 🐤 = 2 and 🐤 = 4, what is the value of 🚀?",
+      "vi": "Nếu 🚀 − 🐤 = 2 và 🐤 = 4, thì 🚀 bằng bao nhiêu?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "6"
+      },
+      {
+        "id": "B",
+        "en": "3"
+      },
+      {
+        "id": "C",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "en": "7"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "C22"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Find the value of 🍌.",
+      "vi": "Tìm giá trị của 🍌."
+    },
+    "figure": {
+      "renderer": "table",
+      "params": {
+        "data": [
+          [
+            "🍌 + 🍎 = 13"
+          ],
+          [
+            "🍌 + ⚽ + 🍎 = 20"
+          ],
+          [
+            "⚽ + 🍎 = 11"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "10"
+      },
+      {
+        "id": "B",
+        "en": "9"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "C23"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "If 🐟 − 🍇 = 8 and 🍇 = 3, what is the value of 🐟?",
+      "vi": "Nếu 🐟 − 🍇 = 8 và 🍇 = 3, thì 🐟 bằng bao nhiêu?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "9"
+      },
+      {
+        "id": "B",
+        "en": "11"
+      },
+      {
+        "id": "C",
+        "en": "8"
+      },
+      {
+        "id": "D",
+        "en": "14"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "C24"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "If 🚗 − ✈️ = 5 and ✈️ = 2, what is the value of 🚗?",
+      "vi": "Nếu 🚗 − ✈️ = 5 và ✈️ = 2, thì 🚗 bằng bao nhiêu?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "6"
+      },
+      {
+        "id": "B",
+        "en": "7"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "4"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "C25"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "If 🐟 − ✈️ = 7 and ✈️ = 1, what is the value of 🐟?",
+      "vi": "Nếu 🐟 − ✈️ = 7 và ✈️ = 1, thì 🐟 bằng bao nhiêu?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "11"
+      },
+      {
+        "id": "B",
+        "en": "8"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "C26"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "If 🍔 − 🚀 = 3 and 🚀 = 3, what is the value of 🍔?",
+      "vi": "Nếu 🍔 − 🚀 = 3 và 🚀 = 3, thì 🍔 bằng bao nhiêu?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "6"
+      },
+      {
+        "id": "B",
+        "en": "7"
+      },
+      {
+        "id": "C",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "en": "4"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "C27"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Find the value of 🍎.",
+      "vi": "Tìm giá trị của 🍎."
+    },
+    "figure": {
+      "renderer": "table",
+      "params": {
+        "data": [
+          [
+            "🍎 + 🐱 = 5"
+          ],
+          [
+            "🍎 + ⭐ + 🐱 = 14"
+          ],
+          [
+            "⭐ + 🐱 = 12"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "-1"
+      },
+      {
+        "id": "B",
+        "en": "2"
+      },
+      {
+        "id": "C",
+        "en": "1"
+      },
+      {
+        "id": "D",
+        "en": "5"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "C28"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Using digits [0, 3, 6, 1] (no repetition), how many two-digit numbers are between 46 and 82?",
+      "vi": "Sử dụng các chữ số [0, 3, 6, 1] (không lặp), có thể tạo ra bao nhiêu số hai chữ số nằm giữa 46 và 82?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "0"
+      },
+      {
+        "id": "B",
+        "en": "3"
+      },
+      {
+        "id": "C",
+        "en": "1"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "C29"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Find the value of ⚽.",
+      "vi": "Tìm giá trị của ⚽."
+    },
+    "figure": {
+      "renderer": "table",
+      "params": {
+        "data": [
+          [
+            "⚽ + 🚗 = 9"
+          ],
+          [
+            "⚽ + 🐶 + 🚗 = 17"
+          ],
+          [
+            "🐶 + 🚗 = 15"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "1"
+      },
+      {
+        "id": "B",
+        "en": "2"
+      },
+      {
+        "id": "C",
+        "en": "4"
+      },
+      {
+        "id": "D",
+        "en": "0"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "C30"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "If 🐟 − 🍇 = 7 and 🍇 = 2, what is the value of 🐟?",
+      "vi": "Nếu 🐟 − 🍇 = 7 và 🍇 = 2, thì 🐟 bằng bao nhiêu?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "7"
+      },
+      {
+        "id": "B",
+        "en": "10"
+      },
+      {
+        "id": "C",
+        "en": "8"
+      },
+      {
+        "id": "D",
+        "en": "9"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "C31"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Find the value of 🚌.",
+      "vi": "Tìm giá trị của 🚌."
+    },
+    "figure": {
+      "renderer": "table",
+      "params": {
+        "data": [
+          [
+            "🚌 + 🐼 = 14"
+          ],
+          [
+            "🚌 + 🐶 + 🐼 = 22"
+          ],
+          [
+            "🐶 + 🐼 = 14"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "8"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "9"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "C32"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "What is the smallest 3-digit number formed by digits 6, 9, 8, 1 (use each at most once)?",
+      "vi": "Số nhỏ nhất có 3 chữ số tạo bởi các chữ số 6, 9, 8, 1 (mỗi chữ số dùng không quá 1 lần) là?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "220"
+      },
+      {
+        "id": "B",
+        "en": "177"
+      },
+      {
+        "id": "C",
+        "en": "168"
+      },
+      {
+        "id": "D",
+        "en": "184"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "C33"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Using digits [8, 2, 6, 1] (no repetition), how many two-digit numbers are between 41 and 69?",
+      "vi": "Sử dụng các chữ số [8, 2, 6, 1] (không lặp), có thể tạo ra bao nhiêu số hai chữ số nằm giữa 41 và 69?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "3"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "2"
+      },
+      {
+        "id": "D",
+        "en": "0"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "C34"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "If ✈️ − 🚀 = 12 and 🚀 = 3, what is the value of ✈️?",
+      "vi": "Nếu ✈️ − 🚀 = 12 và 🚀 = 3, thì ✈️ bằng bao nhiêu?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "18"
+      },
+      {
+        "id": "B",
+        "en": "15"
+      },
+      {
+        "id": "C",
+        "en": "17"
+      },
+      {
+        "id": "D",
+        "en": "13"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "C35"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Among the following numbers, how many are even? 90, 58, 31, 13, 44, 47, 14, 66, 38",
+      "vi": "Trong các số sau, có bao nhiêu số chẵn? 90, 58, 31, 13, 44, 47, 14, 66, 38"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "7"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "en": "4"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "C36"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "If 🐸 − 🍇 = 8 and 🍇 = 2, what is the value of 🐸?",
+      "vi": "Nếu 🐸 − 🍇 = 8 và 🍇 = 2, thì 🐸 bằng bao nhiêu?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "11"
+      },
+      {
+        "id": "B",
+        "en": "10"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "9"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "C37"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Using digits [9, 5, 3, 7] (no repetition), how many two-digit numbers are between 16 and 61?",
+      "vi": "Sử dụng các chữ số [9, 5, 3, 7] (không lặp), có thể tạo ra bao nhiêu số hai chữ số nằm giữa 16 và 61?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "6"
+      },
+      {
+        "id": "B",
+        "en": "5"
+      },
+      {
+        "id": "C",
+        "en": "9"
+      },
+      {
+        "id": "D",
+        "en": "4"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "C38"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Among the following numbers, how many are even? 48, 44, 85, 12, 48, 55, 41, 3, 93",
+      "vi": "Trong các số sau, có bao nhiêu số chẵn? 48, 44, 85, 12, 48, 55, 41, 3, 93"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "6"
+      },
+      {
+        "id": "B",
+        "en": "4"
+      },
+      {
+        "id": "C",
+        "en": "2"
+      },
+      {
+        "id": "D",
+        "en": "5"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "C39"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "What is the largest 3-digit number formed by digits 3, 7, 0, 6 (use each at most once)?",
+      "vi": "Số lớn nhất có 3 chữ số tạo bởi các chữ số 3, 7, 0, 6 (mỗi chữ số dùng không quá 1 lần) là?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "683"
+      },
+      {
+        "id": "B",
+        "en": "681"
+      },
+      {
+        "id": "C",
+        "en": "763"
+      },
+      {
+        "id": "D",
+        "en": "713"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "C40"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "What is the largest 3-digit number formed by digits 9, 4, 5, 6 (use each at most once)?",
+      "vi": "Số lớn nhất có 3 chữ số tạo bởi các chữ số 9, 4, 5, 6 (mỗi chữ số dùng không quá 1 lần) là?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "965"
+      },
+      {
+        "id": "B",
+        "en": "904"
+      },
+      {
+        "id": "C",
+        "en": "901"
+      },
+      {
+        "id": "D",
+        "en": "994"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "C41"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "What is the largest 3-digit number formed by digits 6, 8, 3, 4 (use each at most once)?",
+      "vi": "Số lớn nhất có 3 chữ số tạo bởi các chữ số 6, 8, 3, 4 (mỗi chữ số dùng không quá 1 lần) là?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "880"
+      },
+      {
+        "id": "B",
+        "en": "875"
+      },
+      {
+        "id": "C",
+        "en": "861"
+      },
+      {
+        "id": "D",
+        "en": "864"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "C42"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Using digits [9, 8, 4, 1] (no repetition), how many two-digit numbers are between 68 and 85?",
+      "vi": "Sử dụng các chữ số [9, 8, 4, 1] (không lặp), có thể tạo ra bao nhiêu số hai chữ số nằm giữa 68 và 85?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "-2"
+      },
+      {
+        "id": "B",
+        "en": "1"
+      },
+      {
+        "id": "C",
+        "en": "6"
+      },
+      {
+        "id": "D",
+        "en": "2"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "C43"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Find the value of 🐱.",
+      "vi": "Tìm giá trị của 🐱."
+    },
+    "figure": {
+      "renderer": "table",
+      "params": {
+        "data": [
+          [
+            "🐱 + 🍎 = 17"
+          ],
+          [
+            "🐱 + 🚗 + 🍎 = 26"
+          ],
+          [
+            "🚗 + 🍎 = 17"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "8"
+      },
+      {
+        "id": "B",
+        "en": "9"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "11"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "C44"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "If 🍇 − 🐸 = 9 and 🐸 = 2, what is the value of 🍇?",
+      "vi": "Nếu 🍇 − 🐸 = 9 và 🐸 = 2, thì 🍇 bằng bao nhiêu?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "11"
+      },
+      {
+        "id": "B",
+        "en": "9"
+      },
+      {
+        "id": "C",
+        "en": "14"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "C45"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "What is the largest 3-digit number formed by digits 3, 4, 6, 8 (use each at most once)?",
+      "vi": "Số lớn nhất có 3 chữ số tạo bởi các chữ số 3, 4, 6, 8 (mỗi chữ số dùng không quá 1 lần) là?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "866"
+      },
+      {
+        "id": "B",
+        "en": "864"
+      },
+      {
+        "id": "C",
+        "en": "903"
+      },
+      {
+        "id": "D",
+        "en": "833"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "C46"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Mina wants to collect all apples. What is the minimum number of steps (move only up/down/left/right; start and end anywhere)?",
+      "vi": "Mina muốn nhặt hết các quả táo. Số bước tối thiểu cần đi là bao nhiêu (chỉ đi lên/xuống/trái/phải; được chọn điểm bắt đầu và kết thúc bất kỳ)?"
+    },
+    "figure": {
+      "renderer": "charGrid",
+      "params": {
+        "data": [
+          [
+            "🍎",
+            "🍎",
+            "🍎"
+          ],
+          [
+            "🍎",
+            "",
+            "🍎"
+          ],
+          [
+            "🍎",
+            "🍎",
+            "🍎"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "6"
+      },
+      {
+        "id": "B",
+        "en": "7"
+      },
+      {
+        "id": "C",
+        "en": "8"
+      },
+      {
+        "id": "D",
+        "en": "9"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "C47"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Mina picks all apples in the orchard below. What is the minimum number of steps (move only up/down/left/right; start and end anywhere)?",
+      "vi": "Mina nhặt hết táo trong vườn dưới đây. Số bước tối thiểu là (chỉ đi lên/xuống/trái/phải; được chọn điểm bắt đầu và kết thúc bất kỳ)?"
+    },
+    "figure": {
+      "renderer": "charGrid",
+      "params": {
+        "data": [
+          [
+            "🍎",
+            "",
+            "🍎",
+            ""
+          ],
+          [
+            "🍎",
+            "🍎",
+            "🍎",
+            ""
+          ],
+          [
+            "🍎",
+            "",
+            "🍎",
+            ""
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "7"
+      },
+      {
+        "id": "B",
+        "en": "8"
+      },
+      {
+        "id": "C",
+        "en": "9"
+      },
+      {
+        "id": "D",
+        "en": "10"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "C48"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "How many steps at minimum are needed to collect all apples?",
+      "vi": "Cần tối thiểu bao nhiêu bước để nhặt hết số táo?"
+    },
+    "figure": {
+      "renderer": "charGrid",
+      "params": {
+        "data": [
+          [
+            "🍎",
+            "🍎",
+            "🍎",
+            "🍎"
+          ],
+          [
+            "🍎",
+            "",
+            "",
+            "🍎"
+          ],
+          [
+            "🍎",
+            "🍎",
+            "🍎",
+            "🍎"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "9"
+      },
+      {
+        "id": "B",
+        "en": "10"
+      },
+      {
+        "id": "C",
+        "en": "11"
+      },
+      {
+        "id": "D",
+        "en": "12"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "C49"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Mina wants to gather all apples shown below. What is the least number of steps (move only up/down/left/right; start and end anywhere)?",
+      "vi": "Mina muốn nhặt tất cả táo dưới đây. Ít nhất cần bao nhiêu bước (chỉ đi lên/xuống/trái/phải; được chọn điểm bắt đầu và kết thúc bất kỳ)?"
+    },
+    "figure": {
+      "renderer": "charGrid",
+      "params": {
+        "data": [
+          [
+            "🍎",
+            "🍎",
+            "🍎",
+            "🍎"
+          ],
+          [
+            "🍎",
+            "🍎",
+            "🍎",
+            "🍎"
+          ],
+          [
+            "🍎"
+          ],
+          [
+            "🍎"
+          ],
+          [
+            "🍎",
+            "🍎",
+            "🍎"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "8"
+      },
+      {
+        "id": "C",
+        "en": "12"
+      },
+      {
+        "id": "D",
+        "en": "15"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "C50"
+  }
+]

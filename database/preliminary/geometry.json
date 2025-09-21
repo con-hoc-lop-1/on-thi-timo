@@ -1,0 +1,3206 @@
+[
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many sides are there in the polygon below?",
+      "vi": "Đa giác dưới đây có bao nhiêu cạnh?"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 7,
+        "size": 280
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "G01"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many line segments are there in the figure?",
+      "vi": "Có bao nhiêu đoạn thẳng trong hình sau?"
+    },
+    "figure": {
+      "renderer": "lineSegments",
+      "params": {
+        "points": [
+          [
+            20,
+            20
+          ],
+          [
+            80,
+            20
+          ],
+          [
+            20,
+            80
+          ],
+          [
+            80,
+            80
+          ]
+        ],
+        "segments": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            2,
+            0
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "3"
+      },
+      {
+        "id": "B",
+        "en": "4"
+      },
+      {
+        "id": "C",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "G02"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "Count the number of line segments drawn.",
+      "vi": "Đếm số đoạn thẳng được vẽ."
+    },
+    "figure": {
+      "renderer": "lineSegments",
+      "params": {
+        "points": [
+          [
+            50,
+            10
+          ],
+          [
+            90,
+            50
+          ],
+          [
+            50,
+            90
+          ],
+          [
+            10,
+            50
+          ]
+        ],
+        "segments": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "4"
+      },
+      {
+        "id": "B",
+        "en": "5"
+      },
+      {
+        "id": "C",
+        "en": "6"
+      },
+      {
+        "id": "D",
+        "en": "7"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "G03"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many line segments are present in the triangle?",
+      "vi": "Có bao nhiêu đoạn thẳng trong tam giác?"
+    },
+    "figure": {
+      "renderer": "lineSegments",
+      "params": {
+        "points": [
+          [
+            50,
+            10
+          ],
+          [
+            90,
+            80
+          ],
+          [
+            10,
+            80
+          ],
+          [
+            50,
+            80
+          ],
+          [
+            70,
+            45
+          ],
+          [
+            30,
+            45
+          ]
+        ],
+        "segments": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            4
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "3"
+      },
+      {
+        "id": "B",
+        "en": "4"
+      },
+      {
+        "id": "C",
+        "en": "6"
+      },
+      {
+        "id": "D",
+        "en": "7"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "G04"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many line segments are in the hexagon with all diagonals?",
+      "vi": "Có bao nhiêu đoạn thẳng trong hình lục giác với tất cả các đường chéo?"
+    },
+    "figure": {
+      "renderer": "lineSegments",
+      "params": {
+        "points": [
+          [
+            50,
+            10
+          ],
+          [
+            90,
+            30
+          ],
+          [
+            90,
+            70
+          ],
+          [
+            50,
+            90
+          ],
+          [
+            10,
+            70
+          ],
+          [
+            10,
+            30
+          ]
+        ],
+        "segments": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            0
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            5
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "9"
+      },
+      {
+        "id": "B",
+        "en": "12"
+      },
+      {
+        "id": "C",
+        "en": "15"
+      },
+      {
+        "id": "D",
+        "en": "18"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "G05"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many squares are there in the grid?",
+      "vi": "Có bao nhiêu hình vuông trong lưới?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "13"
+      },
+      {
+        "id": "B",
+        "en": "10"
+      },
+      {
+        "id": "C",
+        "en": "17"
+      },
+      {
+        "id": "D",
+        "en": "14"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "figure": {
+      "renderer": "gridSquareTables",
+      "params": {
+        "data": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    "id": "G06"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many squares are there in the grid?",
+      "vi": "Có bao nhiêu hình vuông trong lưới?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "18"
+      },
+      {
+        "id": "B",
+        "en": "16"
+      },
+      {
+        "id": "C",
+        "en": "13"
+      },
+      {
+        "id": "D",
+        "en": "14"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "figure": {
+      "renderer": "gridSquareTables",
+      "params": {
+        "data": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    "id": "G07"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many squares are there in the grid?",
+      "vi": "Có bao nhiêu hình vuông trong lưới?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "14"
+      },
+      {
+        "id": "B",
+        "en": "15"
+      },
+      {
+        "id": "C",
+        "en": "11"
+      },
+      {
+        "id": "D",
+        "en": "17"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "figure": {
+      "renderer": "gridSquareTables",
+      "params": {
+        "data": [
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    "id": "G08"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many squares are there in the grid?",
+      "vi": "Có bao nhiêu hình vuông trong lưới?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "56"
+      },
+      {
+        "id": "B",
+        "en": "55"
+      },
+      {
+        "id": "C",
+        "en": "58"
+      },
+      {
+        "id": "D",
+        "en": "52"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {
+      "renderer": "gridSquareTables",
+      "params": {
+        "data": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    "id": "G09"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many squares are there in the grid?",
+      "vi": "Có bao nhiêu hình vuông trong lưới?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "59"
+      },
+      {
+        "id": "B",
+        "en": "54"
+      },
+      {
+        "id": "C",
+        "en": "56"
+      },
+      {
+        "id": "D",
+        "en": "55"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "figure": {
+      "renderer": "gridSquareTables",
+      "params": {
+        "data": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    "id": "G10"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many squares are there in the grid?",
+      "vi": "Có bao nhiêu hình vuông trong lưới?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "57"
+      },
+      {
+        "id": "B",
+        "en": "53"
+      },
+      {
+        "id": "C",
+        "en": "55"
+      },
+      {
+        "id": "D",
+        "en": "52"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {
+      "renderer": "gridSquareTables",
+      "params": {
+        "data": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    "id": "G11"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many sides does this polygon have?",
+      "vi": "Hình đa giác này có bao nhiêu cạnh?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "4"
+      },
+      {
+        "id": "B",
+        "en": "0"
+      },
+      {
+        "id": "C",
+        "en": "3"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 3,
+        "size": 280
+      }
+    },
+    "id": "G12"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many sides does this polygon have?",
+      "vi": "Hình đa giác này có bao nhiêu cạnh?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "7"
+      },
+      {
+        "id": "B",
+        "en": "8"
+      },
+      {
+        "id": "C",
+        "en": "9"
+      },
+      {
+        "id": "D",
+        "en": "5"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 7,
+        "size": 280
+      }
+    },
+    "id": "G13"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many sides does this polygon have?",
+      "vi": "Hình đa giác này có bao nhiêu cạnh?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "9"
+      },
+      {
+        "id": "B",
+        "en": "8"
+      },
+      {
+        "id": "C",
+        "en": "6"
+      },
+      {
+        "id": "D",
+        "en": "3"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 6,
+        "size": 280
+      }
+    },
+    "id": "G14"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many sides does this polygon have?",
+      "vi": "Hình đa giác này có bao nhiêu cạnh?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "10"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "4"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 7,
+        "size": 280
+      }
+    },
+    "id": "G15"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many sides does this polygon have?",
+      "vi": "Hình đa giác này có bao nhiêu cạnh?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "2"
+      },
+      {
+        "id": "B",
+        "en": "7"
+      },
+      {
+        "id": "C",
+        "en": "1"
+      },
+      {
+        "id": "D",
+        "en": "4"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 4,
+        "size": 280
+      }
+    },
+    "id": "G16"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "Which symbol should replace ?",
+      "vi": "Ký hiệu nào nên thay cho ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "▲"
+      },
+      {
+        "id": "B",
+        "en": "●"
+      },
+      {
+        "id": "C",
+        "en": "★"
+      },
+      {
+        "id": "D",
+        "en": "◆"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "●",
+            "★",
+            "◆",
+            "?",
+            "★",
+            "◆"
+          ]
+        ]
+      }
+    },
+    "id": "G17"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "Which symbol should replace ?",
+      "vi": "Ký hiệu nào nên thay cho ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "▲"
+      },
+      {
+        "id": "B",
+        "en": "■"
+      },
+      {
+        "id": "C",
+        "en": "★"
+      },
+      {
+        "id": "D",
+        "en": "◆"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "▲",
+            "★",
+            "■",
+            "●",
+            "▲",
+            "★",
+            "?",
+            "●"
+          ]
+        ]
+      }
+    },
+    "id": "G18"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "Which symbol should replace ?",
+      "vi": "Ký hiệu nào nên thay cho ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "▲"
+      },
+      {
+        "id": "B",
+        "en": "●"
+      },
+      {
+        "id": "C",
+        "en": "★"
+      },
+      {
+        "id": "D",
+        "en": "◆"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "●",
+            "★",
+            "★",
+            "▲",
+            "●",
+            "★",
+            "★",
+            "★",
+            "▲",
+            "?",
+            "★",
+            "★"
+          ]
+        ]
+      }
+    },
+    "id": "G19"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "Which symbol should replace ?",
+      "vi": "Ký hiệu nào nên thay cho ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "▲"
+      },
+      {
+        "id": "B",
+        "en": "●"
+      },
+      {
+        "id": "C",
+        "en": "★"
+      },
+      {
+        "id": "D",
+        "en": "◆"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "▲",
+            "●",
+            "◆",
+            "▲",
+            "▲",
+            "●",
+            "●",
+            "◆",
+            "◆",
+            "?",
+            "▲",
+            "▲",
+            "●",
+            "●",
+            "●",
+            "◆",
+            "◆",
+            "◆"
+          ]
+        ]
+      }
+    },
+    "id": "G20"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "Which symbol should replace ?",
+      "vi": "Ký hiệu nào nên thay cho ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "▲"
+      },
+      {
+        "id": "B",
+        "en": "●"
+      },
+      {
+        "id": "C",
+        "en": "★"
+      },
+      {
+        "id": "D",
+        "en": "◆"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "★",
+            "◆",
+            "▲",
+            "?",
+            "◆",
+            "▲"
+          ]
+        ]
+      }
+    },
+    "id": "G21"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many line segments are in the figure?",
+      "vi": "Có bao nhiêu đoạn thẳng trong hình?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "7"
+      },
+      {
+        "id": "B",
+        "en": "4"
+      },
+      {
+        "id": "C",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "en": "2"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {
+      "renderer": "lineSegments",
+      "params": {
+        "points": [
+          [
+            54,
+            90
+          ],
+          [
+            10,
+            18
+          ],
+          [
+            37,
+            20
+          ],
+          [
+            42,
+            11
+          ],
+          [
+            54,
+            27
+          ]
+        ],
+        "segments": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            0
+          ]
+        ]
+      }
+    },
+    "id": "G22"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many line segments are in the figure?",
+      "vi": "Có bao nhiêu đoạn thẳng trong hình?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "8"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "4"
+      },
+      {
+        "id": "D",
+        "en": "3"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {
+      "renderer": "lineSegments",
+      "params": {
+        "points": [
+          [
+            89,
+            28
+          ],
+          [
+            54,
+            44
+          ],
+          [
+            54,
+            34
+          ],
+          [
+            29,
+            20
+          ],
+          [
+            28,
+            32
+          ],
+          [
+            87,
+            42
+          ]
+        ],
+        "segments": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            0
+          ]
+        ]
+      }
+    },
+    "id": "G23"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many line segments are in the figure?",
+      "vi": "Có bao nhiêu đoạn thẳng trong hình?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "6"
+      },
+      {
+        "id": "B",
+        "en": "2"
+      },
+      {
+        "id": "C",
+        "en": "4"
+      },
+      {
+        "id": "D",
+        "en": "3"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {
+      "renderer": "lineSegments",
+      "params": {
+        "points": [
+          [
+            29,
+            87
+          ],
+          [
+            13,
+            46
+          ],
+          [
+            65,
+            75
+          ],
+          [
+            82,
+            78
+          ]
+        ],
+        "segments": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    },
+    "id": "G24"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many line segments are in the figure?",
+      "vi": "Có bao nhiêu đoạn thẳng trong hình?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "8"
+      },
+      {
+        "id": "B",
+        "en": "7"
+      },
+      {
+        "id": "C",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "en": "3"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {
+      "renderer": "lineSegments",
+      "params": {
+        "points": [
+          [
+            41,
+            62
+          ],
+          [
+            83,
+            41
+          ],
+          [
+            27,
+            90
+          ],
+          [
+            72,
+            72
+          ],
+          [
+            14,
+            22
+          ]
+        ],
+        "segments": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            0
+          ]
+        ]
+      }
+    },
+    "id": "G25"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many line segments are in the figure?",
+      "vi": "Có bao nhiêu đoạn thẳng trong hình?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "3"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "9"
+      },
+      {
+        "id": "D",
+        "en": "4"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {
+      "renderer": "lineSegments",
+      "params": {
+        "points": [
+          [
+            74,
+            89
+          ],
+          [
+            11,
+            18
+          ],
+          [
+            30,
+            50
+          ],
+          [
+            8,
+            34
+          ],
+          [
+            86,
+            13
+          ],
+          [
+            55,
+            50
+          ]
+        ],
+        "segments": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            0
+          ]
+        ]
+      }
+    },
+    "id": "G26"
+  },
+  {
+    "type": "Geometry",
+    "figure": {
+      "renderer": "gridSquareTables",
+      "params": {
+        "data": [
+          [
+            0,
+            1,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1,
+            0
+          ]
+        ]
+      }
+    },
+    "stem": {
+      "en": "How many squares are there in the following figure?",
+      "vi": "Có bao nhiêu hình vuông trong hình dưới đây?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "12"
+      },
+      {
+        "id": "B",
+        "en": "16"
+      },
+      {
+        "id": "C",
+        "en": "17"
+      },
+      {
+        "id": "D",
+        "en": "18"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "G27"
+  },
+  {
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "△",
+            "▽",
+            "▽",
+            "△",
+            "▽",
+            "▽",
+            "△",
+            "▽",
+            "?"
+          ]
+        ]
+      }
+    },
+    "type": "Geometry",
+    "stem": {
+      "en": "According to the pattern shown below, what is the figure in the blank?",
+      "vi": "Dựa vào quy luật dưới đây, tìm hình vẽ thích hợp điền vào chỗ trống."
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "△"
+      },
+      {
+        "id": "B",
+        "en": "▽"
+      },
+      {
+        "id": "C",
+        "en": "◆"
+      },
+      {
+        "id": "D",
+        "en": "■"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "G28"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "Look at the star figure. How many line segments form it?",
+      "vi": "Quan sát hình ngôi sao. Nó được tạo bởi bao nhiêu đoạn thẳng?"
+    },
+    "figure": {
+      "renderer": "lineSegments",
+      "params": {
+        "points": [
+          [
+            50,
+            10
+          ],
+          [
+            60,
+            35
+          ],
+          [
+            85,
+            35
+          ],
+          [
+            65,
+            50
+          ],
+          [
+            75,
+            75
+          ],
+          [
+            50,
+            60
+          ],
+          [
+            25,
+            75
+          ],
+          [
+            35,
+            50
+          ],
+          [
+            15,
+            35
+          ],
+          [
+            40,
+            35
+          ]
+        ],
+        "segments": [
+          [
+            0,
+            3
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            6,
+            9
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            8,
+            1
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            7,
+            0
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "8"
+      },
+      {
+        "id": "B",
+        "en": "10"
+      },
+      {
+        "id": "C",
+        "en": "12"
+      },
+      {
+        "id": "D",
+        "en": "15"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "G29"
+  },
+  {
+    "type": "Geometry",
+    "figure": {
+      "renderer": "geometryOverlapFigure",
+      "params": {
+        "shapes": [
+          "square",
+          "square",
+          "square",
+          "square"
+        ]
+      }
+    },
+    "stem": {
+      "vi": "Có bao nhiêu hình vuông trong hình dưới đây?",
+      "en": "How many squares are there in the figure below?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "vi": "3",
+        "en": "3"
+      },
+      {
+        "id": "B",
+        "vi": "4",
+        "en": "4"
+      },
+      {
+        "id": "C",
+        "vi": "5",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "vi": "6",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "G30"
+  },
+  {
+    "type": "Geometry",
+    "figure": {
+      "renderer": "geometryOverlapFigure",
+      "params": {
+        "shapes": [
+          "triangle",
+          "triangle",
+          "triangle",
+          "triangle",
+          "triangle",
+          "triangle"
+        ]
+      }
+    },
+    "stem": {
+      "vi": "Có bao nhiêu hình tam giác trong hình dưới đây?",
+      "en": "How many triangles are there in the figure below?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "vi": "4",
+        "en": "4"
+      },
+      {
+        "id": "B",
+        "vi": "7",
+        "en": "7"
+      },
+      {
+        "id": "C",
+        "vi": "11",
+        "en": "11"
+      },
+      {
+        "id": "D",
+        "vi": "17",
+        "en": "17"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "G31"
+  },
+  {
+    "type": "Geometry",
+    "figure": {
+      "renderer": "geometryOverlapFigure",
+      "params": {
+        "shapes": [
+          "hexagon",
+          "hexagon",
+          "hexagon",
+          "hexagon"
+        ]
+      }
+    },
+    "stem": {
+      "vi": "Có bao nhiêu hình lục giác trong hình dưới đây?",
+      "en": "How many hexagons are there in the figure below?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "vi": "3",
+        "en": "3"
+      },
+      {
+        "id": "B",
+        "vi": "4",
+        "en": "4"
+      },
+      {
+        "id": "C",
+        "vi": "5",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "vi": "6",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "G32"
+  },
+  {
+    "type": "Geometry",
+    "figure": {
+      "renderer": "isoCubes",
+      "params": {
+        "layout": [
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ]
+          ]
+        ]
+      }
+    },
+    "stem": {
+      "en": "Some cubes are placed on top of each other. At least how many cubes are there in the figure below?",
+      "vi": "Một số khối lập phương được xếp chồng lên nhau. Hỏi có ít nhất bao nhiêu khối lập phương trong hình bên dưới?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "13"
+      },
+      {
+        "id": "B",
+        "en": "12"
+      },
+      {
+        "id": "C",
+        "en": "11"
+      },
+      {
+        "id": "D",
+        "en": "14"
+      }
+    ],
+    "id": "G33"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "At least how many cubes are there in the figure?",
+      "vi": "Ít nhất có bao nhiêu khối lập phương trong hình?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "13"
+      },
+      {
+        "id": "B",
+        "en": "12"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "14"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "figure": {
+      "renderer": "isoCubes",
+      "params": {
+        "layout": [
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    "id": "G34"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "At least how many cubes are there in the figure?",
+      "vi": "Ít nhất có bao nhiêu khối lập phương trong hình?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "18"
+      },
+      {
+        "id": "B",
+        "en": "17"
+      },
+      {
+        "id": "C",
+        "en": "19"
+      },
+      {
+        "id": "D",
+        "en": "16"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "figure": {
+      "renderer": "isoCubes",
+      "params": {
+        "layout": [
+          [
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0
+            ]
+          ],
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          [
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    "id": "G35"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "At least how many cubes are there in the figure?",
+      "vi": "Ít nhất có bao nhiêu khối lập phương trong hình?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "13"
+      },
+      {
+        "id": "B",
+        "en": "15"
+      },
+      {
+        "id": "C",
+        "en": "16"
+      },
+      {
+        "id": "D",
+        "en": "19"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {
+      "renderer": "isoCubes",
+      "params": {
+        "layout": [
+          [
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0
+            ]
+          ],
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ]
+        ]
+      }
+    },
+    "id": "G36"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "At least how many cubes are there in the figure?",
+      "vi": "Ít nhất có bao nhiêu khối lập phương trong hình?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "25"
+      },
+      {
+        "id": "B",
+        "en": "23"
+      },
+      {
+        "id": "C",
+        "en": "22"
+      },
+      {
+        "id": "D",
+        "en": "19"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {
+      "renderer": "isoCubes",
+      "params": {
+        "layout": [
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    "id": "G37"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "At least how many cubes are there in the figure?",
+      "vi": "Ít nhất có bao nhiêu khối lập phương trong hình?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "13"
+      },
+      {
+        "id": "B",
+        "en": "11"
+      },
+      {
+        "id": "C",
+        "en": "14"
+      },
+      {
+        "id": "D",
+        "en": "15"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {
+      "renderer": "isoCubes",
+      "params": {
+        "layout": [
+          [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        ]
+      }
+    },
+    "id": "G38"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "At least how many cubes are there in the figure?",
+      "vi": "Ít nhất có bao nhiêu khối lập phương trong hình?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "14"
+      },
+      {
+        "id": "B",
+        "en": "15"
+      },
+      {
+        "id": "C",
+        "en": "16"
+      },
+      {
+        "id": "D",
+        "en": "17"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {
+      "renderer": "isoCubes",
+      "params": {
+        "layout": [
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    "id": "G39"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many circles are drawn in this figure?",
+      "vi": "Có bao nhiêu hình tròn được vẽ trong hình này?"
+    },
+    "figure": {
+      "renderer": "multiCircles",
+      "params": {
+        "circles": [
+          {
+            "cx": 60,
+            "cy": 40,
+            "r": 20
+          },
+          {
+            "cx": 100,
+            "cy": 40,
+            "r": 20
+          },
+          {
+            "cx": 80,
+            "cy": 70,
+            "r": 20
+          },
+          {
+            "cx": 60,
+            "cy": 100,
+            "r": 20
+          },
+          {
+            "cx": 100,
+            "cy": 100,
+            "r": 20
+          },
+          {
+            "cx": 80,
+            "cy": 130,
+            "r": 20
+          }
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "G40"
+  },
+  {
+    "type": "Geometry",
+    "figure": {
+      "renderer": "geometryOverlapFigure",
+      "params": {
+        "shapes": [
+          "circle",
+          "circle",
+          "circle",
+          "circle",
+          "circle"
+        ]
+      }
+    },
+    "stem": {
+      "vi": "Có bao nhiêu hình tròn trong hình dưới đây?",
+      "en": "How many circles are there in the figure below?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "vi": "4",
+        "en": "4"
+      },
+      {
+        "id": "B",
+        "vi": "5",
+        "en": "5"
+      },
+      {
+        "id": "C",
+        "vi": "6",
+        "en": "6"
+      },
+      {
+        "id": "D",
+        "vi": "12",
+        "en": "12"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "G41"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many circles are overlapping in this figure?",
+      "vi": "Có bao nhiêu hình tròn chồng lên nhau trong hình này?"
+    },
+    "figure": {
+      "renderer": "multiCircles",
+      "params": {
+        "circles": [
+          {
+            "cx": 50,
+            "cy": 50,
+            "r": 25
+          },
+          {
+            "cx": 80,
+            "cy": 50,
+            "r": 25
+          },
+          {
+            "cx": 65,
+            "cy": 80,
+            "r": 25
+          }
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "2"
+      },
+      {
+        "id": "B",
+        "en": "3"
+      },
+      {
+        "id": "C",
+        "en": "4"
+      },
+      {
+        "id": "D",
+        "en": "5"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "G42"
+  },
+  {
+    "type": "Geometry",
+    "figure": {
+      "renderer": "stackPattern",
+      "params": {
+        "stacks": [
+          [
+            "🍎",
+            "🍌",
+            "🍐",
+            "🍊",
+            "🍉",
+            "🍇"
+          ],
+          [
+            "🍇",
+            "🍎",
+            "🍌",
+            "🍐",
+            "🍊",
+            "🍉"
+          ],
+          [
+            "🍉",
+            "🍇",
+            "🍎",
+            "🍌",
+            "🍐",
+            "🍊"
+          ],
+          [
+            "🍊",
+            "🍉",
+            "🍇",
+            "🍎",
+            "🍌",
+            "🍐"
+          ]
+        ]
+      }
+    },
+    "stem": {
+      "en": "According to the pattern shown below, what is the shape at the top of the 6th figure?",
+      "vi": "Theo quy luật dưới đây, khối nào nằm ở phía trên cùng trong hình thứ 6?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "🍎"
+      },
+      {
+        "id": "B",
+        "en": "🍌"
+      },
+      {
+        "id": "C",
+        "en": "🍇"
+      },
+      {
+        "id": "D",
+        "en": "🍉"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "G43"
+  },
+  {
+    "type": "Geometry",
+    "figure": {
+      "renderer": "stackPattern",
+      "params": {
+        "stacks": [
+          [
+            "🐶",
+            "🐱",
+            "🐭",
+            "🐹",
+            "🐰",
+            "🦊",
+            "🐻"
+          ],
+          [
+            "🐱",
+            "🐶",
+            "🐹",
+            "🐭",
+            "🦊",
+            "🐰",
+            "🐻"
+          ],
+          [
+            "🐶",
+            "🐱",
+            "🐭",
+            "🐹",
+            "🐰",
+            "🦊",
+            "🐻"
+          ],
+          [
+            "🐱",
+            "🐶",
+            "🐹",
+            "🐭",
+            "🦊",
+            "🐰",
+            "🐻"
+          ]
+        ]
+      }
+    },
+    "stem": {
+      "en": "According to the pattern shown below, what is the shape at the top of the 5th figure?",
+      "vi": "Theo quy luật dưới đây, khối nào nằm ở phía trên cùng trong hình thứ 5?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "🐶"
+      },
+      {
+        "id": "B",
+        "en": "🐱"
+      },
+      {
+        "id": "C",
+        "en": "🐹"
+      },
+      {
+        "id": "D",
+        "en": "🦊"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "G44"
+  },
+  {
+    "type": "Geometry",
+    "figure": {
+      "renderer": "stackPattern",
+      "params": {
+        "stacks": [
+          [
+            "★",
+            "◆",
+            "■",
+            "▲",
+            "●"
+          ],
+          [
+            "▲",
+            "●",
+            "★",
+            "◆",
+            "■"
+          ],
+          [
+            "■",
+            "▲",
+            "●",
+            "★",
+            "◆"
+          ],
+          [
+            "◆",
+            "■",
+            "▲",
+            "●",
+            "★"
+          ]
+        ]
+      }
+    },
+    "stem": {
+      "en": "According to the pattern shown below, what is the shape at the top of the 7th figure?",
+      "vi": "Theo quy luật dưới đây, khối nào nằm ở phía trên cùng trong hình thứ 7?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "★"
+      },
+      {
+        "id": "B",
+        "en": "◆"
+      },
+      {
+        "id": "C",
+        "en": "■"
+      },
+      {
+        "id": "D",
+        "en": "▲"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "G45"
+  },
+  {
+    "type": "Geometry",
+    "figure": {
+      "renderer": "stackPattern",
+      "params": {
+        "stacks": [
+          [
+            "🌸",
+            "🌻",
+            "🌼",
+            "🌹",
+            "🥀",
+            "🌷"
+          ],
+          [
+            "🌼",
+            "🌹",
+            "🥀",
+            "🌷",
+            "🌸",
+            "🌻"
+          ],
+          [
+            "🥀",
+            "🌷",
+            "🌸",
+            "🌻",
+            "🌼",
+            "🌹"
+          ],
+          [
+            "🌸",
+            "🌻",
+            "🌼",
+            "🌹",
+            "🥀",
+            "🌷"
+          ]
+        ]
+      }
+    },
+    "stem": {
+      "en": "According to the pattern shown below, what is the shape at the top of the 5th figure?",
+      "vi": "Theo quy luật dưới đây, khối nào nằm ở phía trên cùng trong hình thứ 5?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "🌸"
+      },
+      {
+        "id": "B",
+        "en": "🌻"
+      },
+      {
+        "id": "C",
+        "en": "🌼"
+      },
+      {
+        "id": "D",
+        "en": "🌹"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "G46"
+  },
+  {
+    "type": "Geometry",
+    "figure": {
+      "renderer": "stackPattern",
+      "params": {
+        "stacks": [
+          [
+            "🚗",
+            "🚕",
+            "🚙",
+            "🚌",
+            "🚎"
+          ],
+          [
+            "🚌",
+            "🚎",
+            "🚗",
+            "🚕",
+            "🚙"
+          ],
+          [
+            "🚕",
+            "🚙",
+            "🚌",
+            "🚎",
+            "🚗"
+          ]
+        ]
+      }
+    },
+    "stem": {
+      "en": "According to the pattern shown below, what is the shape at the top of the 6th figure?",
+      "vi": "Theo quy luật dưới đây, khối nào nằm ở phía trên cùng trong hình thứ 6?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "🚗"
+      },
+      {
+        "id": "B",
+        "en": "🚕"
+      },
+      {
+        "id": "C",
+        "en": "🚙"
+      },
+      {
+        "id": "D",
+        "en": "🚌"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "G47"
+  },
+  {
+    "type": "Geometry",
+    "figure": {
+      "renderer": "stackPattern",
+      "params": {
+        "stacks": [
+          [
+            "🍉",
+            "🍓",
+            "🥝",
+            "🍍",
+            "🍑",
+            "🍒",
+            "🍋",
+            "🍏"
+          ],
+          [
+            "🍍",
+            "🍑",
+            "🍒",
+            "🍋",
+            "🍏",
+            "🍉",
+            "🍓",
+            "🥝"
+          ],
+          [
+            "🍒",
+            "🍋",
+            "🍏",
+            "🍉",
+            "🍓",
+            "🥝",
+            "🍍",
+            "🍑"
+          ],
+          [
+            "🍉",
+            "🍓",
+            "🥝",
+            "🍍",
+            "🍑",
+            "🍒",
+            "🍋",
+            "🍏"
+          ]
+        ]
+      }
+    },
+    "stem": {
+      "en": "According to the pattern shown below, what is the shape at the top of the 7th figure?",
+      "vi": "Theo quy luật dưới đây, khối nào nằm ở phía trên cùng trong hình thứ 7?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "🍉"
+      },
+      {
+        "id": "B",
+        "en": "🍓"
+      },
+      {
+        "id": "C",
+        "en": "🥝"
+      },
+      {
+        "id": "D",
+        "en": "🍍"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "G48"
+  },
+  {
+    "type": "Geometry",
+    "figure": {
+      "renderer": "stackPattern",
+      "params": {
+        "stacks": [
+          [
+            "⚽",
+            "🏀",
+            "🏈",
+            "🎾",
+            "🏐",
+            "🥎"
+          ],
+          [
+            "🏐",
+            "🥎",
+            "⚽",
+            "🏀",
+            "🏈",
+            "🎾"
+          ],
+          [
+            "⚽",
+            "🏀",
+            "🏈",
+            "🎾",
+            "🏐",
+            "🥎"
+          ],
+          [
+            "🏐",
+            "🥎",
+            "⚽",
+            "🏀",
+            "🏈",
+            "🎾"
+          ]
+        ]
+      }
+    },
+    "stem": {
+      "en": "According to the pattern shown below, what is the shape at the top of the 8th figure?",
+      "vi": "Theo quy luật dưới đây, khối nào nằm ở phía trên cùng trong hình thứ 8?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "⚽"
+      },
+      {
+        "id": "B",
+        "en": "🏀"
+      },
+      {
+        "id": "C",
+        "en": "🏈"
+      },
+      {
+        "id": "D",
+        "en": "🏐"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "G49"
+  },
+  {
+    "type": "Geometry",
+    "figure": {
+      "renderer": "stackPattern",
+      "params": {
+        "stacks": [
+          [
+            "◆",
+            "●",
+            "▲",
+            "■"
+          ],
+          [
+            "■",
+            "◆",
+            "●",
+            "▲"
+          ],
+          [
+            "▲",
+            "■",
+            "◆",
+            "●"
+          ]
+        ]
+      }
+    },
+    "stem": {
+      "en": "According to the pattern shown below, what is the shape at the top of the 4th figure?",
+      "vi": "Theo quy luật dưới đây, khối nào nằm ở phía trên cùng trong hình thứ 4?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "■"
+      },
+      {
+        "id": "B",
+        "en": "▲"
+      },
+      {
+        "id": "C",
+        "en": "●"
+      },
+      {
+        "id": "D",
+        "en": "◆"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "G50"
+  }
+]
