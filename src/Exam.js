@@ -12,8 +12,8 @@ function Exam({ name, onFinish }) {
   const [startTime] = useState(Date.now());
   const showVi = JSON.parse(localStorage.getItem("timo-show-vi") || "false");
   useEffect(() => {
-    // loadAllQuestions().then(setQuestions);
-    loadAllQuestions(["logic-thinking"], 50, false).then(setQuestions);
+    loadAllQuestions().then(setQuestions);
+    // loadAllQuestions(["logic-thinking"], 50, false).then(setQuestions);
     const timer = setInterval(() => {
       setSecondsLeft((prev) => {
         if (prev <= 1) {
