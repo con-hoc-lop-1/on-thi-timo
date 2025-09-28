@@ -103,7 +103,7 @@ function SvgIcon({ kind, size = 48, className = "" }) {
     default:
       return (
         <div
-          className={`d-inline-flex align-items-center justify-content-center ${className}`}
+          className={`d-inline-flex align-items-center justify-content-center figure-item ${className}`}
           style={{ width: s, height: s, fontSize: s * 0.6 }}
         >
           {kind}
@@ -119,21 +119,21 @@ function SymbolPattern({ grid }) {
       <div
         className="d-grid"
         style={{
-          gridTemplateColumns: `repeat(${cols}, minmax(40px, 56px))`,
-          gap: 8,
+          gridTemplateColumns: `repeat(${cols}, minmax(30px, 42px))`,
+          gap: 6,
         }}
       >
         {grid.flatMap((row, i) =>
           row.map((cell, j) => (
             <div
               key={`${i}-${j}`}
-              className="d-flex align-items-center justify-content-center border rounded"
-              style={{ aspectRatio: "1 / 1", minWidth: 40 }}
+              className="d-flex align-items-center justify-content-center border rounded figure-item"
+              style={{ aspectRatio: "1 / 1", minWidth: 30 }}
             >
               {cell === "?" ? (
                 <span className="fw-bold">?</span>
               ) : (
-                <SvgIcon kind={cell} size={40} />
+                <SvgIcon kind={cell} size={30} />
               )}
             </div>
           ))
@@ -155,7 +155,7 @@ function GroupRepeats({ symbol, groups }) {
           <div className="d-flex flex-wrap gap-2">
             {g === "?" ? (
               <div
-                className="border rounded d-flex align-items-center justify-content-center"
+                className="border rounded d-flex align-items-center justify-content-center figure-item"
                 style={{ width: 40, height: 40 }}
               >
                 ?
@@ -209,7 +209,12 @@ function TwoBins({ left, right, symbol = "●", labels = ["Left", "Right"] }) {
           <div className="mb-2 text-center fw-medium">{labels[i]}</div>
           <div className="d-flex flex-wrap gap-2" style={{ maxWidth: 150 }}>
             {Array.from({ length: n }).map((_, k) => (
-              <SvgIcon key={k} kind={symbol} size={28} />
+              <SvgIcon
+                className="figure-item"
+                key={k}
+                kind={symbol}
+                size={28}
+              />
             ))}
           </div>
         </div>

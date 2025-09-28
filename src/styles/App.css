@@ -57,12 +57,22 @@
   flex-wrap: wrap;
 }
 
+.paper-mode .question-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.paper-mode .question-title span {
+  font-size: 12px;
+}
 .paper-mode .answer-item {
   display: flex;
   width: calc(20% - 1rem);
   justify-content: space-between;
 }
-
+.paper-mode .answer-separator {
+  margin: 10px 0;
+}
 .blank-page .question-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);

@@ -41,7 +41,10 @@ export function loadAllQuestions(
     const newHistory = [selected.map((q) => q.id), ...history].slice(0, 10);
     localStorage.setItem("timo-question-history", JSON.stringify(newHistory));
 
-    return selected.map((q) => ({ ...q, userAnswer: "" }));
+    // Shuffle questions randomly before returning
+    return selected
+      .sort(() => 0.5 - Math.random())
+      .map((q) => ({ ...q, userAnswer: "" }));
   });
 }
 

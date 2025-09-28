@@ -27,9 +27,11 @@ function Exam({ name, onFinish, paperMode }) {
     }, 1000);
     return () => clearInterval(timer);
   }, []);
+
   useEffect(() => {
-    document.title = `TIMO TEST (${startDate})`;
+    document.title = `${name} - TIMO TEST (${startDate})`;
   }, [startDate]);
+
   const handleAnswer = (val) => {
     const updated = [...questions];
     updated[index].userAnswer = val;
@@ -71,16 +73,23 @@ function Exam({ name, onFinish, paperMode }) {
   if (paperMode) {
     return (
       <div className="container-fluid mt-4 paper-mode">
-        <h3 className="m-3">TIMO TEST ({startDate})</h3>
+        <h3 className="m-3">
+          {name} - TIMO TEST ({startDate})
+        </h3>
         {questions.map((q, qi) => (
           <div
             key={qi}
             className="mb-3 border rounded p-3 bg-light paper-question"
           >
             <div className="mb-2">
-              <strong>
-                Question {qi + 1} {showVi && <i>(Câu {qi + 1})</i>}:
-              </strong>
+              <div className="question-title">
+                <strong>
+                  Question {qi + 1} {showVi && <i>(Câu {qi + 1})</i>}:
+                </strong>
+                <span>
+                  {name} - TIMO TEST ({startDate})
+                </span>
+              </div>
               <div dangerouslySetInnerHTML={{ __html: q.stem.en }} />
               {showVi && (
                 <div
@@ -108,18 +117,18 @@ function Exam({ name, onFinish, paperMode }) {
         <div className="answer-sheet">
           <div className="blank-page">
             <div className="info-box">
+              <h4 className="mb-3">
+                {name} - TIMO TEST ({startDate})
+              </h4>
               <table className="table table-bordered">
                 <tbody>
                   <tr>
                     <td>Full name:</td>
-                    <td>Class:</td>
-                  </tr>
-                  <tr>
                     <td>DOB:</td>
-                    <td>ID No:</td>
                   </tr>
                   <tr>
-                    <td colSpan={2}>School name:</td>
+                    <td>School name:</td>
+                    <td>Class:</td>
                   </tr>
                 </tbody>
               </table>
@@ -149,14 +158,18 @@ function Exam({ name, onFinish, paperMode }) {
               ))}
             </div>
           </div>
-          <h3 className="mt-5">
+          <hr />
+          <h3 className="mt-2">
             Answer <i>(Đáp án)</i>
           </h3>
+          <h6>
+            {name} - TIMO TEST ({startDate})
+          </h6>
           <div className="answer-grid">
             {questions.map((q, qi) => (
               <div
                 key={qi}
-                className="answer-item border rounded me-2 ms-2 mb-1 p-3 bg-light"
+                className="answer-item border rounded me-2 ms-2 mb-1 p-2 bg-light"
               >
                 <span className="top-left">{qi + 1}</span>
                 <strong>{q.answer ? q.answer.key : ""}</strong>
