@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { formatTime, loadAllQuestions } from "./utils";
 import { renderFigure } from "./figure";
 
-function Exam({ name, onFinish }) {
+function Exam({ name, onFinish, paperMode }) {
   const [questions, setQuestions] = useState([]);
   const [index, setIndex] = useState(0);
   const [secondsLeft, setSecondsLeft] = useState(60 * 60);
@@ -10,10 +10,11 @@ function Exam({ name, onFinish }) {
   const [reviewMode, setReviewMode] = useState(false);
   const [result, setResult] = useState(null);
   const [startTime] = useState(Date.now());
+  const [startDate] = useState(new Date().toLocaleString());
   const showVi = JSON.parse(localStorage.getItem("timo-show-vi") || "false");
+
   useEffect(() => {
     loadAllQuestions().then(setQuestions);
-    // loadAllQuestions(["logic-thinking"], 50, false).then(setQuestions);
     const timer = setInterval(() => {
       setSecondsLeft((prev) => {
         if (prev <= 1) {
@@ -26,7 +27,9 @@ function Exam({ name, onFinish }) {
     }, 1000);
     return () => clearInterval(timer);
   }, []);
-
+  useEffect(() => {
+    document.title = `TIMO TEST (${startDate})`;
+  }, [startDate]);
   const handleAnswer = (val) => {
     const updated = [...questions];
     updated[index].userAnswer = val;
@@ -64,6 +67,108 @@ function Exam({ name, onFinish }) {
     setFinished(true);
   };
 
+  // 📄 Chế độ giấy trắc nghiệm
+  if (paperMode) {
+    return (
+      <div className="container-fluid mt-4 paper-mode">
+        <h3 className="m-3">TIMO TEST ({startDate})</h3>
+        {questions.map((q, qi) => (
+          <div
+            key={qi}
+            className="mb-3 border rounded p-3 bg-light paper-question"
+          >
+            <div className="mb-2">
+              <strong>
+                Question {qi + 1} {showVi && <i>(Câu {qi + 1})</i>}:
+              </strong>
+              <div dangerouslySetInnerHTML={{ __html: q.stem.en }} />
+              {showVi && (
+                <div
+                  style={{ fontStyle: "italic" }}
+                  dangerouslySetInnerHTML={{ __html: q.stem.vi }}
+                />
+              )}
+              <div className="figure-container">{renderFigure(q)}</div>
+            </div>
+            <div className="mt-2">
+              <div className="row">
+                {q.choices.map((choice, i) => (
+                  <div className="col-auto" key={i}>
+                    <label className="form-check-label">
+                      <b style={{ color: "gray" }}>{choice.id}.</b> {choice.en}
+                    </label>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
+
+        {/* Trang riêng cho đáp án */}
+        <div className="answer-sheet">
+          <div className="blank-page">
+            <div className="info-box">
+              <table className="table table-bordered">
+                <tbody>
+                  <tr>
+                    <td>Full name:</td>
+                    <td>Class:</td>
+                  </tr>
+                  <tr>
+                    <td>DOB:</td>
+                    <td>ID No:</td>
+                  </tr>
+                  <tr>
+                    <td colSpan={2}>School name:</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="question-grid">
+              {[...Array(25)].map((_, i) => (
+                <div className="question" key={i}>
+                  <div>{i + 1}</div>
+                  <div className="choices">
+                    <div className="choice">
+                      A<div className="box"></div>
+                    </div>
+                    <div className="choice">
+                      B<div className="box"></div>
+                    </div>
+                    <div className="choice">
+                      C<div className="box"></div>
+                    </div>
+                    <div className="choice">
+                      D<div className="box"></div>
+                    </div>
+                    <div className="choice">
+                      E<div className="box"></div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+          <h3 className="mt-5">
+            Answer <i>(Đáp án)</i>
+          </h3>
+          <div className="answer-grid">
+            {questions.map((q, qi) => (
+              <div
+                key={qi}
+                className="answer-item border rounded me-2 ms-2 mb-1 p-3 bg-light"
+              >
+                <span className="top-left">{qi + 1}</span>
+                <strong>{q.answer ? q.answer.key : ""}</strong>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // 📄 Trang kết quả online
   if (finished && result && !reviewMode) {
     return (
       <div className="container mt-5 text-center">
@@ -169,7 +274,7 @@ function Exam({ name, onFinish }) {
     );
   }
 
-  // Giao diện làm bài
+  // 📄 Giao diện làm bài online
   const q = questions[index];
   return questions.length === 0 ? (
     <p>Loading...</p>

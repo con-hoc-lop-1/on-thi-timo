@@ -8,6 +8,7 @@ function App() {
     localStorage.getItem("timo-user-name") || ""
   );
   const [isStarted, setIsStarted] = useState(false);
+  const [paperMode, setPaperMode] = useState(false);
   const [history, setHistory] = useState(
     JSON.parse(localStorage.getItem("timo-history") || "[]")
   );
@@ -30,7 +31,8 @@ function App() {
     if (!isStarted) setIsStarted(false);
   };
 
-  if (isStarted) return <Exam name={name} onFinish={handleFinish} />;
+  if (isStarted)
+    return <Exam name={name} paperMode={paperMode} onFinish={handleFinish} />;
 
   return (
     <div className="container py-5" style={{ maxWidth: 700 }}>
@@ -62,7 +64,7 @@ function App() {
             English
           </label>
         </div>
-        <div className="form-check">
+        <div className="form-check mb-3">
           <input
             className="form-check-input"
             type="checkbox"
@@ -81,8 +83,23 @@ function App() {
           </label>
         </div>
       </div>
+      <hr />
+      <div className="mb-4">
+        <div className="form-check">
+          <input
+            className="form-check-input"
+            type="checkbox"
+            id="paperMode"
+            checked={paperMode}
+            onChange={(e) => setPaperMode(e.target.checked)}
+          />
+          <label className="form-check-label" htmlFor="paperMode">
+            Test with paper <i>(Làm bằng giấy trắc nghiệm)</i>
+          </label>
+        </div>
+      </div>
       <button className="btn btn-primary w-100" onClick={handleStart}>
-        STARTING TEST <i>(LÀM BÀI)</i>
+        {paperMode ? "PRINT (IN RA GIẤY)" : "STARTING TEST (LÀM BÀI)"}
       </button>
 
       {history.length > 0 && (
