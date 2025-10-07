@@ -14,5 +14,6 @@
 <tr><td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;font-weight:bold;overflow:hidden;padding:10px 5px;text-align:left;vertical-align:top;word-break:normal" colspan="2">Ngôn ngữ</td><td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">Song ngữ</td><td style="border-color:inherit;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;text-align:center;vertical-align:top;word-break:normal">Tiếng anh</td></tr></tbody></table>
 
 ### Thông tin chung
+
 - Bộ đề lấy từ các năm đã thi
-- 
+  [Bắt đầu làm](https://con-hoc-lop-1.github.io/on-thi-timo)
