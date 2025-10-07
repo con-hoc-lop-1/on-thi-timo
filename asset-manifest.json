@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/react-on-thi-timo-lop-1/static/css/main.f987ceec.css",
-    "main.js": "/react-on-thi-timo-lop-1/static/js/main.8ded9fc6.js",
-    "index.html": "/react-on-thi-timo-lop-1/index.html",
-    "main.f987ceec.css.map": "/react-on-thi-timo-lop-1/static/css/main.f987ceec.css.map",
-    "main.8ded9fc6.js.map": "/react-on-thi-timo-lop-1/static/js/main.8ded9fc6.js.map"
+    "main.css": "/on-thi-timo/static/css/main.f987ceec.css",
+    "main.js": "/on-thi-timo/static/js/main.8ded9fc6.js",
+    "index.html": "/on-thi-timo/index.html",
+    "main.f987ceec.css.map": "/on-thi-timo/static/css/main.f987ceec.css.map",
+    "main.8ded9fc6.js.map": "/on-thi-timo/static/js/main.8ded9fc6.js.map"
   },
   "entrypoints": [
     "static/css/main.f987ceec.css",
