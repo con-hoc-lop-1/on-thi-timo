@@ -17,9 +17,9 @@ export function loadAllQuestions(
   isRandom = true
 ) {
   const data = tests.map((test) => {
-    return fetch(
-      `/react-on-thi-timo-lop-1/database/preliminary/${test}.json`
-    ).then((res) => res.json());
+    return fetch(`/on-thi-timo/database/preliminary/${test}.json`).then((res) =>
+      res.json()
+    );
   });
 
   return Promise.all(data).then((results) => {
