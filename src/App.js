@@ -15,6 +15,10 @@ function App() {
   const [showVi, setShowVi] = useState(
     JSON.parse(localStorage.getItem("timo-show-vi") || "false")
   );
+  const [dataType, setDataType] = useState(
+    localStorage.getItem("timo-data-type") || "preliminary"
+  );
+  const showHomeVi = dataType === "preliminary";
 
   const handleStart = () => {
     if (!name.trim()) return alert("Vui lòng nhập tên");
@@ -32,14 +36,43 @@ function App() {
   };
 
   if (isStarted)
-    return <Exam name={name} paperMode={paperMode} onFinish={handleFinish} />;
+    return (
+      <Exam
+        name={name}
+        paperMode={paperMode}
+        onFinish={handleFinish}
+        dataType={dataType}
+      />
+    );
 
   return (
     <div className="container py-5" style={{ maxWidth: 700 }}>
       <h1 className="text-center mb-4">TIMO 1</h1>
       <div className="mb-3">
         <label className="form-label">
-          Your name <i>(Nhập tên học sinh)</i>:
+          Round {showHomeVi && <i>(Vòng thi)</i>}:
+        </label>
+        <select
+          className="form-select"
+          value={dataType}
+          onChange={(e) => {
+            const val = e.target.value;
+            setDataType(val);
+            localStorage.setItem("timo-data-type", val);
+            if (val === "heat") {
+              // Khi chọn HEAT thì ẩn ngôn ngữ và chỉ English
+              setShowVi(false);
+              localStorage.setItem("timo-show-vi", JSON.stringify(false));
+            }
+          }}
+        >
+          <option value="preliminary">Preliminary {showHomeVi && <>(Vòng loại)</>}</option>
+          <option value="heat">Heat {showHomeVi && <>(Quốc gia)</>}</option>
+        </select>
+      </div>
+      <div className="mb-3">
+        <label className="form-label">
+          Your name {showHomeVi && <i>(Nhập tên học sinh)</i>}:
         </label>
         <input
           type="text"
@@ -48,41 +81,44 @@ function App() {
           onChange={(e) => setName(e.target.value)}
         />
       </div>
-      <div className="mb-3">
-        <label className="form-label">
-          Question language <i>(Tùy chọn đề bài)</i>:
-        </label>
-        <div className="form-check">
-          <input
-            className="form-check-input"
-            type="checkbox"
-            disabled={true}
-            id="showEn"
-            checked={true}
-          />
-          <label className="form-check-label" htmlFor="showVi">
-            English
+
+      {dataType === "preliminary" && (
+        <div className="mb-3">
+          <label className="form-label">
+            Question language {showHomeVi && <i>(Tùy chọn đề bài)</i>}:
           </label>
+          <div className="form-check">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              disabled={true}
+              id="showEn"
+              checked={true}
+            />
+            <label className="form-check-label" htmlFor="showVi">
+              English
+            </label>
+          </div>
+          <div className="form-check mb-3">
+            <input
+              className="form-check-input"
+              type="checkbox"
+              id="showVi"
+              checked={showVi}
+              onChange={(e) => {
+                setShowVi(e.target.checked);
+                localStorage.setItem(
+                  "timo-show-vi",
+                  JSON.stringify(e.target.checked)
+                );
+              }}
+            />
+            <label className="form-check-label" htmlFor="showVi">
+              Tiếng Việt
+            </label>
+          </div>
         </div>
-        <div className="form-check mb-3">
-          <input
-            className="form-check-input"
-            type="checkbox"
-            id="showVi"
-            checked={showVi}
-            onChange={(e) => {
-              setShowVi(e.target.checked);
-              localStorage.setItem(
-                "timo-show-vi",
-                JSON.stringify(e.target.checked)
-              );
-            }}
-          />
-          <label className="form-check-label" htmlFor="showVi">
-            Tiếng Việt
-          </label>
-        </div>
-      </div>
+      )}
       <hr />
       <div className="mb-4">
         <div className="form-check">
@@ -94,46 +130,46 @@ function App() {
             onChange={(e) => setPaperMode(e.target.checked)}
           />
           <label className="form-check-label" htmlFor="paperMode">
-            Test with paper <i>(Làm bằng giấy trắc nghiệm)</i>
+            Test with paper {showHomeVi && <i>(Làm bằng giấy trắc nghiệm)</i>}
           </label>
         </div>
       </div>
       <button className="btn btn-primary w-100" onClick={handleStart}>
-        {paperMode ? "PRINT (IN RA GIẤY)" : "STARTING TEST (LÀM BÀI)"}
+        {paperMode
+          ? `PRINT${showHomeVi ? " (IN RA GIẤY)" : ""}`
+          : `STARTING TEST${showHomeVi ? " (LÀM BÀI)" : ""}`}
       </button>
 
       {history.length > 0 && (
         <div className="mt-4">
-          <h5>
-            History <i>(Lịch sử làm bài)</i>
-          </h5>
+          <h5>History {showHomeVi && <i>(Lịch sử làm bài)</i>}</h5>
           <table className="table table-bordered text-center">
             <thead>
               <tr>
                 <th>
                   Name
                   <br />
-                  <i>(Tên thí sinh)</i>
+                  {showHomeVi && <i>(Tên thí sinh)</i>}
                 </th>
                 <th>
                   Corrects / Total
                   <br />
-                  <i>(Số câu đúng)</i>
+                  {showHomeVi && <i>(Số câu đúng)</i>}
                 </th>
                 <th>
                   Points
                   <br />
-                  <i>(Điểm)</i>
+                  {showHomeVi && <i>(Điểm)</i>}
                 </th>
                 <th>
                   Testing time
                   <br />
-                  <i>(Thời gian làm bài)</i>
+                  {showHomeVi && <i>(Thời gian làm bài)</i>}
                 </th>
                 <th>
                   Timestamp
                   <br />
-                  <i>(Ngày giờ)</i>
+                  {showHomeVi && <i>(Ngày giờ)</i>}
                 </th>
               </tr>
             </thead>

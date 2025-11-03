@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { formatTime, loadAllQuestions } from "./utils";
 import { renderFigure } from "./figure";
 
-function Exam({ name, onFinish, paperMode }) {
+function Exam({ name, onFinish, paperMode, dataType = "preliminary" }) {
   const [questions, setQuestions] = useState([]);
   const [index, setIndex] = useState(0);
   const [secondsLeft, setSecondsLeft] = useState(60 * 60);
@@ -11,10 +11,18 @@ function Exam({ name, onFinish, paperMode }) {
   const [result, setResult] = useState(null);
   const [startTime] = useState(Date.now());
   const [startDate] = useState(new Date().toLocaleString());
-  const showVi = JSON.parse(localStorage.getItem("timo-show-vi") || "false");
+  const showVi = (function(){
+    const saved = JSON.parse(localStorage.getItem("timo-show-vi") || "false");
+    return dataType === "preliminary" ? saved : false;
+  })();
 
   useEffect(() => {
-    loadAllQuestions().then(setQuestions);
+    loadAllQuestions(
+      ["arithmetic", "combinatorics", "geometry", "logic-thinking", "number-theory"],
+      5,
+      true,
+      dataType
+    ).then(setQuestions);
     const timer = setInterval(() => {
       setSecondsLeft((prev) => {
         if (prev <= 1) {
@@ -26,7 +34,7 @@ function Exam({ name, onFinish, paperMode }) {
       });
     }, 1000);
     return () => clearInterval(timer);
-  }, []);
+  }, [dataType]);
 
   useEffect(() => {
     document.title = `${name} - TIMO TEST (${startDate})`;

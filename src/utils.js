@@ -14,12 +14,12 @@ export function loadAllQuestions(
     "number-theory",
   ],
   maxQuestionPerTest = 5,
-  isRandom = true
+  isRandom = true,
+  dataType = "preliminary"
 ) {
+  const basePath = `/on-thi-timo/database/${dataType}`;
   const data = tests.map((test) => {
-    return fetch(`/on-thi-timo/database/preliminary/${test}.json`).then((res) =>
-      res.json()
-    );
+    return fetch(`${basePath}/${test}.json`).then((res) => res.json());
   });
 
   return Promise.all(data).then((results) => {
