@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Exam from "./Exam";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/App.css";
+import Edit from "./Edit";
 
 function App() {
   const params = new URLSearchParams(window.location.search);
@@ -37,15 +38,15 @@ function App() {
     }
     if (!isStarted) setIsStarted(false);
   };
-
   if (isStarted)
-    return (
+    return isDebug ? (
+      <Edit dataType={dataType} />
+    ) : (
       <Exam
         name={name}
         paperMode={paperMode}
         onFinish={handleFinish}
         dataType={dataType}
-        isDebug={isDebug}
       />
     );
 
@@ -145,9 +146,11 @@ function App() {
         </div>
       </div>
       <button className="btn btn-primary w-100" onClick={handleStart}>
-        {paperMode
-          ? `PRINT${showHomeVi ? " (IN RA GIẤY)" : ""}`
-          : `STARTING TEST${showHomeVi ? " (LÀM BÀI)" : ""}`}
+        {isDebug
+          ? "EDIT"
+          : paperMode
+            ? `PRINT${showHomeVi ? " (IN RA GIẤY)" : ""}`
+            : `STARTING TEST${showHomeVi ? " (LÀM BÀI)" : ""}`}
       </button>
 
       {history.length > 0 && (

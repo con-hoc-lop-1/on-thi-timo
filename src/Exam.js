@@ -2,13 +2,7 @@ import React, { useEffect, useState } from "react";
 import { formatTime, loadAllQuestions } from "./utils";
 import { renderFigure } from "./figure";
 
-function Exam({
-  name,
-  onFinish,
-  paperMode,
-  dataType = "preliminary",
-  isDebug = false,
-}) {
+function Exam({ name, onFinish, paperMode, dataType = "preliminary" }) {
   const [questions, setQuestions] = useState([]);
   const [index, setIndex] = useState(0);
   const [secondsLeft, setSecondsLeft] = useState(
@@ -21,7 +15,6 @@ function Exam({
   const [startDate] = useState(new Date().toLocaleString());
   const showVi = (function () {
     const saved = JSON.parse(localStorage.getItem("timo-show-vi") || "false");
-    if (isDebug) return true; // Luôn hiển thị cả tiếng Việt trong chế độ debug
     return dataType === "preliminary" ? saved : false;
   })();
 
@@ -34,8 +27,8 @@ function Exam({
         "logic-thinking",
         "number-theory",
       ],
-      isDebug ? 5000 : 5,
-      !isDebug,
+      5,
+      true,
       dataType
     ).then(setQuestions);
     const timer = setInterval(() => {
@@ -60,40 +53,6 @@ function Exam({
     updated[index] = { ...updated[index], userAnswer: val };
     setQuestions(updated);
   };
-
-  // Debug editors: update stem.en and choices[i].en
-  const handleStemChange = (qIndex, newEn) => {
-    setQuestions((prev) => {
-      const next = [...prev];
-      const q = next[qIndex] || {};
-      next[qIndex] = { ...q, stem: { ...(q.stem || {}), en: newEn } };
-      return next;
-    });
-  };
-
-  // Debug editors: update stem.vi
-  const handleStemViChange = (qIndex, newVi) => {
-    setQuestions((prev) => {
-      const next = [...prev];
-      const q = next[qIndex] || {};
-      next[qIndex] = { ...q, stem: { ...(q.stem || {}), vi: newVi } };
-      return next;
-    });
-  };
-
-  const handleChoiceTextChange = (qIndex, choiceIndex, newEn) => {
-    setQuestions((prev) => {
-      const next = [...prev];
-      const q = next[qIndex];
-      if (!q) return prev;
-      const choices = (q.choices || []).map((c, i) =>
-        i === choiceIndex ? { ...c, en: newEn } : c
-      );
-      next[qIndex] = { ...q, choices };
-      return next;
-    });
-  };
-
   const handleSubmit = () => {
     const unanswered = questions.filter(
       (q) => !q.userAnswer || q.userAnswer === ""
@@ -125,29 +84,6 @@ function Exam({
     setFinished(true);
   };
 
-  const copyQuestion = (q) => {
-    try {
-      const txt = JSON.stringify(q, null, 2);
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(txt).then(() => {
-          alert("Đã chép nội dung câu hỏi vào clipboard.");
-        });
-      } else {
-        // Fallback
-        const ta = document.createElement("textarea");
-        ta.value = txt;
-        document.body.appendChild(ta);
-        ta.select();
-        document.execCommand("copy");
-        document.body.removeChild(ta);
-        alert("Đã chép nội dung câu hỏi vào clipboard.");
-      }
-    } catch (e) {
-      console.error(e);
-      alert("Không thể chép nội dung câu hỏi");
-    }
-  };
-
   // 📄 Chế độ giấy trắc nghiệm
   if (paperMode) {
     return (
@@ -164,90 +100,30 @@ function Exam({
               <div className="question-title d-flex justify-content-between align-items-center">
                 <strong>
                   Question {qi + 1} {showVi && <i>(Câu {qi + 1})</i>}:{" "}
-                  {isDebug && q.id && (
-                    <span className="badge bg-secondary ms-2">ID: {q.id}</span>
-                  )}
                 </strong>
                 <span className="ms-2">
                   {name} - TIMO TEST ({startDate})
                 </span>
-                {isDebug && (
-                  <button
-                    type="button"
-                    className="btn btn-sm btn-outline-primary"
-                    onClick={() => copyQuestion(q)}
-                    title="Chép JSON câu hỏi"
-                  >
-                    CHÉP
-                  </button>
-                )}
               </div>
-              {isDebug ? (
-                <div className="mb-2">
-                  <label className="form-label">stem.en</label>
-                  <textarea
-                    className="form-control"
-                    rows={3}
-                    value={(q.stem && q.stem.en) || ""}
-                    onChange={(e) => handleStemChange(qi, e.target.value)}
-                  />
-                </div>
-              ) : (
-                <div dangerouslySetInnerHTML={{ __html: q.stem.en }} />
+
+              <div dangerouslySetInnerHTML={{ __html: q.stem.en }} />
+              {showVi && (
+                <div
+                  style={{ fontStyle: "italic" }}
+                  dangerouslySetInnerHTML={{ __html: q.stem.vi }}
+                />
               )}
-              {showVi &&
-                (isDebug ? (
-                  <div className="mb-2">
-                    <label className="form-label">stem.vi</label>
-                    <textarea
-                      className="form-control"
-                      rows={3}
-                      value={(q.stem && q.stem.vi) || ""}
-                      onChange={(e) => handleStemViChange(qi, e.target.value)}
-                    />
-                  </div>
-                ) : (
-                  <div
-                    style={{ fontStyle: "italic" }}
-                    dangerouslySetInnerHTML={{ __html: q.stem.vi }}
-                  />
-                ))}
               <div className="figure-container">{renderFigure(q)}</div>
             </div>
             <div className="mt-2">
               <div className="row">
                 {q.choices.map((choice, i) => {
-                  const isRightAnswer = q.answer && q.answer.key === choice.id;
-                  const rightStyle =
-                    isDebug && isRightAnswer
-                      ? { backgroundColor: "#e6ffed" }
-                      : {};
                   return (
-                    <div
-                      className="col-12 col-md-3 mb-2"
-                      key={i}
-                      style={rightStyle}
-                    >
-                      {isDebug ? (
-                        <div className="d-flex align-items-center">
-                          <b style={{ color: "gray", width: 24 }}>
-                            {choice.id}.
-                          </b>
-                          <input
-                            type="text"
-                            className="form-control ms-2"
-                            value={choice.en || ""}
-                            onChange={(e) =>
-                              handleChoiceTextChange(qi, i, e.target.value)
-                            }
-                          />
-                        </div>
-                      ) : (
-                        <label className="form-check-label">
-                          <b style={{ color: "gray" }}>{choice.id}.</b>{" "}
-                          {choice.en}
-                        </label>
-                      )}
+                    <div className="col-12 col-md-3 mb-2" key={i}>
+                      <label className="form-check-label">
+                        <b style={{ color: "gray" }}>{choice.id}.</b>{" "}
+                        {choice.en}
+                      </label>
                     </div>
                   );
                 })}
@@ -258,53 +134,49 @@ function Exam({
 
         {/* Trang riêng cho đáp án */}
         <div className="answer-sheet">
-          {!isDebug ? (
-            <div className="blank-page">
-              <div className="info-box">
-                <h4 className="mb-3">
-                  {name} - TIMO TEST ({startDate})
-                </h4>
-                <table className="table table-bordered">
-                  <tbody>
-                    <tr>
-                      <td>Full name:</td>
-                      <td>DOB:</td>
-                    </tr>
-                    <tr>
-                      <td>School name:</td>
-                      <td>Class:</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div className="question-grid">
-                {[...Array(25)].map((_, i) => (
-                  <div className="question" key={i}>
-                    <div>{i + 1}</div>
-                    <div className="choices">
-                      <div className="choice">
-                        A<div className="box"></div>
-                      </div>
-                      <div className="choice">
-                        B<div className="box"></div>
-                      </div>
-                      <div className="choice">
-                        C<div className="box"></div>
-                      </div>
-                      <div className="choice">
-                        D<div className="box"></div>
-                      </div>
-                      <div className="choice">
-                        E<div className="box"></div>
-                      </div>
+          <div className="blank-page">
+            <div className="info-box">
+              <h4 className="mb-3">
+                {name} - TIMO TEST ({startDate})
+              </h4>
+              <table className="table table-bordered">
+                <tbody>
+                  <tr>
+                    <td>Full name:</td>
+                    <td>DOB:</td>
+                  </tr>
+                  <tr>
+                    <td>School name:</td>
+                    <td>Class:</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div className="question-grid">
+              {[...Array(25)].map((_, i) => (
+                <div className="question" key={i}>
+                  <div>{i + 1}</div>
+                  <div className="choices">
+                    <div className="choice">
+                      A<div className="box"></div>
+                    </div>
+                    <div className="choice">
+                      B<div className="box"></div>
+                    </div>
+                    <div className="choice">
+                      C<div className="box"></div>
+                    </div>
+                    <div className="choice">
+                      D<div className="box"></div>
+                    </div>
+                    <div className="choice">
+                      E<div className="box"></div>
                     </div>
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
-          ) : (
-            ""
-          )}
+          </div>
           <hr />
           <h3 className="mt-2">
             Answer <i>(Đáp án)</i>
@@ -376,54 +248,16 @@ function Exam({
                 <div>
                   <strong>
                     Question {qi + 1} {showVi && <i>(Câu {qi + 1})</i>}:{" "}
-                    {isDebug && q.id && (
-                      <span className="badge bg-secondary ms-2">
-                        ID: {q.id}
-                      </span>
-                    )}
                   </strong>
                 </div>
-                {isDebug && (
-                  <button
-                    type="button"
-                    className="btn btn-sm btn-outline-primary"
-                    onClick={() => copyQuestion(q)}
-                    title="Chép JSON câu hỏi"
-                  >
-                    CHÉP
-                  </button>
-                )}
               </div>
-              {isDebug ? (
-                <div className="mb-2">
-                  <label className="form-label">stem.en</label>
-                  <textarea
-                    className="form-control"
-                    rows={3}
-                    value={(q.stem && q.stem.en) || ""}
-                    onChange={(e) => handleStemChange(qi, e.target.value)}
-                  />
-                </div>
-              ) : (
-                <div dangerouslySetInnerHTML={{ __html: q.stem.en }} />
+              <div dangerouslySetInnerHTML={{ __html: q.stem.en }} />
+              {showVi && (
+                <div
+                  style={{ fontStyle: "italic" }}
+                  dangerouslySetInnerHTML={{ __html: q.stem.vi }}
+                />
               )}
-              {showVi &&
-                (isDebug ? (
-                  <div className="mb-2">
-                    <label className="form-label">stem.vi</label>
-                    <textarea
-                      className="form-control"
-                      rows={3}
-                      value={(q.stem && q.stem.vi) || ""}
-                      onChange={(e) => handleStemViChange(qi, e.target.value)}
-                    />
-                  </div>
-                ) : (
-                  <div
-                    style={{ fontStyle: "italic" }}
-                    dangerouslySetInnerHTML={{ __html: q.stem.vi }}
-                  />
-                ))}
               {renderFigure(q)}
               <div className="mt-2">
                 {q.choices &&
@@ -445,16 +279,10 @@ function Exam({
                       labelClass += " text-success fw-bold";
                     }
 
-                    const rightStyle =
-                      isDebug && isRightAnswer
-                        ? { backgroundColor: "#e6ffed" }
-                        : {};
-
                     return (
                       <div
-                        className="form-check p-2 rounded"
+                        className={`form-check p-2 rounded ${isRightAnswer ? "answer-right" : ""}`}
                         key={i}
-                        style={rightStyle}
                       >
                         <input
                           type="radio"
@@ -470,19 +298,6 @@ function Exam({
                           <span>{choice.id}.</span>
                           <span className="form-check-label"> {choice.en}</span>
                         </label>
-                        {isDebug ? (
-                          <input
-                            type="text"
-                            className="form-control d-inline-block"
-                            style={{ width: "auto", minWidth: 200 }}
-                            value={choice.en || ""}
-                            onChange={(e) =>
-                              handleChoiceTextChange(qi, i, e.target.value)
-                            }
-                          />
-                        ) : (
-                          ""
-                        )}
                       </div>
                     );
                   })}
@@ -524,53 +339,17 @@ function Exam({
         <div>
           <strong>
             Question {index + 1} {showVi && <i>(Câu {index + 1})</i>}:{" "}
-            {isDebug && q.id && (
-              <span className="badge bg-secondary ms-2">ID: {q.id}</span>
-            )}
           </strong>
         </div>
-        {isDebug && (
-          <button
-            type="button"
-            className="btn btn-sm btn-outline-primary"
-            onClick={() => copyQuestion(q)}
-            title="Chép JSON câu hỏi"
-          >
-            CHÉP
-          </button>
-        )}
       </div>
       <div className="border rounded p-3 bg-light mb-3">
-        {isDebug ? (
-          <div className="mb-2">
-            <label className="form-label">stem.en</label>
-            <textarea
-              className="form-control"
-              rows={3}
-              value={(q.stem && q.stem.en) || ""}
-              onChange={(e) => handleStemChange(index, e.target.value)}
-            />
-          </div>
-        ) : (
-          <div dangerouslySetInnerHTML={{ __html: q.stem.en }} />
+        <div dangerouslySetInnerHTML={{ __html: q.stem.en }} />
+        {showVi && (
+          <div
+            style={{ fontStyle: "italic" }}
+            dangerouslySetInnerHTML={{ __html: q.stem.vi }}
+          />
         )}
-        {showVi &&
-          (isDebug ? (
-            <div className="mb-2">
-              <label className="form-label">stem.vi</label>
-              <textarea
-                className="form-control"
-                rows={3}
-                value={(q.stem && q.stem.vi) || ""}
-                onChange={(e) => handleStemViChange(index, e.target.value)}
-              />
-            </div>
-          ) : (
-            <div
-              style={{ fontStyle: "italic" }}
-              dangerouslySetInnerHTML={{ __html: q.stem.vi }}
-            />
-          ))}
         {renderFigure(q)}
       </div>
 
@@ -578,15 +357,8 @@ function Exam({
         {q.choices && q.choices.length > 0 ? (
           <div>
             {q.choices.map((choice, i) => {
-              const isRightAnswer = q.answer && q.answer.key === choice.id;
-              const rightStyle =
-                isDebug && isRightAnswer ? { backgroundColor: "#e6ffed" } : {};
               return (
-                <div
-                  className="form-check p-2 rounded"
-                  key={i}
-                  style={rightStyle}
-                >
+                <div className="form-check p-2 rounded" key={i}>
                   <input
                     name={`q-${q.id}`}
                     type="radio"
@@ -603,19 +375,6 @@ function Exam({
                     <span className="form-check-label">{choice.id}.</span>
                     <span className="form-check-label">{choice.en}</span>
                   </label>
-                  {isDebug ? (
-                    <input
-                      type="text"
-                      className="form-control d-inline-block"
-                      style={{ width: "auto", minWidth: 200 }}
-                      value={choice.en || ""}
-                      onChange={(e) =>
-                        handleChoiceTextChange(index, i, e.target.value)
-                      }
-                    />
-                  ) : (
-                    ""
-                  )}
                 </div>
               );
             })}
