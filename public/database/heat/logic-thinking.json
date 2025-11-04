@@ -1,0 +1,2157 @@
+[
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Which symbol should replace ?",
+      "vi": "Ký hiệu nào nên thay cho ?"
+    },
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "▲",
+            "●",
+            "?",
+            "▲",
+            "●",
+            "◆"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "▲"
+      },
+      {
+        "id": "B",
+        "en": "★"
+      },
+      {
+        "id": "C",
+        "en": "◆"
+      },
+      {
+        "id": "D",
+        "en": "●"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "LH01"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Find the 4th number of the sequence:",
+      "vi": "Tìm số thứ 4 trong dãy:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "10, 12, 14, __, 18, 20, 22, 24"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "19"
+      },
+      {
+        "id": "B",
+        "en": "15"
+      },
+      {
+        "id": "C",
+        "en": "13"
+      },
+      {
+        "id": "D",
+        "en": "16"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "LH02"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "If two days later is Monday, what day was yesterday?",
+      "vi": "Nếu hai ngày nữa là Thứ Hai, thì hôm qua là thứ mấy?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Friday",
+        "vi": "Thứ Sáu"
+      },
+      {
+        "id": "B",
+        "en": "Saturday",
+        "vi": "Thứ Bảy"
+      },
+      {
+        "id": "C",
+        "en": "Sunday",
+        "vi": "Chủ Nhật"
+      },
+      {
+        "id": "D",
+        "en": "Monday",
+        "vi": "Thứ Hai"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "LH03"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Given two balances below, find the heaviest type of fruit.",
+      "vi": "Cho hai chiếc cân thăng bằng dưới đây, tìm loại quả nặng nhất."
+    },
+    "figure": {
+      "renderer": "balances",
+      "params": {
+        "balances": [
+          [
+            [
+              "🍌",
+              "🥭"
+            ],
+            [
+              "🍎"
+            ]
+          ],
+          [
+            [
+              "🍌"
+            ],
+            [
+              "🥭",
+              "🥭"
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Apple (Táo)"
+      },
+      {
+        "id": "B",
+        "en": "Orange (Cam)"
+      },
+      {
+        "id": "C",
+        "en": "Mango (Xoài)"
+      },
+      {
+        "id": "D",
+        "en": "None of them (Không có)"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "LH04"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Which symbol should replace ?",
+      "vi": "Ký hiệu nào nên thay cho ?"
+    },
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "▲",
+            "●",
+            "?",
+            "▲",
+            "●",
+            "◆"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "▲"
+      },
+      {
+        "id": "B",
+        "en": "★"
+      },
+      {
+        "id": "C",
+        "en": "◆"
+      },
+      {
+        "id": "D",
+        "en": "●"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "LH05"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Find the 4th number of the sequence:",
+      "vi": "Tìm số thứ 4 trong dãy:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "12, 16, 20, __, 28, 32, 36, 40"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "18"
+      },
+      {
+        "id": "B",
+        "en": "24"
+      },
+      {
+        "id": "C",
+        "en": "29"
+      },
+      {
+        "id": "D",
+        "en": "28"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "LH06"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "If two days later is Wednesday, what day was yesterday?",
+      "vi": "Nếu hai ngày nữa là Thứ Tư, thì hôm qua là thứ mấy?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Sunday",
+        "vi": "Chủ Nhật"
+      },
+      {
+        "id": "B",
+        "en": "Monday",
+        "vi": "Thứ Hai"
+      },
+      {
+        "id": "C",
+        "en": "Tuesday",
+        "vi": "Thứ Ba"
+      },
+      {
+        "id": "D",
+        "en": "Wednesday",
+        "vi": "Thứ Tư"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "LH07"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Given two balances below, find the heaviest type of fruit.",
+      "vi": "Cho hai chiếc cân thăng bằng dưới đây, tìm loại quả nặng nhất."
+    },
+    "figure": {
+      "renderer": "balances",
+      "params": {
+        "balances": [
+          [
+            [
+              "🥭",
+              "🍐"
+            ],
+            [
+              "🍌"
+            ]
+          ],
+          [
+            [
+              "🥭"
+            ],
+            [
+              "🍐",
+              "🍐"
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Apple (Táo)"
+      },
+      {
+        "id": "B",
+        "en": "Orange (Cam)"
+      },
+      {
+        "id": "C",
+        "en": "Mango (Xoài)"
+      },
+      {
+        "id": "D",
+        "en": "None of them (Không có)"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "LH08"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Which symbol should replace ?",
+      "vi": "Ký hiệu nào nên thay cho ?"
+    },
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "▲",
+            "?",
+            "◆",
+            "▲",
+            "●",
+            "◆"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "★"
+      },
+      {
+        "id": "B",
+        "en": "●"
+      },
+      {
+        "id": "C",
+        "en": "▲"
+      },
+      {
+        "id": "D",
+        "en": "◆"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "LH09"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Find the 4th number of the sequence:",
+      "vi": "Tìm số thứ 4 trong dãy:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "12, 16, 20, __, 28, 32, 36, 40"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "28"
+      },
+      {
+        "id": "B",
+        "en": "31"
+      },
+      {
+        "id": "C",
+        "en": "18"
+      },
+      {
+        "id": "D",
+        "en": "24"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "LH10"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "If two days later is Sunday, what day was yesterday?",
+      "vi": "Nếu hai ngày nữa là Chủ Nhật, thì hôm qua là thứ mấy?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Thursday",
+        "vi": "Thứ Năm"
+      },
+      {
+        "id": "B",
+        "en": "Friday",
+        "vi": "Thứ Sáu"
+      },
+      {
+        "id": "C",
+        "en": "Saturday",
+        "vi": "Thứ Bảy"
+      },
+      {
+        "id": "D",
+        "en": "Sunday",
+        "vi": "Chủ Nhật"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "LH11"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Given two balances below, find the heaviest type of fruit.",
+      "vi": "Cho hai chiếc cân thăng bằng dưới đây, tìm loại quả nặng nhất."
+    },
+    "figure": {
+      "renderer": "balances",
+      "params": {
+        "balances": [
+          [
+            [
+              "🍌",
+              "🥭"
+            ],
+            [
+              "🍊"
+            ]
+          ],
+          [
+            [
+              "🍌"
+            ],
+            [
+              "🥭",
+              "🥭"
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Apple (Táo)"
+      },
+      {
+        "id": "B",
+        "en": "Orange (Cam)"
+      },
+      {
+        "id": "C",
+        "en": "Mango (Xoài)"
+      },
+      {
+        "id": "D",
+        "en": "None of them (Không có)"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "LH12"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Which symbol should replace ?",
+      "vi": "Ký hiệu nào nên thay cho ?"
+    },
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "▲",
+            "●",
+            "◆",
+            "?",
+            "●",
+            "◆"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "◆"
+      },
+      {
+        "id": "B",
+        "en": "▲"
+      },
+      {
+        "id": "C",
+        "en": "●"
+      },
+      {
+        "id": "D",
+        "en": "★"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "LH13"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Find the 4th number of the sequence:",
+      "vi": "Tìm số thứ 4 trong dãy:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "7, 11, 15, __, 23, 27, 31, 35"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "25"
+      },
+      {
+        "id": "B",
+        "en": "19"
+      },
+      {
+        "id": "C",
+        "en": "22"
+      },
+      {
+        "id": "D",
+        "en": "26"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "LH14"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "If two days later is Monday, what day was yesterday?",
+      "vi": "Nếu hai ngày nữa là Thứ Hai, thì hôm qua là thứ mấy?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Friday",
+        "vi": "Thứ Sáu"
+      },
+      {
+        "id": "B",
+        "en": "Saturday",
+        "vi": "Thứ Bảy"
+      },
+      {
+        "id": "C",
+        "en": "Sunday",
+        "vi": "Chủ Nhật"
+      },
+      {
+        "id": "D",
+        "en": "Monday",
+        "vi": "Thứ Hai"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "LH15"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Given two balances below, find the heaviest type of fruit.",
+      "vi": "Cho hai chiếc cân thăng bằng dưới đây, tìm loại quả nặng nhất."
+    },
+    "figure": {
+      "renderer": "balances",
+      "params": {
+        "balances": [
+          [
+            [
+              "🍐",
+              "🍌"
+            ],
+            [
+              "🥭"
+            ]
+          ],
+          [
+            [
+              "🍐"
+            ],
+            [
+              "🍌",
+              "🍌"
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Apple (Táo)"
+      },
+      {
+        "id": "B",
+        "en": "Orange (Cam)"
+      },
+      {
+        "id": "C",
+        "en": "Mango (Xoài)"
+      },
+      {
+        "id": "D",
+        "en": "None of them (Không có)"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "LH16"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Which symbol should replace ?",
+      "vi": "Ký hiệu nào nên thay cho ?"
+    },
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "▲",
+            "?",
+            "◆",
+            "▲",
+            "●",
+            "◆"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "◆"
+      },
+      {
+        "id": "B",
+        "en": "★"
+      },
+      {
+        "id": "C",
+        "en": "▲"
+      },
+      {
+        "id": "D",
+        "en": "●"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "LH17"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Find the 4th number of the sequence:",
+      "vi": "Tìm số thứ 4 trong dãy:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "10, 13, 16, __, 22, 25, 28, 31"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "20"
+      },
+      {
+        "id": "B",
+        "en": "14"
+      },
+      {
+        "id": "C",
+        "en": "23"
+      },
+      {
+        "id": "D",
+        "en": "19"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "LH18"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "If two days later is Wednesday, what day was yesterday?",
+      "vi": "Nếu hai ngày nữa là Thứ Tư, thì hôm qua là thứ mấy?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Sunday",
+        "vi": "Chủ Nhật"
+      },
+      {
+        "id": "B",
+        "en": "Monday",
+        "vi": "Thứ Hai"
+      },
+      {
+        "id": "C",
+        "en": "Tuesday",
+        "vi": "Thứ Ba"
+      },
+      {
+        "id": "D",
+        "en": "Wednesday",
+        "vi": "Thứ Tư"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "LH19"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Given two balances below, find the heaviest type of fruit.",
+      "vi": "Cho hai chiếc cân thăng bằng dưới đây, tìm loại quả nặng nhất."
+    },
+    "figure": {
+      "renderer": "balances",
+      "params": {
+        "balances": [
+          [
+            [
+              "🍌",
+              "🍎"
+            ],
+            [
+              "🥭"
+            ]
+          ],
+          [
+            [
+              "🍌"
+            ],
+            [
+              "🍎",
+              "🍎"
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Apple (Táo)"
+      },
+      {
+        "id": "B",
+        "en": "Orange (Cam)"
+      },
+      {
+        "id": "C",
+        "en": "Mango (Xoài)"
+      },
+      {
+        "id": "D",
+        "en": "None of them (Không có)"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "LH20"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Which symbol should replace ?",
+      "vi": "Ký hiệu nào nên thay cho ?"
+    },
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "▲",
+            "●",
+            "◆",
+            "?",
+            "●",
+            "◆"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "★"
+      },
+      {
+        "id": "B",
+        "en": "●"
+      },
+      {
+        "id": "C",
+        "en": "▲"
+      },
+      {
+        "id": "D",
+        "en": "◆"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "LH21"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Find the 4th number of the sequence:",
+      "vi": "Tìm số thứ 4 trong dãy:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "12, 16, 20, __, 28, 32, 36, 40"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "26"
+      },
+      {
+        "id": "B",
+        "en": "22"
+      },
+      {
+        "id": "C",
+        "en": "21"
+      },
+      {
+        "id": "D",
+        "en": "24"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "LH22"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "If two days later is Monday, what day was yesterday?",
+      "vi": "Nếu hai ngày nữa là Thứ Hai, thì hôm qua là thứ mấy?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Friday",
+        "vi": "Thứ Sáu"
+      },
+      {
+        "id": "B",
+        "en": "Saturday",
+        "vi": "Thứ Bảy"
+      },
+      {
+        "id": "C",
+        "en": "Sunday",
+        "vi": "Chủ Nhật"
+      },
+      {
+        "id": "D",
+        "en": "Monday",
+        "vi": "Thứ Hai"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "LH23"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Given two balances below, find the heaviest type of fruit.",
+      "vi": "Cho hai chiếc cân thăng bằng dưới đây, tìm loại quả nặng nhất."
+    },
+    "figure": {
+      "renderer": "balances",
+      "params": {
+        "balances": [
+          [
+            [
+              "🥭",
+              "🍌"
+            ],
+            [
+              "🍎"
+            ]
+          ],
+          [
+            [
+              "🥭"
+            ],
+            [
+              "🍌",
+              "🍌"
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Apple (Táo)"
+      },
+      {
+        "id": "B",
+        "en": "Orange (Cam)"
+      },
+      {
+        "id": "C",
+        "en": "Mango (Xoài)"
+      },
+      {
+        "id": "D",
+        "en": "None of them (Không có)"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "LH24"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Which symbol should replace ?",
+      "vi": "Ký hiệu nào nên thay cho ?"
+    },
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "▲",
+            "●",
+            "◆",
+            "?",
+            "●",
+            "◆"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "●"
+      },
+      {
+        "id": "B",
+        "en": "◆"
+      },
+      {
+        "id": "C",
+        "en": "★"
+      },
+      {
+        "id": "D",
+        "en": "▲"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "LH25"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Find the 6th number of the sequence:",
+      "vi": "Tìm số thứ 6 trong dãy:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "15, 19, 23, 27, 31, __, 39, 43"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "32"
+      },
+      {
+        "id": "B",
+        "en": "35"
+      },
+      {
+        "id": "C",
+        "en": "30"
+      },
+      {
+        "id": "D",
+        "en": "28"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "LH26"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "If two days later is Tuesday, what day was yesterday?",
+      "vi": "Nếu hai ngày nữa là Thứ Ba, thì hôm qua là thứ mấy?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Saturday",
+        "vi": "Thứ Bảy"
+      },
+      {
+        "id": "B",
+        "en": "Sunday",
+        "vi": "Chủ Nhật"
+      },
+      {
+        "id": "C",
+        "en": "Monday",
+        "vi": "Thứ Hai"
+      },
+      {
+        "id": "D",
+        "en": "Tuesday",
+        "vi": "Thứ Ba"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "LH27"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Given two balances below, find the heaviest type of fruit.",
+      "vi": "Cho hai chiếc cân thăng bằng dưới đây, tìm loại quả nặng nhất."
+    },
+    "figure": {
+      "renderer": "balances",
+      "params": {
+        "balances": [
+          [
+            [
+              "🍊",
+              "🍐"
+            ],
+            [
+              "🍎"
+            ]
+          ],
+          [
+            [
+              "🍊"
+            ],
+            [
+              "🍐",
+              "🍐"
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Apple (Táo)"
+      },
+      {
+        "id": "B",
+        "en": "Orange (Cam)"
+      },
+      {
+        "id": "C",
+        "en": "Mango (Xoài)"
+      },
+      {
+        "id": "D",
+        "en": "None of them (Không có)"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "LH28"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Which symbol should replace ?",
+      "vi": "Ký hiệu nào nên thay cho ?"
+    },
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "▲",
+            "●",
+            "?",
+            "▲",
+            "●",
+            "◆"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "▲"
+      },
+      {
+        "id": "B",
+        "en": "●"
+      },
+      {
+        "id": "C",
+        "en": "★"
+      },
+      {
+        "id": "D",
+        "en": "◆"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "LH29"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Find the 5th number of the sequence:",
+      "vi": "Tìm số thứ 5 trong dãy:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "12, 15, 18, 21, __, 27, 30, 33"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "20"
+      },
+      {
+        "id": "B",
+        "en": "24"
+      },
+      {
+        "id": "C",
+        "en": "23"
+      },
+      {
+        "id": "D",
+        "en": "22"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "LH30"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "If two days later is Sunday, what day was yesterday?",
+      "vi": "Nếu hai ngày nữa là Chủ Nhật, thì hôm qua là thứ mấy?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Thursday",
+        "vi": "Thứ Năm"
+      },
+      {
+        "id": "B",
+        "en": "Friday",
+        "vi": "Thứ Sáu"
+      },
+      {
+        "id": "C",
+        "en": "Saturday",
+        "vi": "Thứ Bảy"
+      },
+      {
+        "id": "D",
+        "en": "Sunday",
+        "vi": "Chủ Nhật"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "LH31"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Given two balances below, find the heaviest type of fruit.",
+      "vi": "Cho hai chiếc cân thăng bằng dưới đây, tìm loại quả nặng nhất."
+    },
+    "figure": {
+      "renderer": "balances",
+      "params": {
+        "balances": [
+          [
+            [
+              "🍎",
+              "🍌"
+            ],
+            [
+              "🍊"
+            ]
+          ],
+          [
+            [
+              "🍎"
+            ],
+            [
+              "🍌",
+              "🍌"
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Apple (Táo)"
+      },
+      {
+        "id": "B",
+        "en": "Orange (Cam)"
+      },
+      {
+        "id": "C",
+        "en": "Mango (Xoài)"
+      },
+      {
+        "id": "D",
+        "en": "None of them (Không có)"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "LH32"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Which symbol should replace ?",
+      "vi": "Ký hiệu nào nên thay cho ?"
+    },
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "▲",
+            "●",
+            "◆",
+            "▲",
+            "?",
+            "◆"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "◆"
+      },
+      {
+        "id": "B",
+        "en": "●"
+      },
+      {
+        "id": "C",
+        "en": "▲"
+      },
+      {
+        "id": "D",
+        "en": "★"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "LH33"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Find the 4th number of the sequence:",
+      "vi": "Tìm số thứ 4 trong dãy:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "12, 15, 18, __, 24, 27, 30, 33"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "23"
+      },
+      {
+        "id": "B",
+        "en": "16"
+      },
+      {
+        "id": "C",
+        "en": "27"
+      },
+      {
+        "id": "D",
+        "en": "21"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "LH34"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "If two days later is Tuesday, what day was yesterday?",
+      "vi": "Nếu hai ngày nữa là Thứ Ba, thì hôm qua là thứ mấy?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Saturday",
+        "vi": "Thứ Bảy"
+      },
+      {
+        "id": "B",
+        "en": "Sunday",
+        "vi": "Chủ Nhật"
+      },
+      {
+        "id": "C",
+        "en": "Monday",
+        "vi": "Thứ Hai"
+      },
+      {
+        "id": "D",
+        "en": "Tuesday",
+        "vi": "Thứ Ba"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "LH35"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Given two balances below, find the heaviest type of fruit.",
+      "vi": "Cho hai chiếc cân thăng bằng dưới đây, tìm loại quả nặng nhất."
+    },
+    "figure": {
+      "renderer": "balances",
+      "params": {
+        "balances": [
+          [
+            [
+              "🍊",
+              "🍐"
+            ],
+            [
+              "🥭"
+            ]
+          ],
+          [
+            [
+              "🍊"
+            ],
+            [
+              "🍐",
+              "🍐"
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Apple (Táo)"
+      },
+      {
+        "id": "B",
+        "en": "Orange (Cam)"
+      },
+      {
+        "id": "C",
+        "en": "Mango (Xoài)"
+      },
+      {
+        "id": "D",
+        "en": "None of them (Không có)"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "LH36"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Which symbol should replace ?",
+      "vi": "Ký hiệu nào nên thay cho ?"
+    },
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "▲",
+            "?",
+            "◆",
+            "▲",
+            "●",
+            "◆"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "●"
+      },
+      {
+        "id": "B",
+        "en": "▲"
+      },
+      {
+        "id": "C",
+        "en": "★"
+      },
+      {
+        "id": "D",
+        "en": "◆"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "LH37"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Find the 5th number of the sequence:",
+      "vi": "Tìm số thứ 5 trong dãy:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "9, 11, 13, 15, __, 19, 21, 23"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "16"
+      },
+      {
+        "id": "B",
+        "en": "17"
+      },
+      {
+        "id": "C",
+        "en": "12"
+      },
+      {
+        "id": "D",
+        "en": "13"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "LH38"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "If two days later is Monday, what day was yesterday?",
+      "vi": "Nếu hai ngày nữa là Thứ Hai, thì hôm qua là thứ mấy?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Friday",
+        "vi": "Thứ Sáu"
+      },
+      {
+        "id": "B",
+        "en": "Saturday",
+        "vi": "Thứ Bảy"
+      },
+      {
+        "id": "C",
+        "en": "Sunday",
+        "vi": "Chủ Nhật"
+      },
+      {
+        "id": "D",
+        "en": "Monday",
+        "vi": "Thứ Hai"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "LH39"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Given two balances below, find the heaviest type of fruit.",
+      "vi": "Cho hai chiếc cân thăng bằng dưới đây, tìm loại quả nặng nhất."
+    },
+    "figure": {
+      "renderer": "balances",
+      "params": {
+        "balances": [
+          [
+            [
+              "🍊",
+              "🥭"
+            ],
+            [
+              "🍎"
+            ]
+          ],
+          [
+            [
+              "🍊"
+            ],
+            [
+              "🥭",
+              "🥭"
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Apple (Táo)"
+      },
+      {
+        "id": "B",
+        "en": "Orange (Cam)"
+      },
+      {
+        "id": "C",
+        "en": "Mango (Xoài)"
+      },
+      {
+        "id": "D",
+        "en": "None of them (Không có)"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "LH40"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Which symbol should replace ?",
+      "vi": "Ký hiệu nào nên thay cho ?"
+    },
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "▲",
+            "●",
+            "◆",
+            "▲",
+            "?",
+            "◆"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "●"
+      },
+      {
+        "id": "B",
+        "en": "★"
+      },
+      {
+        "id": "C",
+        "en": "▲"
+      },
+      {
+        "id": "D",
+        "en": "◆"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "LH41"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Find the 5th number of the sequence:",
+      "vi": "Tìm số thứ 5 trong dãy:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "13, 15, 17, 19, __, 23, 25, 27"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "21"
+      },
+      {
+        "id": "B",
+        "en": "25"
+      },
+      {
+        "id": "C",
+        "en": "26"
+      },
+      {
+        "id": "D",
+        "en": "22"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "LH42"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "If two days later is Wednesday, what day was yesterday?",
+      "vi": "Nếu hai ngày nữa là Thứ Tư, thì hôm qua là thứ mấy?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Sunday",
+        "vi": "Chủ Nhật"
+      },
+      {
+        "id": "B",
+        "en": "Monday",
+        "vi": "Thứ Hai"
+      },
+      {
+        "id": "C",
+        "en": "Tuesday",
+        "vi": "Thứ Ba"
+      },
+      {
+        "id": "D",
+        "en": "Wednesday",
+        "vi": "Thứ Tư"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "LH43"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Given two balances below, find the heaviest type of fruit.",
+      "vi": "Cho hai chiếc cân thăng bằng dưới đây, tìm loại quả nặng nhất."
+    },
+    "figure": {
+      "renderer": "balances",
+      "params": {
+        "balances": [
+          [
+            [
+              "🍌",
+              "🍐"
+            ],
+            [
+              "🥭"
+            ]
+          ],
+          [
+            [
+              "🍌"
+            ],
+            [
+              "🍐",
+              "🍐"
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Apple (Táo)"
+      },
+      {
+        "id": "B",
+        "en": "Orange (Cam)"
+      },
+      {
+        "id": "C",
+        "en": "Mango (Xoài)"
+      },
+      {
+        "id": "D",
+        "en": "None of them (Không có)"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "LH44"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Which symbol should replace ?",
+      "vi": "Ký hiệu nào nên thay cho ?"
+    },
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "▲",
+            "●",
+            "◆",
+            "?",
+            "●",
+            "◆"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "●"
+      },
+      {
+        "id": "B",
+        "en": "★"
+      },
+      {
+        "id": "C",
+        "en": "▲"
+      },
+      {
+        "id": "D",
+        "en": "◆"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "LH45"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Find the 6th number of the sequence:",
+      "vi": "Tìm số thứ 6 trong dãy:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "9, 12, 15, 18, 21, __, 27, 30"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "22"
+      },
+      {
+        "id": "B",
+        "en": "26"
+      },
+      {
+        "id": "C",
+        "en": "24"
+      },
+      {
+        "id": "D",
+        "en": "19"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "LH46"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "If two days later is Saturday, what day was yesterday?",
+      "vi": "Nếu hai ngày nữa là Thứ Bảy, thì hôm qua là thứ mấy?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Wednesday",
+        "vi": "Thứ Tư"
+      },
+      {
+        "id": "B",
+        "en": "Thursday",
+        "vi": "Thứ Năm"
+      },
+      {
+        "id": "C",
+        "en": "Friday",
+        "vi": "Thứ Sáu"
+      },
+      {
+        "id": "D",
+        "en": "Saturday",
+        "vi": "Thứ Bảy"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "LH47"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Given two balances below, find the heaviest type of fruit.",
+      "vi": "Cho hai chiếc cân thăng bằng dưới đây, tìm loại quả nặng nhất."
+    },
+    "figure": {
+      "renderer": "balances",
+      "params": {
+        "balances": [
+          [
+            [
+              "🍎",
+              "🍊"
+            ],
+            [
+              "🍐"
+            ]
+          ],
+          [
+            [
+              "🍎"
+            ],
+            [
+              "🍊",
+              "🍊"
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Apple (Táo)"
+      },
+      {
+        "id": "B",
+        "en": "Orange (Cam)"
+      },
+      {
+        "id": "C",
+        "en": "Mango (Xoài)"
+      },
+      {
+        "id": "D",
+        "en": "None of them (Không có)"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "LH48"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "Which symbol should replace ?",
+      "vi": "Ký hiệu nào nên thay cho ?"
+    },
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "▲",
+            "●",
+            "◆",
+            "?",
+            "●",
+            "◆"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "★"
+      },
+      {
+        "id": "B",
+        "en": "●"
+      },
+      {
+        "id": "C",
+        "en": "◆"
+      },
+      {
+        "id": "D",
+        "en": "▲"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "LH49"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Find the 4th number of the sequence:",
+      "vi": "Tìm số thứ 4 trong dãy:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "8, 11, 14, __, 20, 23, 26, 29"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "13"
+      },
+      {
+        "id": "B",
+        "en": "20"
+      },
+      {
+        "id": "C",
+        "en": "23"
+      },
+      {
+        "id": "D",
+        "en": "17"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "LH50"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "en": "If two days later is Wednesday, what day was yesterday?",
+      "vi": "Nếu hai ngày nữa là Thứ Tư, thì hôm qua là thứ mấy?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Sunday",
+        "vi": "Chủ Nhật"
+      },
+      {
+        "id": "B",
+        "en": "Monday",
+        "vi": "Thứ Hai"
+      },
+      {
+        "id": "C",
+        "en": "Tuesday",
+        "vi": "Thứ Ba"
+      },
+      {
+        "id": "D",
+        "en": "Wednesday",
+        "vi": "Thứ Tư"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "LH51"
+  }
+]

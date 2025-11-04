@@ -1,0 +1,1880 @@
+[
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Is the result of operation odd or even?",
+      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "6 - 6 - 3 - 8 + 2 - 8"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Even"
+      },
+      {
+        "id": "B",
+        "en": "Odd"
+      },
+      {
+        "id": "C",
+        "en": "Neither odd nor even"
+      },
+      {
+        "id": "D",
+        "en": "Both odd and even"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "NH01"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Move how many items from left(23) to right(7) to balance?",
+      "vi": "Phải chuyển bao nhiêu vật từ trái(23) sang phải(7) để bằng nhau?"
+    },
+    "figure": {
+      "renderer": "twoBins",
+      "params": {
+        "left": 23,
+        "right": 7,
+        "symbol": "🐟",
+        "labels": [
+          "Left",
+          "Right"
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "10"
+      },
+      {
+        "id": "B",
+        "en": "8"
+      },
+      {
+        "id": "C",
+        "en": "9"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "NH02"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Find the 7th number of the sequence:",
+      "vi": "Tìm số thứ 7 trong dãy:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "34, 40, 46, 52, 58, 64, __, 76"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "70"
+      },
+      {
+        "id": "B",
+        "en": "71"
+      },
+      {
+        "id": "C",
+        "en": "67"
+      },
+      {
+        "id": "D",
+        "en": "76"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "NH03"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Is the result of operation odd or even?",
+      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "3 + 7 + 3 + 4"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Even"
+      },
+      {
+        "id": "B",
+        "en": "Odd"
+      },
+      {
+        "id": "C",
+        "en": "Neither odd nor even"
+      },
+      {
+        "id": "D",
+        "en": "Both odd and even"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "NH04"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Is the result of operation odd or even?",
+      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "8 - 9 - 9 - 3 - 6 + 6"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Even"
+      },
+      {
+        "id": "B",
+        "en": "Odd"
+      },
+      {
+        "id": "C",
+        "en": "Neither odd nor even"
+      },
+      {
+        "id": "D",
+        "en": "Both odd and even"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "NH05"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Move how many items from left(26) to right(16) to balance?",
+      "vi": "Phải chuyển bao nhiêu vật từ trái(26) sang phải(16) để bằng nhau?"
+    },
+    "figure": {
+      "renderer": "twoBins",
+      "params": {
+        "left": 26,
+        "right": 16,
+        "symbol": "🐸",
+        "labels": [
+          "Left",
+          "Right"
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "7"
+      },
+      {
+        "id": "B",
+        "en": "3"
+      },
+      {
+        "id": "C",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "NH06"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Find the 7th number of the sequence:",
+      "vi": "Tìm số thứ 7 trong dãy:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "30, 34, 38, 42, 46, 50, __, 58"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "57"
+      },
+      {
+        "id": "B",
+        "en": "49"
+      },
+      {
+        "id": "C",
+        "en": "61"
+      },
+      {
+        "id": "D",
+        "en": "54"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "NH07"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Is the result of operation odd or even?",
+      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "4 - 3 - 6 - 8"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Even"
+      },
+      {
+        "id": "B",
+        "en": "Odd"
+      },
+      {
+        "id": "C",
+        "en": "Neither odd nor even"
+      },
+      {
+        "id": "D",
+        "en": "Both odd and even"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "NH08"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Is the result of operation odd or even?",
+      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "9 + 2 - 7 - 9 + 6"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Even"
+      },
+      {
+        "id": "B",
+        "en": "Odd"
+      },
+      {
+        "id": "C",
+        "en": "Neither odd nor even"
+      },
+      {
+        "id": "D",
+        "en": "Both odd and even"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "NH09"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Move how many items from left(17) to right(11) to balance?",
+      "vi": "Phải chuyển bao nhiêu vật từ trái(17) sang phải(11) để bằng nhau?"
+    },
+    "figure": {
+      "renderer": "twoBins",
+      "params": {
+        "left": 17,
+        "right": 11,
+        "symbol": "🍪",
+        "labels": [
+          "Left",
+          "Right"
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "2"
+      },
+      {
+        "id": "C",
+        "en": "3"
+      },
+      {
+        "id": "D",
+        "en": "1"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "NH10"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Find the 6th number of the sequence:",
+      "vi": "Tìm số thứ 6 trong dãy:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "24, 30, 36, 42, 48, __, 60, 66"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "54"
+      },
+      {
+        "id": "B",
+        "en": "59"
+      },
+      {
+        "id": "C",
+        "en": "50"
+      },
+      {
+        "id": "D",
+        "en": "49"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "NH11"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Is the result of operation odd or even?",
+      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "5 + 9 + 6 + 9"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Even"
+      },
+      {
+        "id": "B",
+        "en": "Odd"
+      },
+      {
+        "id": "C",
+        "en": "Neither odd nor even"
+      },
+      {
+        "id": "D",
+        "en": "Both odd and even"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "NH12"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Is the result of operation odd or even?",
+      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "8 - 4 - 6 + 8 + 8 + 5"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Even"
+      },
+      {
+        "id": "B",
+        "en": "Odd"
+      },
+      {
+        "id": "C",
+        "en": "Neither odd nor even"
+      },
+      {
+        "id": "D",
+        "en": "Both odd and even"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "NH13"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Move how many items from left(28) to right(10) to balance?",
+      "vi": "Phải chuyển bao nhiêu vật từ trái(28) sang phải(10) để bằng nhau?"
+    },
+    "figure": {
+      "renderer": "twoBins",
+      "params": {
+        "left": 28,
+        "right": 10,
+        "symbol": "🍎",
+        "labels": [
+          "Left",
+          "Right"
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "11"
+      },
+      {
+        "id": "B",
+        "en": "7"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "9"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "NH14"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Find the 6th number of the sequence:",
+      "vi": "Tìm số thứ 6 trong dãy:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "25, 30, 35, 40, 45, __, 55, 60"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "46"
+      },
+      {
+        "id": "B",
+        "en": "58"
+      },
+      {
+        "id": "C",
+        "en": "55"
+      },
+      {
+        "id": "D",
+        "en": "50"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "NH15"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Is the result of operation odd or even?",
+      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "7 - 2 - 8 - 2"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Even"
+      },
+      {
+        "id": "B",
+        "en": "Odd"
+      },
+      {
+        "id": "C",
+        "en": "Neither odd nor even"
+      },
+      {
+        "id": "D",
+        "en": "Both odd and even"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "NH16"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Is the result of operation odd or even?",
+      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "7 - 2 + 6 - 4 + 1"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Even"
+      },
+      {
+        "id": "B",
+        "en": "Odd"
+      },
+      {
+        "id": "C",
+        "en": "Neither odd nor even"
+      },
+      {
+        "id": "D",
+        "en": "Both odd and even"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "NH17"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Move how many items from left(16) to right(6) to balance?",
+      "vi": "Phải chuyển bao nhiêu vật từ trái(16) sang phải(6) để bằng nhau?"
+    },
+    "figure": {
+      "renderer": "twoBins",
+      "params": {
+        "left": 16,
+        "right": 6,
+        "symbol": "🐟",
+        "labels": [
+          "Left",
+          "Right"
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "4"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "NH18"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Find the 5th number of the sequence:",
+      "vi": "Tìm số thứ 5 trong dãy:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "28, 32, 36, 40, __, 48, 52, 56"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "45"
+      },
+      {
+        "id": "B",
+        "en": "44"
+      },
+      {
+        "id": "C",
+        "en": "48"
+      },
+      {
+        "id": "D",
+        "en": "46"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "NH19"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Fill '+' and '−' to make the equation correct:",
+      "vi": "Điền dấu '+' và '−' để phép tính đúng:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "5 _ 6 _ 3 _ 2 = 12"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "5 + 6 + 3 - 2 = 12"
+      },
+      {
+        "id": "B",
+        "en": "5 + 6 + 3 + 2 = 12"
+      },
+      {
+        "id": "C",
+        "en": "5 - 6 - 3 - 2 = 12"
+      },
+      {
+        "id": "D",
+        "en": "5 + 6 - 3 + 2 = 12"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "NH20"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Is the result of operation odd or even?",
+      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "8 + 2 + 2 - 8 - 9 + 1"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Even"
+      },
+      {
+        "id": "B",
+        "en": "Odd"
+      },
+      {
+        "id": "C",
+        "en": "Neither odd nor even"
+      },
+      {
+        "id": "D",
+        "en": "Both odd and even"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "NH21"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Move how many items from left(23) to right(11) to balance?",
+      "vi": "Phải chuyển bao nhiêu vật từ trái(23) sang phải(11) để bằng nhau?"
+    },
+    "figure": {
+      "renderer": "twoBins",
+      "params": {
+        "left": 23,
+        "right": 11,
+        "symbol": "⚽",
+        "labels": [
+          "Left",
+          "Right"
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "7"
+      },
+      {
+        "id": "B",
+        "en": "5"
+      },
+      {
+        "id": "C",
+        "en": "6"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "NH22"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Find the 7th number of the sequence:",
+      "vi": "Tìm số thứ 7 trong dãy:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "22, 28, 34, 40, 46, 52, __, 64"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "66"
+      },
+      {
+        "id": "B",
+        "en": "65"
+      },
+      {
+        "id": "C",
+        "en": "58"
+      },
+      {
+        "id": "D",
+        "en": "49"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "NH23"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Is the result of operation odd or even?",
+      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "8 + 7 + 6 + 2"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Even"
+      },
+      {
+        "id": "B",
+        "en": "Odd"
+      },
+      {
+        "id": "C",
+        "en": "Neither odd nor even"
+      },
+      {
+        "id": "D",
+        "en": "Both odd and even"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "NH24"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Is the result of operation odd or even?",
+      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "4 - 2 + 6 - 3 - 1 + 6"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Even"
+      },
+      {
+        "id": "B",
+        "en": "Odd"
+      },
+      {
+        "id": "C",
+        "en": "Neither odd nor even"
+      },
+      {
+        "id": "D",
+        "en": "Both odd and even"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "NH25"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Move how many items from left(26) to right(8) to balance?",
+      "vi": "Phải chuyển bao nhiêu vật từ trái(26) sang phải(8) để bằng nhau?"
+    },
+    "figure": {
+      "renderer": "twoBins",
+      "params": {
+        "left": 26,
+        "right": 8,
+        "symbol": "🍎",
+        "labels": [
+          "Left",
+          "Right"
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "9"
+      },
+      {
+        "id": "B",
+        "en": "10"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "NH26"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Find the 7th number of the sequence:",
+      "vi": "Tìm số thứ 7 trong dãy:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "30, 35, 40, 45, 50, 55, __, 65"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "64"
+      },
+      {
+        "id": "B",
+        "en": "60"
+      },
+      {
+        "id": "C",
+        "en": "53"
+      },
+      {
+        "id": "D",
+        "en": "67"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "NH27"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Is the result of operation odd or even?",
+      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "2 - 7 - 6 - 3"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Even"
+      },
+      {
+        "id": "B",
+        "en": "Odd"
+      },
+      {
+        "id": "C",
+        "en": "Neither odd nor even"
+      },
+      {
+        "id": "D",
+        "en": "Both odd and even"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "NH28"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Is the result of operation odd or even?",
+      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "8 - 7 - 6 + 3 - 8 + 8"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Even"
+      },
+      {
+        "id": "B",
+        "en": "Odd"
+      },
+      {
+        "id": "C",
+        "en": "Neither odd nor even"
+      },
+      {
+        "id": "D",
+        "en": "Both odd and even"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "NH29"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Move how many items from left(21) to right(15) to balance?",
+      "vi": "Phải chuyển bao nhiêu vật từ trái(21) sang phải(15) để bằng nhau?"
+    },
+    "figure": {
+      "renderer": "twoBins",
+      "params": {
+        "left": 21,
+        "right": 15,
+        "symbol": "⚽",
+        "labels": [
+          "Left",
+          "Right"
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "4"
+      },
+      {
+        "id": "B",
+        "en": "3"
+      },
+      {
+        "id": "C",
+        "en": "1"
+      },
+      {
+        "id": "D",
+        "en": "5"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "NH30"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Find the 5th number of the sequence:",
+      "vi": "Tìm số thứ 5 trong dãy:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "31, 36, 41, 46, __, 56, 61, 66"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "54"
+      },
+      {
+        "id": "B",
+        "en": "51"
+      },
+      {
+        "id": "C",
+        "en": "44"
+      },
+      {
+        "id": "D",
+        "en": "56"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "NH31"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Is the result of operation odd or even?",
+      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "7 - 4 - 2 - 4"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Even"
+      },
+      {
+        "id": "B",
+        "en": "Odd"
+      },
+      {
+        "id": "C",
+        "en": "Neither odd nor even"
+      },
+      {
+        "id": "D",
+        "en": "Both odd and even"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "NH32"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Is the result of operation odd or even?",
+      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "3 - 2 + 4 + 6 - 6"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Even"
+      },
+      {
+        "id": "B",
+        "en": "Odd"
+      },
+      {
+        "id": "C",
+        "en": "Neither odd nor even"
+      },
+      {
+        "id": "D",
+        "en": "Both odd and even"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "NH33"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Move how many items from left(19) to right(11) to balance?",
+      "vi": "Phải chuyển bao nhiêu vật từ trái(19) sang phải(11) để bằng nhau?"
+    },
+    "figure": {
+      "renderer": "twoBins",
+      "params": {
+        "left": 19,
+        "right": 11,
+        "symbol": "🍪",
+        "labels": [
+          "Left",
+          "Right"
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "2"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "3"
+      },
+      {
+        "id": "D",
+        "en": "4"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "NH34"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Find the 5th number of the sequence:",
+      "vi": "Tìm số thứ 5 trong dãy:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "28, 32, 36, 40, __, 48, 52, 56"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "48"
+      },
+      {
+        "id": "B",
+        "en": "44"
+      },
+      {
+        "id": "C",
+        "en": "37"
+      },
+      {
+        "id": "D",
+        "en": "39"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "NH35"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Is the result of operation odd or even?",
+      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "3 - 6 - 6 - 9"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Even"
+      },
+      {
+        "id": "B",
+        "en": "Odd"
+      },
+      {
+        "id": "C",
+        "en": "Neither odd nor even"
+      },
+      {
+        "id": "D",
+        "en": "Both odd and even"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "NH36"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Is the result of operation odd or even?",
+      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "4 - 2 + 3 - 2 - 8 + 3"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Even"
+      },
+      {
+        "id": "B",
+        "en": "Odd"
+      },
+      {
+        "id": "C",
+        "en": "Neither odd nor even"
+      },
+      {
+        "id": "D",
+        "en": "Both odd and even"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "NH37"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Move how many items from left(22) to right(14) to balance?",
+      "vi": "Phải chuyển bao nhiêu vật từ trái(22) sang phải(14) để bằng nhau?"
+    },
+    "figure": {
+      "renderer": "twoBins",
+      "params": {
+        "left": 22,
+        "right": 14,
+        "symbol": "🐟",
+        "labels": [
+          "Left",
+          "Right"
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "6"
+      },
+      {
+        "id": "B",
+        "en": "4"
+      },
+      {
+        "id": "C",
+        "en": "2"
+      },
+      {
+        "id": "D",
+        "en": "3"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "NH38"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Find the 6th number of the sequence:",
+      "vi": "Tìm số thứ 6 trong dãy:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "35, 39, 43, 47, 51, __, 59, 63"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "57"
+      },
+      {
+        "id": "B",
+        "en": "56"
+      },
+      {
+        "id": "C",
+        "en": "53"
+      },
+      {
+        "id": "D",
+        "en": "55"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "NH39"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Is the result of operation odd or even?",
+      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "3 - 3 - 6 - 8"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Even"
+      },
+      {
+        "id": "B",
+        "en": "Odd"
+      },
+      {
+        "id": "C",
+        "en": "Neither odd nor even"
+      },
+      {
+        "id": "D",
+        "en": "Both odd and even"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "NH40"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Is the result of operation odd or even?",
+      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "7 - 2 - 3 + 6 + 2 + 8"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Even"
+      },
+      {
+        "id": "B",
+        "en": "Odd"
+      },
+      {
+        "id": "C",
+        "en": "Neither odd nor even"
+      },
+      {
+        "id": "D",
+        "en": "Both odd and even"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "NH41"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Move how many items from left(20) to right(14) to balance?",
+      "vi": "Phải chuyển bao nhiêu vật từ trái(20) sang phải(14) để bằng nhau?"
+    },
+    "figure": {
+      "renderer": "twoBins",
+      "params": {
+        "left": 20,
+        "right": 14,
+        "symbol": "🍎",
+        "labels": [
+          "Left",
+          "Right"
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "2"
+      },
+      {
+        "id": "B",
+        "en": "5"
+      },
+      {
+        "id": "C",
+        "en": "1"
+      },
+      {
+        "id": "D",
+        "en": "3"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "NH42"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Find the 5th number of the sequence:",
+      "vi": "Tìm số thứ 5 trong dãy:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "30, 36, 42, 48, __, 60, 66, 72"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "47"
+      },
+      {
+        "id": "B",
+        "en": "61"
+      },
+      {
+        "id": "C",
+        "en": "56"
+      },
+      {
+        "id": "D",
+        "en": "54"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "NH43"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Is the result of operation odd or even?",
+      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "4 + 6 + 3 + 4"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Even"
+      },
+      {
+        "id": "B",
+        "en": "Odd"
+      },
+      {
+        "id": "C",
+        "en": "Neither odd nor even"
+      },
+      {
+        "id": "D",
+        "en": "Both odd and even"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "NH44"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Is the result of operation odd or even?",
+      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "6 - 1 + 1 - 2 + 1"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Even"
+      },
+      {
+        "id": "B",
+        "en": "Odd"
+      },
+      {
+        "id": "C",
+        "en": "Neither odd nor even"
+      },
+      {
+        "id": "D",
+        "en": "Both odd and even"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "NH45"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Move how many items from left(22) to right(16) to balance?",
+      "vi": "Phải chuyển bao nhiêu vật từ trái(22) sang phải(16) để bằng nhau?"
+    },
+    "figure": {
+      "renderer": "twoBins",
+      "params": {
+        "left": 22,
+        "right": 16,
+        "symbol": "🪵",
+        "labels": [
+          "Left",
+          "Right"
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "3"
+      },
+      {
+        "id": "B",
+        "en": "2"
+      },
+      {
+        "id": "C",
+        "en": "4"
+      },
+      {
+        "id": "D",
+        "en": "1"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "NH46"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Find the 6th number of the sequence:",
+      "vi": "Tìm số thứ 6 trong dãy:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "33, 38, 43, 48, 53, __, 63, 68"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "56"
+      },
+      {
+        "id": "B",
+        "en": "58"
+      },
+      {
+        "id": "C",
+        "en": "54"
+      },
+      {
+        "id": "D",
+        "en": "60"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "NH47"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Is the result of operation odd or even?",
+      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "7 + 8 + 4 + 7"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Even"
+      },
+      {
+        "id": "B",
+        "en": "Odd"
+      },
+      {
+        "id": "C",
+        "en": "Neither odd nor even"
+      },
+      {
+        "id": "D",
+        "en": "Both odd and even"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "NH48"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Is the result of operation odd or even?",
+      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "4 + 8 + 2 + 5 - 8 - 4"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Even"
+      },
+      {
+        "id": "B",
+        "en": "Odd"
+      },
+      {
+        "id": "C",
+        "en": "Neither odd nor even"
+      },
+      {
+        "id": "D",
+        "en": "Both odd and even"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "NH49"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "en": "Move how many items from left(27) to right(15) to balance?",
+      "vi": "Phải chuyển bao nhiêu vật từ trái(27) sang phải(15) để bằng nhau?"
+    },
+    "figure": {
+      "renderer": "twoBins",
+      "params": {
+        "left": 27,
+        "right": 15,
+        "symbol": "🍪",
+        "labels": [
+          "Left",
+          "Right"
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "8"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "en": "7"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "NH50"
+  }
+]

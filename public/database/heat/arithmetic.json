@@ -1,0 +1,1802 @@
+[
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Compute the value.",
+      "vi": "Tính giá trị."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "13 + 6 − 15 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "2"
+      },
+      {
+        "id": "B",
+        "en": "4"
+      },
+      {
+        "id": "C",
+        "en": "3"
+      },
+      {
+        "id": "D",
+        "en": "1"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "AH01"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Fill the box to make the equation true.",
+      "vi": "Điền số vào ô để phép tính đúng."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "13 + □ = 36"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "23"
+      },
+      {
+        "id": "B",
+        "en": "19"
+      },
+      {
+        "id": "C",
+        "en": "22"
+      },
+      {
+        "id": "D",
+        "en": "20"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "AH02"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Compute the sum (repeated addition).",
+      "vi": "Tính tổng (cộng lặp)."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "4 + 4 + 4 + 4 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "16"
+      },
+      {
+        "id": "B",
+        "en": "18"
+      },
+      {
+        "id": "C",
+        "en": "20"
+      },
+      {
+        "id": "D",
+        "en": "15"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "AH03"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Compute the value.",
+      "vi": "Tính giá trị."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "10 + 18 − 6 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "22"
+      },
+      {
+        "id": "B",
+        "en": "19"
+      },
+      {
+        "id": "C",
+        "en": "23"
+      },
+      {
+        "id": "D",
+        "en": "21"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "AH04"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Fill the box to make the equation true.",
+      "vi": "Điền số vào ô để phép tính đúng."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "13 + □ = 20"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "3"
+      },
+      {
+        "id": "B",
+        "en": "8"
+      },
+      {
+        "id": "C",
+        "en": "4"
+      },
+      {
+        "id": "D",
+        "en": "7"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "AH05"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Compute the sum (repeated addition).",
+      "vi": "Tính tổng (cộng lặp)."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "3 + 3 + 3 + 3 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "11"
+      },
+      {
+        "id": "B",
+        "en": "12"
+      },
+      {
+        "id": "C",
+        "en": "13"
+      },
+      {
+        "id": "D",
+        "en": "16"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "AH06"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Compute the value.",
+      "vi": "Tính giá trị."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "19 + 7 − 7 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "18"
+      },
+      {
+        "id": "B",
+        "en": "19"
+      },
+      {
+        "id": "C",
+        "en": "20"
+      },
+      {
+        "id": "D",
+        "en": "15"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "AH07"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Fill the box to make the equation true.",
+      "vi": "Điền số vào ô để phép tính đúng."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "12 + □ = 23"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "12"
+      },
+      {
+        "id": "B",
+        "en": "8"
+      },
+      {
+        "id": "C",
+        "en": "11"
+      },
+      {
+        "id": "D",
+        "en": "10"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "AH08"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Compute the sum (repeated addition).",
+      "vi": "Tính tổng (cộng lặp)."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "2 + 2 + 2 + 2 + 2 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "10"
+      },
+      {
+        "id": "B",
+        "en": "14"
+      },
+      {
+        "id": "C",
+        "en": "9"
+      },
+      {
+        "id": "D",
+        "en": "12"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "AH09"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Compute the value.",
+      "vi": "Tính giá trị."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "11 + 18 − 9 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "16"
+      },
+      {
+        "id": "B",
+        "en": "21"
+      },
+      {
+        "id": "C",
+        "en": "20"
+      },
+      {
+        "id": "D",
+        "en": "19"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "AH10"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Fill the box to make the equation true.",
+      "vi": "Điền số vào ô để phép tính đúng."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "17 + □ = 24"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "10"
+      },
+      {
+        "id": "B",
+        "en": "7"
+      },
+      {
+        "id": "C",
+        "en": "9"
+      },
+      {
+        "id": "D",
+        "en": "5"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "AH11"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Compute the sum (repeated addition).",
+      "vi": "Tính tổng (cộng lặp)."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "4 + 4 + 4 + 4 + 4 + 4 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "26"
+      },
+      {
+        "id": "B",
+        "en": "28"
+      },
+      {
+        "id": "C",
+        "en": "24"
+      },
+      {
+        "id": "D",
+        "en": "25"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "AH12"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Compute the value.",
+      "vi": "Tính giá trị."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "12 + 18 − 4 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "26"
+      },
+      {
+        "id": "B",
+        "en": "23"
+      },
+      {
+        "id": "C",
+        "en": "22"
+      },
+      {
+        "id": "D",
+        "en": "31"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "AH13"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Fill the box to make the equation true.",
+      "vi": "Điền số vào ô để phép tính đúng."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "8 + □ = 37"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "33"
+      },
+      {
+        "id": "B",
+        "en": "32"
+      },
+      {
+        "id": "C",
+        "en": "31"
+      },
+      {
+        "id": "D",
+        "en": "29"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "AH14"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Compute the sum (repeated addition).",
+      "vi": "Tính tổng (cộng lặp)."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "4 + 4 + 4 + 4 + 4 + 4 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "21"
+      },
+      {
+        "id": "B",
+        "en": "28"
+      },
+      {
+        "id": "C",
+        "en": "25"
+      },
+      {
+        "id": "D",
+        "en": "24"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "AH15"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Compute the value.",
+      "vi": "Tính giá trị."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "15 + 13 − 4 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "23"
+      },
+      {
+        "id": "B",
+        "en": "27"
+      },
+      {
+        "id": "C",
+        "en": "21"
+      },
+      {
+        "id": "D",
+        "en": "24"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "AH16"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Fill the box to make the equation true.",
+      "vi": "Điền số vào ô để phép tính đúng."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "15 + □ = 38"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "23"
+      },
+      {
+        "id": "B",
+        "en": "24"
+      },
+      {
+        "id": "C",
+        "en": "22"
+      },
+      {
+        "id": "D",
+        "en": "21"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "AH17"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Compute the sum (repeated addition).",
+      "vi": "Tính tổng (cộng lặp)."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "4 + 4 + 4 + 4 + 4 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "23"
+      },
+      {
+        "id": "B",
+        "en": "16"
+      },
+      {
+        "id": "C",
+        "en": "17"
+      },
+      {
+        "id": "D",
+        "en": "20"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "AH18"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Compute the value.",
+      "vi": "Tính giá trị."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "11 + 9 − 13 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "3"
+      },
+      {
+        "id": "B",
+        "en": "7"
+      },
+      {
+        "id": "C",
+        "en": "9"
+      },
+      {
+        "id": "D",
+        "en": "10"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "AH19"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Fill the box to make the equation true.",
+      "vi": "Điền số vào ô để phép tính đúng."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "9 + □ = 35"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "25"
+      },
+      {
+        "id": "B",
+        "en": "30"
+      },
+      {
+        "id": "C",
+        "en": "28"
+      },
+      {
+        "id": "D",
+        "en": "26"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "AH20"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Compute the sum (repeated addition).",
+      "vi": "Tính tổng (cộng lặp)."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "3 + 3 + 3 + 3 + 3 + 3 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "19"
+      },
+      {
+        "id": "B",
+        "en": "21"
+      },
+      {
+        "id": "C",
+        "en": "18"
+      },
+      {
+        "id": "D",
+        "en": "22"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "AH21"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Compute the value.",
+      "vi": "Tính giá trị."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "17 + 7 − 9 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "15"
+      },
+      {
+        "id": "B",
+        "en": "18"
+      },
+      {
+        "id": "C",
+        "en": "19"
+      },
+      {
+        "id": "D",
+        "en": "10"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "AH22"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Fill the box to make the equation true.",
+      "vi": "Điền số vào ô để phép tính đúng."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "8 + □ = 18"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "6"
+      },
+      {
+        "id": "B",
+        "en": "7"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "9"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "AH23"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Compute the sum (repeated addition).",
+      "vi": "Tính tổng (cộng lặp)."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "4 + 4 + 4 + 4 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "16"
+      },
+      {
+        "id": "B",
+        "en": "15"
+      },
+      {
+        "id": "C",
+        "en": "20"
+      },
+      {
+        "id": "D",
+        "en": "19"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "AH24"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Compute the value.",
+      "vi": "Tính giá trị."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "17 + 18 − 11 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "22"
+      },
+      {
+        "id": "B",
+        "en": "25"
+      },
+      {
+        "id": "C",
+        "en": "20"
+      },
+      {
+        "id": "D",
+        "en": "24"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "AH25"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Fill the box to make the equation true.",
+      "vi": "Điền số vào ô để phép tính đúng."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "13 + □ = 29"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "19"
+      },
+      {
+        "id": "B",
+        "en": "18"
+      },
+      {
+        "id": "C",
+        "en": "12"
+      },
+      {
+        "id": "D",
+        "en": "16"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "AH26"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Compute the sum (repeated addition).",
+      "vi": "Tính tổng (cộng lặp)."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "4 + 4 + 4 + 4 + 4 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "19"
+      },
+      {
+        "id": "B",
+        "en": "17"
+      },
+      {
+        "id": "C",
+        "en": "24"
+      },
+      {
+        "id": "D",
+        "en": "20"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "AH27"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Compute the value.",
+      "vi": "Tính giá trị."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "15 + 10 − 11 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "10"
+      },
+      {
+        "id": "B",
+        "en": "12"
+      },
+      {
+        "id": "C",
+        "en": "14"
+      },
+      {
+        "id": "D",
+        "en": "16"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "AH28"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Fill the box to make the equation true.",
+      "vi": "Điền số vào ô để phép tính đúng."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "10 + □ = 20"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "12"
+      },
+      {
+        "id": "B",
+        "en": "10"
+      },
+      {
+        "id": "C",
+        "en": "8"
+      },
+      {
+        "id": "D",
+        "en": "13"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "AH29"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Compute the sum (repeated addition).",
+      "vi": "Tính tổng (cộng lặp)."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "2 + 2 + 2 + 2 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "8"
+      },
+      {
+        "id": "B",
+        "en": "4"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "11"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "AH30"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Compute the value.",
+      "vi": "Tính giá trị."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "14 + 9 − 8 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "15"
+      },
+      {
+        "id": "B",
+        "en": "19"
+      },
+      {
+        "id": "C",
+        "en": "13"
+      },
+      {
+        "id": "D",
+        "en": "10"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "AH31"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Fill the box to make the equation true.",
+      "vi": "Điền số vào ô để phép tính đúng."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "7 + □ = 19"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "10"
+      },
+      {
+        "id": "B",
+        "en": "15"
+      },
+      {
+        "id": "C",
+        "en": "12"
+      },
+      {
+        "id": "D",
+        "en": "16"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "AH32"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Compute the sum (repeated addition).",
+      "vi": "Tính tổng (cộng lặp)."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "2 + 2 + 2 + 2 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "10"
+      },
+      {
+        "id": "B",
+        "en": "7"
+      },
+      {
+        "id": "C",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "AH33"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Compute the value.",
+      "vi": "Tính giá trị."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "11 + 15 − 5 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "22"
+      },
+      {
+        "id": "B",
+        "en": "25"
+      },
+      {
+        "id": "C",
+        "en": "26"
+      },
+      {
+        "id": "D",
+        "en": "21"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "AH34"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Fill the box to make the equation true.",
+      "vi": "Điền số vào ô để phép tính đúng."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "12 + □ = 39"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "25"
+      },
+      {
+        "id": "B",
+        "en": "29"
+      },
+      {
+        "id": "C",
+        "en": "26"
+      },
+      {
+        "id": "D",
+        "en": "27"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "AH35"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Compute the sum (repeated addition).",
+      "vi": "Tính tổng (cộng lặp)."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "2 + 2 + 2 + 2 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "8"
+      },
+      {
+        "id": "B",
+        "en": "5"
+      },
+      {
+        "id": "C",
+        "en": "12"
+      },
+      {
+        "id": "D",
+        "en": "11"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "AH36"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Compute the value.",
+      "vi": "Tính giá trị."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "14 + 11 − 5 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "17"
+      },
+      {
+        "id": "B",
+        "en": "18"
+      },
+      {
+        "id": "C",
+        "en": "19"
+      },
+      {
+        "id": "D",
+        "en": "20"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "AH37"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Fill the box to make the equation true.",
+      "vi": "Điền số vào ô để phép tính đúng."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "17 + □ = 37"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "20"
+      },
+      {
+        "id": "B",
+        "en": "24"
+      },
+      {
+        "id": "C",
+        "en": "17"
+      },
+      {
+        "id": "D",
+        "en": "16"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "AH38"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Compute the sum (repeated addition).",
+      "vi": "Tính tổng (cộng lặp)."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "2 + 2 + 2 + 2 + 2 + 2 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "12"
+      },
+      {
+        "id": "B",
+        "en": "10"
+      },
+      {
+        "id": "C",
+        "en": "16"
+      },
+      {
+        "id": "D",
+        "en": "11"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "AH39"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Compute the value.",
+      "vi": "Tính giá trị."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "25 + 10 − 4 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "27"
+      },
+      {
+        "id": "B",
+        "en": "31"
+      },
+      {
+        "id": "C",
+        "en": "32"
+      },
+      {
+        "id": "D",
+        "en": "36"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "AH40"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Fill the box to make the equation true.",
+      "vi": "Điền số vào ô để phép tính đúng."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "9 + □ = 28"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "19"
+      },
+      {
+        "id": "B",
+        "en": "17"
+      },
+      {
+        "id": "C",
+        "en": "22"
+      },
+      {
+        "id": "D",
+        "en": "23"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "AH41"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Compute the sum (repeated addition).",
+      "vi": "Tính tổng (cộng lặp)."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "2 + 2 + 2 + 2 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "12"
+      },
+      {
+        "id": "B",
+        "en": "8"
+      },
+      {
+        "id": "C",
+        "en": "6"
+      },
+      {
+        "id": "D",
+        "en": "4"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "AH42"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Compute the value.",
+      "vi": "Tính giá trị."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "23 + 8 − 4 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "22"
+      },
+      {
+        "id": "B",
+        "en": "25"
+      },
+      {
+        "id": "C",
+        "en": "27"
+      },
+      {
+        "id": "D",
+        "en": "26"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "AH43"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Fill the box to make the equation true.",
+      "vi": "Điền số vào ô để phép tính đúng."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "15 + □ = 29"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "13"
+      },
+      {
+        "id": "B",
+        "en": "14"
+      },
+      {
+        "id": "C",
+        "en": "16"
+      },
+      {
+        "id": "D",
+        "en": "12"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "AH44"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Compute the sum (repeated addition).",
+      "vi": "Tính tổng (cộng lặp)."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "2 + 2 + 2 + 2 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "9"
+      },
+      {
+        "id": "B",
+        "en": "7"
+      },
+      {
+        "id": "C",
+        "en": "8"
+      },
+      {
+        "id": "D",
+        "en": "10"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "AH45"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Compute the value.",
+      "vi": "Tính giá trị."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "22 + 6 − 11 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "15"
+      },
+      {
+        "id": "B",
+        "en": "19"
+      },
+      {
+        "id": "C",
+        "en": "16"
+      },
+      {
+        "id": "D",
+        "en": "17"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "AH46"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Fill the box to make the equation true.",
+      "vi": "Điền số vào ô để phép tính đúng."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "10 + □ = 39"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "26"
+      },
+      {
+        "id": "B",
+        "en": "31"
+      },
+      {
+        "id": "C",
+        "en": "29"
+      },
+      {
+        "id": "D",
+        "en": "30"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "AH47"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Compute the sum (repeated addition).",
+      "vi": "Tính tổng (cộng lặp)."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "4 + 4 + 4 + 4 + 4 + 4 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "21"
+      },
+      {
+        "id": "B",
+        "en": "25"
+      },
+      {
+        "id": "C",
+        "en": "24"
+      },
+      {
+        "id": "D",
+        "en": "20"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "AH48"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Compute the value.",
+      "vi": "Tính giá trị."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "11 + 7 − 13 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "9"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "AH49"
+  },
+  {
+    "type": "Arithmetic",
+    "stem": {
+      "en": "Fill the box to make the equation true.",
+      "vi": "Điền số vào ô để phép tính đúng."
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "7 + □ = 26"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "19"
+      },
+      {
+        "id": "B",
+        "en": "21"
+      },
+      {
+        "id": "C",
+        "en": "15"
+      },
+      {
+        "id": "D",
+        "en": "23"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "AH50"
+  }
+]

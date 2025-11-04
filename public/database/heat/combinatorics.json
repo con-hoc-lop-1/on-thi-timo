@@ -1,0 +1,1802 @@
+[
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 2 shirts and 4 pants. How many outfits can be made?",
+      "vi": "Có 2 áo và 4 quần. Có thể tạo được bao nhiêu bộ đồ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "7"
+      },
+      {
+        "id": "B",
+        "en": "9"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Outfits = shirts × pants"
+      }
+    },
+    "id": "CH01"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 5 red balls and 6 blue balls. How many balls in total?",
+      "vi": "Có 5 bóng màu đỏ và 6 bóng màu xanh. Hỏi có tất cả bao nhiêu quả bóng?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "10"
+      },
+      {
+        "id": "B",
+        "en": "12"
+      },
+      {
+        "id": "C",
+        "en": "13"
+      },
+      {
+        "id": "D",
+        "en": "11"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Count and add."
+      }
+    },
+    "id": "CH02"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 4 shirts and 4 pants. How many outfits can be made?",
+      "vi": "Có 4 áo và 4 quần. Có thể tạo được bao nhiêu bộ đồ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "17"
+      },
+      {
+        "id": "B",
+        "en": "16"
+      },
+      {
+        "id": "C",
+        "en": "14"
+      },
+      {
+        "id": "D",
+        "en": "15"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Outfits = shirts × pants"
+      }
+    },
+    "id": "CH03"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 5 red balls and 5 blue balls. How many balls in total?",
+      "vi": "Có 5 bóng màu đỏ và 5 bóng màu xanh. Hỏi có tất cả bao nhiêu quả bóng?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "9"
+      },
+      {
+        "id": "B",
+        "en": "12"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "11"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Count and add."
+      }
+    },
+    "id": "CH04"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 3 shirts and 4 pants. How many outfits can be made?",
+      "vi": "Có 3 áo và 4 quần. Có thể tạo được bao nhiêu bộ đồ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "15"
+      },
+      {
+        "id": "B",
+        "en": "10"
+      },
+      {
+        "id": "C",
+        "en": "13"
+      },
+      {
+        "id": "D",
+        "en": "12"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Outfits = shirts × pants"
+      }
+    },
+    "id": "CH05"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 5 red balls and 5 blue balls. How many balls in total?",
+      "vi": "Có 5 bóng màu đỏ và 5 bóng màu xanh. Hỏi có tất cả bao nhiêu quả bóng?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "11"
+      },
+      {
+        "id": "B",
+        "en": "10"
+      },
+      {
+        "id": "C",
+        "en": "9"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Count and add."
+      }
+    },
+    "id": "CH06"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 4 shirts and 4 pants. How many outfits can be made?",
+      "vi": "Có 4 áo và 4 quần. Có thể tạo được bao nhiêu bộ đồ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "13"
+      },
+      {
+        "id": "B",
+        "en": "14"
+      },
+      {
+        "id": "C",
+        "en": "18"
+      },
+      {
+        "id": "D",
+        "en": "16"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Outfits = shirts × pants"
+      }
+    },
+    "id": "CH07"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 4 red balls and 6 blue balls. How many balls in total?",
+      "vi": "Có 4 bóng màu đỏ và 6 bóng màu xanh. Hỏi có tất cả bao nhiêu quả bóng?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "10"
+      },
+      {
+        "id": "B",
+        "en": "12"
+      },
+      {
+        "id": "C",
+        "en": "9"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Count and add."
+      }
+    },
+    "id": "CH08"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 3 shirts and 4 pants. How many outfits can be made?",
+      "vi": "Có 3 áo và 4 quần. Có thể tạo được bao nhiêu bộ đồ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "11"
+      },
+      {
+        "id": "B",
+        "en": "12"
+      },
+      {
+        "id": "C",
+        "en": "13"
+      },
+      {
+        "id": "D",
+        "en": "15"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Outfits = shirts × pants"
+      }
+    },
+    "id": "CH09"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 6 red balls and 4 blue balls. How many balls in total?",
+      "vi": "Có 6 bóng màu đỏ và 4 bóng màu xanh. Hỏi có tất cả bao nhiêu quả bóng?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "10"
+      },
+      {
+        "id": "B",
+        "en": "9"
+      },
+      {
+        "id": "C",
+        "en": "11"
+      },
+      {
+        "id": "D",
+        "en": "12"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Count and add."
+      }
+    },
+    "id": "CH10"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 3 shirts and 3 pants. How many outfits can be made?",
+      "vi": "Có 3 áo và 3 quần. Có thể tạo được bao nhiêu bộ đồ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "8"
+      },
+      {
+        "id": "B",
+        "en": "11"
+      },
+      {
+        "id": "C",
+        "en": "6"
+      },
+      {
+        "id": "D",
+        "en": "9"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Outfits = shirts × pants"
+      }
+    },
+    "id": "CH11"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 5 red balls and 3 blue balls. How many balls in total?",
+      "vi": "Có 5 bóng màu đỏ và 3 bóng màu xanh. Hỏi có tất cả bao nhiêu quả bóng?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "8"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "9"
+      },
+      {
+        "id": "D",
+        "en": "7"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Count and add."
+      }
+    },
+    "id": "CH12"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 4 shirts and 3 pants. How many outfits can be made?",
+      "vi": "Có 4 áo và 3 quần. Có thể tạo được bao nhiêu bộ đồ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "12"
+      },
+      {
+        "id": "B",
+        "en": "9"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "15"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Outfits = shirts × pants"
+      }
+    },
+    "id": "CH13"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 6 red balls and 6 blue balls. How many balls in total?",
+      "vi": "Có 6 bóng màu đỏ và 6 bóng màu xanh. Hỏi có tất cả bao nhiêu quả bóng?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "13"
+      },
+      {
+        "id": "B",
+        "en": "10"
+      },
+      {
+        "id": "C",
+        "en": "14"
+      },
+      {
+        "id": "D",
+        "en": "12"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Count and add."
+      }
+    },
+    "id": "CH14"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 3 shirts and 3 pants. How many outfits can be made?",
+      "vi": "Có 3 áo và 3 quần. Có thể tạo được bao nhiêu bộ đồ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "9"
+      },
+      {
+        "id": "B",
+        "en": "8"
+      },
+      {
+        "id": "C",
+        "en": "11"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Outfits = shirts × pants"
+      }
+    },
+    "id": "CH15"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 6 red balls and 4 blue balls. How many balls in total?",
+      "vi": "Có 6 bóng màu đỏ và 4 bóng màu xanh. Hỏi có tất cả bao nhiêu quả bóng?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "11"
+      },
+      {
+        "id": "B",
+        "en": "10"
+      },
+      {
+        "id": "C",
+        "en": "12"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Count and add."
+      }
+    },
+    "id": "CH16"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 2 shirts and 3 pants. How many outfits can be made?",
+      "vi": "Có 2 áo và 3 quần. Có thể tạo được bao nhiêu bộ đồ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "3"
+      },
+      {
+        "id": "C",
+        "en": "4"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Outfits = shirts × pants"
+      }
+    },
+    "id": "CH17"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 6 red balls and 5 blue balls. How many balls in total?",
+      "vi": "Có 6 bóng màu đỏ và 5 bóng màu xanh. Hỏi có tất cả bao nhiêu quả bóng?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "12"
+      },
+      {
+        "id": "B",
+        "en": "13"
+      },
+      {
+        "id": "C",
+        "en": "11"
+      },
+      {
+        "id": "D",
+        "en": "9"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Count and add."
+      }
+    },
+    "id": "CH18"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 4 shirts and 2 pants. How many outfits can be made?",
+      "vi": "Có 4 áo và 2 quần. Có thể tạo được bao nhiêu bộ đồ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "10"
+      },
+      {
+        "id": "B",
+        "en": "11"
+      },
+      {
+        "id": "C",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Outfits = shirts × pants"
+      }
+    },
+    "id": "CH19"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 3 red balls and 4 blue balls. How many balls in total?",
+      "vi": "Có 3 bóng màu đỏ và 4 bóng màu xanh. Hỏi có tất cả bao nhiêu quả bóng?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "8"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "5"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Count and add."
+      }
+    },
+    "id": "CH20"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 3 shirts and 2 pants. How many outfits can be made?",
+      "vi": "Có 3 áo và 2 quần. Có thể tạo được bao nhiêu bộ đồ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "6"
+      },
+      {
+        "id": "B",
+        "en": "8"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "3"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Outfits = shirts × pants"
+      }
+    },
+    "id": "CH21"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 3 red balls and 5 blue balls. How many balls in total?",
+      "vi": "Có 3 bóng màu đỏ và 5 bóng màu xanh. Hỏi có tất cả bao nhiêu quả bóng?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "9"
+      },
+      {
+        "id": "B",
+        "en": "7"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Count and add."
+      }
+    },
+    "id": "CH22"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 2 shirts and 4 pants. How many outfits can be made?",
+      "vi": "Có 2 áo và 4 quần. Có thể tạo được bao nhiêu bộ đồ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "10"
+      },
+      {
+        "id": "B",
+        "en": "7"
+      },
+      {
+        "id": "C",
+        "en": "11"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Outfits = shirts × pants"
+      }
+    },
+    "id": "CH23"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 5 red balls and 6 blue balls. How many balls in total?",
+      "vi": "Có 5 bóng màu đỏ và 6 bóng màu xanh. Hỏi có tất cả bao nhiêu quả bóng?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "12"
+      },
+      {
+        "id": "B",
+        "en": "11"
+      },
+      {
+        "id": "C",
+        "en": "9"
+      },
+      {
+        "id": "D",
+        "en": "13"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Count and add."
+      }
+    },
+    "id": "CH24"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 3 shirts and 4 pants. How many outfits can be made?",
+      "vi": "Có 3 áo và 4 quần. Có thể tạo được bao nhiêu bộ đồ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "14"
+      },
+      {
+        "id": "B",
+        "en": "12"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "15"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Outfits = shirts × pants"
+      }
+    },
+    "id": "CH25"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 6 red balls and 6 blue balls. How many balls in total?",
+      "vi": "Có 6 bóng màu đỏ và 6 bóng màu xanh. Hỏi có tất cả bao nhiêu quả bóng?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "14"
+      },
+      {
+        "id": "B",
+        "en": "13"
+      },
+      {
+        "id": "C",
+        "en": "12"
+      },
+      {
+        "id": "D",
+        "en": "11"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Count and add."
+      }
+    },
+    "id": "CH26"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 2 shirts and 3 pants. How many outfits can be made?",
+      "vi": "Có 2 áo và 3 quần. Có thể tạo được bao nhiêu bộ đồ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "7"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Outfits = shirts × pants"
+      }
+    },
+    "id": "CH27"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 4 red balls and 6 blue balls. How many balls in total?",
+      "vi": "Có 4 bóng màu đỏ và 6 bóng màu xanh. Hỏi có tất cả bao nhiêu quả bóng?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "12"
+      },
+      {
+        "id": "B",
+        "en": "10"
+      },
+      {
+        "id": "C",
+        "en": "8"
+      },
+      {
+        "id": "D",
+        "en": "9"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Count and add."
+      }
+    },
+    "id": "CH28"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 4 shirts and 3 pants. How many outfits can be made?",
+      "vi": "Có 4 áo và 3 quần. Có thể tạo được bao nhiêu bộ đồ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "10"
+      },
+      {
+        "id": "B",
+        "en": "12"
+      },
+      {
+        "id": "C",
+        "en": "13"
+      },
+      {
+        "id": "D",
+        "en": "15"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Outfits = shirts × pants"
+      }
+    },
+    "id": "CH29"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 6 red balls and 3 blue balls. How many balls in total?",
+      "vi": "Có 6 bóng màu đỏ và 3 bóng màu xanh. Hỏi có tất cả bao nhiêu quả bóng?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "8"
+      },
+      {
+        "id": "B",
+        "en": "10"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "9"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Count and add."
+      }
+    },
+    "id": "CH30"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 3 shirts and 4 pants. How many outfits can be made?",
+      "vi": "Có 3 áo và 4 quần. Có thể tạo được bao nhiêu bộ đồ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "11"
+      },
+      {
+        "id": "B",
+        "en": "14"
+      },
+      {
+        "id": "C",
+        "en": "12"
+      },
+      {
+        "id": "D",
+        "en": "13"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Outfits = shirts × pants"
+      }
+    },
+    "id": "CH31"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 5 red balls and 5 blue balls. How many balls in total?",
+      "vi": "Có 5 bóng màu đỏ và 5 bóng màu xanh. Hỏi có tất cả bao nhiêu quả bóng?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "12"
+      },
+      {
+        "id": "B",
+        "en": "10"
+      },
+      {
+        "id": "C",
+        "en": "8"
+      },
+      {
+        "id": "D",
+        "en": "9"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Count and add."
+      }
+    },
+    "id": "CH32"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 4 shirts and 3 pants. How many outfits can be made?",
+      "vi": "Có 4 áo và 3 quần. Có thể tạo được bao nhiêu bộ đồ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "12"
+      },
+      {
+        "id": "B",
+        "en": "14"
+      },
+      {
+        "id": "C",
+        "en": "11"
+      },
+      {
+        "id": "D",
+        "en": "13"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Outfits = shirts × pants"
+      }
+    },
+    "id": "CH33"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 5 red balls and 4 blue balls. How many balls in total?",
+      "vi": "Có 5 bóng màu đỏ và 4 bóng màu xanh. Hỏi có tất cả bao nhiêu quả bóng?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "11"
+      },
+      {
+        "id": "B",
+        "en": "8"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "9"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Count and add."
+      }
+    },
+    "id": "CH34"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 2 shirts and 4 pants. How many outfits can be made?",
+      "vi": "Có 2 áo và 4 quần. Có thể tạo được bao nhiêu bộ đồ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "10"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "8"
+      },
+      {
+        "id": "D",
+        "en": "7"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Outfits = shirts × pants"
+      }
+    },
+    "id": "CH35"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 5 red balls and 6 blue balls. How many balls in total?",
+      "vi": "Có 5 bóng màu đỏ và 6 bóng màu xanh. Hỏi có tất cả bao nhiêu quả bóng?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "12"
+      },
+      {
+        "id": "B",
+        "en": "9"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "11"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Count and add."
+      }
+    },
+    "id": "CH36"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 2 shirts and 3 pants. How many outfits can be made?",
+      "vi": "Có 2 áo và 3 quần. Có thể tạo được bao nhiêu bộ đồ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "3"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Outfits = shirts × pants"
+      }
+    },
+    "id": "CH37"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 5 red balls and 3 blue balls. How many balls in total?",
+      "vi": "Có 5 bóng màu đỏ và 3 bóng màu xanh. Hỏi có tất cả bao nhiêu quả bóng?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "10"
+      },
+      {
+        "id": "B",
+        "en": "8"
+      },
+      {
+        "id": "C",
+        "en": "6"
+      },
+      {
+        "id": "D",
+        "en": "7"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Count and add."
+      }
+    },
+    "id": "CH38"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 4 shirts and 3 pants. How many outfits can be made?",
+      "vi": "Có 4 áo và 3 quần. Có thể tạo được bao nhiêu bộ đồ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "13"
+      },
+      {
+        "id": "B",
+        "en": "11"
+      },
+      {
+        "id": "C",
+        "en": "12"
+      },
+      {
+        "id": "D",
+        "en": "15"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Outfits = shirts × pants"
+      }
+    },
+    "id": "CH39"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 3 red balls and 4 blue balls. How many balls in total?",
+      "vi": "Có 3 bóng màu đỏ và 4 bóng màu xanh. Hỏi có tất cả bao nhiêu quả bóng?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "9"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Count and add."
+      }
+    },
+    "id": "CH40"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 3 shirts and 3 pants. How many outfits can be made?",
+      "vi": "Có 3 áo và 3 quần. Có thể tạo được bao nhiêu bộ đồ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "10"
+      },
+      {
+        "id": "B",
+        "en": "9"
+      },
+      {
+        "id": "C",
+        "en": "11"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Outfits = shirts × pants"
+      }
+    },
+    "id": "CH41"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 5 red balls and 6 blue balls. How many balls in total?",
+      "vi": "Có 5 bóng màu đỏ và 6 bóng màu xanh. Hỏi có tất cả bao nhiêu quả bóng?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "11"
+      },
+      {
+        "id": "B",
+        "en": "9"
+      },
+      {
+        "id": "C",
+        "en": "13"
+      },
+      {
+        "id": "D",
+        "en": "10"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Count and add."
+      }
+    },
+    "id": "CH42"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 4 shirts and 2 pants. How many outfits can be made?",
+      "vi": "Có 4 áo và 2 quần. Có thể tạo được bao nhiêu bộ đồ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "7"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "8"
+      },
+      {
+        "id": "D",
+        "en": "10"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Outfits = shirts × pants"
+      }
+    },
+    "id": "CH43"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 4 red balls and 5 blue balls. How many balls in total?",
+      "vi": "Có 4 bóng màu đỏ và 5 bóng màu xanh. Hỏi có tất cả bao nhiêu quả bóng?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "9"
+      },
+      {
+        "id": "B",
+        "en": "10"
+      },
+      {
+        "id": "C",
+        "en": "11"
+      },
+      {
+        "id": "D",
+        "en": "7"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Count and add."
+      }
+    },
+    "id": "CH44"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 4 shirts and 3 pants. How many outfits can be made?",
+      "vi": "Có 4 áo và 3 quần. Có thể tạo được bao nhiêu bộ đồ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "13"
+      },
+      {
+        "id": "B",
+        "en": "12"
+      },
+      {
+        "id": "C",
+        "en": "11"
+      },
+      {
+        "id": "D",
+        "en": "9"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Outfits = shirts × pants"
+      }
+    },
+    "id": "CH45"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 5 red balls and 3 blue balls. How many balls in total?",
+      "vi": "Có 5 bóng màu đỏ và 3 bóng màu xanh. Hỏi có tất cả bao nhiêu quả bóng?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "7"
+      },
+      {
+        "id": "B",
+        "en": "10"
+      },
+      {
+        "id": "C",
+        "en": "6"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Count and add."
+      }
+    },
+    "id": "CH46"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 4 shirts and 2 pants. How many outfits can be made?",
+      "vi": "Có 4 áo và 2 quần. Có thể tạo được bao nhiêu bộ đồ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "11"
+      },
+      {
+        "id": "B",
+        "en": "8"
+      },
+      {
+        "id": "C",
+        "en": "9"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Outfits = shirts × pants"
+      }
+    },
+    "id": "CH47"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 6 red balls and 6 blue balls. How many balls in total?",
+      "vi": "Có 6 bóng màu đỏ và 6 bóng màu xanh. Hỏi có tất cả bao nhiêu quả bóng?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "10"
+      },
+      {
+        "id": "B",
+        "en": "13"
+      },
+      {
+        "id": "C",
+        "en": "11"
+      },
+      {
+        "id": "D",
+        "en": "12"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Count and add."
+      }
+    },
+    "id": "CH48"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 3 shirts and 4 pants. How many outfits can be made?",
+      "vi": "Có 3 áo và 4 quần. Có thể tạo được bao nhiêu bộ đồ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "13"
+      },
+      {
+        "id": "B",
+        "en": "12"
+      },
+      {
+        "id": "C",
+        "en": "9"
+      },
+      {
+        "id": "D",
+        "en": "15"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Outfits = shirts × pants"
+      }
+    },
+    "id": "CH49"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 5 red balls and 5 blue balls. How many balls in total?",
+      "vi": "Có 5 bóng màu đỏ và 5 bóng màu xanh. Hỏi có tất cả bao nhiêu quả bóng?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "12"
+      },
+      {
+        "id": "B",
+        "en": "10"
+      },
+      {
+        "id": "C",
+        "en": "11"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Count and add."
+      }
+    },
+    "id": "CH50"
+  }
+]

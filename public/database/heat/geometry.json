@@ -1,0 +1,3283 @@
+[
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many sides does this polygon have?",
+      "vi": "Hình đa giác này có bao nhiêu cạnh?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "7"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "9"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 8,
+        "size": 280
+      }
+    },
+    "id": "GH01"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many circles are drawn in this figure?",
+      "vi": "Có bao nhiêu hình tròn được vẽ trong hình này?"
+    },
+    "figure": {
+      "renderer": "multiCircles",
+      "params": {
+        "circles": [
+          {
+            "cx": 40,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 160,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 40,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 160,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 40,
+            "cy": 120,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 120,
+            "r": 15
+          }
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "13"
+      },
+      {
+        "id": "B",
+        "en": "10"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "12"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "GH02"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "At least how many cubes are there in the figure?",
+      "vi": "Ít nhất có bao nhiêu khối lập phương trong hình?"
+    },
+    "figure": {
+      "renderer": "isoCubes",
+      "params": {
+        "layout": [
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "29"
+      },
+      {
+        "id": "B",
+        "en": "24"
+      },
+      {
+        "id": "C",
+        "en": "28"
+      },
+      {
+        "id": "D",
+        "en": "27"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "GH03"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many sides does this polygon have?",
+      "vi": "Hình đa giác này có bao nhiêu cạnh?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "8"
+      },
+      {
+        "id": "B",
+        "en": "5"
+      },
+      {
+        "id": "C",
+        "en": "6"
+      },
+      {
+        "id": "D",
+        "en": "7"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 7,
+        "size": 280
+      }
+    },
+    "id": "GH04"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many circles are drawn in this figure?",
+      "vi": "Có bao nhiêu hình tròn được vẽ trong hình này?"
+    },
+    "figure": {
+      "renderer": "multiCircles",
+      "params": {
+        "circles": [
+          {
+            "cx": 40,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 40,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 80,
+            "r": 15
+          }
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "3"
+      },
+      {
+        "id": "B",
+        "en": "4"
+      },
+      {
+        "id": "C",
+        "en": "9"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "GH05"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "At least how many cubes are there in the figure?",
+      "vi": "Ít nhất có bao nhiêu khối lập phương trong hình?"
+    },
+    "figure": {
+      "renderer": "isoCubes",
+      "params": {
+        "layout": [
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "26"
+      },
+      {
+        "id": "B",
+        "en": "28"
+      },
+      {
+        "id": "C",
+        "en": "27"
+      },
+      {
+        "id": "D",
+        "en": "29"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "GH06"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many sides does this polygon have?",
+      "vi": "Hình đa giác này có bao nhiêu cạnh?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "4"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "en": "7"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 6,
+        "size": 280
+      }
+    },
+    "id": "GH07"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many circles are drawn in this figure?",
+      "vi": "Có bao nhiêu hình tròn được vẽ trong hình này?"
+    },
+    "figure": {
+      "renderer": "multiCircles",
+      "params": {
+        "circles": [
+          {
+            "cx": 40,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 40,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 40,
+            "cy": 120,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 120,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 120,
+            "r": 15
+          }
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "11"
+      },
+      {
+        "id": "B",
+        "en": "7"
+      },
+      {
+        "id": "C",
+        "en": "9"
+      },
+      {
+        "id": "D",
+        "en": "10"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "GH08"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "At least how many cubes are there in the figure?",
+      "vi": "Ít nhất có bao nhiêu khối lập phương trong hình?"
+    },
+    "figure": {
+      "renderer": "isoCubes",
+      "params": {
+        "layout": [
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "30"
+      },
+      {
+        "id": "B",
+        "en": "28"
+      },
+      {
+        "id": "C",
+        "en": "27"
+      },
+      {
+        "id": "D",
+        "en": "26"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "GH09"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many sides does this polygon have?",
+      "vi": "Hình đa giác này có bao nhiêu cạnh?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "8"
+      },
+      {
+        "id": "B",
+        "en": "7"
+      },
+      {
+        "id": "C",
+        "en": "9"
+      },
+      {
+        "id": "D",
+        "en": "10"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 9,
+        "size": 280
+      }
+    },
+    "id": "GH10"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many circles are drawn in this figure?",
+      "vi": "Có bao nhiêu hình tròn được vẽ trong hình này?"
+    },
+    "figure": {
+      "renderer": "multiCircles",
+      "params": {
+        "circles": [
+          {
+            "cx": 40,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 160,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 40,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 160,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 40,
+            "cy": 120,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 120,
+            "r": 15
+          }
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "9"
+      },
+      {
+        "id": "B",
+        "en": "11"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "13"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "GH11"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "At least how many cubes are there in the figure?",
+      "vi": "Ít nhất có bao nhiêu khối lập phương trong hình?"
+    },
+    "figure": {
+      "renderer": "isoCubes",
+      "params": {
+        "layout": [
+          [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "11"
+      },
+      {
+        "id": "B",
+        "en": "9"
+      },
+      {
+        "id": "C",
+        "en": "8"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "GH12"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many sides does this polygon have?",
+      "vi": "Hình đa giác này có bao nhiêu cạnh?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "10"
+      },
+      {
+        "id": "B",
+        "en": "8"
+      },
+      {
+        "id": "C",
+        "en": "9"
+      },
+      {
+        "id": "D",
+        "en": "11"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 10,
+        "size": 280
+      }
+    },
+    "id": "GH13"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many circles are drawn in this figure?",
+      "vi": "Có bao nhiêu hình tròn được vẽ trong hình này?"
+    },
+    "figure": {
+      "renderer": "multiCircles",
+      "params": {
+        "circles": [
+          {
+            "cx": 40,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 40,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 40,
+            "cy": 120,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 120,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 120,
+            "r": 15
+          }
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "11"
+      },
+      {
+        "id": "B",
+        "en": "12"
+      },
+      {
+        "id": "C",
+        "en": "9"
+      },
+      {
+        "id": "D",
+        "en": "7"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "GH14"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "At least how many cubes are there in the figure?",
+      "vi": "Ít nhất có bao nhiêu khối lập phương trong hình?"
+    },
+    "figure": {
+      "renderer": "isoCubes",
+      "params": {
+        "layout": [
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "19"
+      },
+      {
+        "id": "B",
+        "en": "21"
+      },
+      {
+        "id": "C",
+        "en": "18"
+      },
+      {
+        "id": "D",
+        "en": "15"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "GH15"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many sides does this polygon have?",
+      "vi": "Hình đa giác này có bao nhiêu cạnh?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "7"
+      },
+      {
+        "id": "B",
+        "en": "9"
+      },
+      {
+        "id": "C",
+        "en": "8"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 8,
+        "size": 280
+      }
+    },
+    "id": "GH16"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many circles are drawn in this figure?",
+      "vi": "Có bao nhiêu hình tròn được vẽ trong hình này?"
+    },
+    "figure": {
+      "renderer": "multiCircles",
+      "params": {
+        "circles": [
+          {
+            "cx": 40,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 160,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 40,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 160,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 40,
+            "cy": 120,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 120,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 120,
+            "r": 15
+          },
+          {
+            "cx": 160,
+            "cy": 120,
+            "r": 15
+          }
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "12"
+      },
+      {
+        "id": "B",
+        "en": "11"
+      },
+      {
+        "id": "C",
+        "en": "13"
+      },
+      {
+        "id": "D",
+        "en": "14"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "GH17"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "At least how many cubes are there in the figure?",
+      "vi": "Ít nhất có bao nhiêu khối lập phương trong hình?"
+    },
+    "figure": {
+      "renderer": "isoCubes",
+      "params": {
+        "layout": [
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "27"
+      },
+      {
+        "id": "B",
+        "en": "26"
+      },
+      {
+        "id": "C",
+        "en": "29"
+      },
+      {
+        "id": "D",
+        "en": "30"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "GH18"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many sides does this polygon have?",
+      "vi": "Hình đa giác này có bao nhiêu cạnh?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "8"
+      },
+      {
+        "id": "B",
+        "en": "7"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "9"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 9,
+        "size": 280
+      }
+    },
+    "id": "GH19"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many circles are drawn in this figure?",
+      "vi": "Có bao nhiêu hình tròn được vẽ trong hình này?"
+    },
+    "figure": {
+      "renderer": "multiCircles",
+      "params": {
+        "circles": [
+          {
+            "cx": 40,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 40,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 40,
+            "cy": 120,
+            "r": 15
+          }
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "4"
+      },
+      {
+        "id": "B",
+        "en": "7"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "9"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "GH20"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "At least how many cubes are there in the figure?",
+      "vi": "Ít nhất có bao nhiêu khối lập phương trong hình?"
+    },
+    "figure": {
+      "renderer": "isoCubes",
+      "params": {
+        "layout": [
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "15"
+      },
+      {
+        "id": "B",
+        "en": "21"
+      },
+      {
+        "id": "C",
+        "en": "18"
+      },
+      {
+        "id": "D",
+        "en": "17"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "GH21"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many sides does this polygon have?",
+      "vi": "Hình đa giác này có bao nhiêu cạnh?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 7,
+        "size": 280
+      }
+    },
+    "id": "GH22"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many circles are drawn in this figure?",
+      "vi": "Có bao nhiêu hình tròn được vẽ trong hình này?"
+    },
+    "figure": {
+      "renderer": "multiCircles",
+      "params": {
+        "circles": [
+          {
+            "cx": 40,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 160,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 40,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 160,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 40,
+            "cy": 120,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 120,
+            "r": 15
+          }
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "13"
+      },
+      {
+        "id": "B",
+        "en": "12"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "11"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "GH23"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "At least how many cubes are there in the figure?",
+      "vi": "Ít nhất có bao nhiêu khối lập phương trong hình?"
+    },
+    "figure": {
+      "renderer": "isoCubes",
+      "params": {
+        "layout": [
+          [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "12"
+      },
+      {
+        "id": "B",
+        "en": "10"
+      },
+      {
+        "id": "C",
+        "en": "13"
+      },
+      {
+        "id": "D",
+        "en": "14"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "GH24"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many sides does this polygon have?",
+      "vi": "Hình đa giác này có bao nhiêu cạnh?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "6"
+      },
+      {
+        "id": "B",
+        "en": "4"
+      },
+      {
+        "id": "C",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "en": "7"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 6,
+        "size": 280
+      }
+    },
+    "id": "GH25"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many circles are drawn in this figure?",
+      "vi": "Có bao nhiêu hình tròn được vẽ trong hình này?"
+    },
+    "figure": {
+      "renderer": "multiCircles",
+      "params": {
+        "circles": [
+          {
+            "cx": 40,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 40,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 40,
+            "cy": 120,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 120,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 120,
+            "r": 15
+          }
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "11"
+      },
+      {
+        "id": "B",
+        "en": "8"
+      },
+      {
+        "id": "C",
+        "en": "9"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "GH26"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "At least how many cubes are there in the figure?",
+      "vi": "Ít nhất có bao nhiêu khối lập phương trong hình?"
+    },
+    "figure": {
+      "renderer": "isoCubes",
+      "params": {
+        "layout": [
+          [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "11"
+      },
+      {
+        "id": "B",
+        "en": "12"
+      },
+      {
+        "id": "C",
+        "en": "13"
+      },
+      {
+        "id": "D",
+        "en": "14"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "GH27"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many sides does this polygon have?",
+      "vi": "Hình đa giác này có bao nhiêu cạnh?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "9"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "8"
+      },
+      {
+        "id": "D",
+        "en": "7"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 8,
+        "size": 280
+      }
+    },
+    "id": "GH28"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many circles are drawn in this figure?",
+      "vi": "Có bao nhiêu hình tròn được vẽ trong hình này?"
+    },
+    "figure": {
+      "renderer": "multiCircles",
+      "params": {
+        "circles": [
+          {
+            "cx": 40,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 160,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 40,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 160,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 40,
+            "cy": 120,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 120,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 120,
+            "r": 15
+          },
+          {
+            "cx": 160,
+            "cy": 120,
+            "r": 15
+          }
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "9"
+      },
+      {
+        "id": "B",
+        "en": "10"
+      },
+      {
+        "id": "C",
+        "en": "13"
+      },
+      {
+        "id": "D",
+        "en": "12"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "GH29"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "At least how many cubes are there in the figure?",
+      "vi": "Ít nhất có bao nhiêu khối lập phương trong hình?"
+    },
+    "figure": {
+      "renderer": "isoCubes",
+      "params": {
+        "layout": [
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "18"
+      },
+      {
+        "id": "B",
+        "en": "21"
+      },
+      {
+        "id": "C",
+        "en": "20"
+      },
+      {
+        "id": "D",
+        "en": "17"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "GH30"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many sides does this polygon have?",
+      "vi": "Hình đa giác này có bao nhiêu cạnh?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "8"
+      },
+      {
+        "id": "B",
+        "en": "9"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "10"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 9,
+        "size": 280
+      }
+    },
+    "id": "GH31"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many circles are drawn in this figure?",
+      "vi": "Có bao nhiêu hình tròn được vẽ trong hình này?"
+    },
+    "figure": {
+      "renderer": "multiCircles",
+      "params": {
+        "circles": [
+          {
+            "cx": 40,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 160,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 40,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 160,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 40,
+            "cy": 120,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 120,
+            "r": 15
+          }
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "8"
+      },
+      {
+        "id": "B",
+        "en": "13"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "9"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "GH32"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "At least how many cubes are there in the figure?",
+      "vi": "Ít nhất có bao nhiêu khối lập phương trong hình?"
+    },
+    "figure": {
+      "renderer": "isoCubes",
+      "params": {
+        "layout": [
+          [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "en": "10"
+      },
+      {
+        "id": "C",
+        "en": "8"
+      },
+      {
+        "id": "D",
+        "en": "7"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "GH33"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many sides does this polygon have?",
+      "vi": "Hình đa giác này có bao nhiêu cạnh?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "9"
+      },
+      {
+        "id": "B",
+        "en": "11"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 10,
+        "size": 280
+      }
+    },
+    "id": "GH34"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many circles are drawn in this figure?",
+      "vi": "Có bao nhiêu hình tròn được vẽ trong hình này?"
+    },
+    "figure": {
+      "renderer": "multiCircles",
+      "params": {
+        "circles": [
+          {
+            "cx": 40,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 40,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 40,
+            "cy": 120,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 120,
+            "r": 15
+          }
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "8"
+      },
+      {
+        "id": "B",
+        "en": "10"
+      },
+      {
+        "id": "C",
+        "en": "6"
+      },
+      {
+        "id": "D",
+        "en": "11"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "GH35"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "At least how many cubes are there in the figure?",
+      "vi": "Ít nhất có bao nhiêu khối lập phương trong hình?"
+    },
+    "figure": {
+      "renderer": "isoCubes",
+      "params": {
+        "layout": [
+          [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "15"
+      },
+      {
+        "id": "B",
+        "en": "12"
+      },
+      {
+        "id": "C",
+        "en": "11"
+      },
+      {
+        "id": "D",
+        "en": "14"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "GH36"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many sides does this polygon have?",
+      "vi": "Hình đa giác này có bao nhiêu cạnh?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "4"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "en": "3"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 5,
+        "size": 280
+      }
+    },
+    "id": "GH37"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many circles are drawn in this figure?",
+      "vi": "Có bao nhiêu hình tròn được vẽ trong hình này?"
+    },
+    "figure": {
+      "renderer": "multiCircles",
+      "params": {
+        "circles": [
+          {
+            "cx": 40,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 160,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 40,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 160,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 40,
+            "cy": 120,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 120,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 120,
+            "r": 15
+          },
+          {
+            "cx": 160,
+            "cy": 120,
+            "r": 15
+          }
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "13"
+      },
+      {
+        "id": "B",
+        "en": "15"
+      },
+      {
+        "id": "C",
+        "en": "12"
+      },
+      {
+        "id": "D",
+        "en": "11"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "GH38"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "At least how many cubes are there in the figure?",
+      "vi": "Ít nhất có bao nhiêu khối lập phương trong hình?"
+    },
+    "figure": {
+      "renderer": "isoCubes",
+      "params": {
+        "layout": [
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "17"
+      },
+      {
+        "id": "B",
+        "en": "18"
+      },
+      {
+        "id": "C",
+        "en": "19"
+      },
+      {
+        "id": "D",
+        "en": "20"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "GH39"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many sides does this polygon have?",
+      "vi": "Hình đa giác này có bao nhiêu cạnh?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "4"
+      },
+      {
+        "id": "B",
+        "en": "5"
+      },
+      {
+        "id": "C",
+        "en": "6"
+      },
+      {
+        "id": "D",
+        "en": "3"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 5,
+        "size": 280
+      }
+    },
+    "id": "GH40"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many circles are drawn in this figure?",
+      "vi": "Có bao nhiêu hình tròn được vẽ trong hình này?"
+    },
+    "figure": {
+      "renderer": "multiCircles",
+      "params": {
+        "circles": [
+          {
+            "cx": 40,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 160,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 40,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 160,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 40,
+            "cy": 120,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 120,
+            "r": 15
+          }
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "11"
+      },
+      {
+        "id": "B",
+        "en": "9"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "GH41"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "At least how many cubes are there in the figure?",
+      "vi": "Ít nhất có bao nhiêu khối lập phương trong hình?"
+    },
+    "figure": {
+      "renderer": "isoCubes",
+      "params": {
+        "layout": [
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "25"
+      },
+      {
+        "id": "B",
+        "en": "26"
+      },
+      {
+        "id": "C",
+        "en": "24"
+      },
+      {
+        "id": "D",
+        "en": "27"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "GH42"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many sides does this polygon have?",
+      "vi": "Hình đa giác này có bao nhiêu cạnh?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "6"
+      },
+      {
+        "id": "B",
+        "en": "5"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "4"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 6,
+        "size": 280
+      }
+    },
+    "id": "GH43"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many circles are drawn in this figure?",
+      "vi": "Có bao nhiêu hình tròn được vẽ trong hình này?"
+    },
+    "figure": {
+      "renderer": "multiCircles",
+      "params": {
+        "circles": [
+          {
+            "cx": 40,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 40,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 40,
+            "cy": 120,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 120,
+            "r": 15
+          }
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "9"
+      },
+      {
+        "id": "B",
+        "en": "8"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "GH44"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "At least how many cubes are there in the figure?",
+      "vi": "Ít nhất có bao nhiêu khối lập phương trong hình?"
+    },
+    "figure": {
+      "renderer": "isoCubes",
+      "params": {
+        "layout": [
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "29"
+      },
+      {
+        "id": "B",
+        "en": "26"
+      },
+      {
+        "id": "C",
+        "en": "24"
+      },
+      {
+        "id": "D",
+        "en": "27"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "GH45"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many sides does this polygon have?",
+      "vi": "Hình đa giác này có bao nhiêu cạnh?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "7"
+      },
+      {
+        "id": "B",
+        "en": "8"
+      },
+      {
+        "id": "C",
+        "en": "9"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 8,
+        "size": 280
+      }
+    },
+    "id": "GH46"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many circles are drawn in this figure?",
+      "vi": "Có bao nhiêu hình tròn được vẽ trong hình này?"
+    },
+    "figure": {
+      "renderer": "multiCircles",
+      "params": {
+        "circles": [
+          {
+            "cx": 40,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 160,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 40,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 160,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 40,
+            "cy": 120,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 120,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 120,
+            "r": 15
+          }
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "13"
+      },
+      {
+        "id": "B",
+        "en": "11"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "12"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "GH47"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "At least how many cubes are there in the figure?",
+      "vi": "Ít nhất có bao nhiêu khối lập phương trong hình?"
+    },
+    "figure": {
+      "renderer": "isoCubes",
+      "params": {
+        "layout": [
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "15"
+      },
+      {
+        "id": "B",
+        "en": "18"
+      },
+      {
+        "id": "C",
+        "en": "21"
+      },
+      {
+        "id": "D",
+        "en": "20"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "GH48"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many sides does this polygon have?",
+      "vi": "Hình đa giác này có bao nhiêu cạnh?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "3"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "en": "4"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 5,
+        "size": 280
+      }
+    },
+    "id": "GH49"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many circles are drawn in this figure?",
+      "vi": "Có bao nhiêu hình tròn được vẽ trong hình này?"
+    },
+    "figure": {
+      "renderer": "multiCircles",
+      "params": {
+        "circles": [
+          {
+            "cx": 40,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 160,
+            "cy": 40,
+            "r": 15
+          },
+          {
+            "cx": 40,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 160,
+            "cy": 80,
+            "r": 15
+          },
+          {
+            "cx": 40,
+            "cy": 120,
+            "r": 15
+          },
+          {
+            "cx": 80,
+            "cy": 120,
+            "r": 15
+          },
+          {
+            "cx": 120,
+            "cy": 120,
+            "r": 15
+          },
+          {
+            "cx": 160,
+            "cy": 120,
+            "r": 15
+          }
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "13"
+      },
+      {
+        "id": "B",
+        "en": "9"
+      },
+      {
+        "id": "C",
+        "en": "12"
+      },
+      {
+        "id": "D",
+        "en": "10"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "GH50"
+  }
+]

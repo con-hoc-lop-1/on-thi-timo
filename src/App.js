@@ -4,11 +4,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/App.css";
 
 function App() {
+  const params = new URLSearchParams(window.location.search);
+  const isDebug = params.get("debug") === "1" || params.get("debug") === "true";
+
   const [name, setName] = useState(
     localStorage.getItem("timo-user-name") || ""
   );
   const [isStarted, setIsStarted] = useState(false);
-  const [paperMode, setPaperMode] = useState(false);
+  const [paperMode, setPaperMode] = useState(isDebug);
   const [history, setHistory] = useState(
     JSON.parse(localStorage.getItem("timo-history") || "[]")
   );
@@ -42,6 +45,7 @@ function App() {
         paperMode={paperMode}
         onFinish={handleFinish}
         dataType={dataType}
+        isDebug={isDebug}
       />
     );
 
@@ -66,7 +70,9 @@ function App() {
             }
           }}
         >
-          <option value="preliminary">Preliminary {showHomeVi && <>(Vòng loại)</>}</option>
+          <option value="preliminary">
+            Preliminary {showHomeVi && <>(Vòng loại)</>}
+          </option>
           <option value="heat">Heat {showHomeVi && <>(Quốc gia)</>}</option>
         </select>
       </div>
@@ -127,10 +133,14 @@ function App() {
             type="checkbox"
             id="paperMode"
             checked={paperMode}
+            disabled={isDebug}
             onChange={(e) => setPaperMode(e.target.checked)}
           />
           <label className="form-check-label" htmlFor="paperMode">
-            Test with paper {showHomeVi && <i>(Làm bằng giấy trắc nghiệm)</i>}
+            Test with paper {showHomeVi && <i>(Làm bằng giấy trắc nghiệm)</i>}{" "}
+            {isDebug && (
+              <span className="text-muted">— forced ON in debug</span>
+            )}
           </label>
         </div>
       </div>

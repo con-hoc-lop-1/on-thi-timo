@@ -2,25 +2,40 @@ import React, { useEffect, useState } from "react";
 import { formatTime, loadAllQuestions } from "./utils";
 import { renderFigure } from "./figure";
 
-function Exam({ name, onFinish, paperMode, dataType = "preliminary" }) {
+function Exam({
+  name,
+  onFinish,
+  paperMode,
+  dataType = "preliminary",
+  isDebug = false,
+}) {
   const [questions, setQuestions] = useState([]);
   const [index, setIndex] = useState(0);
-  const [secondsLeft, setSecondsLeft] = useState(60 * 60);
+  const [secondsLeft, setSecondsLeft] = useState(
+    dataType === "preliminary" ? 60 : 90 * 60
+  );
   const [finished, setFinished] = useState(false);
   const [reviewMode, setReviewMode] = useState(false);
   const [result, setResult] = useState(null);
   const [startTime] = useState(Date.now());
   const [startDate] = useState(new Date().toLocaleString());
-  const showVi = (function(){
+  const showVi = (function () {
     const saved = JSON.parse(localStorage.getItem("timo-show-vi") || "false");
+    if (isDebug) return true; // Luôn hiển thị cả tiếng Việt trong chế độ debug
     return dataType === "preliminary" ? saved : false;
   })();
 
   useEffect(() => {
     loadAllQuestions(
-      ["arithmetic", "combinatorics", "geometry", "logic-thinking", "number-theory"],
-      5,
-      true,
+      [
+        "arithmetic",
+        "combinatorics",
+        "geometry",
+        "logic-thinking",
+        "number-theory",
+      ],
+      isDebug ? 5000 : 5,
+      !isDebug,
       dataType
     ).then(setQuestions);
     const timer = setInterval(() => {
@@ -77,6 +92,29 @@ function Exam({ name, onFinish, paperMode, dataType = "preliminary" }) {
     setFinished(true);
   };
 
+  const copyQuestion = (q) => {
+    try {
+      const txt = JSON.stringify(q, null, 2);
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(txt).then(() => {
+          alert("Đã chép nội dung câu hỏi vào clipboard.");
+        });
+      } else {
+        // Fallback
+        const ta = document.createElement("textarea");
+        ta.value = txt;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand("copy");
+        document.body.removeChild(ta);
+        alert("Đã chép nội dung câu hỏi vào clipboard.");
+      }
+    } catch (e) {
+      console.error(e);
+      alert("Không thể chép nội dung câu hỏi");
+    }
+  };
+
   // 📄 Chế độ giấy trắc nghiệm
   if (paperMode) {
     return (
@@ -90,13 +128,30 @@ function Exam({ name, onFinish, paperMode, dataType = "preliminary" }) {
             className="mb-3 border rounded p-3 bg-light paper-question"
           >
             <div className="mb-2">
-              <div className="question-title">
-                <strong>
-                  Question {qi + 1} {showVi && <i>(Câu {qi + 1})</i>}:
-                </strong>
-                <span>
-                  {name} - TIMO TEST ({startDate})
-                </span>
+              <div className="question-title d-flex justify-content-between align-items-center">
+                <div>
+                  <strong>
+                    Question {qi + 1} {showVi && <i>(Câu {qi + 1})</i>}:{" "}
+                    {isDebug && q.id && (
+                      <span className="badge bg-secondary ms-2">
+                        ID: {q.id}
+                      </span>
+                    )}
+                  </strong>
+                  <span className="ms-2">
+                    {name} - TIMO TEST ({startDate})
+                  </span>
+                </div>
+                {isDebug && (
+                  <button
+                    type="button"
+                    className="btn btn-sm btn-outline-primary"
+                    onClick={() => copyQuestion(q)}
+                    title="Chép JSON câu hỏi"
+                  >
+                    CHÉP
+                  </button>
+                )}
               </div>
               <div dangerouslySetInnerHTML={{ __html: q.stem.en }} />
               {showVi && (
@@ -233,18 +288,35 @@ function Exam({ name, onFinish, paperMode, dataType = "preliminary" }) {
           const isCorrect = q.answer && q.answer.key === q.userAnswer;
           return (
             <div key={qi} className="mb-4 border rounded p-3 bg-light">
-              <div className="mb-2">
-                <strong>
-                  Question {qi + 1} {showVi && <i>(Câu {qi + 1})</i>}:
-                </strong>
-                <div dangerouslySetInnerHTML={{ __html: q.stem.en }} />
-                {showVi && (
-                  <div
-                    style={{ fontStyle: "italic" }}
-                    dangerouslySetInnerHTML={{ __html: q.stem.vi }}
-                  />
+              <div className="mb-2 d-flex justify-content-between align-items-center">
+                <div>
+                  <strong>
+                    Question {qi + 1} {showVi && <i>(Câu {qi + 1})</i>}:{" "}
+                    {isDebug && q.id && (
+                      <span className="badge bg-secondary ms-2">
+                        ID: {q.id}
+                      </span>
+                    )}
+                  </strong>
+                </div>
+                {isDebug && (
+                  <button
+                    type="button"
+                    className="btn btn-sm btn-outline-primary"
+                    onClick={() => copyQuestion(q)}
+                    title="Chép JSON câu hỏi"
+                  >
+                    CHÉP
+                  </button>
                 )}
               </div>
+              <div dangerouslySetInnerHTML={{ __html: q.stem.en }} />
+              {showVi && (
+                <div
+                  style={{ fontStyle: "italic" }}
+                  dangerouslySetInnerHTML={{ __html: q.stem.vi }}
+                />
+              )}
               {renderFigure(q)}
               <div className="mt-2">
                 {q.choices &&
@@ -315,10 +387,25 @@ function Exam({ name, onFinish, paperMode, dataType = "preliminary" }) {
         </div>
       </div>
 
-      <div className="mb-2">
-        <strong>
-          Question {index + 1} {showVi && <i>(Câu {index + 1})</i>}:
-        </strong>
+      <div className="mb-2 d-flex justify-content-between align-items-center">
+        <div>
+          <strong>
+            Question {index + 1} {showVi && <i>(Câu {index + 1})</i>}:{" "}
+            {isDebug && q.id && (
+              <span className="badge bg-secondary ms-2">ID: {q.id}</span>
+            )}
+          </strong>
+        </div>
+        {isDebug && (
+          <button
+            type="button"
+            className="btn btn-sm btn-outline-primary"
+            onClick={() => copyQuestion(q)}
+            title="Chép JSON câu hỏi"
+          >
+            CHÉP
+          </button>
+        )}
       </div>
       <div className="border rounded p-3 bg-light mb-3">
         <div dangerouslySetInnerHTML={{ __html: q.stem.en }} />
