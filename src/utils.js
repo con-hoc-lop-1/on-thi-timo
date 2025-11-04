@@ -33,7 +33,14 @@ export function loadAllQuestions(
       if (isRandom) {
         return getRandomFromArray(questions, maxQuestionPerTest, excludeIds);
       } else {
-        return questions.slice(0, maxQuestionPerTest);
+        // Debug mode: sắp xếp theo thứ tự ID tăng dần trong từng danh mục
+        const sortedById = [...questions].sort((a, b) =>
+          (a.id || "").localeCompare(b.id || "", undefined, {
+            numeric: true,
+            sensitivity: "base",
+          })
+        );
+        return sortedById.slice(0, maxQuestionPerTest);
       }
     });
 
@@ -41,10 +48,14 @@ export function loadAllQuestions(
     const newHistory = [selected.map((q) => q.id), ...history].slice(0, 10);
     localStorage.setItem("timo-question-history", JSON.stringify(newHistory));
 
-    // Shuffle questions randomly before returning
-    return selected
-      .sort(() => 0.5 - Math.random())
-      .map((q) => ({ ...q, userAnswer: "" }));
+    // Trả về danh sách câu hỏi
+    // - Nếu random: xáo trộn toàn bộ
+    // - Nếu không random (debug): giữ nguyên thứ tự theo từng danh mục
+    const finalized = isRandom
+      ? selected.sort(() => 0.5 - Math.random())
+      : selected;
+
+    return finalized.map((q) => ({ ...q, userAnswer: "" }));
   });
 }
 

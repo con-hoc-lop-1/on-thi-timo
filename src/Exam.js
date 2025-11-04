@@ -12,7 +12,7 @@ function Exam({
   const [questions, setQuestions] = useState([]);
   const [index, setIndex] = useState(0);
   const [secondsLeft, setSecondsLeft] = useState(
-    dataType === "preliminary" ? 60 : 90 * 60
+    (dataType === "preliminary" ? 60 : 90) * 60
   );
   const [finished, setFinished] = useState(false);
   const [reviewMode, setReviewMode] = useState(false);
@@ -57,8 +57,41 @@ function Exam({
 
   const handleAnswer = (val) => {
     const updated = [...questions];
-    updated[index].userAnswer = val;
+    updated[index] = { ...updated[index], userAnswer: val };
     setQuestions(updated);
+  };
+
+  // Debug editors: update stem.en and choices[i].en
+  const handleStemChange = (qIndex, newEn) => {
+    setQuestions((prev) => {
+      const next = [...prev];
+      const q = next[qIndex] || {};
+      next[qIndex] = { ...q, stem: { ...(q.stem || {}), en: newEn } };
+      return next;
+    });
+  };
+
+  // Debug editors: update stem.vi
+  const handleStemViChange = (qIndex, newVi) => {
+    setQuestions((prev) => {
+      const next = [...prev];
+      const q = next[qIndex] || {};
+      next[qIndex] = { ...q, stem: { ...(q.stem || {}), vi: newVi } };
+      return next;
+    });
+  };
+
+  const handleChoiceTextChange = (qIndex, choiceIndex, newEn) => {
+    setQuestions((prev) => {
+      const next = [...prev];
+      const q = next[qIndex];
+      if (!q) return prev;
+      const choices = (q.choices || []).map((c, i) =>
+        i === choiceIndex ? { ...c, en: newEn } : c
+      );
+      next[qIndex] = { ...q, choices };
+      return next;
+    });
   };
 
   const handleSubmit = () => {
@@ -129,19 +162,15 @@ function Exam({
           >
             <div className="mb-2">
               <div className="question-title d-flex justify-content-between align-items-center">
-                <div>
-                  <strong>
-                    Question {qi + 1} {showVi && <i>(Câu {qi + 1})</i>}:{" "}
-                    {isDebug && q.id && (
-                      <span className="badge bg-secondary ms-2">
-                        ID: {q.id}
-                      </span>
-                    )}
-                  </strong>
-                  <span className="ms-2">
-                    {name} - TIMO TEST ({startDate})
-                  </span>
-                </div>
+                <strong>
+                  Question {qi + 1} {showVi && <i>(Câu {qi + 1})</i>}:{" "}
+                  {isDebug && q.id && (
+                    <span className="badge bg-secondary ms-2">ID: {q.id}</span>
+                  )}
+                </strong>
+                <span className="ms-2">
+                  {name} - TIMO TEST ({startDate})
+                </span>
                 {isDebug && (
                   <button
                     type="button"
@@ -153,24 +182,75 @@ function Exam({
                   </button>
                 )}
               </div>
-              <div dangerouslySetInnerHTML={{ __html: q.stem.en }} />
-              {showVi && (
-                <div
-                  style={{ fontStyle: "italic" }}
-                  dangerouslySetInnerHTML={{ __html: q.stem.vi }}
-                />
+              {isDebug ? (
+                <div className="mb-2">
+                  <label className="form-label">stem.en</label>
+                  <textarea
+                    className="form-control"
+                    rows={3}
+                    value={(q.stem && q.stem.en) || ""}
+                    onChange={(e) => handleStemChange(qi, e.target.value)}
+                  />
+                </div>
+              ) : (
+                <div dangerouslySetInnerHTML={{ __html: q.stem.en }} />
               )}
+              {showVi &&
+                (isDebug ? (
+                  <div className="mb-2">
+                    <label className="form-label">stem.vi</label>
+                    <textarea
+                      className="form-control"
+                      rows={3}
+                      value={(q.stem && q.stem.vi) || ""}
+                      onChange={(e) => handleStemViChange(qi, e.target.value)}
+                    />
+                  </div>
+                ) : (
+                  <div
+                    style={{ fontStyle: "italic" }}
+                    dangerouslySetInnerHTML={{ __html: q.stem.vi }}
+                  />
+                ))}
               <div className="figure-container">{renderFigure(q)}</div>
             </div>
             <div className="mt-2">
               <div className="row">
-                {q.choices.map((choice, i) => (
-                  <div className="col-auto" key={i}>
-                    <label className="form-check-label">
-                      <b style={{ color: "gray" }}>{choice.id}.</b> {choice.en}
-                    </label>
-                  </div>
-                ))}
+                {q.choices.map((choice, i) => {
+                  const isRightAnswer = q.answer && q.answer.key === choice.id;
+                  const rightStyle =
+                    isDebug && isRightAnswer
+                      ? { backgroundColor: "#e6ffed" }
+                      : {};
+                  return (
+                    <div
+                      className="col-12 col-md-3 mb-2"
+                      key={i}
+                      style={rightStyle}
+                    >
+                      {isDebug ? (
+                        <div className="d-flex align-items-center">
+                          <b style={{ color: "gray", width: 24 }}>
+                            {choice.id}.
+                          </b>
+                          <input
+                            type="text"
+                            className="form-control ms-2"
+                            value={choice.en || ""}
+                            onChange={(e) =>
+                              handleChoiceTextChange(qi, i, e.target.value)
+                            }
+                          />
+                        </div>
+                      ) : (
+                        <label className="form-check-label">
+                          <b style={{ color: "gray" }}>{choice.id}.</b>{" "}
+                          {choice.en}
+                        </label>
+                      )}
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
@@ -178,49 +258,53 @@ function Exam({
 
         {/* Trang riêng cho đáp án */}
         <div className="answer-sheet">
-          <div className="blank-page">
-            <div className="info-box">
-              <h4 className="mb-3">
-                {name} - TIMO TEST ({startDate})
-              </h4>
-              <table className="table table-bordered">
-                <tbody>
-                  <tr>
-                    <td>Full name:</td>
-                    <td>DOB:</td>
-                  </tr>
-                  <tr>
-                    <td>School name:</td>
-                    <td>Class:</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div className="question-grid">
-              {[...Array(25)].map((_, i) => (
-                <div className="question" key={i}>
-                  <div>{i + 1}</div>
-                  <div className="choices">
-                    <div className="choice">
-                      A<div className="box"></div>
-                    </div>
-                    <div className="choice">
-                      B<div className="box"></div>
-                    </div>
-                    <div className="choice">
-                      C<div className="box"></div>
-                    </div>
-                    <div className="choice">
-                      D<div className="box"></div>
-                    </div>
-                    <div className="choice">
-                      E<div className="box"></div>
+          {!isDebug ? (
+            <div className="blank-page">
+              <div className="info-box">
+                <h4 className="mb-3">
+                  {name} - TIMO TEST ({startDate})
+                </h4>
+                <table className="table table-bordered">
+                  <tbody>
+                    <tr>
+                      <td>Full name:</td>
+                      <td>DOB:</td>
+                    </tr>
+                    <tr>
+                      <td>School name:</td>
+                      <td>Class:</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div className="question-grid">
+                {[...Array(25)].map((_, i) => (
+                  <div className="question" key={i}>
+                    <div>{i + 1}</div>
+                    <div className="choices">
+                      <div className="choice">
+                        A<div className="box"></div>
+                      </div>
+                      <div className="choice">
+                        B<div className="box"></div>
+                      </div>
+                      <div className="choice">
+                        C<div className="box"></div>
+                      </div>
+                      <div className="choice">
+                        D<div className="box"></div>
+                      </div>
+                      <div className="choice">
+                        E<div className="box"></div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
-          </div>
+          ) : (
+            ""
+          )}
           <hr />
           <h3 className="mt-2">
             Answer <i>(Đáp án)</i>
@@ -310,13 +394,36 @@ function Exam({
                   </button>
                 )}
               </div>
-              <div dangerouslySetInnerHTML={{ __html: q.stem.en }} />
-              {showVi && (
-                <div
-                  style={{ fontStyle: "italic" }}
-                  dangerouslySetInnerHTML={{ __html: q.stem.vi }}
-                />
+              {isDebug ? (
+                <div className="mb-2">
+                  <label className="form-label">stem.en</label>
+                  <textarea
+                    className="form-control"
+                    rows={3}
+                    value={(q.stem && q.stem.en) || ""}
+                    onChange={(e) => handleStemChange(qi, e.target.value)}
+                  />
+                </div>
+              ) : (
+                <div dangerouslySetInnerHTML={{ __html: q.stem.en }} />
               )}
+              {showVi &&
+                (isDebug ? (
+                  <div className="mb-2">
+                    <label className="form-label">stem.vi</label>
+                    <textarea
+                      className="form-control"
+                      rows={3}
+                      value={(q.stem && q.stem.vi) || ""}
+                      onChange={(e) => handleStemViChange(qi, e.target.value)}
+                    />
+                  </div>
+                ) : (
+                  <div
+                    style={{ fontStyle: "italic" }}
+                    dangerouslySetInnerHTML={{ __html: q.stem.vi }}
+                  />
+                ))}
               {renderFigure(q)}
               <div className="mt-2">
                 {q.choices &&
@@ -338,8 +445,17 @@ function Exam({
                       labelClass += " text-success fw-bold";
                     }
 
+                    const rightStyle =
+                      isDebug && isRightAnswer
+                        ? { backgroundColor: "#e6ffed" }
+                        : {};
+
                     return (
-                      <div className="form-check" key={i}>
+                      <div
+                        className="form-check p-2 rounded"
+                        key={i}
+                        style={rightStyle}
+                      >
                         <input
                           type="radio"
                           disabled
@@ -347,9 +463,26 @@ function Exam({
                           checked={chosen}
                           readOnly
                         />
-                        <label {...answeredAttr} className={labelClass}>
-                          <span>{choice.id}.</span> <span>{choice.en}</span>
+                        <label
+                          {...answeredAttr}
+                          className={labelClass + " me-2"}
+                        >
+                          <span>{choice.id}.</span>
+                          <span className="form-check-label"> {choice.en}</span>
                         </label>
+                        {isDebug ? (
+                          <input
+                            type="text"
+                            className="form-control d-inline-block"
+                            style={{ width: "auto", minWidth: 200 }}
+                            value={choice.en || ""}
+                            onChange={(e) =>
+                              handleChoiceTextChange(qi, i, e.target.value)
+                            }
+                          />
+                        ) : (
+                          ""
+                        )}
                       </div>
                     );
                   })}
@@ -408,36 +541,84 @@ function Exam({
         )}
       </div>
       <div className="border rounded p-3 bg-light mb-3">
-        <div dangerouslySetInnerHTML={{ __html: q.stem.en }} />
-        {showVi && (
-          <div
-            style={{ fontStyle: "italic" }}
-            dangerouslySetInnerHTML={{ __html: q.stem.vi }}
-          />
+        {isDebug ? (
+          <div className="mb-2">
+            <label className="form-label">stem.en</label>
+            <textarea
+              className="form-control"
+              rows={3}
+              value={(q.stem && q.stem.en) || ""}
+              onChange={(e) => handleStemChange(index, e.target.value)}
+            />
+          </div>
+        ) : (
+          <div dangerouslySetInnerHTML={{ __html: q.stem.en }} />
         )}
+        {showVi &&
+          (isDebug ? (
+            <div className="mb-2">
+              <label className="form-label">stem.vi</label>
+              <textarea
+                className="form-control"
+                rows={3}
+                value={(q.stem && q.stem.vi) || ""}
+                onChange={(e) => handleStemViChange(index, e.target.value)}
+              />
+            </div>
+          ) : (
+            <div
+              style={{ fontStyle: "italic" }}
+              dangerouslySetInnerHTML={{ __html: q.stem.vi }}
+            />
+          ))}
         {renderFigure(q)}
       </div>
 
       <div className="mb-4">
         {q.choices && q.choices.length > 0 ? (
           <div>
-            {q.choices.map((choice, i) => (
-              <div className="form-check" key={i}>
-                <input
-                  name={`q-${q.id}`}
-                  type="radio"
-                  id={`q-${q.id}-choice-${i}`}
-                  className="form-check-input"
-                  value={choice.id}
-                  checked={q.userAnswer === choice.id}
-                  onChange={() => handleAnswer(choice.id)}
-                />
-                <label htmlFor={`q-${q.id}-choice-${i}`}>
-                  <span className="form-check-label">{choice.id}.</span>{" "}
-                  <span className="form-check-label">{choice.en}</span>
-                </label>
-              </div>
-            ))}
+            {q.choices.map((choice, i) => {
+              const isRightAnswer = q.answer && q.answer.key === choice.id;
+              const rightStyle =
+                isDebug && isRightAnswer ? { backgroundColor: "#e6ffed" } : {};
+              return (
+                <div
+                  className="form-check p-2 rounded"
+                  key={i}
+                  style={rightStyle}
+                >
+                  <input
+                    name={`q-${q.id}`}
+                    type="radio"
+                    id={`q-${q.id}-choice-${i}`}
+                    className="form-check-input"
+                    value={choice.id}
+                    checked={q.userAnswer === choice.id}
+                    onChange={() => handleAnswer(choice.id)}
+                  />
+                  <label
+                    htmlFor={`q-${q.id}-choice-${i}`}
+                    className="ms-1 me-2"
+                  >
+                    <span className="form-check-label">{choice.id}.</span>
+                    <span className="form-check-label">{choice.en}</span>
+                  </label>
+                  {isDebug ? (
+                    <input
+                      type="text"
+                      className="form-control d-inline-block"
+                      style={{ width: "auto", minWidth: 200 }}
+                      value={choice.en || ""}
+                      onChange={(e) =>
+                        handleChoiceTextChange(index, i, e.target.value)
+                      }
+                    />
+                  ) : (
+                    ""
+                  )}
+                </div>
+              );
+            })}
           </div>
         ) : (
           <input
