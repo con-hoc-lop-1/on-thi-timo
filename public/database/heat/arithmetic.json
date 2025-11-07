@@ -2,7 +2,7 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "Compute the value.da",
+      "en": "Compute the value.",
       "vi": "Tính giá trị."
     },
     "figure": {
@@ -74,13 +74,13 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "Compute the sum (repeated addition).",
-      "vi": "Tính tổng (cộng lặp)."
+      "en": "Compute the sum.",
+      "vi": "Tính tổng."
     },
     "figure": {
       "renderer": "text",
       "params": {
-        "content": "4 + 4 + 4 + 4 = ?"
+        "content": "4 + 4 + 4 + 1 = ?"
       }
     },
     "choices": [
@@ -98,7 +98,7 @@
       },
       {
         "id": "D",
-        "en": "15"
+        "en": "13"
       }
     ],
     "answer": {
@@ -182,27 +182,27 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "Compute the sum (repeated addition).",
-      "vi": "Tính tổng (cộng lặp)."
+      "en": "Compute the sum.",
+      "vi": "Tính tổng."
     },
     "figure": {
       "renderer": "text",
       "params": {
-        "content": "3 + 3 + 3 + 3 = ?"
+        "content": "3 + 3 + 3 + 3 - 8 = ?"
       }
     },
     "choices": [
       {
         "id": "A",
-        "en": "11"
+        "en": "2"
       },
       {
         "id": "B",
-        "en": "12"
+        "en": "4"
       },
       {
         "id": "C",
-        "en": "13"
+        "en": "8"
       },
       {
         "id": "D",
@@ -290,36 +290,36 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "Compute the sum (repeated addition).",
-      "vi": "Tính tổng (cộng lặp)."
+      "en": "Compute the sum.",
+      "vi": "Tính tổng."
     },
     "figure": {
       "renderer": "text",
       "params": {
-        "content": "2 + 2 + 2 + 2 + 2 = ?"
+        "content": "8 + 5 + 3 + 7 = ?"
       }
     },
     "choices": [
       {
         "id": "A",
-        "en": "10"
+        "en": "21"
       },
       {
         "id": "B",
-        "en": "14"
+        "en": "23"
       },
       {
         "id": "C",
-        "en": "9"
+        "en": "24"
       },
       {
         "id": "D",
-        "en": "12"
+        "en": "22"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "A"
+      "key": "B"
     },
     "id": "AH09"
   },
@@ -398,19 +398,19 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "Compute the sum (repeated addition).",
-      "vi": "Tính tổng (cộng lặp)."
+      "en": "Compute the sum.",
+      "vi": "Tính tổng."
     },
     "figure": {
       "renderer": "text",
       "params": {
-        "content": "4 + 4 + 4 + 4 + 4 + 4 = ?"
+        "content": "9 + 6 + 8 + 7 = ?"
       }
     },
     "choices": [
       {
         "id": "A",
-        "en": "26"
+        "en": "27"
       },
       {
         "id": "B",
@@ -418,16 +418,16 @@
       },
       {
         "id": "C",
-        "en": "24"
+        "en": "30"
       },
       {
         "id": "D",
-        "en": "25"
+        "en": "31"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "C"
+      "key": "B"
     },
     "id": "AH12"
   },
@@ -506,36 +506,36 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "Compute the sum (repeated addition).",
-      "vi": "Tính tổng (cộng lặp)."
+      "en": "Compute the sum.",
+      "vi": "Tính tổng."
     },
     "figure": {
       "renderer": "text",
       "params": {
-        "content": "4 + 4 + 4 + 4 + 4 + 4 = ?"
+        "content": "12 + 5 + 9 = ?"
       }
     },
     "choices": [
       {
         "id": "A",
-        "en": "21"
-      },
-      {
-        "id": "B",
-        "en": "28"
-      },
-      {
-        "id": "C",
         "en": "25"
       },
       {
+        "id": "B",
+        "en": "27"
+      },
+      {
+        "id": "C",
+        "en": "26"
+      },
+      {
         "id": "D",
-        "en": "24"
+        "en": "28"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "D"
+      "key": "B"
     },
     "id": "AH15"
   },
@@ -614,13 +614,13 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "Compute the sum (repeated addition).",
-      "vi": "Tính tổng (cộng lặp)."
+      "en": "Compute the sum.",
+      "vi": "Tính tổng."
     },
     "figure": {
       "renderer": "text",
       "params": {
-        "content": "4 + 4 + 4 + 4 + 4 = ?"
+        "content": "15 + 7 - 6 + 8 = ?"
       }
     },
     "choices": [
@@ -630,20 +630,20 @@
       },
       {
         "id": "B",
-        "en": "16"
+        "en": "24"
       },
       {
         "id": "C",
-        "en": "17"
+        "en": "25"
       },
       {
         "id": "D",
-        "en": "20"
+        "en": "26"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "D"
+      "key": "C"
     },
     "id": "AH18"
   },
@@ -722,31 +722,31 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "Compute the sum (repeated addition).",
-      "vi": "Tính tổng (cộng lặp)."
+      "en": "Compute the sum.",
+      "vi": "Tính tổng."
     },
     "figure": {
       "renderer": "text",
       "params": {
-        "content": "3 + 3 + 3 + 3 + 3 + 3 = ?"
+        "content": "18 - 7 + 9 + 4 = ?"
       }
     },
     "choices": [
       {
         "id": "A",
-        "en": "19"
+        "en": "22"
       },
       {
         "id": "B",
-        "en": "21"
+        "en": "23"
       },
       {
         "id": "C",
-        "en": "18"
+        "en": "24"
       },
       {
         "id": "D",
-        "en": "22"
+        "en": "25"
       }
     ],
     "answer": {
@@ -830,36 +830,36 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "Compute the sum (repeated addition).",
-      "vi": "Tính tổng (cộng lặp)."
+      "en": "Compute the sum.",
+      "vi": "Tính tổng."
     },
     "figure": {
       "renderer": "text",
       "params": {
-        "content": "4 + 4 + 4 + 4 = ?"
+        "content": "20 - 6 + 5 + 3 = ?"
       }
     },
     "choices": [
       {
         "id": "A",
-        "en": "16"
-      },
-      {
-        "id": "B",
-        "en": "15"
-      },
-      {
-        "id": "C",
         "en": "20"
       },
       {
+        "id": "B",
+        "en": "21"
+      },
+      {
+        "id": "C",
+        "en": "22"
+      },
+      {
         "id": "D",
-        "en": "19"
+        "en": "23"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "A"
+      "key": "C"
     },
     "id": "AH24"
   },
@@ -938,36 +938,36 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "Compute the sum (repeated addition).",
-      "vi": "Tính tổng (cộng lặp)."
+      "en": "Compute the sum.",
+      "vi": "Tính tổng."
     },
     "figure": {
       "renderer": "text",
       "params": {
-        "content": "4 + 4 + 4 + 4 + 4 = ?"
+        "content": "17 - 5 + 9 + 6 = ?"
       }
     },
     "choices": [
       {
         "id": "A",
-        "en": "19"
+        "en": "25"
       },
       {
         "id": "B",
-        "en": "17"
+        "en": "26"
       },
       {
         "id": "C",
-        "en": "24"
+        "en": "27"
       },
       {
         "id": "D",
-        "en": "20"
+        "en": "28"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "D"
+      "key": "C"
     },
     "id": "AH27"
   },
@@ -1046,36 +1046,36 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "Compute the sum (repeated addition).",
-      "vi": "Tính tổng (cộng lặp)."
+      "en": "Compute the sum.",
+      "vi": "Tính tổng."
     },
     "figure": {
       "renderer": "text",
       "params": {
-        "content": "2 + 2 + 2 + 2 = ?"
+        "content": "14 - 6 + 5 + 8 = ?"
       }
     },
     "choices": [
       {
         "id": "A",
-        "en": "8"
+        "en": "19"
       },
       {
         "id": "B",
-        "en": "4"
+        "en": "20"
       },
       {
         "id": "C",
-        "en": "10"
+        "en": "21"
       },
       {
         "id": "D",
-        "en": "11"
+        "en": "22"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "A"
+      "key": "C"
     },
     "id": "AH30"
   },
@@ -1154,36 +1154,36 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "Compute the sum (repeated addition).",
-      "vi": "Tính tổng (cộng lặp)."
+      "en": "Compute the sum.",
+      "vi": "Tính tổng."
     },
     "figure": {
       "renderer": "text",
       "params": {
-        "content": "2 + 2 + 2 + 2 = ?"
+        "content": "19 - 7 + 6 + 5 = ?"
       }
     },
     "choices": [
       {
         "id": "A",
-        "en": "10"
+        "en": "21"
       },
       {
         "id": "B",
-        "en": "7"
+        "en": "22"
       },
       {
         "id": "C",
-        "en": "5"
+        "en": "23"
       },
       {
         "id": "D",
-        "en": "8"
+        "en": "24"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "D"
+      "key": "C"
     },
     "id": "AH33"
   },
@@ -1262,36 +1262,36 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "Compute the sum (repeated addition).",
-      "vi": "Tính tổng (cộng lặp)."
+      "en": "Compute the sum.",
+      "vi": "Tính tổng."
     },
     "figure": {
       "renderer": "text",
       "params": {
-        "content": "2 + 2 + 2 + 2 = ?"
+        "content": "25 - 9 + 4 + 7 = ?"
       }
     },
     "choices": [
       {
         "id": "A",
-        "en": "8"
+        "en": "26"
       },
       {
         "id": "B",
-        "en": "5"
+        "en": "27"
       },
       {
         "id": "C",
-        "en": "12"
+        "en": "28"
       },
       {
         "id": "D",
-        "en": "11"
+        "en": "29"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "A"
+      "key": "B"
     },
     "id": "AH36"
   },
@@ -1370,36 +1370,36 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "Compute the sum (repeated addition).",
-      "vi": "Tính tổng (cộng lặp)."
+      "en": "Compute the sum.",
+      "vi": "Tính tổng."
     },
     "figure": {
       "renderer": "text",
       "params": {
-        "content": "2 + 2 + 2 + 2 + 2 + 2 = ?"
+        "content": "16 + 8 - 5 + 9 = ?"
       }
     },
     "choices": [
       {
         "id": "A",
-        "en": "12"
+        "en": "27"
       },
       {
         "id": "B",
-        "en": "10"
+        "en": "28"
       },
       {
         "id": "C",
-        "en": "16"
+        "en": "29"
       },
       {
         "id": "D",
-        "en": "11"
+        "en": "30"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "A"
+      "key": "C"
     },
     "id": "AH39"
   },
@@ -1478,31 +1478,31 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "Compute the sum (repeated addition).",
-      "vi": "Tính tổng (cộng lặp)."
+      "en": "Compute the sum.",
+      "vi": "Tính tổng."
     },
     "figure": {
       "renderer": "text",
       "params": {
-        "content": "2 + 2 + 2 + 2 = ?"
+        "content": "30 - 12 + 7 + 4 = ?"
       }
     },
     "choices": [
       {
         "id": "A",
-        "en": "12"
+        "en": "28"
       },
       {
         "id": "B",
-        "en": "8"
+        "en": "29"
       },
       {
         "id": "C",
-        "en": "6"
+        "en": "30"
       },
       {
         "id": "D",
-        "en": "4"
+        "en": "31"
       }
     ],
     "answer": {
@@ -1586,31 +1586,31 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "Compute the sum (repeated addition).",
-      "vi": "Tính tổng (cộng lặp)."
+      "en": "Compute the sum.",
+      "vi": "Tính tổng."
     },
     "figure": {
       "renderer": "text",
       "params": {
-        "content": "2 + 2 + 2 + 2 = ?"
+        "content": "22 + 5 - 8 + 6 = ?"
       }
     },
     "choices": [
       {
         "id": "A",
-        "en": "9"
+        "en": "23"
       },
       {
         "id": "B",
-        "en": "7"
+        "en": "24"
       },
       {
         "id": "C",
-        "en": "8"
+        "en": "25"
       },
       {
         "id": "D",
-        "en": "10"
+        "en": "26"
       }
     ],
     "answer": {
@@ -1694,31 +1694,31 @@
   {
     "type": "Arithmetic",
     "stem": {
-      "en": "Compute the sum (repeated addition).",
-      "vi": "Tính tổng (cộng lặp)."
+      "en": "Compute the sum.",
+      "vi": "Tính tổng."
     },
     "figure": {
       "renderer": "text",
       "params": {
-        "content": "4 + 4 + 4 + 4 + 4 + 4 = ?"
+        "content": "18 + 7 - 5 + 9 = ?"
       }
     },
     "choices": [
       {
         "id": "A",
-        "en": "21"
+        "en": "27"
       },
       {
         "id": "B",
-        "en": "25"
+        "en": "28"
       },
       {
         "id": "C",
-        "en": "24"
+        "en": "29"
       },
       {
         "id": "D",
-        "en": "20"
+        "en": "30"
       }
     ],
     "answer": {

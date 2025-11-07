@@ -124,3 +124,7 @@
     width: 180px;
     text-align: center;
 }
+
+.btn-block {
+    width: 100%;
+}

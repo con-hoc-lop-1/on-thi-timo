@@ -17,9 +17,18 @@ export function loadAllQuestions(
   isRandom = true,
   dataType = "preliminary"
 ) {
-  const basePath = `/on-thi-timo/database/${dataType}`;
+  // In debug mode on localhost, read via local API to avoid CRA full-page reloads
+  const params = typeof window !== 'undefined' ? new URLSearchParams(window.location.search) : null;
+  const isDebug = params && (params.get('debug') === '1' || params.get('debug') === 'true');
+  const isLocalhost = typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1');
+  const useApi = isDebug && isLocalhost;
+  const basePath = useApi
+    ? `http://localhost:4500/api/database/${dataType}`
+    : `/on-thi-timo/database/${dataType}`;
+
   const data = tests.map((test) => {
-    return fetch(`${basePath}/${test}.json`).then((res) => res.json());
+    const url = `${basePath}/${test}.json` + (useApi ? `?v=${Date.now()}` : "");
+    return fetch(url, useApi ? { cache: 'no-store' } : undefined).then((res) => res.json());
   });
 
   return Promise.all(data).then((results) => {

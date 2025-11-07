@@ -4,21 +4,38 @@ import { renderFigure } from "./figure";
 
 function Edit({ dataType = "preliminary" }) {
   const [questions, setQuestions] = useState([]);
-
+  const [copied, setCopied] = useState(0);
+  const [saved, setSaved] = useState(0);
   useEffect(() => {
     loadAllQuestions(
       [
-        "arithmetic",
+        // "arithmetic",
         "combinatorics",
-        "geometry",
-        "logic-thinking",
-        "number-theory",
+        // "geometry",
+        // "logic-thinking",
+        // "number-theory",
       ],
       5000,
       false,
       dataType
     ).then(setQuestions);
   }, [dataType]);
+
+  const reloadAll = async () => {
+    const all = await loadAllQuestions(
+      [
+        // "arithmetic",
+        "combinatorics",
+        // "geometry",
+        // "logic-thinking",
+        // "number-theory",
+      ],
+      5000,
+      false,
+      dataType
+    );
+    setQuestions(all);
+  };
   // Debug editors: update stem.en and choices[i].en
   const handleStemChange = (qIndex, newEn) => {
     setQuestions((prev) => {
@@ -35,6 +52,51 @@ function Edit({ dataType = "preliminary" }) {
       const next = [...prev];
       const q = next[qIndex] || {};
       next[qIndex] = { ...q, stem: { ...(q.stem || {}), vi: newVi } };
+      return next;
+    });
+  };
+  const handleFigureChange = (qIndex, newFigure) => {
+    setQuestions((prev) => {
+      const next = [...prev];
+      const q = next[qIndex] || {};
+      try {
+        // Parse the newFigure string to JSON
+        const figureObj = JSON.parse(newFigure);
+        next[qIndex] = { ...q, figure: figureObj };
+      } catch (e) {
+        // If parsing fails, store as is
+        next[qIndex] = { ...q, figure: newFigure };
+      }
+      return next;
+    });
+  };
+  const handleChoiceChange = (qIndex, newChoice) => {
+    setQuestions((prev) => {
+      const next = [...prev];
+      const q = next[qIndex] || {};
+      try {
+        // Parse the newChoice string to JSON
+        const choiceObj = JSON.parse(newChoice);
+        next[qIndex] = { ...q, choices: choiceObj };
+      } catch (e) {
+        // If parsing fails, store as is
+        next[qIndex] = { ...q, choices: newChoice };
+      }
+      return next;
+    });
+  };
+  const handleAnswerChange = (qIndex, newAnswer) => {
+    setQuestions((prev) => {
+      const next = [...prev];
+      const q = next[qIndex] || {};
+      try {
+        // Parse the newAnswer string to JSON
+        const answerObj = JSON.parse(newAnswer);
+        next[qIndex] = { ...q, answer: answerObj };
+      } catch (e) {
+        // If parsing fails, store as is
+        next[qIndex] = { ...q, answer: newAnswer };
+      }
       return next;
     });
   };
@@ -57,7 +119,7 @@ function Edit({ dataType = "preliminary" }) {
       const txt = JSON.stringify(q, null, 2);
       if (navigator.clipboard && navigator.clipboard.writeText) {
         navigator.clipboard.writeText(txt).then(() => {
-          alert("Đã chép nội dung câu hỏi vào clipboard.");
+          setCopied(q.id);
         });
       } else {
         // Fallback
@@ -67,7 +129,7 @@ function Edit({ dataType = "preliminary" }) {
         ta.select();
         document.execCommand("copy");
         document.body.removeChild(ta);
-        alert("Đã chép nội dung câu hỏi vào clipboard.");
+        setCopied(q.id);
       }
     } catch (e) {
       console.error(e);
@@ -98,8 +160,26 @@ function Edit({ dataType = "preliminary" }) {
           .replace(/\s+/g, "-")}.json`;
 
       // Đọc toàn bộ danh mục hiện tại
-      const basePath = `/on-thi-timo/database/${dataType}`;
-      const res = await fetch(`${basePath}/${fileName}`);
+      // Chọn nguồn dữ liệu: trong debug+localhost thì dùng API shadow để tránh reload trang
+      const params =
+        typeof window !== "undefined"
+          ? new URLSearchParams(window.location.search)
+          : null;
+      const isDebug =
+        params &&
+        (params.get("debug") === "1" || params.get("debug") === "true");
+      const isLocalhost =
+        typeof window !== "undefined" &&
+        (window.location.hostname === "localhost" ||
+          window.location.hostname === "127.0.0.1");
+      const useApi = isDebug && isLocalhost;
+      const basePath = useApi
+        ? `http://localhost:4500/api/database/${dataType}`
+        : `/on-thi-timo/database/${dataType}`;
+      const res = await fetch(
+        `${basePath}/${fileName}` + (useApi ? `?v=${Date.now()}` : ""),
+        useApi ? { cache: "no-store" } : undefined
+      );
       if (!res.ok) throw new Error(`Không thể tải ${fileName}`);
       const arr = await res.json();
       if (!Array.isArray(arr))
@@ -129,10 +209,6 @@ function Edit({ dataType = "preliminary" }) {
       const text = JSON.stringify(updated, null, 2);
 
       // Ưu tiên: nếu đang debug và chạy trên localhost, gọi API lưu trực tiếp
-      const isLocalhost =
-        typeof window !== "undefined" &&
-        (window.location.hostname === "localhost" ||
-          window.location.hostname === "127.0.0.1");
       try {
         if (isDebug && isLocalhost) {
           const resp = await fetch(
@@ -147,7 +223,21 @@ function Edit({ dataType = "preliminary" }) {
             }
           );
           if (resp.ok) {
-            // alert(`Đã ghi đè trực tiếp file ${fileName} (vòng ${dataType}).`);
+            // Sau khi lưu thành công, refetch toàn bộ câu hỏi (không reload trang)
+            const all = await loadAllQuestions(
+              [
+                "arithmetic",
+                "combinatorics",
+                "geometry",
+                "logic-thinking",
+                "number-theory",
+              ],
+              5000,
+              false,
+              dataType
+            );
+            setQuestions(all);
+            setSaved(q.id);
             return;
           } else {
             console.warn("Local save API trả về lỗi", await resp.text());
@@ -195,10 +285,39 @@ function Edit({ dataType = "preliminary" }) {
     }
   };
 
+  useEffect(() => {
+    if (copied) {
+      const timeout = setTimeout(() => {
+        setCopied(0);
+      }, 3000);
+      return () => clearTimeout(timeout);
+    }
+  }, [copied]);
+
+  useEffect(() => {
+    if (saved) {
+      const timeout = setTimeout(() => {
+        setSaved(0);
+      }, 3000);
+      return () => clearTimeout(timeout);
+    }
+  }, [saved]);
+
   // 📄 Chế độ giấy trắc nghiệm
   return (
     <div className="container-fluid mt-4 paper-mode">
-      <h3 className="m-3">{dataType.toUpperCase()} - EDIT MODE</h3>
+      <div className="d-flex justify-content-between align-items-center m-3">
+        <h3 className="m-0">{dataType.toUpperCase()} - EDIT MODE</h3>
+        <div className="d-flex gap-2">
+          <button
+            type="button"
+            className="btn btn-sm btn-outline-secondary"
+            onClick={reloadAll}
+          >
+            REFRESH
+          </button>
+        </div>
+      </div>
       {questions.map((q, qi) => (
         <div
           key={qi}
@@ -216,41 +335,33 @@ function Edit({ dataType = "preliminary" }) {
               <div className="d-flex gap-2">
                 <button
                   type="button"
-                  className="btn btn-sm btn-outline-primary"
+                  className={`btn btn-sm ${copied === q.id ? "btn-primary" : "btn-outline-primary"}`}
                   onClick={() => copyQuestion(q)}
                   title="Chép JSON câu hỏi"
                 >
-                  CHÉP
-                </button>
-                <button
-                  type="button"
-                  className="btn btn-sm btn-outline-success"
-                  onClick={() => saveQuestion(q)}
-                  title="Lưu và ghi đè tệp JSON của danh mục"
-                >
-                  LƯU
+                  {copied === q.id ? "ĐÃ CHÉP" : "CHÉP"}
                 </button>
               </div>
             </div>
             <div className="mb-2">
-              <label className="form-label">stem.en</label>
+              <label className="form-label">stem</label>
               <textarea
                 className="form-control"
-                rows={3}
-                value={(q.stem && q.stem.en) || ""}
+                rows={4}
+                value={JSON.stringify(q.stem, null, 2)}
                 onChange={(e) => handleStemChange(qi, e.target.value)}
               />
             </div>
-            <div className="mb-2">
-              <label className="form-label">stem.vi</label>
+            <div className="figure-container">{renderFigure(q)}</div>
+            <div className="figure-container">
+              <label className="form-label">Figure</label>
               <textarea
                 className="form-control"
-                rows={3}
-                value={(q.stem && q.stem.vi) || ""}
-                onChange={(e) => handleStemViChange(qi, e.target.value)}
+                rows={10}
+                value={JSON.stringify(q.figure, null, 2)}
+                onChange={(e) => handleFigureChange(qi, e.target.value)}
               />
             </div>
-            <div className="figure-container">{renderFigure(q)}</div>
           </div>
           <div className="mt-2">
             <div className="row">
@@ -280,6 +391,38 @@ function Edit({ dataType = "preliminary" }) {
                 );
               })}
             </div>
+            <div className="row">
+              <div className="col-12">
+                <label className="form-label">Choice</label>
+                <textarea
+                  className="form-control"
+                  rows={10}
+                  value={JSON.stringify(q.choices, null, 2)}
+                  onChange={(e) => handleChoiceChange(qi, e.target.value)}
+                />
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-12">
+                <label className="form-label">Answer</label>
+                <textarea
+                  className="form-control"
+                  rows={4}
+                  value={JSON.stringify(q.answer, null, 2)}
+                  onChange={(e) => handleAnswerChange(qi, e.target.value)}
+                />
+              </div>
+            </div>
+          </div>
+          <div className="mt-2">
+            <button
+              type="button"
+              className={`btn btn-block ${saved === q.id ? "btn-success" : "btn-outline-success"}`}
+              onClick={() => saveQuestion(q)}
+              title="Lưu JSON câu hỏi"
+            >
+              {saved === q.id ? "ĐÃ LƯU" : "LƯU"}
+            </button>
           </div>
         </div>
       ))}
