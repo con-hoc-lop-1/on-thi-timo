@@ -3,21 +3,26 @@ import { loadAllQuestions } from "./utils";
 import { renderFigure } from "./figure";
 
 function Edit({ dataType = "preliminary" }) {
-  const [questions, setQuestions] = useState([]);
-  const [copied, setCopied] = useState(0);
-  const [saved, setSaved] = useState(0);
   const listQuestionFiles = [
     // "arithmetic",
-    "combinatorics",
-    // "geometry",
+    // "combinatorics",
+    "geometry",
     // "logic-thinking",
     // "number-theory",
   ];
-  useEffect(() => {
-    loadAllQuestions(listQuestionFiles, 5000, false, dataType).then(
-      setQuestions
-    );
-  }, [dataType]);
+
+  const [questions, setQuestions] = useState([]);
+  const [copied, setCopied] = useState(0);
+  const [saved, setSaved] = useState([]);
+  const [tmpStem, setTmpStem] = useState(false);
+  const [tmpFull, setTmpFull] = useState(false);
+
+  const removeSaved = (id) => {
+    setSaved((prev) => prev.filter((savedId) => savedId !== id));
+  };
+  const [tmpChoice, setTmpChoice] = useState(false);
+  const [tmpFigure, setTmpFigure] = useState(false);
+  const [tmpAnswer, setTmpAnswer] = useState(false);
 
   const reloadAll = async () => {
     const all = await loadAllQuestions(
@@ -41,6 +46,8 @@ function Edit({ dataType = "preliminary" }) {
         // If parsing fails, store as is
         next[qIndex] = { ...q, stem: newStem };
       }
+      setTmpStem(false);
+      removeSaved(next[qIndex]?.id);
       return next;
     });
   };
@@ -57,9 +64,12 @@ function Edit({ dataType = "preliminary" }) {
         // If parsing fails, store as is
         next[qIndex] = { ...q, figure: newFigure };
       }
+      setTmpFigure(false);
+      removeSaved(next[qIndex]?.id);
       return next;
     });
   };
+
   const handleChoiceChange = (qIndex, newChoice) => {
     setQuestions((prev) => {
       const next = [...prev];
@@ -72,9 +82,12 @@ function Edit({ dataType = "preliminary" }) {
         // If parsing fails, store as is
         next[qIndex] = { ...q, choices: newChoice };
       }
+      setTmpChoice(false);
+      removeSaved(next[qIndex]?.id);
       return next;
     });
   };
+
   const handleAnswerChange = (qIndex, newAnswer) => {
     setQuestions((prev) => {
       const next = [...prev];
@@ -87,6 +100,8 @@ function Edit({ dataType = "preliminary" }) {
         // If parsing fails, store as is
         next[qIndex] = { ...q, answer: newAnswer };
       }
+      setTmpAnswer(false);
+      removeSaved(next[qIndex]?.id);
       return next;
     });
   };
@@ -100,6 +115,40 @@ function Edit({ dataType = "preliminary" }) {
         i === choiceIndex ? { ...c, en: newEn } : c
       );
       next[qIndex] = { ...q, choices };
+      removeSaved(q.id);
+      return next;
+    });
+  };
+  const handleFullChange = (qIndex, newValue) => {
+    setQuestions((prev) => {
+      const next = [...prev];
+      const currentQuestion = next[qIndex] || {};
+      try {
+        // Parse the newValue string to JSON
+        let updatedQuestion = JSON.parse(newValue);
+
+        // Add default type if missing
+        if (!updatedQuestion.type) {
+          updatedQuestion.type = currentQuestion.type;
+        }
+
+        // Add empty figure object if missing
+        if (!updatedQuestion.figure) {
+          updatedQuestion.figure = {};
+        }
+
+        // Add current id if missing
+        if (!updatedQuestion.id) {
+          updatedQuestion.id = currentQuestion.id;
+        }
+
+        next[qIndex] = updatedQuestion;
+      } catch (e) {
+        console.error("Invalid JSON:", e);
+        return prev;
+      }
+      setTmpFull(false);
+      removeSaved(next[qIndex]?.id);
       return next;
     });
   };
@@ -221,7 +270,7 @@ function Edit({ dataType = "preliminary" }) {
               dataType
             );
             setQuestions(all);
-            setSaved(q.id);
+            setSaved((prev) => [...prev, q.id]);
             return;
           } else {
             console.warn("Local save API trả về lỗi", await resp.text());
@@ -279,13 +328,10 @@ function Edit({ dataType = "preliminary" }) {
   }, [copied]);
 
   useEffect(() => {
-    if (saved) {
-      const timeout = setTimeout(() => {
-        setSaved(0);
-      }, 3000);
-      return () => clearTimeout(timeout);
-    }
-  }, [saved]);
+    loadAllQuestions(listQuestionFiles, 5000, false, dataType).then(
+      setQuestions
+    );
+  }, [dataType]);
 
   // 📄 Chế độ giấy trắc nghiệm
   return (
@@ -319,7 +365,7 @@ function Edit({ dataType = "preliminary" }) {
               <div className="d-flex gap-2">
                 <button
                   type="button"
-                  className={`btn ${copied === q.id ? "btn-primary" : "btn-outline-primary"}`}
+                  className={`btn ${copied === q.id ? "btn-warning" : "btn-outline-primary"}`}
                   onClick={() => copyQuestion(q)}
                   title="Chép JSON câu hỏi"
                 >
@@ -327,103 +373,162 @@ function Edit({ dataType = "preliminary" }) {
                 </button>
               </div>
             </div>
-            <div className="question-edit-mode">
-              <div className="question-item mb-2">
-                <label className="form-label">Stem</label>
-                <div className="row">
-                  <div className="col-8">
-                    <div dangerouslySetInnerHTML={{ __html: q.stem.en }} />
-                  </div>
-                  <div className="col-4">
-                    <textarea
-                      className="form-control"
-                      rows={4}
-                      value={JSON.stringify(q.stem, null, 2)}
-                      onChange={(e) => handleStemChange(qi, e.target.value)}
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="question-item mb-2">
-                <label className="form-label">Figure</label>
-                <div className="row">
-                  <div className="col-8">
-                    <div className="figure-container">{renderFigure(q)}</div>
-                  </div>
-                  <div className="col-4">
-                    <div className="figure-container">
-                      <textarea
-                        className="form-control"
-                        rows={10}
-                        value={JSON.stringify(q.figure, null, 2)}
-                        onChange={(e) => handleFigureChange(qi, e.target.value)}
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="question-item mb-2">
-                <label className="form-label">Choice</label>
-                <div className="row">
-                  <div className="col-8">
+            <div className="row">
+              <div className="col-9">
+                <div className="question-edit-mode">
+                  <div className="question-item mb-2">
+                    <label className="form-label">Stem</label>
                     <div className="row">
-                      {q.choices.map((choice, i) => {
-                        const isRightAnswer =
-                          q.answer && q.answer.key === choice.id;
-                        const rightStyle = isRightAnswer
-                          ? { backgroundColor: "#e6ffed" }
-                          : {};
-                        return (
-                          <div
-                            className="col-6 mb-2 p-2"
-                            key={i}
-                            style={rightStyle}
-                          >
-                            <div className="d-flex align-items-center">
-                              <b style={{ color: "gray", width: 24 }}>
-                                {choice.id}.
-                              </b>
-                              <input
-                                type="text"
-                                className="form-control ms-2"
-                                value={choice.en || ""}
-                                onChange={(e) =>
-                                  handleChoiceTextChange(qi, i, e.target.value)
-                                }
-                              />
-                            </div>
-                          </div>
-                        );
-                      })}
+                      <div className="col-8">
+                        <div dangerouslySetInnerHTML={{ __html: q.stem.en }} />
+                        <div dangerouslySetInnerHTML={{ __html: q.stem.vi }} />
+                      </div>
+                      <div className="col-4">
+                        <textarea
+                          className="form-control"
+                          rows={5}
+                          onFocus={(e) => e.target.select()}
+                          onBlur={(e) => handleStemChange(qi, e.target.value)}
+                          value={tmpStem ? tmpStem : JSON.stringify(q.stem)}
+                          onChange={(e) => {
+                            setTmpStem(e.target.value);
+                          }}
+                        />
+                      </div>
                     </div>
                   </div>
-                  <div className="col-4">
-                    <textarea
-                      className="form-control"
-                      rows={10}
-                      value={JSON.stringify(q.choices, null, 2)}
-                      onChange={(e) => handleChoiceChange(qi, e.target.value)}
-                    />
+                  <div className="question-item mb-2">
+                    <label className="form-label">Figure</label>
+                    <div className="row">
+                      <div className="col-8">
+                        <div className="figure-container">
+                          {renderFigure(q)}
+                        </div>
+                      </div>
+                      <div className="col-4">
+                        <div className="figure-container">
+                          <textarea
+                            className="form-control"
+                            rows={10}
+                            onFocus={(e) => e.target.select()}
+                            value={
+                              tmpFigure ? tmpFigure : JSON.stringify(q.figure)
+                            }
+                            onChange={(e) => {
+                              setTmpFigure(e.target.value);
+                            }}
+                            onBlur={(e) =>
+                              handleFigureChange(qi, e.target.value)
+                            }
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="question-item mb-2">
+                    <label className="form-label">Choice</label>
+                    <div className="row">
+                      <div className="col-8">
+                        <div className="row">
+                          {q.choices.map((choice, i) => {
+                            const isRightAnswer =
+                              q.answer && q.answer.key === choice.id;
+                            const rightStyle = isRightAnswer
+                              ? { backgroundColor: "#e6ffed" }
+                              : {};
+                            return (
+                              <div
+                                className="col-6 mb-2 p-2"
+                                key={i}
+                                style={rightStyle}
+                              >
+                                <div className="d-flex align-items-center">
+                                  <b style={{ color: "gray", width: 24 }}>
+                                    {choice.id}.
+                                  </b>
+                                  <input
+                                    type="text"
+                                    className="form-control ms-2"
+                                    value={choice.en || ""}
+                                    onChange={(e) =>
+                                      handleChoiceTextChange(
+                                        qi,
+                                        i,
+                                        e.target.value
+                                      )
+                                    }
+                                  />
+                                </div>
+                              </div>
+                            );
+                          })}
+                        </div>
+                      </div>
+                      <div className="col-4">
+                        <textarea
+                          className="form-control"
+                          rows={4}
+                          onFocus={(e) => e.target.select()}
+                          value={
+                            tmpChoice ? tmpChoice : JSON.stringify(q.choices)
+                          }
+                          onChange={(e) => {
+                            setTmpChoice(e.target.value);
+                          }}
+                          onBlur={(e) => handleChoiceChange(qi, e.target.value)}
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="question-item mb-2">
+                    <label className="form-label">Answer</label>
+                    <div className="row">
+                      <div className="col-8">
+                        <div className="answer-item border rounded me-2 ms-2 mb-1 p-2 bg-light">
+                          <span className="top-left">Correct answer:</span>
+                          <strong>{q.answer ? q.answer.key : ""}</strong>
+                        </div>
+                      </div>
+                      <div className="col-4">
+                        <textarea
+                          className="form-control"
+                          rows={3}
+                          onFocus={(e) => e.target.select()}
+                          value={
+                            tmpAnswer ? tmpAnswer : JSON.stringify(q.answer)
+                          }
+                          onChange={(e) => {
+                            setTmpAnswer(e.target.value);
+                          }}
+                          onBlur={(e) => handleAnswerChange(qi, e.target.value)}
+                        />
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="question-item mb-2">
-                <label className="form-label">Answer</label>
-                <div className="row">
-                  <div className="col-8">
-                    <div className="answer-item border rounded me-2 ms-2 mb-1 p-2 bg-light">
-                      <span className="top-left">Correct answer:</span>
-                      <strong>{q.answer ? q.answer.key : ""}</strong>
-                    </div>
-                  </div>
-                  <div className="col-4">
-                    <textarea
-                      className="form-control"
-                      rows={4}
-                      value={JSON.stringify(q.answer, null, 2)}
-                      onChange={(e) => handleAnswerChange(qi, e.target.value)}
-                    />
-                  </div>
+              <div className="col-3">
+                <div className="question-item mb-2">
+                  <label
+                    className="form-label"
+                    style={{
+                      background: "#ddd",
+                      borderRadius: "5px",
+                      padding: "0 10px",
+                    }}
+                  >
+                    Full
+                  </label>
+                  <textarea
+                    className="form-control"
+                    rows={32}
+                    onFocus={(e) => e.target.select()}
+                    onBlur={(e) => handleFullChange(qi, e.target.value)}
+                    value={tmpFull ? tmpFull : JSON.stringify(q)}
+                    onChange={(e) => {
+                      setTmpFull(e.target.value);
+                    }}
+                  />
                 </div>
               </div>
             </div>
@@ -431,11 +536,11 @@ function Edit({ dataType = "preliminary" }) {
           <div className="mt-2">
             <button
               type="button"
-              className={`btn btn-block ${saved === q.id ? "btn-success" : "btn-outline-success"}`}
+              className={`btn btn-block ${saved.includes(q.id) ? "btn-warning" : "btn-outline-success"}`}
               onClick={() => saveQuestion(q)}
               title="SAVE JSON câu hỏi"
             >
-              {saved === q.id ? "SAVED" : "SAVE"}
+              {saved.includes(q.id) ? "SAVED" : "SAVE"}
             </button>
           </div>
         </div>
