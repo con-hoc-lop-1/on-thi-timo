@@ -6,30 +6,22 @@ function Edit({ dataType = "preliminary" }) {
   const [questions, setQuestions] = useState([]);
   const [copied, setCopied] = useState(0);
   const [saved, setSaved] = useState(0);
+  const listQuestionFiles = [
+    // "arithmetic",
+    "combinatorics",
+    // "geometry",
+    // "logic-thinking",
+    // "number-theory",
+  ];
   useEffect(() => {
-    loadAllQuestions(
-      [
-        // "arithmetic",
-        "combinatorics",
-        // "geometry",
-        // "logic-thinking",
-        // "number-theory",
-      ],
-      5000,
-      false,
-      dataType
-    ).then(setQuestions);
+    loadAllQuestions(listQuestionFiles, 5000, false, dataType).then(
+      setQuestions
+    );
   }, [dataType]);
 
   const reloadAll = async () => {
     const all = await loadAllQuestions(
-      [
-        // "arithmetic",
-        "combinatorics",
-        // "geometry",
-        // "logic-thinking",
-        // "number-theory",
-      ],
+      listQuestionFiles,
       5000,
       false,
       dataType
@@ -37,24 +29,22 @@ function Edit({ dataType = "preliminary" }) {
     setQuestions(all);
   };
   // Debug editors: update stem.en and choices[i].en
-  const handleStemChange = (qIndex, newEn) => {
+  const handleStemChange = (qIndex, newStem) => {
     setQuestions((prev) => {
       const next = [...prev];
       const q = next[qIndex] || {};
-      next[qIndex] = { ...q, stem: { ...(q.stem || {}), en: newEn } };
+      try {
+        // Parse the newStem string to JSON
+        const stemObj = JSON.parse(newStem);
+        next[qIndex] = { ...q, stem: stemObj };
+      } catch (e) {
+        // If parsing fails, store as is
+        next[qIndex] = { ...q, stem: newStem };
+      }
       return next;
     });
   };
 
-  // Debug editors: update stem.vi
-  const handleStemViChange = (qIndex, newVi) => {
-    setQuestions((prev) => {
-      const next = [...prev];
-      const q = next[qIndex] || {};
-      next[qIndex] = { ...q, stem: { ...(q.stem || {}), vi: newVi } };
-      return next;
-    });
-  };
   const handleFigureChange = (qIndex, newFigure) => {
     setQuestions((prev) => {
       const next = [...prev];
@@ -137,7 +127,7 @@ function Edit({ dataType = "preliminary" }) {
     }
   };
 
-  // LƯU: ghi đè tệp JSON
+  // SAVE: ghi đè tệp JSON
   // Ưu tiên gọi API cục bộ khi debug+localhost để ghi trực tiếp không cần hộp thoại.
   // Fallback: File System Access API hoặc tải xuống.
   const saveQuestion = async (q) => {
@@ -208,7 +198,7 @@ function Edit({ dataType = "preliminary" }) {
 
       const text = JSON.stringify(updated, null, 2);
 
-      // Ưu tiên: nếu đang debug và chạy trên localhost, gọi API lưu trực tiếp
+      // Ưu tiên: nếu đang debug và chạy trên localhost, gọi API SAVE trực tiếp
       try {
         if (isDebug && isLocalhost) {
           const resp = await fetch(
@@ -223,15 +213,9 @@ function Edit({ dataType = "preliminary" }) {
             }
           );
           if (resp.ok) {
-            // Sau khi lưu thành công, refetch toàn bộ câu hỏi (không reload trang)
+            // Sau khi SAVE thành công, refetch toàn bộ câu hỏi (không reload trang)
             const all = await loadAllQuestions(
-              [
-                "arithmetic",
-                "combinatorics",
-                "geometry",
-                "logic-thinking",
-                "number-theory",
-              ],
+              listQuestionFiles,
               5000,
               false,
               dataType
@@ -264,7 +248,7 @@ function Edit({ dataType = "preliminary" }) {
         const writable = await handle.createWritable();
         await writable.write(text);
         await writable.close();
-        alert(`Đã lưu nội dung vào tệp: ${handle.name}`);
+        alert(`SAVED nội dung vào tệp: ${handle.name}`);
         return;
       }
 
@@ -281,7 +265,7 @@ function Edit({ dataType = "preliminary" }) {
       alert("Đã tạo file JSON đã cập nhật (tải xuống).");
     } catch (err) {
       console.error(err);
-      alert("Không thể lưu. Chi tiết trong console.");
+      alert("Không thể SAVE. Chi tiết trong console.");
     }
   };
 
@@ -324,9 +308,9 @@ function Edit({ dataType = "preliminary" }) {
           className="mb-3 border rounded p-3 bg-light paper-question"
         >
           <div className="mb-2">
-            <div className="question-title d-flex justify-content-between align-items-center">
+            <div className="question-title d-flex justify-content-between align-items-center mb-2">
               <strong>
-                Question {qi + 1} <i>(Câu {qi + 1})</i>
+                Question {qi + 1}
                 {q.id && (
                   <span className="badge bg-secondary ms-2">ID: {q.id}</span>
                 )}
@@ -335,82 +319,112 @@ function Edit({ dataType = "preliminary" }) {
               <div className="d-flex gap-2">
                 <button
                   type="button"
-                  className={`btn btn-sm ${copied === q.id ? "btn-primary" : "btn-outline-primary"}`}
+                  className={`btn ${copied === q.id ? "btn-primary" : "btn-outline-primary"}`}
                   onClick={() => copyQuestion(q)}
                   title="Chép JSON câu hỏi"
                 >
-                  {copied === q.id ? "ĐÃ CHÉP" : "CHÉP"}
+                  {copied === q.id ? "COPIED" : "COPY"}
                 </button>
               </div>
             </div>
-            <div className="mb-2">
-              <label className="form-label">stem</label>
-              <textarea
-                className="form-control"
-                rows={4}
-                value={JSON.stringify(q.stem, null, 2)}
-                onChange={(e) => handleStemChange(qi, e.target.value)}
-              />
-            </div>
-            <div className="figure-container">{renderFigure(q)}</div>
-            <div className="figure-container">
-              <label className="form-label">Figure</label>
-              <textarea
-                className="form-control"
-                rows={10}
-                value={JSON.stringify(q.figure, null, 2)}
-                onChange={(e) => handleFigureChange(qi, e.target.value)}
-              />
-            </div>
-          </div>
-          <div className="mt-2">
-            <div className="row">
-              {q.choices.map((choice, i) => {
-                const isRightAnswer = q.answer && q.answer.key === choice.id;
-                const rightStyle = isRightAnswer
-                  ? { backgroundColor: "#e6ffed" }
-                  : {};
-                return (
-                  <div
-                    className="col-12 col-md-3 mb-2"
-                    key={i}
-                    style={rightStyle}
-                  >
-                    <div className="d-flex align-items-center">
-                      <b style={{ color: "gray", width: 24 }}>{choice.id}.</b>
-                      <input
-                        type="text"
-                        className="form-control ms-2"
-                        value={choice.en || ""}
-                        onChange={(e) =>
-                          handleChoiceTextChange(qi, i, e.target.value)
-                        }
+            <div className="question-edit-mode">
+              <div className="question-item mb-2">
+                <label className="form-label">Stem</label>
+                <div className="row">
+                  <div className="col-8">
+                    <div dangerouslySetInnerHTML={{ __html: q.stem.en }} />
+                  </div>
+                  <div className="col-4">
+                    <textarea
+                      className="form-control"
+                      rows={4}
+                      value={JSON.stringify(q.stem, null, 2)}
+                      onChange={(e) => handleStemChange(qi, e.target.value)}
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="question-item mb-2">
+                <label className="form-label">Figure</label>
+                <div className="row">
+                  <div className="col-8">
+                    <div className="figure-container">{renderFigure(q)}</div>
+                  </div>
+                  <div className="col-4">
+                    <div className="figure-container">
+                      <textarea
+                        className="form-control"
+                        rows={10}
+                        value={JSON.stringify(q.figure, null, 2)}
+                        onChange={(e) => handleFigureChange(qi, e.target.value)}
                       />
                     </div>
                   </div>
-                );
-              })}
-            </div>
-            <div className="row">
-              <div className="col-12">
-                <label className="form-label">Choice</label>
-                <textarea
-                  className="form-control"
-                  rows={10}
-                  value={JSON.stringify(q.choices, null, 2)}
-                  onChange={(e) => handleChoiceChange(qi, e.target.value)}
-                />
+                </div>
               </div>
-            </div>
-            <div className="row">
-              <div className="col-12">
+              <div className="question-item mb-2">
+                <label className="form-label">Choice</label>
+                <div className="row">
+                  <div className="col-8">
+                    <div className="row">
+                      {q.choices.map((choice, i) => {
+                        const isRightAnswer =
+                          q.answer && q.answer.key === choice.id;
+                        const rightStyle = isRightAnswer
+                          ? { backgroundColor: "#e6ffed" }
+                          : {};
+                        return (
+                          <div
+                            className="col-6 mb-2 p-2"
+                            key={i}
+                            style={rightStyle}
+                          >
+                            <div className="d-flex align-items-center">
+                              <b style={{ color: "gray", width: 24 }}>
+                                {choice.id}.
+                              </b>
+                              <input
+                                type="text"
+                                className="form-control ms-2"
+                                value={choice.en || ""}
+                                onChange={(e) =>
+                                  handleChoiceTextChange(qi, i, e.target.value)
+                                }
+                              />
+                            </div>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </div>
+                  <div className="col-4">
+                    <textarea
+                      className="form-control"
+                      rows={10}
+                      value={JSON.stringify(q.choices, null, 2)}
+                      onChange={(e) => handleChoiceChange(qi, e.target.value)}
+                    />
+                  </div>
+                </div>
+              </div>
+              <div className="question-item mb-2">
                 <label className="form-label">Answer</label>
-                <textarea
-                  className="form-control"
-                  rows={4}
-                  value={JSON.stringify(q.answer, null, 2)}
-                  onChange={(e) => handleAnswerChange(qi, e.target.value)}
-                />
+                <div className="row">
+                  <div className="col-8">
+                    <div className="answer-item border rounded me-2 ms-2 mb-1 p-2 bg-light">
+                      <span className="top-left">Correct answer:</span>
+                      <strong>{q.answer ? q.answer.key : ""}</strong>
+                    </div>
+                  </div>
+                  <div className="col-4">
+                    <textarea
+                      className="form-control"
+                      rows={4}
+                      value={JSON.stringify(q.answer, null, 2)}
+                      onChange={(e) => handleAnswerChange(qi, e.target.value)}
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -419,32 +433,13 @@ function Edit({ dataType = "preliminary" }) {
               type="button"
               className={`btn btn-block ${saved === q.id ? "btn-success" : "btn-outline-success"}`}
               onClick={() => saveQuestion(q)}
-              title="Lưu JSON câu hỏi"
+              title="SAVE JSON câu hỏi"
             >
-              {saved === q.id ? "ĐÃ LƯU" : "LƯU"}
+              {saved === q.id ? "SAVED" : "SAVE"}
             </button>
           </div>
         </div>
       ))}
-
-      {/* Trang riêng cho đáp án */}
-      <div className="answer-sheet">
-        <h3 className="mt-2">
-          Answer <i>(Đáp án)</i>
-        </h3>
-        <h6>{dataType.toUpperCase()} - EDIT MODE</h6>
-        <div className="answer-grid">
-          {questions.map((q, qi) => (
-            <div
-              key={qi}
-              className="answer-item border rounded me-2 ms-2 mb-1 p-2 bg-light"
-            >
-              <span className="top-left">{qi + 1}</span>
-              <strong>{q.answer ? q.answer.key : ""}</strong>
-            </div>
-          ))}
-        </div>
-      </div>
     </div>
   );
 }

@@ -128,3 +128,14 @@
 .btn-block {
     width: 100%;
 }
+
+.question-edit-mode .question-item .form-label {
+    background: #ddd;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+
+.question-edit-mode .question-item:not(:last-child) {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #a8a5a5;
+}
