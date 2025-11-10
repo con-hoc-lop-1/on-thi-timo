@@ -205,7 +205,7 @@
     ],
     "answer": {
       "type": "single",
-      "key": "B"
+      "key": "A"
     },
     "figure": {
       "renderer": "squareConnect",
@@ -224,15 +224,15 @@
             7
           ],
           [
-            4,
-            8
+            3,
+            7
+          ],
+          [
+            "?"
           ],
           [
             1,
             5
-          ],
-          [
-            "?"
           ]
         ]
       }
@@ -1423,8 +1423,8 @@
   {
     "type": "Combinatorics",
     "stem": {
-      "en": "Collect all 🐟 (⛰️ is a rock). Start/end anywhere. 4-directional.",
-      "vi": "Nhặt tất cả 🐟 (⛰️ là đá). Bắt đầu/kết thúc tự do. Di chuyển 4 hướng."
+      "en": "Collect all 🐟. Start/end anywhere. 4-directional.",
+      "vi": "Nhặt tất cả 🐟. Bắt đầu/kết thúc tự do. Di chuyển 4 hướng."
     },
     "figure": {
       "renderer": "charGrid",

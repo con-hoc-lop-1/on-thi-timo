@@ -103,7 +103,7 @@
     ],
     "answer": {
       "type": "single",
-      "key": "A"
+      "key": "D"
     },
     "id": "AH03"
   },
@@ -427,7 +427,7 @@
     ],
     "answer": {
       "type": "single",
-      "key": "B"
+      "key": "C"
     },
     "id": "AH12"
   },
@@ -535,7 +535,7 @@
     ],
     "answer": {
       "type": "single",
-      "key": "B"
+      "key": "C"
     },
     "id": "AH15"
   },
@@ -643,7 +643,7 @@
     ],
     "answer": {
       "type": "single",
-      "key": "C"
+      "key": "B"
     },
     "id": "AH18"
   },
@@ -1399,7 +1399,7 @@
     ],
     "answer": {
       "type": "single",
-      "key": "C"
+      "key": "B"
     },
     "id": "AH39"
   },

@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/on-thi-timo/static/css/main.060acba4.css",
-    "main.js": "/on-thi-timo/static/js/main.6821afd8.js",
+    "main.js": "/on-thi-timo/static/js/main.8b97aaf0.js",
     "index.html": "/on-thi-timo/index.html",
     "main.060acba4.css.map": "/on-thi-timo/static/css/main.060acba4.css.map",
-    "main.6821afd8.js.map": "/on-thi-timo/static/js/main.6821afd8.js.map"
+    "main.8b97aaf0.js.map": "/on-thi-timo/static/js/main.8b97aaf0.js.map"
   },
   "entrypoints": [
     "static/css/main.060acba4.css",
-    "static/js/main.6821afd8.js"
+    "static/js/main.8b97aaf0.js"
   ]
 }
