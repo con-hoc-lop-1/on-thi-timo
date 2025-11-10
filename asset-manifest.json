@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/on-thi-timo/static/css/main.f987ceec.css",
-    "main.js": "/on-thi-timo/static/js/main.d43f2ae9.js",
+    "main.css": "/on-thi-timo/static/css/main.060acba4.css",
+    "main.js": "/on-thi-timo/static/js/main.6821afd8.js",
     "index.html": "/on-thi-timo/index.html",
-    "main.f987ceec.css.map": "/on-thi-timo/static/css/main.f987ceec.css.map",
-    "main.d43f2ae9.js.map": "/on-thi-timo/static/js/main.d43f2ae9.js.map"
+    "main.060acba4.css.map": "/on-thi-timo/static/css/main.060acba4.css.map",
+    "main.6821afd8.js.map": "/on-thi-timo/static/js/main.6821afd8.js.map"
   },
   "entrypoints": [
-    "static/css/main.f987ceec.css",
-    "static/js/main.d43f2ae9.js"
+    "static/css/main.060acba4.css",
+    "static/js/main.6821afd8.js"
   ]
 }

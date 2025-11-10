@@ -1,0 +1,2622 @@
+[
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many sides does the polygon below have?",
+      "vi": "Hình đa giác dưới đây có bao nhiêu cạnh?"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 9,
+        "size": 260
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "7"
+      },
+      {
+        "id": "B",
+        "en": "8"
+      },
+      {
+        "id": "C",
+        "en": "9"
+      },
+      {
+        "id": "D",
+        "en": "10"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "GH01"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many diagonals does the polygon have?",
+      "vi": "Hình đa giác dưới đây có bao nhiêu đường chéo?"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 6,
+        "size": 260
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "6"
+      },
+      {
+        "id": "B",
+        "en": "8"
+      },
+      {
+        "id": "C",
+        "en": "9"
+      },
+      {
+        "id": "D",
+        "en": "12"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "GH02"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "A decagon has all its diagonals drawn. How many line segments (sides + diagonals) are there?",
+      "vi": "Một hình 10 cạnh (thập giác) được vẽ tất cả đường chéo. Có tổng cộng bao nhiêu đoạn thẳng (cạnh + đường chéo)?"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 10,
+        "size": 260
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "40"
+      },
+      {
+        "id": "B",
+        "en": "45"
+      },
+      {
+        "id": "C",
+        "en": "50"
+      },
+      {
+        "id": "D",
+        "en": "55"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "GH03"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many diagonals does a nonagon have?",
+      "vi": "Một hình 9 cạnh có bao nhiêu đường chéo?"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 9,
+        "size": 260
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "18"
+      },
+      {
+        "id": "B",
+        "en": "27"
+      },
+      {
+        "id": "C",
+        "en": "36"
+      },
+      {
+        "id": "D",
+        "en": "54"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "GH04"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "All diagonals of a heptagon are drawn. How many line segments are there in total?",
+      "vi": "Vẽ tất cả đường chéo của thất giác. Tổng số đoạn thẳng (cạnh + đường chéo) là bao nhiêu?"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 7,
+        "size": 260
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "21"
+      },
+      {
+        "id": "B",
+        "en": "28"
+      },
+      {
+        "id": "C",
+        "en": "35"
+      },
+      {
+        "id": "D",
+        "en": "42"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "GH05"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "Some cubes are stacked. At least how many cubes are there in total?",
+      "vi": "Một số khối lập phương được xếp chồng. Ít nhất có bao nhiêu khối tất cả?"
+    },
+    "figure": {
+      "renderer": "isoCubes",
+      "params": {
+        "layout": [
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "10"
+      },
+      {
+        "id": "B",
+        "en": "14"
+      },
+      {
+        "id": "C",
+        "en": "22"
+      },
+      {
+        "id": "D",
+        "en": "30"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "explain": "Có 9 khối ở tầng dưới, 4 khối ở giữa, 3 khối ở trên → tổng 16 khối.",
+    "id": "GH06"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many diagonals does an octagon have?",
+      "vi": "Hình 8 cạnh có bao nhiêu đường chéo?"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 8,
+        "size": 260
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "16"
+      },
+      {
+        "id": "B",
+        "en": "20"
+      },
+      {
+        "id": "C",
+        "en": "24"
+      },
+      {
+        "id": "D",
+        "en": "28"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "GH07"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "In a 4×4 full grid, how many squares are there in total?",
+      "vi": "Trong lưới 4×4 đầy đủ, có tất cả bao nhiêu hình vuông?"
+    },
+    "figure": {
+      "renderer": "gridSquareTables",
+      "params": {
+        "data": [
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "24"
+      },
+      {
+        "id": "B",
+        "en": "28"
+      },
+      {
+        "id": "C",
+        "en": "30"
+      },
+      {
+        "id": "D",
+        "en": "32"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "GH08"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "In a 5×5 full grid, how many squares are there?",
+      "vi": "Trong lưới 5×5 đầy đủ, có bao nhiêu hình vuông?"
+    },
+    "figure": {
+      "renderer": "gridSquareTables",
+      "params": {
+        "data": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "45"
+      },
+      {
+        "id": "B",
+        "en": "50"
+      },
+      {
+        "id": "C",
+        "en": "55"
+      },
+      {
+        "id": "D",
+        "en": "60"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "GH09"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "In a 6×6 full grid, how many squares are there?",
+      "vi": "Trong lưới 6×6 đầy đủ, có bao nhiêu hình vuông?"
+    },
+    "figure": {
+      "renderer": "gridSquareTables",
+      "params": {
+        "data": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "84"
+      },
+      {
+        "id": "B",
+        "en": "90"
+      },
+      {
+        "id": "C",
+        "en": "91"
+      },
+      {
+        "id": "D",
+        "en": "96"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "GH10"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "In a 3×4 full grid, how many rectangles are there in total?",
+      "vi": "Trong lưới 3×4 đầy đủ, có tất cả bao nhiêu hình chữ nhật?"
+    },
+    "figure": {
+      "renderer": "gridSquareTables",
+      "params": {
+        "data": [
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "48"
+      },
+      {
+        "id": "B",
+        "en": "54"
+      },
+      {
+        "id": "C",
+        "en": "60"
+      },
+      {
+        "id": "D",
+        "en": "66"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "GH11"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "Some cubes form a hollow box. How many cubes are visible from outside?",
+      "vi": "Một khối lập phương rỗng được tạo thành. Có bao nhiêu khối nhìn thấy được bên ngoài?"
+    },
+    "figure": {
+      "renderer": "isoCubes",
+      "params": {
+        "layout": [
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "14"
+      },
+      {
+        "id": "B",
+        "en": "16"
+      },
+      {
+        "id": "C",
+        "en": "18"
+      },
+      {
+        "id": "D",
+        "en": "20"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "explain": "Có 8 khối phía trước và 8 khối phía sau cùng 0 khối ở giữa → nhìn thấy tổng cộng 16 khối.",
+    "id": "GH12"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "The cubes form an L shape. How many cubes are there?",
+      "vi": "Các khối lập phương xếp thành chữ L. Có bao nhiêu khối?"
+    },
+    "figure": {
+      "renderer": "isoCubes",
+      "params": {
+        "layout": [
+          [
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ]
+          ],
+          [
+            [
+              1,
+              1,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "4"
+      },
+      {
+        "id": "B",
+        "en": "5"
+      },
+      {
+        "id": "C",
+        "en": "8"
+      },
+      {
+        "id": "D",
+        "en": "12"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "explain": "Có 3 khối ở tầng dưới, 3 khối ở trên → tổng 6 khối.",
+    "id": "GH13"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "Which symbol fits the pattern?",
+      "vi": "Ký hiệu nào khớp quy luật?"
+    },
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "◆",
+            "◆",
+            "▲",
+            "◆",
+            "◆",
+            "▲",
+            "◆",
+            "?",
+            "▲"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "◆"
+      },
+      {
+        "id": "B",
+        "en": "▲"
+      },
+      {
+        "id": "C",
+        "en": "●"
+      },
+      {
+        "id": "D",
+        "en": "★"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "GH14"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "Three circles overlap each other. How many overlapping regions can you see?",
+      "vi": "Ba hình tròn chồng lên nhau. Có bao nhiêu vùng giao nhau nhìn thấy?"
+    },
+    "figure": {
+      "renderer": "multiCircles",
+      "params": {
+        "circles": [
+          {
+            "cx": 60,
+            "cy": 50,
+            "r": 25
+          },
+          {
+            "cx": 80,
+            "cy": 50,
+            "r": 25
+          },
+          {
+            "cx": 70,
+            "cy": 70,
+            "r": 25
+          }
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "3"
+      },
+      {
+        "id": "B",
+        "en": "4"
+      },
+      {
+        "id": "C",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "explain": "Ba hình tròn giao nhau tạo ra 4 vùng riêng biệt dễ quan sát.",
+    "id": "GH15"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "Choose the correct symbol for ?",
+      "vi": "Chọn ký hiệu đúng cho ?"
+    },
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "▲",
+            "★",
+            "★",
+            "▲",
+            "★",
+            "★",
+            "?",
+            "★",
+            "★"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "▲"
+      },
+      {
+        "id": "B",
+        "en": "★"
+      },
+      {
+        "id": "C",
+        "en": "●"
+      },
+      {
+        "id": "D",
+        "en": "◆"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "GH16"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "Which symbol continues the 2D pattern?",
+      "vi": "Ký hiệu nào tiếp tục quy luật hai chiều?"
+    },
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "●",
+            "▲",
+            "●",
+            "▲",
+            "?"
+          ],
+          [
+            "▲",
+            "●",
+            "▲",
+            "●",
+            "▲"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "●"
+      },
+      {
+        "id": "B",
+        "en": "▲"
+      },
+      {
+        "id": "C",
+        "en": "★"
+      },
+      {
+        "id": "D",
+        "en": "◆"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "GH17"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "Which symbol should replace ? in the row pattern?",
+      "vi": "Ký hiệu nào thay cho ? trong dãy hàng?"
+    },
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "■",
+            "◆",
+            "■",
+            "◆",
+            "■",
+            "◆",
+            "?",
+            "◆"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "■"
+      },
+      {
+        "id": "B",
+        "en": "◆"
+      },
+      {
+        "id": "C",
+        "en": "▲"
+      },
+      {
+        "id": "D",
+        "en": "●"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "GH18"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "All diagonals of a nonagon are drawn. How many line segments are there in total?",
+      "vi": "Vẽ tất cả đường chéo của hình 9 cạnh. Tổng số đoạn thẳng (cạnh + đường chéo) là bao nhiêu?"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 9,
+        "size": 260
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "36"
+      },
+      {
+        "id": "B",
+        "en": "45"
+      },
+      {
+        "id": "C",
+        "en": "48"
+      },
+      {
+        "id": "D",
+        "en": "54"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "GH19"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many squares are there in a 7×7 full grid?",
+      "vi": "Có bao nhiêu hình vuông trong lưới 7×7 đầy đủ?"
+    },
+    "figure": {
+      "renderer": "gridSquareTables",
+      "params": {
+        "data": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "126"
+      },
+      {
+        "id": "B",
+        "en": "133"
+      },
+      {
+        "id": "C",
+        "en": "140"
+      },
+      {
+        "id": "D",
+        "en": "147"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "GH20"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many diagonals does a 12-gon have?",
+      "vi": "Một hình 12 cạnh có bao nhiêu đường chéo?"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 12,
+        "size": 260
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "54"
+      },
+      {
+        "id": "B",
+        "en": "60"
+      },
+      {
+        "id": "C",
+        "en": "66"
+      },
+      {
+        "id": "D",
+        "en": "72"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "GH21"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "All diagonals of an octagon are drawn. How many segments (sides + diagonals) in total?",
+      "vi": "Vẽ tất cả đường chéo của bát giác. Tổng số đoạn thẳng (cạnh + đường chéo) là?"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 8,
+        "size": 260
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "28"
+      },
+      {
+        "id": "B",
+        "en": "32"
+      },
+      {
+        "id": "C",
+        "en": "36"
+      },
+      {
+        "id": "D",
+        "en": "44"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "GH22"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "A circle and a square overlap. How many shapes are there altogether?",
+      "vi": "Một hình tròn và một hình vuông chồng lên nhau. Có bao nhiêu hình học tất cả?"
+    },
+    "figure": {
+      "renderer": "geometryOverlapFigure",
+      "params": {
+        "shapes": [
+          "circle",
+          "square"
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "1"
+      },
+      {
+        "id": "B",
+        "en": "2"
+      },
+      {
+        "id": "C",
+        "en": "3"
+      },
+      {
+        "id": "D",
+        "en": "4"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "explain": "Có hai hình cơ bản: 1 tròn, 1 vuông.",
+    "id": "GH23"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "Continue the pattern: what replaces ?",
+      "vi": "Tiếp tục quy luật: ký hiệu nào thay cho ?"
+    },
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "●",
+            "●",
+            "▲",
+            "▲",
+            "●",
+            "●",
+            "▲",
+            "?",
+            "●"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "●"
+      },
+      {
+        "id": "B",
+        "en": "▲"
+      },
+      {
+        "id": "C",
+        "en": "★"
+      },
+      {
+        "id": "D",
+        "en": "◆"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "GH24"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "Rotate-down stack pattern: what is on top of the 6th figure?",
+      "vi": "Quy luật chồng khối dịch xuống: khối nào ở trên cùng hình thứ 6?"
+    },
+    "figure": {
+      "renderer": "stackPattern",
+      "params": {
+        "stacks": [
+          [
+            "★",
+            "◆",
+            "■",
+            "▲",
+            "●"
+          ],
+          [
+            "●",
+            "★",
+            "◆",
+            "■",
+            "▲"
+          ],
+          [
+            "▲",
+            "●",
+            "★",
+            "◆",
+            "■"
+          ],
+          [
+            "■",
+            "▲",
+            "●",
+            "★",
+            "◆"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "★"
+      },
+      {
+        "id": "B",
+        "en": "◆"
+      },
+      {
+        "id": "C",
+        "en": "■"
+      },
+      {
+        "id": "D",
+        "en": "▲"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "GH25"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "Stack pattern cycles every 4. What is on top of the 9th figure?",
+      "vi": "Quy luật chồng khối chu kỳ 4. Hình thứ 9 có khối nào trên cùng?"
+    },
+    "figure": {
+      "renderer": "stackPattern",
+      "params": {
+        "stacks": [
+          [
+            "▲",
+            "●",
+            "★",
+            "◆"
+          ],
+          [
+            "◆",
+            "▲",
+            "●",
+            "★"
+          ],
+          [
+            "★",
+            "◆",
+            "▲",
+            "●"
+          ],
+          [
+            "●",
+            "★",
+            "◆",
+            "▲"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "▲"
+      },
+      {
+        "id": "B",
+        "en": "●"
+      },
+      {
+        "id": "C",
+        "en": "★"
+      },
+      {
+        "id": "D",
+        "en": "◆"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "GH26"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "Stack pattern rotates up by one. What is on top of the 7th figure?",
+      "vi": "Quy luật dịch lên 1 vị trí. Hình thứ 7 có khối nào trên cùng?"
+    },
+    "figure": {
+      "renderer": "stackPattern",
+      "params": {
+        "stacks": [
+          [
+            "◇",
+            "○",
+            "□",
+            "△",
+            "☆",
+            "●"
+          ],
+          [
+            "●",
+            "◇",
+            "○",
+            "□",
+            "△",
+            "☆"
+          ],
+          [
+            "☆",
+            "●",
+            "◇",
+            "○",
+            "□",
+            "△"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "◇"
+      },
+      {
+        "id": "B",
+        "en": "○"
+      },
+      {
+        "id": "C",
+        "en": "□"
+      },
+      {
+        "id": "D",
+        "en": "●"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "GH27"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "Two triangles and a square overlap symmetrically. How many triangles?",
+      "vi": "Hai tam giác và một hình vuông chồng đối xứng. Có bao nhiêu hình tam giác?"
+    },
+    "figure": {
+      "renderer": "geometryOverlapFigure",
+      "params": {
+        "shapes": [
+          "triangle",
+          "triangle",
+          "square"
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "3"
+      },
+      {
+        "id": "B",
+        "en": "4"
+      },
+      {
+        "id": "C",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "explain": "Ba hình giao nhau tạo ra 4 vùng rõ rệt.",
+    "id": "GH28"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "Cubes form a hollow pillar (like a box with empty center). How many cubes are there?",
+      "vi": "Khối lập phương tạo thành trụ rỗng (giữa rỗng). Có bao nhiêu khối?"
+    },
+    "figure": {
+      "renderer": "isoCubes",
+      "params": {
+        "layout": [
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              0,
+              1
+            ],
+            [
+              1,
+              1,
+              1
+            ]
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "20"
+      },
+      {
+        "id": "B",
+        "en": "22"
+      },
+      {
+        "id": "C",
+        "en": "24"
+      },
+      {
+        "id": "D",
+        "en": "26"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "explain": "3 tầng, mỗi tầng 8 khối (trừ 1 khối giữa rỗng) → 8×3=24.",
+    "id": "GH29"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "A circle, a triangle, and a square overlap. How many separate shapes are used?",
+      "vi": "Một hình tròn, tam giác và vuông chồng lên nhau. Có bao nhiêu hình cơ bản được dùng?"
+    },
+    "figure": {
+      "renderer": "geometryOverlapFigure",
+      "params": {
+        "shapes": [
+          "circle",
+          "triangle",
+          "square"
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "2"
+      },
+      {
+        "id": "B",
+        "en": "3"
+      },
+      {
+        "id": "C",
+        "en": "4"
+      },
+      {
+        "id": "D",
+        "en": "5"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "explain": "Có 3 hình khác loại chồng lên nhau.",
+    "id": "GH30"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "A 6-point star is drawn by connecting alternating vertices of a hexagon. How many distinct line segments form the star?",
+      "vi": "Ngôi sao 6 cánh tạo bằng cách nối cách đỉnh của lục giác. Có bao nhiêu đoạn thẳng tạo nên ngôi sao?"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 6,
+        "size": 240
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "6"
+      },
+      {
+        "id": "B",
+        "en": "9"
+      },
+      {
+        "id": "C",
+        "en": "12"
+      },
+      {
+        "id": "D",
+        "en": "15"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "GH31"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "Which symbol completes the chessboard-like 2D pattern?",
+      "vi": "Ký hiệu nào hoàn thiện mẫu 2D kiểu bàn cờ?"
+    },
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "◆",
+            "●",
+            "◆",
+            "●",
+            "?"
+          ],
+          [
+            "●",
+            "◆",
+            "●",
+            "◆",
+            "●"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "◆"
+      },
+      {
+        "id": "B",
+        "en": "●"
+      },
+      {
+        "id": "C",
+        "en": "▲"
+      },
+      {
+        "id": "D",
+        "en": "★"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "GH32"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "Stack pattern with 5 items cycles. What is on top of the 12th figure?",
+      "vi": "Mẫu chồng 5 phần tử có chu kỳ. Hình thứ 12 có phần tử nào trên cùng?"
+    },
+    "figure": {
+      "renderer": "stackPattern",
+      "params": {
+        "stacks": [
+          [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"
+          ],
+          [
+            "E",
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          [
+            "D",
+            "E",
+            "A",
+            "B",
+            "C"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "A"
+      },
+      {
+        "id": "B",
+        "en": "B"
+      },
+      {
+        "id": "C",
+        "en": "D"
+      },
+      {
+        "id": "D",
+        "en": "E"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "GH33"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "Choose the correct symbol for ?",
+      "vi": "Chọn ký hiệu đúng cho ?"
+    },
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "★",
+            "◆",
+            "★",
+            "◆",
+            "★",
+            "◆",
+            "★",
+            "?"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "★"
+      },
+      {
+        "id": "B",
+        "en": "◆"
+      },
+      {
+        "id": "C",
+        "en": "▲"
+      },
+      {
+        "id": "D",
+        "en": "●"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "GH34"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "Four ovals overlap partly in a line. How many ovals are there?",
+      "vi": "Bốn hình bầu dục chồng một phần theo hàng ngang. Có bao nhiêu hình bầu dục?"
+    },
+    "figure": {
+      "renderer": "multiCircles",
+      "params": {
+        "circles": [
+          {
+            "cx": 40,
+            "cy": 50,
+            "r": 22
+          },
+          {
+            "cx": 60,
+            "cy": 50,
+            "r": 22
+          },
+          {
+            "cx": 80,
+            "cy": 50,
+            "r": 22
+          },
+          {
+            "cx": 100,
+            "cy": 50,
+            "r": 22
+          }
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "3"
+      },
+      {
+        "id": "B",
+        "en": "4"
+      },
+      {
+        "id": "C",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "explain": "Dù có phần giao, vẫn có 4 hình riêng biệt.",
+    "id": "GH35"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "In a 2×5 grid, how many rectangles are there?",
+      "vi": "Trong lưới 2×5 có bao nhiêu hình chữ nhật?"
+    },
+    "figure": {
+      "renderer": "gridSquareTables",
+      "params": {
+        "data": [
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "40"
+      },
+      {
+        "id": "B",
+        "en": "45"
+      },
+      {
+        "id": "C",
+        "en": "50"
+      },
+      {
+        "id": "D",
+        "en": "55"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "GH36"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "All diagonals of a 7-gon are drawn. How many diagonals are there?",
+      "vi": "Vẽ tất cả đường chéo của hình 7 cạnh. Có bao nhiêu đường chéo?"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 7,
+        "size": 260
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "14"
+      },
+      {
+        "id": "B",
+        "en": "21"
+      },
+      {
+        "id": "C",
+        "en": "28"
+      },
+      {
+        "id": "D",
+        "en": "35"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "GH37"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "An 11-gon is drawn. How many diagonals does it have?",
+      "vi": "Hình 11 cạnh có bao nhiêu đường chéo?"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 11,
+        "size": 260
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "36"
+      },
+      {
+        "id": "B",
+        "en": "44"
+      },
+      {
+        "id": "C",
+        "en": "54"
+      },
+      {
+        "id": "D",
+        "en": "66"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "GH38"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "Which symbol should be on top of the 8th figure?",
+      "vi": "Khối nào nằm trên cùng ở hình thứ 8?"
+    },
+    "figure": {
+      "renderer": "stackPattern",
+      "params": {
+        "stacks": [
+          [
+            "⚽",
+            "🏀",
+            "🏈",
+            "🎾",
+            "🏐",
+            "🥎"
+          ],
+          [
+            "🥎",
+            "⚽",
+            "🏀",
+            "🏈",
+            "🎾",
+            "🏐"
+          ],
+          [
+            "🏐",
+            "🥎",
+            "⚽",
+            "🏀",
+            "🏈",
+            "🎾"
+          ],
+          [
+            "🎾",
+            "🏐",
+            "🥎",
+            "⚽",
+            "🏀",
+            "🏈"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "⚽"
+      },
+      {
+        "id": "B",
+        "en": "🏀"
+      },
+      {
+        "id": "C",
+        "en": "🏈"
+      },
+      {
+        "id": "D",
+        "en": "🎾"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "GH39"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "Choose the correct symbol to replace ?",
+      "vi": "Chọn ký hiệu đúng thay thế ?"
+    },
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "●",
+            "★",
+            "★",
+            "◆",
+            "●",
+            "★",
+            "★",
+            "◆",
+            "?",
+            "★"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "●"
+      },
+      {
+        "id": "B",
+        "en": "★"
+      },
+      {
+        "id": "C",
+        "en": "◆"
+      },
+      {
+        "id": "D",
+        "en": "▲"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "GH40"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "All diagonals of a pentagon are drawn. How many segments (sides + diagonals) are there?",
+      "vi": "Vẽ tất cả đường chéo của ngũ giác. Có bao nhiêu đoạn thẳng (cạnh + đường chéo)?"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 5,
+        "size": 260
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "10"
+      },
+      {
+        "id": "B",
+        "en": "12"
+      },
+      {
+        "id": "C",
+        "en": "15"
+      },
+      {
+        "id": "D",
+        "en": "20"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "GH41"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "In a 4×4 grid, how many rectangles are there?",
+      "vi": "Trong lưới 4×4, có bao nhiêu hình chữ nhật?"
+    },
+    "figure": {
+      "renderer": "gridSquareTables",
+      "params": {
+        "data": [
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "90"
+      },
+      {
+        "id": "B",
+        "en": "80"
+      },
+      {
+        "id": "C",
+        "en": "70"
+      },
+      {
+        "id": "D",
+        "en": "60"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "GH42"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "Which symbol goes on top of the 10th figure?",
+      "vi": "Hình thứ 10 có ký hiệu nào trên cùng?"
+    },
+    "figure": {
+      "renderer": "stackPattern",
+      "params": {
+        "stacks": [
+          [
+            "◆",
+            "●",
+            "▲",
+            "■"
+          ],
+          [
+            "■",
+            "◆",
+            "●",
+            "▲"
+          ],
+          [
+            "▲",
+            "■",
+            "◆",
+            "●"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "◆"
+      },
+      {
+        "id": "B",
+        "en": "●"
+      },
+      {
+        "id": "C",
+        "en": "▲"
+      },
+      {
+        "id": "D",
+        "en": "■"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "GH43"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "Five circles overlap in a flower pattern. How many circles are drawn in total?",
+      "vi": "Năm hình tròn chồng như cánh hoa. Có bao nhiêu hình tròn được vẽ?"
+    },
+    "figure": {
+      "renderer": "multiCircles",
+      "params": {
+        "circles": [
+          {
+            "cx": 70,
+            "cy": 40,
+            "r": 18
+          },
+          {
+            "cx": 90,
+            "cy": 60,
+            "r": 18
+          },
+          {
+            "cx": 70,
+            "cy": 80,
+            "r": 18
+          },
+          {
+            "cx": 50,
+            "cy": 60,
+            "r": 18
+          },
+          {
+            "cx": 70,
+            "cy": 60,
+            "r": 18
+          }
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "4"
+      },
+      {
+        "id": "B",
+        "en": "5"
+      },
+      {
+        "id": "C",
+        "en": "6"
+      },
+      {
+        "id": "D",
+        "en": "7"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "explain": "Có 5 hình tròn, gồm 4 vòng ngoài và 1 vòng giữa.",
+    "id": "GH44"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "How many diagonals does a 13-gon have?",
+      "vi": "Hình 13 cạnh có bao nhiêu đường chéo?"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 13,
+        "size": 260
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "52"
+      },
+      {
+        "id": "B",
+        "en": "60"
+      },
+      {
+        "id": "C",
+        "en": "65"
+      },
+      {
+        "id": "D",
+        "en": "78"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "GH45"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "All diagonals of an 11-gon are drawn. How many segments in total (sides + diagonals)?",
+      "vi": "Vẽ tất cả đường chéo của 11-giác. Tổng đoạn thẳng (cạnh + đường chéo) là?"
+    },
+    "figure": {
+      "renderer": "regularPolygon",
+      "params": {
+        "sides": 11,
+        "size": 260
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "55"
+      },
+      {
+        "id": "B",
+        "en": "66"
+      },
+      {
+        "id": "C",
+        "en": "77"
+      },
+      {
+        "id": "D",
+        "en": "99"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "GH46"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "Stack cycles every 3. What is on top of the 11th figure?",
+      "vi": "Chu kỳ chồng là 3. Ở hình thứ 11, khối nào ở trên cùng?"
+    },
+    "figure": {
+      "renderer": "stackPattern",
+      "params": {
+        "stacks": [
+          [
+            "X",
+            "Y",
+            "Z"
+          ],
+          [
+            "Z",
+            "X",
+            "Y"
+          ],
+          [
+            "Y",
+            "Z",
+            "X"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "X"
+      },
+      {
+        "id": "B",
+        "en": "Y"
+      },
+      {
+        "id": "C",
+        "en": "Z"
+      },
+      {
+        "id": "D",
+        "en": "(none)"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "GH47"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "Which symbol completes the pattern?",
+      "vi": "Ký hiệu nào hoàn thành quy luật?"
+    },
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "◆",
+            "◆",
+            "◆",
+            "★",
+            "◆",
+            "◆",
+            "◆",
+            "★",
+            "◆",
+            "?"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "◆"
+      },
+      {
+        "id": "B",
+        "en": "★"
+      },
+      {
+        "id": "C",
+        "en": "▲"
+      },
+      {
+        "id": "D",
+        "en": "●"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "GH48"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "Different shapes overlap each other. How many overlap areas?",
+      "vi": "Nhiều hình khác nhau chồng lên nhau. Có bao nhiêu vùng giao nhau?"
+    },
+    "figure": {
+      "renderer": "geometryOverlapFigure",
+      "params": {
+        "shapes": [
+          "circle",
+          "circle",
+          "triangle",
+          "square"
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "3"
+      },
+      {
+        "id": "B",
+        "en": "4"
+      },
+      {
+        "id": "C",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "explain": "2 hình tròn + 1 tam giác + 1 vuông = 4 hình.",
+    "id": "GH49"
+  },
+  {
+    "type": "Geometry",
+    "stem": {
+      "en": "Which symbol goes on top of the 15th figure?",
+      "vi": "Hình thứ 15 có ký hiệu nào trên cùng?"
+    },
+    "figure": {
+      "renderer": "stackPattern",
+      "params": {
+        "stacks": [
+          [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          [
+            "D",
+            "A",
+            "B",
+            "C"
+          ],
+          [
+            "C",
+            "D",
+            "A",
+            "B"
+          ],
+          [
+            "B",
+            "C",
+            "D",
+            "A"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "A"
+      },
+      {
+        "id": "B",
+        "en": "B"
+      },
+      {
+        "id": "C",
+        "en": "C"
+      },
+      {
+        "id": "D",
+        "en": "D"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "GH50"
+  }
+]

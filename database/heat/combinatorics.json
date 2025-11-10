@@ -1,0 +1,2297 @@
+[
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "The pattern repeats every three lines in the order: horizontal, diagonal (╲), vertical. Which line should replace ?",
+      "vi": "Mẫu lặp lại theo chu kỳ 3: ngang, chéo trái, dọc. Đường nào nên thay cho ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "│"
+      },
+      {
+        "id": "B",
+        "en": "—"
+      },
+      {
+        "id": "C",
+        "en": "╲"
+      },
+      {
+        "id": "D",
+        "en": "╱"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {
+      "renderer": "squareConnect",
+      "params": {
+        "data": [
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            "?"
+          ]
+        ]
+      }
+    },
+    "id": "CH01"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "The sequence alternates in pairs: (horizontal, vertical), (diagonal ╱, diagonal ╲). Which comes next?",
+      "vi": "Dãy đường nối xen kẽ theo cặp: (ngang, dọc), (chéo phải, chéo trái). Ký hiệu nào tiếp theo?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "│"
+      },
+      {
+        "id": "B",
+        "en": "╲"
+      },
+      {
+        "id": "C",
+        "en": "╱"
+      },
+      {
+        "id": "D",
+        "en": "—"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "figure": {
+      "renderer": "squareConnect",
+      "params": {
+        "data": [
+          [
+            1,
+            5
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            "?"
+          ]
+        ]
+      }
+    },
+    "id": "CH02"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Each new line turns 90° clockwise compared to the previous one. Which line should replace ?",
+      "vi": "Mỗi đường tiếp theo xoay 90° theo chiều kim đồng hồ so với đường trước. Đường nào nên thay cho ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "│"
+      },
+      {
+        "id": "B",
+        "en": "—"
+      },
+      {
+        "id": "C",
+        "en": "╲"
+      },
+      {
+        "id": "D",
+        "en": "╱"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {
+      "renderer": "squareConnect",
+      "params": {
+        "data": [
+          [
+            1,
+            5
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            "?"
+          ]
+        ]
+      }
+    },
+    "id": "CH03"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "The sequence follows a mirror rule: after two lines, the next two are their mirror reflections. Which line replaces ?",
+      "vi": "Dãy đường nối tuân theo quy luật phản chiếu: sau hai đường đầu, hai đường tiếp theo là hình phản chiếu của chúng. Đường nào thay cho ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "╲"
+      },
+      {
+        "id": "B",
+        "en": "╱"
+      },
+      {
+        "id": "C",
+        "en": "│"
+      },
+      {
+        "id": "D",
+        "en": "—"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {
+      "renderer": "squareConnect",
+      "params": {
+        "data": [
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            "?"
+          ]
+        ]
+      }
+    },
+    "id": "CH04"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "The lines repeat every four steps in this order: vertical, horizontal, diagonal ╲, diagonal ╱. What comes next?",
+      "vi": "Các đường lặp lại theo chu kỳ 4: dọc, ngang, chéo trái, chéo phải. Ký hiệu nào tiếp theo?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "│"
+      },
+      {
+        "id": "B",
+        "en": "—"
+      },
+      {
+        "id": "C",
+        "en": "╲"
+      },
+      {
+        "id": "D",
+        "en": "╱"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "figure": {
+      "renderer": "squareConnect",
+      "params": {
+        "data": [
+          [
+            3,
+            7
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            "?"
+          ]
+        ]
+      }
+    },
+    "id": "CH05"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Using digits [0, 1, 2, 4, 6] (no repetition), how many two-digit even numbers are strictly between 21 and 64?",
+      "vi": "Dùng các chữ số [0, 1, 2, 4, 6] (không lặp), có bao nhiêu số chẵn có hai chữ số nằm nghiêm ngặt giữa 21 và 64?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "6"
+      },
+      {
+        "id": "B",
+        "en": "7"
+      },
+      {
+        "id": "C",
+        "en": "8"
+      },
+      {
+        "id": "D",
+        "en": "9"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {},
+    "id": "CH06"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "What is the largest 3-digit number formed from digits 0, 5, 7, 8 (each used at most once) that is ended by 5?",
+      "vi": "Số lớn nhất có 3 chữ số tạo từ các chữ số 0, 5, 7, 8 (mỗi chữ số dùng không quá 1 lần) và kết thúc bằng chữ số 5 là số nào?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "870"
+      },
+      {
+        "id": "B",
+        "en": "857"
+      },
+      {
+        "id": "C",
+        "en": "875"
+      },
+      {
+        "id": "D",
+        "en": "785"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {},
+    "id": "CH07"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Using digits [3, 4, 5, 6, 7] (no repetition), how many two-digit numbers are multiples of 3?",
+      "vi": "Dùng các chữ số [3, 4, 5, 6, 7] (không lặp), có bao nhiêu số có hai chữ số chia hết cho 3?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "6"
+      },
+      {
+        "id": "B",
+        "en": "8"
+      },
+      {
+        "id": "C",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "en": "4"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "figure": {},
+    "id": "CH08"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "What is the smallest 3-digit even number formed from digits 0, 2, 5, 9 (each used at most once)?",
+      "vi": "Số chẵn nhỏ nhất có 3 chữ số tạo từ các chữ số 0, 2, 5, 9 (mỗi chữ số dùng không quá 1 lần) là số nào?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "205"
+      },
+      {
+        "id": "B",
+        "en": "250"
+      },
+      {
+        "id": "C",
+        "en": "290"
+      },
+      {
+        "id": "D",
+        "en": "520"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {},
+    "id": "CH09"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Using digits [0, 1, 2, 3, 4] (no repetition), how many 3-digit numbers are strictly between 210 and 340?",
+      "vi": "Dùng các chữ số [0, 1, 2, 3, 4] (không lặp), có bao nhiêu số có 3 chữ số nằm nghiêm ngặt giữa 210 và 340?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "15"
+      },
+      {
+        "id": "B",
+        "en": "16"
+      },
+      {
+        "id": "C",
+        "en": "17"
+      },
+      {
+        "id": "D",
+        "en": "18"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {},
+    "id": "CH10"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Using digits [2, 3, 5, 7] (no repetition), how many two-digit numbers can be formed where the first digit is smaller than the last digit?",
+      "vi": "Dùng các chữ số [2, 3, 5, 7] (không lặp), có thể tạo được bao nhiêu số có hai chữ số mà chữ số hàng chục nhỏ hơn chữ số hàng đơn vị?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "3"
+      },
+      {
+        "id": "B",
+        "en": "4"
+      },
+      {
+        "id": "C",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "figure": {},
+    "id": "CH11"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "What is the largest 3-digit number formed from digits 2, 4, 6, 9 (each used at most once) that is divisible by both 2 and 3?",
+      "vi": "Số lớn nhất có 3 chữ số tạo từ các chữ số 2, 4, 6, 9 (mỗi chữ số dùng không quá 1 lần) và chia hết cho cả 2 và 3 là số nào?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "942"
+      },
+      {
+        "id": "B",
+        "en": "962"
+      },
+      {
+        "id": "C",
+        "en": "642"
+      },
+      {
+        "id": "D",
+        "en": "624"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "figure": {},
+    "id": "CH12"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "What is the smallest 3-digit number formed from digits 1, 4, 5, 7 (each used at most once) such that the hundreds and tens digits are not both even or odd?",
+      "vi": "Số nhỏ nhất có 3 chữ số tạo từ các chữ số 1, 4, 5, 7 (mỗi chữ số dùng không quá 1 lần) sao cho chữ số hàng trăm và hàng chục không cùng chẵn hoặc lẻ là số nào?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "145"
+      },
+      {
+        "id": "B",
+        "en": "157"
+      },
+      {
+        "id": "C",
+        "en": "175"
+      },
+      {
+        "id": "D",
+        "en": "415"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "figure": {},
+    "id": "CH13"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Using digits [1, 2, 3, 4, 5] (no repetition), how many two-digit numbers divisible by 4 can be formed?",
+      "vi": "Dùng các chữ số [1, 2, 3, 4, 5] (không lặp), có thể tạo được bao nhiêu số có hai chữ số chia hết cho 4?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "2"
+      },
+      {
+        "id": "B",
+        "en": "3"
+      },
+      {
+        "id": "C",
+        "en": "4"
+      },
+      {
+        "id": "D",
+        "en": "5"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {},
+    "id": "CH14"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Using digits [1, 3, 4, 6, 8] (no repetition), how many 3-digit numbers can be formed whose digits increase from left to right?",
+      "vi": "Dùng các chữ số [1, 3, 4, 6, 8] (không lặp), có thể tạo được bao nhiêu số có 3 chữ số mà các chữ số tăng dần từ trái sang phải?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "4"
+      },
+      {
+        "id": "B",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "en": "8"
+      },
+      {
+        "id": "D",
+        "en": "10"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "figure": {},
+    "id": "CH15"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "What is the largest 3-digit odd number formed by digits 2, 5, 6, 9 (each used at most once)?",
+      "vi": "Số lẻ lớn nhất có 3 chữ số tạo từ các chữ số 2, 5, 6, 9 (mỗi chữ số dùng không quá 1 lần) là số nào?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "965"
+      },
+      {
+        "id": "B",
+        "en": "956"
+      },
+      {
+        "id": "C",
+        "en": "925"
+      },
+      {
+        "id": "D",
+        "en": "695"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "figure": [],
+    "id": "CH16"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Using digits [1, 2, 3, 4, 5, 6] (no repetition), how many two-digit numbers have the sum of their digits equal to 10?",
+      "vi": "Dùng các chữ số [1, 2, 3, 4, 5, 6] (không lặp), có bao nhiêu số có hai chữ số sao cho tổng các chữ số bằng 10?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "2"
+      },
+      {
+        "id": "B",
+        "en": "3"
+      },
+      {
+        "id": "C",
+        "en": "4"
+      },
+      {
+        "id": "D",
+        "en": "5"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "figure": [],
+    "id": "CH17"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Using digits [0, 2, 3, 5, 7] (no repetition), how many 3-digit even numbers greater than 300 can be formed?",
+      "vi": "Dùng các chữ số [0, 2, 3, 5, 7] (không lặp), có thể tạo được bao nhiêu số chẵn có 3 chữ số lớn hơn 300?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "12"
+      },
+      {
+        "id": "B",
+        "en": "14"
+      },
+      {
+        "id": "C",
+        "en": "16"
+      },
+      {
+        "id": "D",
+        "en": "18"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "figure": [],
+    "id": "CH18"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "How many 3-digit numbers can be formed from digits [1, 3, 5, 7, 9] (no repetition) such that all digits are odd?",
+      "vi": "Từ các chữ số [1, 3, 5, 7, 9] (không lặp), có thể tạo được bao nhiêu số có 3 chữ số mà tất cả các chữ số đều là số lẻ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "30"
+      },
+      {
+        "id": "B",
+        "en": "60"
+      },
+      {
+        "id": "C",
+        "en": "120"
+      },
+      {
+        "id": "D",
+        "en": "24"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": [],
+    "id": "CH19"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "What is the smallest 3-digit number formed by digits 1, 3, 6, 8 (use each at most once) that is divisible by 3?",
+      "vi": "Số nhỏ nhất có 3 chữ số tạo từ các chữ số 1, 3, 6, 8 (mỗi chữ số dùng không quá 1 lần) và chia hết cho 3 là số nào?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "138"
+      },
+      {
+        "id": "B",
+        "en": "186"
+      },
+      {
+        "id": "C",
+        "en": "318"
+      },
+      {
+        "id": "D",
+        "en": "168"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "figure": [],
+    "id": "CH20"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Using digits [2, 3, 5, 6] (no repetition), how many two-digit numbers have two digits that differ by exactly 2?",
+      "vi": "Dùng các chữ số [2, 3, 5, 6] (không lặp), có thể tạo được bao nhiêu số có hai chữ số mà hai chữ số chênh nhau đúng 2 đơn vị?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "2"
+      },
+      {
+        "id": "B",
+        "en": "3"
+      },
+      {
+        "id": "C",
+        "en": "4"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "figure": [],
+    "id": "CH21"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Using digits [0, 1, 3, 4, 6] (no repetition), how many two-digit numbers have a digit sum that is a multiple of 5?",
+      "vi": "Dùng các chữ số [0, 1, 3, 4, 6] (không lặp), có bao nhiêu số có hai chữ số sao cho tổng các chữ số là chia hết cho 5?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "3"
+      },
+      {
+        "id": "B",
+        "en": "4"
+      },
+      {
+        "id": "C",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": [],
+    "id": "CH22"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Find the value of 🦊.",
+      "vi": "Tìm giá trị của 🦊."
+    },
+    "figure": {
+      "renderer": "table",
+      "params": {
+        "data": [
+          [
+            "🦊 + 🐰 = 12"
+          ],
+          [
+            "🐰 + 🐻 = 14"
+          ],
+          [
+            "🦊 + 🐻 = 16"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "6"
+      },
+      {
+        "id": "B",
+        "en": "7"
+      },
+      {
+        "id": "C",
+        "en": "8"
+      },
+      {
+        "id": "D",
+        "en": "9"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "CH23"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Find the value of ⭐.",
+      "vi": "Tìm giá trị của ⭐."
+    },
+    "figure": {
+      "renderer": "table",
+      "params": {
+        "data": [
+          [
+            "⭐ + 🍎 = 11"
+          ],
+          [
+            "⭐ + 🐱 + 🍎 = 18"
+          ],
+          [
+            "🐱 + 🍎 = 13"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "4"
+      },
+      {
+        "id": "B",
+        "en": "5"
+      },
+      {
+        "id": "C",
+        "en": "6"
+      },
+      {
+        "id": "D",
+        "en": "7"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "CH24"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Find the value of 🐼.",
+      "vi": "Tìm giá trị của 🐼."
+    },
+    "figure": {
+      "renderer": "table",
+      "params": {
+        "data": [
+          [
+            "🐼 + 🚗 = 14"
+          ],
+          [
+            "🐼 + 🐶 + 🚗 = 20"
+          ],
+          [
+            "🐶 + 🚗 = 10"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "8"
+      },
+      {
+        "id": "B",
+        "en": "9"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "12"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "CH25"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Find the value of 🌟.",
+      "vi": "Tìm giá trị của 🌟."
+    },
+    "figure": {
+      "renderer": "table",
+      "params": {
+        "data": [
+          [
+            "🌟 + 🍌 = 13"
+          ],
+          [
+            "🍌 + 🐠 = 11"
+          ],
+          [
+            "🌟 + 🐠 = 12"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "6"
+      },
+      {
+        "id": "B",
+        "en": "7"
+      },
+      {
+        "id": "C",
+        "en": "8"
+      },
+      {
+        "id": "D",
+        "en": "9"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "CH26"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Find the value of 🐨.",
+      "vi": "Tìm giá trị của 🐨."
+    },
+    "figure": {
+      "renderer": "table",
+      "params": {
+        "data": [
+          [
+            "🐨 + 🐧 = 9"
+          ],
+          [
+            "🐧 + 🐸 = 11"
+          ],
+          [
+            "🐨 + 🐸 = 12"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "4"
+      },
+      {
+        "id": "B",
+        "en": "5"
+      },
+      {
+        "id": "C",
+        "en": "6"
+      },
+      {
+        "id": "D",
+        "en": "7"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "CH27"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Find the value of 🍓.",
+      "vi": "Tìm giá trị của 🍓."
+    },
+    "figure": {
+      "renderer": "table",
+      "params": {
+        "data": [
+          [
+            "🍓 + 🧀 = 18"
+          ],
+          [
+            "🧀 + 🥚 = 14"
+          ],
+          [
+            "🍓 + 🥚 = 16"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "8"
+      },
+      {
+        "id": "B",
+        "en": "9"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "12"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "CH28"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Find the value of 🐢.",
+      "vi": "Tìm giá trị của 🐢."
+    },
+    "figure": {
+      "renderer": "table",
+      "params": {
+        "data": [
+          [
+            "🐢 + 🐙 = 19"
+          ],
+          [
+            "🐙 + 🐞 = 13"
+          ],
+          [
+            "🐢 + 🐞 = 18"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "10"
+      },
+      {
+        "id": "B",
+        "en": "11"
+      },
+      {
+        "id": "C",
+        "en": "12"
+      },
+      {
+        "id": "D",
+        "en": "13"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "CH29"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Find the value of 🦁.",
+      "vi": "Tìm giá trị của 🦁."
+    },
+    "figure": {
+      "renderer": "table",
+      "params": {
+        "data": [
+          [
+            "🦁 + 🐮 = 21"
+          ],
+          [
+            "🐮 + 🐔 = 15"
+          ],
+          [
+            "🦁 + 🐔 = 20"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "11"
+      },
+      {
+        "id": "B",
+        "en": "12"
+      },
+      {
+        "id": "C",
+        "en": "13"
+      },
+      {
+        "id": "D",
+        "en": "14"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "CH30"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Find the value of 🍀.",
+      "vi": "Tìm giá trị của 🍀."
+    },
+    "figure": {
+      "renderer": "table",
+      "params": {
+        "data": [
+          [
+            "🍀 + 🌙 = 17"
+          ],
+          [
+            "🌙 + 🔔 = 12"
+          ],
+          [
+            "🍀 + 🔔 = 15"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "9"
+      },
+      {
+        "id": "B",
+        "en": "10"
+      },
+      {
+        "id": "C",
+        "en": "11"
+      },
+      {
+        "id": "D",
+        "en": "12"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "CH31"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Find the value of 🐳.",
+      "vi": "Tìm giá trị của 🐳."
+    },
+    "figure": {
+      "renderer": "table",
+      "params": {
+        "data": [
+          [
+            "🐳 + 🐟 = 16"
+          ],
+          [
+            "🐟 + 🐬 = 9"
+          ],
+          [
+            "🐳 + 🐬 = 13"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "8"
+      },
+      {
+        "id": "B",
+        "en": "9"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "11"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "CH32"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Find the value of 🍇.",
+      "vi": "Tìm giá trị của 🍇."
+    },
+    "figure": {
+      "renderer": "table",
+      "params": {
+        "data": [
+          [
+            "🍇 + 🍎 = 11"
+          ],
+          [
+            "🍎 + 🍌 = 9"
+          ],
+          [
+            "🍇 + 🍌 = 12"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "6"
+      },
+      {
+        "id": "B",
+        "en": "7"
+      },
+      {
+        "id": "C",
+        "en": "8"
+      },
+      {
+        "id": "D",
+        "en": "9"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "CH33"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "There are 5 red balls and 4 blue balls. How many balls in total?",
+      "vi": "Có 5 bóng màu đỏ và 4 bóng màu xanh. Hỏi có tất cả bao nhiêu quả bóng?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "11"
+      },
+      {
+        "id": "B",
+        "en": "8"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "9"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "Count and add."
+      }
+    },
+    "id": "CH34"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Collect all 🍌 and 🍇 (ignore ⛰️). Start/end anywhere. Moves: 4-directional.",
+      "vi": "Nhặt tất cả 🍌 và 🍇 (bỏ qua ⛰️). Bắt đầu/kết thúc tự do. Di chuyển 4 hướng."
+    },
+    "figure": {
+      "renderer": "charGrid",
+      "params": {
+        "data": [
+          [
+            "🍌",
+            "⛰️",
+            "🍇",
+            "🍇",
+            "🍌",
+            ""
+          ],
+          [
+            "🍌",
+            "🍇",
+            "⛰️",
+            "🍇",
+            "🍌"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "6"
+      },
+      {
+        "id": "B",
+        "en": "7"
+      },
+      {
+        "id": "C",
+        "en": "8"
+      },
+      {
+        "id": "D",
+        "en": "9"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "CH35"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Collect all 🐟 (⛰️ is a rock). Start/end anywhere. 4-directional.",
+      "vi": "Nhặt tất cả 🐟 (⛰️ là đá). Bắt đầu/kết thúc tự do. Di chuyển 4 hướng."
+    },
+    "figure": {
+      "renderer": "charGrid",
+      "params": {
+        "data": [
+          [
+            "🐟",
+            "🐟",
+            "🐟",
+            "🐟"
+          ],
+          [
+            "🐟",
+            "",
+            "🐟",
+            "🐟"
+          ],
+          [
+            "🐟",
+            "🐟",
+            "🐟",
+            "🐟"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "9"
+      },
+      {
+        "id": "B",
+        "en": "10"
+      },
+      {
+        "id": "C",
+        "en": "11"
+      },
+      {
+        "id": "D",
+        "en": "12"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "CH36"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Start at 🚩 and pick all 🎈. End anywhere. Moves: up/down/left/right.",
+      "vi": "Bắt đầu tại 🚩 và nhặt hết 🎈. Kết thúc tự do. Di chuyển: lên/xuống/trái/phải."
+    },
+    "figure": {
+      "renderer": "charGrid",
+      "params": {
+        "data": [
+          [
+            "🚩",
+            "🎈",
+            "🎈",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "🎈",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "🎈",
+            "🎈",
+            "🎈"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "4"
+      },
+      {
+        "id": "B",
+        "en": "5"
+      },
+      {
+        "id": "C",
+        "en": "6"
+      },
+      {
+        "id": "D",
+        "en": "7"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "CH37"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Pick all 🍀 and return to the start. Only border cells have 🍀.",
+      "vi": "Nhặt tất cả 🍀 và quay về điểm xuất phát. Chỉ các ô viền có 🍀."
+    },
+    "figure": {
+      "renderer": "charGrid",
+      "params": {
+        "data": [
+          [
+            "🍀",
+            "🍀",
+            "🍀",
+            "🍀"
+          ],
+          [
+            "🍀",
+            "",
+            "",
+            "🍀"
+          ],
+          [
+            "🍀",
+            "",
+            "",
+            "🍀"
+          ],
+          [
+            "🍀",
+            "🍀",
+            "🍀",
+            "🍀"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "10"
+      },
+      {
+        "id": "B",
+        "en": "11"
+      },
+      {
+        "id": "C",
+        "en": "12"
+      },
+      {
+        "id": "D",
+        "en": "13"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "CH38"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Collect all 🥕 and 🥦 (⛔ is blocked). Start/end anywhere. 4-directional.",
+      "vi": "Nhặt tất cả 🥕 và 🥦 (⛔ là chắn). Bắt đầu/kết thúc tự do. Di chuyển 4 hướng."
+    },
+    "figure": {
+      "renderer": "charGrid",
+      "params": {
+        "data": [
+          [
+            "🥕",
+            "🥦",
+            "🥕"
+          ],
+          [
+            "🥦",
+            "⛔",
+            "🥦"
+          ],
+          [
+            "🥕",
+            "🥦",
+            "🥕"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "6"
+      },
+      {
+        "id": "B",
+        "en": "7"
+      },
+      {
+        "id": "C",
+        "en": "8"
+      },
+      {
+        "id": "D",
+        "en": "9"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "CH39"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Collect all 🧊 (walls ⛰️). Start/end anywhere. 4-directional.",
+      "vi": "Nhặt tất cả 🧊 (tường là ⛰️). Bắt đầu/kết thúc tự do. Di chuyển 4 hướng."
+    },
+    "figure": {
+      "renderer": "charGrid",
+      "params": {
+        "data": [
+          [
+            "⛰️",
+            "⛰️",
+            "⛰️",
+            "⛰️",
+            "⛰️",
+            "⛰️",
+            "⛰️"
+          ],
+          [
+            "⛰️",
+            "🧊",
+            "🧊",
+            "🧊",
+            "⛰️",
+            "🧊",
+            "⛰️"
+          ],
+          [
+            "⛰️",
+            "⛰️",
+            "⛰️",
+            "🧊",
+            "⛰️",
+            "🧊",
+            "⛰️"
+          ],
+          [
+            "⛰️",
+            "🧊",
+            "🧊",
+            "🧊",
+            "🧊",
+            "🧊",
+            "⛰️"
+          ],
+          [
+            "⛰️",
+            "🧊",
+            "⛰️",
+            "⛰️",
+            "⛰️",
+            "⛰️",
+            "⛰️"
+          ],
+          [
+            "⛰️",
+            "🧊",
+            "🧊",
+            "🧊",
+            "🧊",
+            "🧊",
+            "⛰️"
+          ],
+          [
+            "⛰️",
+            "⛰️",
+            "⛰️",
+            "⛰️",
+            "⛰️",
+            "⛰️",
+            "⛰️"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "12"
+      },
+      {
+        "id": "B",
+        "en": "16"
+      },
+      {
+        "id": "C",
+        "en": "20"
+      },
+      {
+        "id": "D",
+        "en": "24"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "CH40"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Mina must collect 🟥 then 🟨 then 🟦 in this order. What is the minimum number of steps (4-directional)?",
+      "vi": "Mina phải nhặt lần lượt 🟥 rồi 🟨 rồi 🟦 theo thứ tự này. Số bước tối thiểu (4 hướng)?"
+    },
+    "figure": {
+      "renderer": "charGrid",
+      "params": {
+        "data": [
+          [
+            "🟥",
+            "🟨",
+            "🟦"
+          ],
+          [
+            "🟥",
+            "🟨",
+            "🟦"
+          ],
+          [
+            "🟥",
+            "🟨",
+            "🟦"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "3"
+      },
+      {
+        "id": "B",
+        "en": "5"
+      },
+      {
+        "id": "C",
+        "en": "8"
+      },
+      {
+        "id": "D",
+        "en": "10"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "CH41"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Collect all 🪙 avoiding ☠️. Start/end anywhere. 4-directional.",
+      "vi": "Nhặt tất cả 🪙 tránh ô ☠️. Bắt đầu/kết thúc tự do. Di chuyển 4 hướng."
+    },
+    "figure": {
+      "renderer": "charGrid",
+      "params": {
+        "data": [
+          [
+            "🪙",
+            "🪙",
+            "☠️",
+            "🪙"
+          ],
+          [
+            "🪙",
+            "🪙",
+            "🪙",
+            "🪙"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "6"
+      },
+      {
+        "id": "B",
+        "en": "7"
+      },
+      {
+        "id": "C",
+        "en": "8"
+      },
+      {
+        "id": "D",
+        "en": "9"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "CH42"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "How many 🧁 are there on the grid?",
+      "vi": "Có bao nhiêu chiếc bánh 🧁 trên lưới?"
+    },
+    "figure": {
+      "renderer": "charGrid",
+      "params": {
+        "data": [
+          [
+            "🧁",
+            "🧁",
+            "",
+            ""
+          ],
+          [
+            "",
+            "🧁",
+            "🧁",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "🧁"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "3"
+      },
+      {
+        "id": "B",
+        "en": "4"
+      },
+      {
+        "id": "C",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "CH43"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Mina stands at 🧍‍♀️ and wants to reach 🏠 in one straight line. Which direction should she move?",
+      "vi": "Mina đứng ở 🧍‍♀️ và muốn đến 🏠 theo đường thẳng. Cô ấy nên đi hướng nào?"
+    },
+    "figure": {
+      "renderer": "charGrid",
+      "params": {
+        "data": [
+          [
+            "🧍‍♀️",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "🏠"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Right →"
+      },
+      {
+        "id": "B",
+        "en": "Down ↓"
+      },
+      {
+        "id": "C",
+        "en": "Diagonal ↘"
+      },
+      {
+        "id": "D",
+        "en": "Left ←"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "CH44"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Which icon appears the most on the grid?",
+      "vi": "Biểu tượng nào xuất hiện nhiều nhất trên lưới?"
+    },
+    "figure": {
+      "renderer": "charGrid",
+      "params": {
+        "data": [
+          [
+            "🍎",
+            "🍎",
+            "🍐",
+            "🍎"
+          ],
+          [
+            "🍐",
+            "🍐",
+            "🍎",
+            "🍋"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "🍎"
+      },
+      {
+        "id": "B",
+        "en": "🍐"
+      },
+      {
+        "id": "C",
+        "en": "🍋"
+      },
+      {
+        "id": "D",
+        "en": "Equal number"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "CH45"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Where is the single 🎈 located?",
+      "vi": "Quả bóng 🎈 đơn lẻ nằm ở đâu?"
+    },
+    "figure": {
+      "renderer": "charGrid",
+      "params": {
+        "data": [
+          [
+            "🎈",
+            "🎈",
+            "🎈"
+          ],
+          [
+            "🎈",
+            "",
+            "🎈"
+          ],
+          [
+            "🎈",
+            "🎈",
+            "🎈"
+          ],
+          [
+            "",
+            "",
+            "🎈"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Top row"
+      },
+      {
+        "id": "B",
+        "en": "Bottom row"
+      },
+      {
+        "id": "C",
+        "en": "Middle row"
+      },
+      {
+        "id": "D",
+        "en": "No single 🎈"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "CH46"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Is the arrangement of 💎 symmetric across the vertical line?",
+      "vi": "Cách sắp xếp 💎 có đối xứng qua trục dọc không?"
+    },
+    "figure": {
+      "renderer": "charGrid",
+      "params": {
+        "data": [
+          [
+            "💎",
+            "",
+            "💎"
+          ],
+          [
+            "",
+            "💎",
+            ""
+          ],
+          [
+            "💎",
+            "",
+            "💎"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "Yes"
+      },
+      {
+        "id": "B",
+        "en": "No"
+      },
+      {
+        "id": "C",
+        "en": "Only horizontal"
+      },
+      {
+        "id": "D",
+        "en": "Both horizontal and vertical"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "CH47"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "How many empty cells are there on the grid?",
+      "vi": "Có bao nhiêu ô trống trên lưới?"
+    },
+    "figure": {
+      "renderer": "charGrid",
+      "params": {
+        "data": [
+          [
+            "🍄",
+            "",
+            "🍄"
+          ],
+          [
+            "🍄",
+            "",
+            ""
+          ],
+          [
+            "🍄",
+            "🍄",
+            ""
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "3"
+      },
+      {
+        "id": "B",
+        "en": "4"
+      },
+      {
+        "id": "C",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "CH48"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Each row alternates between 🟩 and 🟥. How many 🟥 need to complete the pattern?",
+      "vi": "Mỗi hàng luân phiên giữa 🟩 và 🟥. Cần thêm bao nhiêu 🟥 để hoàn thành mẫu?"
+    },
+    "figure": {
+      "renderer": "charGrid",
+      "params": {
+        "data": [
+          [
+            "🟩",
+            "🟥",
+            "🟩",
+            "🟥"
+          ],
+          [
+            "🟥",
+            "🟩",
+            "",
+            "🟩"
+          ],
+          [
+            "🟩",
+            "",
+            "🟩"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "3"
+      },
+      {
+        "id": "B",
+        "en": "5"
+      },
+      {
+        "id": "C",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "en": "9"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "CH49"
+  },
+  {
+    "type": "Combinatorics",
+    "stem": {
+      "en": "Each next col less one 🍪 than the previous. How many cols are there?",
+      "vi": "Mỗi cột sau có ít hơn hàng trước 1 chiếc 🍪. Hỏi có tổng cộng bao nhiêu cột?"
+    },
+    "figure": {
+      "renderer": "charGrid",
+      "params": {
+        "data": [
+          [
+            "🍪"
+          ],
+          [
+            "🍪",
+            "🍪"
+          ],
+          [
+            "🍪",
+            "🍪",
+            "🍪"
+          ],
+          [
+            "🍪",
+            "🍪",
+            "🍪"
+          ],
+          [
+            "🍪",
+            "🍪",
+            "🍪"
+          ],
+          [
+            "🍪",
+            "🍪",
+            "🍪",
+            "?"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "3"
+      },
+      {
+        "id": "B",
+        "en": "4"
+      },
+      {
+        "id": "C",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "CH50"
+  }
+]
