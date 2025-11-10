@@ -4,10 +4,10 @@ import { renderFigure } from "./figure";
 
 function Edit({ dataType = "preliminary" }) {
   const listQuestionFiles = [
-    // "arithmetic",
-    // "combinatorics",
-    // "geometry",
-    // "logic-thinking",
+    "arithmetic",
+    "combinatorics",
+    "geometry",
+    "logic-thinking",
     "number-theory",
   ];
 

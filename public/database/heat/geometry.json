@@ -180,7 +180,7 @@
     ],
     "answer": {
       "type": "single",
-      "key": "C"
+      "key": "A"
     },
     "id": "GH05"
   },
@@ -1007,7 +1007,7 @@
     ],
     "answer": {
       "type": "single",
-      "key": "B"
+      "key": "A"
     },
     "id": "GH19"
   },
@@ -1638,10 +1638,9 @@
       "vi": "Ngôi sao 6 cánh tạo bằng cách nối cách đỉnh của lục giác. Có bao nhiêu đoạn thẳng tạo nên ngôi sao?"
     },
     "figure": {
-      "renderer": "regularPolygon",
+      "renderer": "svg",
       "params": {
-        "sides": 6,
-        "size": 240
+        "svg": "<svg width=\"240\" height=\"240\" viewBox=\"0 0 240 240\" xmlns=\"http://www.w3.org/2000/svg\">\n  <title>Ngôi sao 6 cạnh – nối mọi đỉnh</title>\n  <desc>6 đỉnh trên một đường tròn, mọi cặp đỉnh được nối bằng một đường thẳng. Có chấm tròn ở mỗi đỉnh.</desc>\n\n  <!-- Định nghĩa style chung -->\n  <g stroke=\"#222\" stroke-width=\"1.6\" stroke-linecap=\"round\" fill=\"none\">\n    <!-- 6 điểm (tọa độ) trên vòng tròn bán kính 90, tâm (120,120) -->\n    <!-- P0 --> <!-- (120,30) -->\n    <!-- P1 --> <!-- (197.94,75) -->\n    <!-- P2 --> <!-- (197.94,165) -->\n    <!-- P3 --> <!-- (120,210) -->\n    <!-- P4 --> <!-- (42.06,165) -->\n    <!-- P5 --> <!-- (42.06,75) -->\n\n    <!-- Nối tất cả các cặp đỉnh (C(6,2)=15 đoạn thẳng) -->\n    <line x1=\"120\" y1=\"30\" x2=\"197.94\" y2=\"75\" />\n    <line x1=\"120\" y1=\"30\" x2=\"197.94\" y2=\"165\" />\n    <line x1=\"120\" y1=\"30\" x2=\"120\" y2=\"210\" />\n    <line x1=\"120\" y1=\"30\" x2=\"42.06\" y2=\"165\" />\n    <line x1=\"120\" y1=\"30\" x2=\"42.06\" y2=\"75\" />\n\n    <line x1=\"197.94\" y1=\"75\" x2=\"197.94\" y2=\"165\" />\n    <line x1=\"197.94\" y1=\"75\" x2=\"120\" y2=\"210\" />\n    <line x1=\"197.94\" y1=\"75\" x2=\"42.06\" y2=\"165\" />\n    <line x1=\"197.94\" y1=\"75\" x2=\"42.06\" y2=\"75\" />\n\n    <line x1=\"197.94\" y1=\"165\" x2=\"120\" y2=\"210\" />\n    <line x1=\"197.94\" y1=\"165\" x2=\"42.06\" y2=\"165\" />\n    <line x1=\"197.94\" y1=\"165\" x2=\"42.06\" y2=\"75\" />\n\n    <line x1=\"120\" y1=\"210\" x2=\"42.06\" y2=\"165\" />\n    <line x1=\"120\" y1=\"210\" x2=\"42.06\" y2=\"75\" />\n\n    <line x1=\"42.06\" y1=\"165\" x2=\"42.06\" y2=\"75\" />\n  </g>\n\n  <!-- Chấm tròn ở 6 đỉnh -->\n  <g fill=\"#222\">\n    <circle cx=\"120\" cy=\"30\" r=\"4\" />\n    <circle cx=\"197.94\" cy=\"75\" r=\"4\" />\n    <circle cx=\"197.94\" cy=\"165\" r=\"4\" />\n    <circle cx=\"120\" cy=\"210\" r=\"4\" />\n    <circle cx=\"42.06\" cy=\"165\" r=\"4\" />\n    <circle cx=\"42.06\" cy=\"75\" r=\"4\" />\n  </g>\n</svg>\n"
       }
     },
     "choices": [
@@ -1664,7 +1663,7 @@
     ],
     "answer": {
       "type": "single",
-      "key": "C"
+      "key": "D"
     },
     "id": "GH31"
   },
@@ -2141,24 +2140,24 @@
     "choices": [
       {
         "id": "A",
-        "en": "10"
+        "en": "16"
       },
       {
         "id": "B",
-        "en": "12"
+        "en": "14"
       },
       {
         "id": "C",
-        "en": "15"
+        "en": "12"
       },
       {
         "id": "D",
-        "en": "20"
+        "en": "10"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "C"
+      "key": "D"
     },
     "id": "GH41"
   },
@@ -2394,24 +2393,24 @@
     "choices": [
       {
         "id": "A",
-        "en": "55"
+        "en": "44"
       },
       {
         "id": "B",
-        "en": "66"
+        "en": "55"
       },
       {
         "id": "C",
-        "en": "77"
+        "en": "66"
       },
       {
         "id": "D",
-        "en": "99"
+        "en": "77"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "C"
+      "key": "B"
     },
     "id": "GH46"
   },

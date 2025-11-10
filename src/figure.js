@@ -758,6 +758,16 @@ function TextFigure({ content }) {
     </div>
   );
 }
+function SvgFigure({ svg }) {
+  if (!svg) return null;
+  return (
+    <div
+      className="d-flex justify-content-center"
+      dangerouslySetInnerHTML={{ __html: svg }}
+    />
+  );
+}
+
 // Thêm vào registry
 const FIGURES = {
   symbolPattern: (p) => <SymbolPattern {...p} />,
@@ -777,6 +787,7 @@ const FIGURES = {
   multiCircles: (p) => <MultiCircles {...p} />,
   geometryOverlapFigure: (p) => <GeometryOverlapFigure {...p} />,
   text: (p) => <TextFigure {...p} />,
+  svg: (p) => <SvgFigure {...p} />,
 };
 
 // Hàm hiển thị figure theo schema dữ liệu
