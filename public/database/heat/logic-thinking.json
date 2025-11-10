@@ -2,739 +2,459 @@
   {
     "type": "Logic Thinking",
     "stem": {
-      "en": "Which symbol should replace ?",
-      "vi": "Ký hiệu nào nên thay cho ?"
-    },
-    "figure": {
-      "renderer": "symbolPattern",
-      "params": {
-        "grid": [
-          [
-            "▲",
-            "●",
-            "?",
-            "▲",
-            "●",
-            "◆"
-          ]
-        ]
-      }
+      "vi": "Nếu ngày mai là Thứ Sáu và sinh nhật của Lan sau sinh nhật của Nam 3 ngày, biết sinh nhật của Nam là ngày mai, thì sinh nhật của Lan rơi vào thứ mấy?",
+      "en": "If tomorrow is Friday and Lan’s birthday is 3 days after Nam’s, whose birthday is tomorrow, then which day of the week is Lan’s birthday?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "▲"
+        "vi": "Thứ Hai",
+        "en": "Monday"
       },
       {
         "id": "B",
-        "en": "★"
+        "vi": "Chủ Nhật",
+        "en": "Sunday"
       },
       {
         "id": "C",
-        "en": "◆"
+        "vi": "Thứ Ba",
+        "en": "Tuesday"
       },
       {
         "id": "D",
-        "en": "●"
+        "vi": "Thứ Hai tuần sau",
+        "en": "Next Monday"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "C"
+      "key": "A"
     },
+    "figure": {},
     "id": "LH01"
   },
   {
-    "type": "Number Theory",
     "stem": {
-      "en": "Find the 4th number of the sequence:",
-      "vi": "Tìm số thứ 4 trong dãy:"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "10, 12, 14, __, 18, 20, 22, 24"
-      }
+      "vi": "Nếu ngày 29 là chủ nhật, thì ngày 1 là thứ mấy?",
+      "en": "If 29th is Sunday, what weekday of 1st?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "19"
+        "vi": "30",
+        "en": "Friday"
       },
       {
         "id": "B",
-        "en": "15"
+        "vi": "31",
+        "en": "Sunday"
       },
       {
         "id": "C",
-        "en": "13"
+        "vi": "1",
+        "en": "Tuesday"
       },
       {
         "id": "D",
-        "en": "16"
+        "vi": "2",
+        "en": "Monday"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "D"
+      "key": "B"
     },
+    "type": "Logic Thinking",
+    "figure": {},
     "id": "LH02"
   },
   {
-    "type": "Logic Thinking",
     "stem": {
-      "en": "If two days later is Monday, what day was yesterday?",
-      "vi": "Nếu hai ngày nữa là Thứ Hai, thì hôm qua là thứ mấy?"
+      "vi": "Nếu hôm nay là ngày 30 tháng 11, thì 2 ngày sau là ngày bao nhiêu, tháng mấy?",
+      "en": "If today is November 30, what will the date and month be two days later?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "Friday",
-        "vi": "Thứ Sáu"
+        "vi": "1 tháng 12",
+        "en": "December 1st"
       },
       {
         "id": "B",
-        "en": "Saturday",
-        "vi": "Thứ Bảy"
+        "vi": "2 tháng 12",
+        "en": "December 2nd"
       },
       {
         "id": "C",
-        "en": "Sunday",
-        "vi": "Chủ Nhật"
+        "vi": "29 tháng 11",
+        "en": "November 29th"
       },
       {
         "id": "D",
-        "en": "Monday",
-        "vi": "Thứ Hai"
+        "vi": "30 tháng 12",
+        "en": "December 30th"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "A"
+      "key": "B"
     },
+    "type": "Logic Thinking",
+    "figure": {},
     "id": "LH03"
   },
   {
-    "type": "Logic Thinking",
     "stem": {
-      "en": "Given two balances below, find the heaviest type of fruit.",
-      "vi": "Cho hai chiếc cân thăng bằng dưới đây, tìm loại quả nặng nhất."
-    },
-    "figure": {
-      "renderer": "balances",
-      "params": {
-        "balances": [
-          [
-            [
-              "🍌",
-              "🥭"
-            ],
-            [
-              "🍎"
-            ]
-          ],
-          [
-            [
-              "🍌"
-            ],
-            [
-              "🥭",
-              "🥭"
-            ]
-          ]
-        ]
-      }
+      "vi": "Nếu ngày kia là Thứ Hai, thì 3 ngày trước hôm nay là thứ mấy?",
+      "en": "If the day after tomorrow is Monday, what day was it 3 days before today?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "Apple (Táo)"
+        "vi": "Thứ Ba",
+        "en": "Tuesday"
       },
       {
         "id": "B",
-        "en": "Orange (Cam)"
+        "vi": "Thứ Năm",
+        "en": "Wednesday"
       },
       {
         "id": "C",
-        "en": "Mango (Xoài)"
+        "vi": "Thứ Sáu",
+        "en": "Friday"
       },
       {
         "id": "D",
-        "en": "None of them (Không có)"
+        "vi": "Chủ Nhật",
+        "en": "Sunday"
       }
     ],
     "answer": {
       "type": "single",
       "key": "B"
     },
+    "type": "Logic Thinking",
+    "figure": {},
     "id": "LH04"
   },
   {
-    "type": "Logic Thinking",
     "stem": {
-      "en": "Which symbol should replace ?",
-      "vi": "Ký hiệu nào nên thay cho ?"
-    },
-    "figure": {
-      "renderer": "symbolPattern",
-      "params": {
-        "grid": [
-          [
-            "▲",
-            "●",
-            "?",
-            "▲",
-            "●",
-            "◆"
-          ]
-        ]
-      }
+      "vi": "Sinh nhật Minh là Thứ Năm, còn sinh nhật Hà là Thứ Hai của tuần kế tiếp. Hai ngày sinh cách nhau bao nhiêu ngày?",
+      "en": "Minh’s birthday is on Thursday, and Ha’s birthday is on next week’s Monday. How many days apart are their birthdays?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "▲"
+        "vi": "3",
+        "en": "3"
       },
       {
         "id": "B",
-        "en": "★"
+        "vi": "4",
+        "en": "4"
       },
       {
         "id": "C",
-        "en": "◆"
+        "vi": "5",
+        "en": "5"
       },
       {
         "id": "D",
-        "en": "●"
+        "vi": "6",
+        "en": "6"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "C"
+      "key": "B"
     },
+    "type": "Logic Thinking",
+    "figure": {},
     "id": "LH05"
   },
   {
-    "type": "Number Theory",
     "stem": {
-      "en": "Find the 4th number of the sequence:",
-      "vi": "Tìm số thứ 4 trong dãy:"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "12, 16, 20, __, 28, 32, 36, 40"
-      }
+      "vi": "Nếu 2 ngày trước là thứ chẵn và 3 ngày sau là Thứ Sáu, thì hôm nay là thứ mấy?",
+      "en": "If two days ago was an even weekday and three days later is Friday, what day is today?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "18"
+        "vi": "Thứ Ba",
+        "en": "Thursday"
       },
       {
         "id": "B",
-        "en": "24"
+        "vi": "Thứ Tư",
+        "en": "Wednesday"
       },
       {
         "id": "C",
-        "en": "29"
+        "vi": "Thứ Hai",
+        "en": "Monday"
       },
       {
         "id": "D",
-        "en": "28"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "B"
-    },
-    "id": "LH06"
-  },
-  {
-    "type": "Logic Thinking",
-    "stem": {
-      "en": "If two days later is Wednesday, what day was yesterday?",
-      "vi": "Nếu hai ngày nữa là Thứ Tư, thì hôm qua là thứ mấy?"
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "Sunday",
-        "vi": "Chủ Nhật"
-      },
-      {
-        "id": "B",
-        "en": "Monday",
-        "vi": "Thứ Hai"
-      },
-      {
-        "id": "C",
-        "en": "Tuesday",
-        "vi": "Thứ Ba"
-      },
-      {
-        "id": "D",
-        "en": "Wednesday",
-        "vi": "Thứ Tư"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "A"
-    },
-    "id": "LH07"
-  },
-  {
-    "type": "Logic Thinking",
-    "stem": {
-      "en": "Given two balances below, find the heaviest type of fruit.",
-      "vi": "Cho hai chiếc cân thăng bằng dưới đây, tìm loại quả nặng nhất."
-    },
-    "figure": {
-      "renderer": "balances",
-      "params": {
-        "balances": [
-          [
-            [
-              "🥭",
-              "🍐"
-            ],
-            [
-              "🍌"
-            ]
-          ],
-          [
-            [
-              "🥭"
-            ],
-            [
-              "🍐",
-              "🍐"
-            ]
-          ]
-        ]
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "Apple (Táo)"
-      },
-      {
-        "id": "B",
-        "en": "Orange (Cam)"
-      },
-      {
-        "id": "C",
-        "en": "Mango (Xoài)"
-      },
-      {
-        "id": "D",
-        "en": "None of them (Không có)"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "C"
-    },
-    "id": "LH08"
-  },
-  {
-    "type": "Logic Thinking",
-    "stem": {
-      "en": "Which symbol should replace ?",
-      "vi": "Ký hiệu nào nên thay cho ?"
-    },
-    "figure": {
-      "renderer": "symbolPattern",
-      "params": {
-        "grid": [
-          [
-            "▲",
-            "?",
-            "◆",
-            "▲",
-            "●",
-            "◆"
-          ]
-        ]
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "★"
-      },
-      {
-        "id": "B",
-        "en": "●"
-      },
-      {
-        "id": "C",
-        "en": "▲"
-      },
-      {
-        "id": "D",
-        "en": "◆"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "B"
-    },
-    "id": "LH09"
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Find the 4th number of the sequence:",
-      "vi": "Tìm số thứ 4 trong dãy:"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "12, 16, 20, __, 28, 32, 36, 40"
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "28"
-      },
-      {
-        "id": "B",
-        "en": "31"
-      },
-      {
-        "id": "C",
-        "en": "18"
-      },
-      {
-        "id": "D",
-        "en": "24"
+        "vi": "Thứ Năm",
+        "en": "Tuesday"
       }
     ],
     "answer": {
       "type": "single",
       "key": "D"
     },
+    "type": "Logic Thinking",
+    "figure": {},
+    "id": "LH06"
+  },
+  {
+    "stem": {
+      "vi": "2, 4, 8, 16, ?, 64 – Số còn thiếu là?",
+      "en": "2, 4, 8, 16, ?, 64 – What number is missing?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "vi": "24",
+        "en": "24"
+      },
+      {
+        "id": "B",
+        "vi": "32",
+        "en": "32"
+      },
+      {
+        "id": "C",
+        "vi": "48",
+        "en": "48"
+      },
+      {
+        "id": "D",
+        "vi": "56",
+        "en": "56"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "type": "Logic Thinking",
+    "figure": {},
+    "id": "LH07"
+  },
+  {
+    "figure": {
+      "renderer": "symbolPattern",
+      "params": {
+        "grid": [
+          [
+            "🍎",
+            "🍊",
+            "🍇",
+            "🍉",
+            "🍎",
+            "🍊",
+            "🍇",
+            "____",
+            "🍎",
+            "🍊",
+            "🍇",
+            "🍉"
+          ]
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "🍉"
+      },
+      {
+        "id": "B",
+        "en": "🍇"
+      },
+      {
+        "id": "C",
+        "en": "🍊"
+      },
+      {
+        "id": "D",
+        "en": "🍎"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "stem": {},
+    "type": "Logic Thinking",
+    "id": "LH08"
+  },
+  {
+    "stem": {
+      "vi": "1, 2, 4, 7, 11, 16, ?, …",
+      "en": "1, 2, 4, 7, 11, 16, ?, …"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "22"
+      },
+      {
+        "id": "B",
+        "en": "23"
+      },
+      {
+        "id": "C",
+        "en": "24"
+      },
+      {
+        "id": "D",
+        "en": "25"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "type": "Logic Thinking",
+    "figure": {},
+    "id": "LH09"
+  },
+  {
+    "stem": {
+      "vi": "1, 3, 6, 10, 15, 21, 28, ?, ? – Dãy này tăng theo quy luật nào và số tiếp theo là gì?",
+      "en": "1, 3, 6, 10, 15, 21, 28, ?, ? – What comes next in the pattern?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "36,45"
+      },
+      {
+        "id": "B",
+        "en": "36,44"
+      },
+      {
+        "id": "C",
+        "en": "35,45"
+      },
+      {
+        "id": "D",
+        "en": "38,47"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "type": "Logic Thinking",
+    "figure": {},
     "id": "LH10"
   },
   {
     "type": "Logic Thinking",
     "stem": {
-      "en": "If two days later is Sunday, what day was yesterday?",
-      "vi": "Nếu hai ngày nữa là Chủ Nhật, thì hôm qua là thứ mấy?"
+      "vi": "Trong sân có 3 con mèo và 2 con gà. Sau đó 1 con mèo chạy đi và 1 con gà mới đến. Hỏi tổng số chân của các con vật còn lại là bao nhiêu?",
+      "en": "There are 3 cats and 2 chickens in the yard. Then 1 cat runs away and 1 chicken arrives. How many legs do the animals now have in total?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "Thursday",
-        "vi": "Thứ Năm"
+        "vi": "14",
+        "en": "14"
       },
       {
         "id": "B",
-        "en": "Friday",
-        "vi": "Thứ Sáu"
+        "vi": "16",
+        "en": "16"
       },
       {
         "id": "C",
-        "en": "Saturday",
-        "vi": "Thứ Bảy"
+        "vi": "18",
+        "en": "18"
       },
       {
         "id": "D",
-        "en": "Sunday",
-        "vi": "Chủ Nhật"
+        "vi": "20",
+        "en": "20"
       }
     ],
     "answer": {
       "type": "single",
       "key": "A"
     },
+    "figure": {},
     "id": "LH11"
   },
   {
-    "type": "Logic Thinking",
     "stem": {
-      "en": "Given two balances below, find the heaviest type of fruit.",
-      "vi": "Cho hai chiếc cân thăng bằng dưới đây, tìm loại quả nặng nhất."
-    },
-    "figure": {
-      "renderer": "balances",
-      "params": {
-        "balances": [
-          [
-            [
-              "🍌",
-              "🥭"
-            ],
-            [
-              "🍊"
-            ]
-          ],
-          [
-            [
-              "🍌"
-            ],
-            [
-              "🥭",
-              "🥭"
-            ]
-          ]
-        ]
-      }
+      "vi": "Trong gara có 2 xe đạp, 1 xe máy và 1 ô tô. Biết xe đạp có 2 bánh, xe máy 2 bánh, ô tô 4 bánh. Hỏi có tổng cộng bao nhiêu bánh xe?",
+      "en": "In the garage, there are 2 bicycles, 1 motorbike, and 1 car. A bicycle has 2 wheels, a motorbike has 2, and a car has 4. How many wheels are there in total?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "Apple (Táo)"
+        "en": "8"
       },
       {
         "id": "B",
-        "en": "Orange (Cam)"
+        "en": "10"
       },
       {
         "id": "C",
-        "en": "Mango (Xoài)"
+        "en": "12"
       },
       {
         "id": "D",
-        "en": "None of them (Không có)"
+        "en": "14"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "C"
+      "key": "B"
     },
+    "type": "Logic Thinking",
+    "figure": {},
     "id": "LH12"
   },
   {
-    "type": "Logic Thinking",
     "stem": {
-      "en": "Which symbol should replace ?",
-      "vi": "Ký hiệu nào nên thay cho ?"
-    },
-    "figure": {
-      "renderer": "symbolPattern",
-      "params": {
-        "grid": [
-          [
-            "▲",
-            "●",
-            "◆",
-            "?",
-            "●",
-            "◆"
-          ]
-        ]
-      }
+      "vi": "Có 3 con chó và 2 con mèo. Hỏi số chân chó nhiều hơn chân mèo bao nhiêu?",
+      "en": "There are 3 dogs and 2 cats. How many more legs do the dogs have than the cats?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "◆"
+        "en": "4"
       },
       {
         "id": "B",
-        "en": "▲"
+        "en": "6"
       },
       {
         "id": "C",
-        "en": "●"
+        "en": "8"
       },
       {
         "id": "D",
-        "en": "★"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "B"
-    },
-    "id": "LH13"
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Find the 4th number of the sequence:",
-      "vi": "Tìm số thứ 4 trong dãy:"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "7, 11, 15, __, 23, 27, 31, 35"
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "25"
-      },
-      {
-        "id": "B",
-        "en": "19"
-      },
-      {
-        "id": "C",
-        "en": "22"
-      },
-      {
-        "id": "D",
-        "en": "26"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "B"
-    },
-    "id": "LH14"
-  },
-  {
-    "type": "Logic Thinking",
-    "stem": {
-      "en": "If two days later is Monday, what day was yesterday?",
-      "vi": "Nếu hai ngày nữa là Thứ Hai, thì hôm qua là thứ mấy?"
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "Friday",
-        "vi": "Thứ Sáu"
-      },
-      {
-        "id": "B",
-        "en": "Saturday",
-        "vi": "Thứ Bảy"
-      },
-      {
-        "id": "C",
-        "en": "Sunday",
-        "vi": "Chủ Nhật"
-      },
-      {
-        "id": "D",
-        "en": "Monday",
-        "vi": "Thứ Hai"
+        "en": "10"
       }
     ],
     "answer": {
       "type": "single",
       "key": "A"
     },
-    "id": "LH15"
-  },
-  {
     "type": "Logic Thinking",
-    "stem": {
-      "en": "Given two balances below, find the heaviest type of fruit.",
-      "vi": "Cho hai chiếc cân thăng bằng dưới đây, tìm loại quả nặng nhất."
-    },
-    "figure": {
-      "renderer": "balances",
-      "params": {
-        "balances": [
-          [
-            [
-              "🍐",
-              "🍌"
-            ],
-            [
-              "🥭"
-            ]
-          ],
-          [
-            [
-              "🍐"
-            ],
-            [
-              "🍌",
-              "🍌"
-            ]
-          ]
-        ]
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "Apple (Táo)"
-      },
-      {
-        "id": "B",
-        "en": "Orange (Cam)"
-      },
-      {
-        "id": "C",
-        "en": "Mango (Xoài)"
-      },
-      {
-        "id": "D",
-        "en": "None of them (Không có)"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "C"
-    },
-    "id": "LH16"
+    "figure": {},
+    "id": "LH13"
   },
   {
-    "type": "Logic Thinking",
     "stem": {
-      "en": "Which symbol should replace ?",
-      "vi": "Ký hiệu nào nên thay cho ?"
-    },
-    "figure": {
-      "renderer": "symbolPattern",
-      "params": {
-        "grid": [
-          [
-            "▲",
-            "?",
-            "◆",
-            "▲",
-            "●",
-            "◆"
-          ]
-        ]
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "◆"
-      },
-      {
-        "id": "B",
-        "en": "★"
-      },
-      {
-        "id": "C",
-        "en": "▲"
-      },
-      {
-        "id": "D",
-        "en": "●"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "D"
-    },
-    "id": "LH17"
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Find the 4th number of the sequence:",
-      "vi": "Tìm số thứ 4 trong dãy:"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "10, 13, 16, __, 22, 25, 28, 31"
-      }
+      "vi": "4 người đạp 2 xe đạp đôi. Mỗi người có 2 chân, mỗi xe có 2 bánh. Hỏi tổng số chân và bánh là bao nhiêu?",
+      "en": "4 people ride 2 tandem bicycles. Each person has 2 legs, each bike has 2 wheels. How many legs and wheels are there in total?"
     },
     "choices": [
       {
@@ -747,7 +467,131 @@
       },
       {
         "id": "C",
-        "en": "23"
+        "en": "16"
+      },
+      {
+        "id": "D",
+        "en": "12"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "type": "Logic Thinking",
+    "figure": {},
+    "id": "LH14"
+  },
+  {
+    "stem": {
+      "vi": "Trong chuồng có 2 con thỏ (4 chân), 3 con gà (2 chân) và 1 con vịt (2 chân). Tổng số chân là bao nhiêu?",
+      "en": "In the coop, there are 2 rabbits (4 legs), 3 chickens (2 legs), and 1 duck (2 legs). How many legs in total?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "14"
+      },
+      {
+        "id": "B",
+        "en": "16"
+      },
+      {
+        "id": "C",
+        "en": "18"
+      },
+      {
+        "id": "D",
+        "en": "20"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "type": "Logic Thinking",
+    "figure": {},
+    "id": "LH15"
+  },
+  {
+    "stem": {
+      "vi": "Có 2 con mèo và 1 bé gái đang chơi cùng nhau. Mỗi con mèo 4 chân, bé gái có 2 chân. Nếu một con mèo nhảy đi, hỏi còn lại bao nhiêu chân trong sân?",
+      "en": "There are 2 cats and 1 girl playing together. Each cat has 4 legs, the girl has 2. If one cat jumps away, how many legs are left in the yard?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "6"
+      },
+      {
+        "id": "B",
+        "en": "8"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "12"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "type": "Logic Thinking",
+    "figure": {},
+    "id": "LH16"
+  },
+  {
+    "type": "Logic Thinking",
+    "stem": {
+      "vi": "Quan sát các nhóm 🐱: 1, 2, 4, 5, 7, ? – Nhóm kế tiếp có bao nhiêu con 🐱?",
+      "en": "Observe the groups of 🐱: 1, 2, 4, 5, 7, ? – How many 🐱 in the next group?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "8"
+      },
+      {
+        "id": "B",
+        "en": "9"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "11"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "figure": {},
+    "id": "LH17"
+  },
+  {
+    "stem": {
+      "vi": "Các nhóm 🍎 lần lượt có: 1, 2, 3, 5, 9, ? – Nhóm kế tiếp có bao nhiêu quả?",
+      "en": "Groups of 🍎 have 1, 2, 3, 5, 9, ? apples. How many apples in the next group?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "14"
+      },
+      {
+        "id": "B",
+        "en": "17"
+      },
+      {
+        "id": "C",
+        "en": "18"
       },
       {
         "id": "D",
@@ -756,240 +600,290 @@
     ],
     "answer": {
       "type": "single",
-      "key": "D"
+      "key": "B"
     },
+    "type": "Logic Thinking",
+    "figure": {},
     "id": "LH18"
   },
   {
-    "type": "Logic Thinking",
-    "stem": {
-      "en": "If two days later is Wednesday, what day was yesterday?",
-      "vi": "Nếu hai ngày nữa là Thứ Tư, thì hôm qua là thứ mấy?"
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "Sunday",
-        "vi": "Chủ Nhật"
-      },
-      {
-        "id": "B",
-        "en": "Monday",
-        "vi": "Thứ Hai"
-      },
-      {
-        "id": "C",
-        "en": "Tuesday",
-        "vi": "Thứ Ba"
-      },
-      {
-        "id": "D",
-        "en": "Wednesday",
-        "vi": "Thứ Tư"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "A"
-    },
-    "id": "LH19"
-  },
-  {
-    "type": "Logic Thinking",
-    "stem": {
-      "en": "Given two balances below, find the heaviest type of fruit.",
-      "vi": "Cho hai chiếc cân thăng bằng dưới đây, tìm loại quả nặng nhất."
-    },
     "figure": {
-      "renderer": "balances",
+      "renderer": "groupRepeats",
       "params": {
-        "balances": [
-          [
-            [
-              "🍌",
-              "🍎"
-            ],
-            [
-              "🥭"
-            ]
-          ],
-          [
-            [
-              "🍌"
-            ],
-            [
-              "🍎",
-              "🍎"
-            ]
-          ]
+        "symbol": "🍋",
+        "groups": [
+          1,
+          1,
+          2,
+          2,
+          3,
+          3,
+          "?",
+          "?"
         ]
       }
     },
     "choices": [
       {
         "id": "A",
-        "en": "Apple (Táo)"
+        "en": "3🍋 và 3🍋"
       },
       {
         "id": "B",
-        "en": "Orange (Cam)"
+        "en": "4🍋 và 4🍋"
       },
       {
         "id": "C",
-        "en": "Mango (Xoài)"
+        "en": "4🍋 và 3🍋"
       },
       {
         "id": "D",
-        "en": "None of them (Không có)"
+        "en": "3🍋 và 4🍋"
       }
     ],
     "answer": {
       "type": "single",
       "key": "B"
     },
-    "id": "LH20"
-  },
-  {
+    "stem": {},
     "type": "Logic Thinking",
-    "stem": {
-      "en": "Which symbol should replace ?",
-      "vi": "Ký hiệu nào nên thay cho ?"
-    },
-    "figure": {
-      "renderer": "symbolPattern",
-      "params": {
-        "grid": [
-          [
-            "▲",
-            "●",
-            "◆",
-            "?",
-            "●",
-            "◆"
-          ]
-        ]
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "★"
-      },
-      {
-        "id": "B",
-        "en": "●"
-      },
-      {
-        "id": "C",
-        "en": "▲"
-      },
-      {
-        "id": "D",
-        "en": "◆"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "C"
-    },
-    "id": "LH21"
+    "id": "LH19"
   },
   {
-    "type": "Number Theory",
     "stem": {
-      "en": "Find the 4th number of the sequence:",
-      "vi": "Tìm số thứ 4 trong dãy:"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "12, 16, 20, __, 28, 32, 36, 40"
-      }
+      "vi": "Các nhóm 🍌 có số lượng: 2, ?, 8, 14 – Nhóm bị thiếu có bao nhiêu quả 🍌?",
+      "en": "Groups of 🍌: 2, ?, 8, 14 – How many 🍌 are in the missing group?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "26"
+        "en": "4"
       },
       {
         "id": "B",
-        "en": "22"
+        "en": "5"
       },
       {
         "id": "C",
-        "en": "21"
+        "en": "6"
       },
       {
         "id": "D",
-        "en": "24"
+        "en": "7"
       }
     ],
     "answer": {
       "type": "single",
       "key": "D"
     },
+    "type": "Logic Thinking",
+    "figure": {},
+    "id": "LH20"
+  },
+  {
+    "figure": {
+      "renderer": "groupRepeats",
+      "params": {
+        "symbol": "⭐",
+        "groups": [
+          1,
+          2,
+          4,
+          8,
+          "?"
+        ]
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "10"
+      },
+      {
+        "id": "B",
+        "en": "12"
+      },
+      {
+        "id": "C",
+        "en": "14"
+      },
+      {
+        "id": "D",
+        "en": "16"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "stem": {},
+    "type": "Logic Thinking",
+    "id": "LH21"
+  },
+  {
+    "stem": {
+      "vi": "Các nhóm có ký hiệu 🐸 và 🐢 theo quy luật: 🐸: 1,3,5,7; 🐢: 2,4,6,8. Hỏi trong nhóm thứ 9 có bao nhiêu 🐸?",
+      "en": "Frogs 🐸: 1,3,5,7; Turtles 🐢: 2,4,6,8. How many 🐸 in the 9th group?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "8"
+      },
+      {
+        "id": "B",
+        "en": "9"
+      },
+      {
+        "id": "C",
+        "en": "10"
+      },
+      {
+        "id": "D",
+        "en": "11"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "type": "Logic Thinking",
+    "figure": {},
     "id": "LH22"
   },
   {
     "type": "Logic Thinking",
     "stem": {
-      "en": "If two days later is Monday, what day was yesterday?",
-      "vi": "Nếu hai ngày nữa là Thứ Hai, thì hôm qua là thứ mấy?"
+      "vi": "Quan sát 4 hình dưới đây (mỗi hình là một ô vuông làm từ các ⭕). Hỏi ở HÌNH THỨ 5 sẽ có bao nhiêu ⭕?",
+      "en": "Look at the 4 figures (each is a square made of ⭕). How many ⭕ will there be in the 5th figure?"
+    },
+    "figure": {
+      "renderer": "groupMatrices",
+      "params": {
+        "data": [
+          [
+            [
+              "⭕"
+            ]
+          ],
+          [
+            [
+              "⭕",
+              "⭕"
+            ],
+            [
+              "⭕",
+              "⭕"
+            ]
+          ],
+          [
+            [
+              "⭕",
+              "⭕",
+              "⭕"
+            ],
+            [
+              "⭕",
+              "⭕",
+              "⭕"
+            ],
+            [
+              "⭕",
+              "⭕",
+              "⭕"
+            ]
+          ],
+          [
+            [
+              "⭕",
+              "⭕",
+              "⭕",
+              "⭕"
+            ],
+            [
+              "⭕",
+              "⭕",
+              "⭕",
+              "⭕"
+            ],
+            [
+              "⭕",
+              "⭕",
+              "⭕",
+              "⭕"
+            ],
+            [
+              "⭕",
+              "⭕",
+              "⭕",
+              "⭕"
+            ]
+          ]
+        ]
+      }
     },
     "choices": [
       {
         "id": "A",
-        "en": "Friday",
-        "vi": "Thứ Sáu"
+        "en": "20",
+        "vi": "20"
       },
       {
         "id": "B",
-        "en": "Saturday",
-        "vi": "Thứ Bảy"
+        "en": "24",
+        "vi": "24"
       },
       {
         "id": "C",
-        "en": "Sunday",
-        "vi": "Chủ Nhật"
+        "en": "25",
+        "vi": "25"
       },
       {
         "id": "D",
-        "en": "Monday",
-        "vi": "Thứ Hai"
+        "en": "30",
+        "vi": "30"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "A"
+      "key": "C"
     },
     "id": "LH23"
   },
   {
     "type": "Logic Thinking",
     "stem": {
-      "en": "Given two balances below, find the heaviest type of fruit.",
-      "vi": "Cho hai chiếc cân thăng bằng dưới đây, tìm loại quả nặng nhất."
+      "vi": "Hình dưới là một bảng 4×4 các ký hiệu xen kẽ ⭕ và ❌ như bàn cờ. Nếu hình là bảng 5x5 thì có bao nhiêu ô là ⭕?",
+      "en": "The figure is a 4×4 checker of ⭕ and ❌. If the figure is a 5x5, how many cells are ⭕?"
     },
     "figure": {
-      "renderer": "balances",
+      "renderer": "groupMatrices",
       "params": {
-        "balances": [
+        "data": [
           [
             [
-              "🥭",
-              "🍌"
+              "⭕",
+              "❌",
+              "⭕",
+              "❌"
             ],
             [
-              "🍎"
-            ]
-          ],
-          [
-            [
-              "🥭"
+              "❌",
+              "⭕",
+              "❌",
+              "⭕"
             ],
             [
-              "🍌",
-              "🍌"
+              "⭕",
+              "❌",
+              "⭕",
+              "❌"
+            ],
+            [
+              "❌",
+              "⭕",
+              "❌",
+              "⭕"
             ]
           ]
         ]
@@ -998,44 +892,98 @@
     "choices": [
       {
         "id": "A",
-        "en": "Apple (Táo)"
+        "en": "8",
+        "vi": "8"
       },
       {
         "id": "B",
-        "en": "Orange (Cam)"
+        "en": "10",
+        "vi": "10"
       },
       {
         "id": "C",
-        "en": "Mango (Xoài)"
+        "en": "12",
+        "vi": "12"
       },
       {
         "id": "D",
-        "en": "None of them (Không có)"
+        "en": "13",
+        "vi": "16"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "A"
+      "key": "D"
     },
     "id": "LH24"
   },
   {
     "type": "Logic Thinking",
     "stem": {
-      "en": "Which symbol should replace ?",
-      "vi": "Ký hiệu nào nên thay cho ?"
+      "vi": "Các hình dưới đây được ghép từ các hàng ⭕. Hỏi Hình 6 có bao nhiêu ⭕?",
+      "en": "Figures are built from rows of ⭕. How many ⭕ are in Figure 6?"
     },
     "figure": {
-      "renderer": "symbolPattern",
+      "renderer": "groupMatrices",
       "params": {
-        "grid": [
+        "data": [
           [
-            "▲",
-            "●",
-            "◆",
-            "?",
-            "●",
-            "◆"
+            [
+              "⭕"
+            ]
+          ],
+          [
+            [
+              "⭕",
+              "⭕"
+            ],
+            [
+              "⭕",
+              "⭕"
+            ]
+          ],
+          [
+            [
+              "⭕",
+              "⭕",
+              "⭕"
+            ],
+            [
+              "⭕",
+              "",
+              "⭕"
+            ],
+            [
+              "⭕",
+              "⭕",
+              "⭕"
+            ]
+          ],
+          [
+            [
+              "⭕",
+              "⭕",
+              "⭕",
+              "⭕"
+            ],
+            [
+              "⭕",
+              "",
+              "",
+              "⭕"
+            ],
+            [
+              "⭕",
+              "",
+              "",
+              "⭕"
+            ],
+            [
+              "⭕",
+              "⭕",
+              "⭕",
+              "⭕"
+            ]
           ]
         ]
       }
@@ -1043,19 +991,23 @@
     "choices": [
       {
         "id": "A",
-        "en": "●"
+        "en": "12",
+        "vi": "12"
       },
       {
         "id": "B",
-        "en": "◆"
+        "en": "14",
+        "vi": "14"
       },
       {
         "id": "C",
-        "en": "★"
+        "en": "16",
+        "vi": "16"
       },
       {
         "id": "D",
-        "en": "▲"
+        "en": "20",
+        "vi": "18"
       }
     ],
     "answer": {
@@ -1065,101 +1017,116 @@
     "id": "LH25"
   },
   {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Find the 6th number of the sequence:",
-      "vi": "Tìm số thứ 6 trong dãy:"
-    },
     "figure": {
-      "renderer": "text",
+      "renderer": "groupMatrices",
       "params": {
-        "content": "15, 19, 23, 27, 31, __, 39, 43"
+        "data": [
+          [
+            [
+              "⭕"
+            ]
+          ],
+          [
+            [
+              "⭕",
+              "❌"
+            ]
+          ],
+          [
+            [
+              "⭕",
+              "❌",
+              "⭕"
+            ]
+          ],
+          [
+            [
+              "⭕",
+              "❌",
+              "⭕",
+              "❌"
+            ]
+          ]
+        ]
       }
     },
     "choices": [
       {
         "id": "A",
-        "en": "32"
+        "en": "2"
       },
       {
         "id": "B",
-        "en": "35"
+        "en": "3"
       },
       {
         "id": "C",
-        "en": "30"
+        "en": "4"
       },
       {
         "id": "D",
-        "en": "28"
+        "en": "5"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "B"
+      "key": "C"
     },
+    "stem": {},
+    "type": "Logic Thinking",
     "id": "LH26"
   },
   {
     "type": "Logic Thinking",
     "stem": {
-      "en": "If two days later is Tuesday, what day was yesterday?",
-      "vi": "Nếu hai ngày nữa là Thứ Ba, thì hôm qua là thứ mấy?"
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "Saturday",
-        "vi": "Thứ Bảy"
-      },
-      {
-        "id": "B",
-        "en": "Sunday",
-        "vi": "Chủ Nhật"
-      },
-      {
-        "id": "C",
-        "en": "Monday",
-        "vi": "Thứ Hai"
-      },
-      {
-        "id": "D",
-        "en": "Tuesday",
-        "vi": "Thứ Ba"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "A"
-    },
-    "id": "LH27"
-  },
-  {
-    "type": "Logic Thinking",
-    "stem": {
-      "en": "Given two balances below, find the heaviest type of fruit.",
-      "vi": "Cho hai chiếc cân thăng bằng dưới đây, tìm loại quả nặng nhất."
+      "vi": "Trong hình dưới (kích thước 3×3), cả HÀNG 1 và CỘT 1 đều là ⭕, các ô khác là ⬜. Hỏi trong hình 5x5 có bao nhiêu ⭕?",
+      "en": "In the 3×3 figure below, both ROW 1 and COLUMN 1 are ⭕, others are ⬜. How many ⭕ are there if figure is 5x5?"
     },
     "figure": {
-      "renderer": "balances",
+      "renderer": "groupMatrices",
       "params": {
-        "balances": [
+        "data": [
           [
             [
-              "🍊",
-              "🍐"
+              "⭕",
+              "⭕",
+              "⭕"
             ],
             [
-              "🍎"
+              "⭕",
+              "⬜",
+              "⬜"
+            ],
+            [
+              "⭕",
+              "⬜",
+              "⬜"
             ]
           ],
           [
             [
-              "🍊"
+              "⭕",
+              "⭕",
+              "⭕",
+              "⭕"
             ],
             [
-              "🍐",
-              "🍐"
+              "⭕",
+              "⬜",
+              "⬜",
+              "⬜"
+            ],
+            [
+              "⭕",
+              "⬜",
+              "⬜",
+              "⬜"
+            ],
+            [
+              "⭕",
+              "⬜",
+              "⬜",
+              "⬜"
             ]
           ]
         ]
@@ -1168,147 +1135,67 @@
     "choices": [
       {
         "id": "A",
-        "en": "Apple (Táo)"
+        "en": "5",
+        "vi": "5"
       },
       {
         "id": "B",
-        "en": "Orange (Cam)"
+        "en": "6",
+        "vi": "6"
       },
       {
         "id": "C",
-        "en": "Mango (Xoài)"
+        "en": "7",
+        "vi": "7"
       },
       {
         "id": "D",
-        "en": "None of them (Không có)"
+        "en": "9",
+        "vi": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "D"
+    },
+    "id": "LH27"
+  },
+  {
+    "stem": {
+      "vi": "Mỗi lần hình vuông ⬜ tăng kích thước cạnh thêm 1 ô. Hình đầu 1×1 có 1 ô, hình thứ hai 2×2 có 4 ô, hình thứ ba 3×3 có 9 ô. Hỏi hình thứ sáu có bao nhiêu ô?",
+      "en": "Each square ⬜ increases side length by 1 each time. 1×1→1, 2×2→4, 3×3→9. How many cells in the 6th?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "25"
+      },
+      {
+        "id": "B",
+        "en": "30"
+      },
+      {
+        "id": "C",
+        "en": "36"
+      },
+      {
+        "id": "D",
+        "en": "42"
       }
     ],
     "answer": {
       "type": "single",
       "key": "C"
     },
+    "type": "Logic Thinking",
+    "figure": {},
     "id": "LH28"
   },
   {
     "type": "Logic Thinking",
     "stem": {
-      "en": "Which symbol should replace ?",
-      "vi": "Ký hiệu nào nên thay cho ?"
-    },
-    "figure": {
-      "renderer": "symbolPattern",
-      "params": {
-        "grid": [
-          [
-            "▲",
-            "●",
-            "?",
-            "▲",
-            "●",
-            "◆"
-          ]
-        ]
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "▲"
-      },
-      {
-        "id": "B",
-        "en": "●"
-      },
-      {
-        "id": "C",
-        "en": "★"
-      },
-      {
-        "id": "D",
-        "en": "◆"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "D"
-    },
-    "id": "LH29"
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Find the 5th number of the sequence:",
-      "vi": "Tìm số thứ 5 trong dãy:"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "12, 15, 18, 21, __, 27, 30, 33"
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "20"
-      },
-      {
-        "id": "B",
-        "en": "24"
-      },
-      {
-        "id": "C",
-        "en": "23"
-      },
-      {
-        "id": "D",
-        "en": "22"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "B"
-    },
-    "id": "LH30"
-  },
-  {
-    "type": "Logic Thinking",
-    "stem": {
-      "en": "If two days later is Sunday, what day was yesterday?",
-      "vi": "Nếu hai ngày nữa là Chủ Nhật, thì hôm qua là thứ mấy?"
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "Thursday",
-        "vi": "Thứ Năm"
-      },
-      {
-        "id": "B",
-        "en": "Friday",
-        "vi": "Thứ Sáu"
-      },
-      {
-        "id": "C",
-        "en": "Saturday",
-        "vi": "Thứ Bảy"
-      },
-      {
-        "id": "D",
-        "en": "Sunday",
-        "vi": "Chủ Nhật"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "A"
-    },
-    "id": "LH31"
-  },
-  {
-    "type": "Logic Thinking",
-    "stem": {
-      "en": "Given two balances below, find the heaviest type of fruit.",
-      "vi": "Cho hai chiếc cân thăng bằng dưới đây, tìm loại quả nặng nhất."
+      "vi": "Quan sát hai chiếc cân dưới đây, loại quả nào nặng nhất?",
+      "en": "Look at the two balances below. Which fruit is the heaviest?"
     },
     "figure": {
       "renderer": "balances",
@@ -1317,19 +1204,19 @@
           [
             [
               "🍎",
-              "🍌"
+              "🍊"
             ],
             [
-              "🍊"
+              "🍇"
             ]
           ],
           [
             [
-              "🍎"
+              "🍊"
             ],
             [
-              "🍌",
-              "🍌"
+              "🍎",
+              "🍎"
             ]
           ]
         ]
@@ -1338,44 +1225,57 @@
     "choices": [
       {
         "id": "A",
-        "en": "Apple (Táo)"
+        "vi": "🍎",
+        "en": "Apple"
       },
       {
         "id": "B",
-        "en": "Orange (Cam)"
+        "vi": "🍊",
+        "en": "Orange"
       },
       {
         "id": "C",
-        "en": "Mango (Xoài)"
+        "vi": "🍇",
+        "en": "Grape"
       },
       {
         "id": "D",
-        "en": "None of them (Không có)"
+        "vi": "Không có",
+        "en": "None"
       }
     ],
     "answer": {
       "type": "single",
       "key": "C"
     },
-    "id": "LH32"
+    "id": "LH29"
   },
   {
-    "type": "Logic Thinking",
     "stem": {
-      "en": "Which symbol should replace ?",
-      "vi": "Ký hiệu nào nên thay cho ?"
+      "vi": "Cho 2 cân dưới đây, con vật nào nhẹ nhất?",
+      "en": "From the two balances below, which animal is the lightest?"
     },
     "figure": {
-      "renderer": "symbolPattern",
+      "renderer": "balances",
       "params": {
-        "grid": [
+        "balances": [
           [
-            "▲",
-            "●",
-            "◆",
-            "▲",
-            "?",
-            "◆"
+            [
+              "🐰",
+              "🐰"
+            ],
+            [
+              "🐱"
+            ]
+          ],
+          [
+            [
+              "🐱"
+            ],
+            [
+              "🐶",
+              "🐶"
+            ]
           ]
         ]
       }
@@ -1383,509 +1283,607 @@
     "choices": [
       {
         "id": "A",
-        "en": "◆"
+        "vi": "🐰",
+        "en": "Rabbit"
       },
       {
         "id": "B",
-        "en": "●"
+        "vi": "🐱",
+        "en": "Cat"
       },
       {
         "id": "C",
-        "en": "▲"
+        "vi": "🐶",
+        "en": "Dog"
       },
       {
         "id": "D",
-        "en": "★"
+        "vi": "Bằng nhau",
+        "en": "Equal"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "type": "Logic Thinking",
+    "id": "LH30"
+  },
+  {
+    "stem": {
+      "vi": "Hai quả 🍎 cân bằng với 1 quả 🍉. Một quả 🍎 và một quả 🍋 cân nặng bằng một quả 🍉. Hỏi quả nào nhẹ nhất?",
+      "en": "Two 🍎 balance one 🍉. One 🍎 and one 🍋 equal one 🍉. Which fruit is the lightest?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "vi": "🍎",
+        "en": "Apple"
+      },
+      {
+        "id": "B",
+        "vi": "🍋",
+        "en": "Lemon"
+      },
+      {
+        "id": "C",
+        "vi": "🍉",
+        "en": "Watermelon"
+      },
+      {
+        "id": "D",
+        "vi": "Bằng nhau",
+        "en": "Equal"
       }
     ],
     "answer": {
       "type": "single",
       "key": "B"
     },
-    "id": "LH33"
+    "type": "Logic Thinking",
+    "figure": {},
+    "id": "LH31"
   },
   {
-    "type": "Number Theory",
     "stem": {
-      "en": "Find the 4th number of the sequence:",
-      "vi": "Tìm số thứ 4 trong dãy:"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "12, 15, 18, __, 24, 27, 30, 33"
-      }
+      "vi": "Cân 1: 🥕 + 🥕 = 🌽. Cân 2: 🌽 = 🍆 + 🥕. Hỏi loại rau nào nặng nhất?",
+      "en": "Balance 1: 🥕 + 🥕 = 🌽. Balance 2: 🌽 = 🍆 + 🥕. Which vegetable is the heaviest?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "23"
+        "vi": "🥕",
+        "en": "Carrot"
       },
       {
         "id": "B",
-        "en": "16"
+        "vi": "🌽",
+        "en": "Corn"
       },
       {
         "id": "C",
-        "en": "27"
+        "vi": "🍆",
+        "en": "Eggplant"
       },
       {
         "id": "D",
-        "en": "21"
+        "vi": "Bằng nhau",
+        "en": "Equal"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "D"
+      "key": "C"
     },
+    "type": "Logic Thinking",
+    "figure": {},
+    "id": "LH32"
+  },
+  {
+    "stem": {
+      "vi": "Cân 1: 🐸 + 🐸 = 🐢. Cân 2: 🐢 = 🐸 + 🐰. Hỏi nếu đặt 2 con 🐸 và 1 con 🐰 lên cùng một bên, thì bên đó nặng hơn hay nhẹ hơn 🐢?",
+      "en": "Balance 1: 🐸 + 🐸 = 🐢. Balance 2: 🐢 = 🐸 + 🐰. If we place 2 🐸 and 1 🐰 together, is that side heavier or lighter than 🐢?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "vi": "Nặng hơn",
+        "en": "Heavier"
+      },
+      {
+        "id": "B",
+        "vi": "Nhẹ hơn",
+        "en": "Lighter"
+      },
+      {
+        "id": "C",
+        "vi": "Bằng nhau",
+        "en": "Equal"
+      },
+      {
+        "id": "D",
+        "vi": "Không xác định",
+        "en": "Cannot tell"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "type": "Logic Thinking",
+    "figure": {},
+    "id": "LH33"
+  },
+  {
+    "stem": {
+      "vi": "Cân 1: 🐱 + 🐶 = 🐰 + 🐰. Cân 2: 🐶 = 🐰 + 🐱. Hỏi con vật nào nhẹ nhất?",
+      "en": "Balance 1: 🐱 + 🐶 = 🐰 + 🐰. Balance 2: 🐶 = 🐰 + 🐱. Which animal is the lightest?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "vi": "🐱",
+        "en": "Cat"
+      },
+      {
+        "id": "B",
+        "vi": "🐶",
+        "en": "Dog"
+      },
+      {
+        "id": "C",
+        "vi": "🐰",
+        "en": "Rabbit"
+      },
+      {
+        "id": "D",
+        "vi": "Bằng nhau",
+        "en": "Equal"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "type": "Logic Thinking",
+    "figure": {},
     "id": "LH34"
   },
   {
     "type": "Logic Thinking",
     "stem": {
-      "en": "If two days later is Tuesday, what day was yesterday?",
-      "vi": "Nếu hai ngày nữa là Thứ Ba, thì hôm qua là thứ mấy?"
+      "vi": "Nam hơn Lan 3 tuổi. Tổng số tuổi của hai bạn là 13. Hỏi Lan mấy tuổi?",
+      "en": "Nam is 3 years older than Lan. Together they are 13 years old. How old is Lan?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "Saturday",
-        "vi": "Thứ Bảy"
+        "vi": "5",
+        "en": "5"
       },
       {
         "id": "B",
-        "en": "Sunday",
-        "vi": "Chủ Nhật"
+        "vi": "6",
+        "en": "6"
       },
       {
         "id": "C",
-        "en": "Monday",
-        "vi": "Thứ Hai"
+        "vi": "7",
+        "en": "7"
       },
       {
         "id": "D",
-        "en": "Tuesday",
-        "vi": "Thứ Ba"
+        "vi": "8",
+        "en": "8"
       }
     ],
     "answer": {
       "type": "single",
       "key": "A"
     },
+    "figure": {},
     "id": "LH35"
   },
   {
-    "type": "Logic Thinking",
     "stem": {
-      "en": "Given two balances below, find the heaviest type of fruit.",
-      "vi": "Cho hai chiếc cân thăng bằng dưới đây, tìm loại quả nặng nhất."
-    },
-    "figure": {
-      "renderer": "balances",
-      "params": {
-        "balances": [
-          [
-            [
-              "🍊",
-              "🍐"
-            ],
-            [
-              "🥭"
-            ]
-          ],
-          [
-            [
-              "🍊"
-            ],
-            [
-              "🍐",
-              "🍐"
-            ]
-          ]
-        ]
-      }
+      "vi": "Khi Mai 6 tuổi thì em gái cô ấy 3 tuổi. Hỏi khi Mai 9 tuổi thì em gái bao nhiêu tuổi?",
+      "en": "When Mai was 6, her sister was 3. How old will her sister be when Mai is 9?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "Apple (Táo)"
+        "vi": "5",
+        "en": "5"
       },
       {
         "id": "B",
-        "en": "Orange (Cam)"
+        "vi": "6",
+        "en": "6"
       },
       {
         "id": "C",
-        "en": "Mango (Xoài)"
+        "vi": "7",
+        "en": "7"
       },
       {
         "id": "D",
-        "en": "None of them (Không có)"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "A"
-    },
-    "id": "LH36"
-  },
-  {
-    "type": "Logic Thinking",
-    "stem": {
-      "en": "Which symbol should replace ?",
-      "vi": "Ký hiệu nào nên thay cho ?"
-    },
-    "figure": {
-      "renderer": "symbolPattern",
-      "params": {
-        "grid": [
-          [
-            "▲",
-            "?",
-            "◆",
-            "▲",
-            "●",
-            "◆"
-          ]
-        ]
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "●"
-      },
-      {
-        "id": "B",
-        "en": "▲"
-      },
-      {
-        "id": "C",
-        "en": "★"
-      },
-      {
-        "id": "D",
-        "en": "◆"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "A"
-    },
-    "id": "LH37"
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Find the 5th number of the sequence:",
-      "vi": "Tìm số thứ 5 trong dãy:"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "9, 11, 13, 15, __, 19, 21, 23"
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "16"
-      },
-      {
-        "id": "B",
-        "en": "17"
-      },
-      {
-        "id": "C",
-        "en": "12"
-      },
-      {
-        "id": "D",
-        "en": "13"
+        "vi": "8",
+        "en": "8"
       }
     ],
     "answer": {
       "type": "single",
       "key": "B"
     },
+    "type": "Logic Thinking",
+    "figure": {},
+    "id": "LH36"
+  },
+  {
+    "stem": {
+      "vi": "Nhà có 2 bố mẹ và 3 con. Mỗi người có 2 chân. Hỏi tổng số chân trong gia đình là bao nhiêu?",
+      "en": "A family has 2 parents and 3 children. Everyone has 2 legs. How many legs in total?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "vi": "8",
+        "en": "8"
+      },
+      {
+        "id": "B",
+        "vi": "10",
+        "en": "10"
+      },
+      {
+        "id": "C",
+        "vi": "12",
+        "en": "12"
+      },
+      {
+        "id": "D",
+        "vi": "14",
+        "en": "14"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "type": "Logic Thinking",
+    "figure": {},
+    "id": "LH37"
+  },
+  {
+    "stem": {
+      "vi": "Bây giờ mẹ 30 tuổi, con 6 tuổi. Hỏi 6 năm trước, tuổi mẹ gấp mấy lần tuổi con?",
+      "en": "Mom is 30, the child is 6. How many times older was Mom than the child 6 years ago?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "vi": "3 lần",
+        "en": "3 times"
+      },
+      {
+        "id": "B",
+        "vi": "4 lần",
+        "en": "4 times"
+      },
+      {
+        "id": "C",
+        "vi": "5 lần",
+        "en": "5 times"
+      },
+      {
+        "id": "D",
+        "vi": "6 lần",
+        "en": "6 times"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "type": "Logic Thinking",
+    "figure": {},
     "id": "LH38"
   },
   {
-    "type": "Logic Thinking",
     "stem": {
-      "en": "If two days later is Monday, what day was yesterday?",
-      "vi": "Nếu hai ngày nữa là Thứ Hai, thì hôm qua là thứ mấy?"
+      "vi": "Trong nhà có 4 anh em, gồm cả trai và gái. Số anh trai bằng số em gái. Hỏi trong nhà có mấy anh trai?",
+      "en": "There are 4 siblings including both boys and girls. The number of brothers equals the number of sisters. How many brothers are there?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "Friday",
-        "vi": "Thứ Sáu"
+        "vi": "1",
+        "en": "1"
       },
       {
         "id": "B",
-        "en": "Saturday",
-        "vi": "Thứ Bảy"
+        "vi": "2",
+        "en": "2"
       },
       {
         "id": "C",
-        "en": "Sunday",
-        "vi": "Chủ Nhật"
+        "vi": "3",
+        "en": "3"
       },
       {
         "id": "D",
-        "en": "Monday",
-        "vi": "Thứ Hai"
+        "vi": "4",
+        "en": "4"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "A"
+      "key": "B"
     },
+    "type": "Logic Thinking",
+    "figure": {},
     "id": "LH39"
   },
   {
-    "type": "Logic Thinking",
     "stem": {
-      "en": "Given two balances below, find the heaviest type of fruit.",
-      "vi": "Cho hai chiếc cân thăng bằng dưới đây, tìm loại quả nặng nhất."
-    },
-    "figure": {
-      "renderer": "balances",
-      "params": {
-        "balances": [
-          [
-            [
-              "🍊",
-              "🥭"
-            ],
-            [
-              "🍎"
-            ]
-          ],
-          [
-            [
-              "🍊"
-            ],
-            [
-              "🥭",
-              "🥭"
-            ]
-          ]
-        ]
-      }
+      "vi": "5 năm nữa, tuổi của Minh sẽ là 12. Hỏi bây giờ Minh bao nhiêu tuổi?",
+      "en": "In 5 years, Minh will be 12 years old. How old is Minh now?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "Apple (Táo)"
+        "vi": "6",
+        "en": "6"
       },
       {
         "id": "B",
-        "en": "Orange (Cam)"
+        "vi": "7",
+        "en": "7"
       },
       {
         "id": "C",
-        "en": "Mango (Xoài)"
+        "vi": "8",
+        "en": "8"
       },
       {
         "id": "D",
-        "en": "None of them (Không có)"
+        "vi": "9",
+        "en": "9"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "C"
+      "key": "B"
     },
+    "type": "Logic Thinking",
+    "figure": {},
     "id": "LH40"
   },
   {
     "type": "Logic Thinking",
     "stem": {
-      "en": "Which symbol should replace ?",
-      "vi": "Ký hiệu nào nên thay cho ?"
-    },
-    "figure": {
-      "renderer": "symbolPattern",
-      "params": {
-        "grid": [
-          [
-            "▲",
-            "●",
-            "◆",
-            "▲",
-            "?",
-            "◆"
-          ]
-        ]
-      }
+      "vi": "Trong hộp có 6 hình màu đỏ 🔴 và 4 hình vừa có màu đỏ 🔴 vừa có màu xanh 🔵. Nam đếm được tổng cộng 12 hình. Hỏi có bao nhiêu hình chỉ có màu xanh?",
+      "en": "There are 6 red 🔴 shapes and 4 shapes that are both red 🔴 and blue 🔵. Nam counted 12 shapes in total. How many shapes are only blue?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "●"
+        "vi": "2",
+        "en": "2"
       },
       {
         "id": "B",
-        "en": "★"
+        "vi": "4",
+        "en": "4"
       },
       {
         "id": "C",
-        "en": "▲"
+        "vi": "6",
+        "en": "6"
       },
       {
         "id": "D",
-        "en": "◆"
+        "vi": "8",
+        "en": "8"
       }
     ],
     "answer": {
       "type": "single",
       "key": "A"
     },
+    "figure": {},
     "id": "LH41"
   },
   {
-    "type": "Number Theory",
     "stem": {
-      "en": "Find the 5th number of the sequence:",
-      "vi": "Tìm số thứ 5 trong dãy:"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "13, 15, 17, 19, __, 23, 25, 27"
-      }
+      "vi": "Trong hộp có 7 hình màu xanh 🔵 và 5 hình tròn, trong đó có 3 hình vừa tròn vừa xanh. Hỏi có bao nhiêu hình chỉ tròn mà không xanh?",
+      "en": "There are 7 blue 🔵 shapes and 5 circles ⭕, only 3 circles is blue. How many are circles only (not blue)?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "21"
+        "vi": "2",
+        "en": "2"
       },
       {
         "id": "B",
-        "en": "25"
+        "vi": "3",
+        "en": "3"
       },
       {
         "id": "C",
-        "en": "26"
+        "vi": "4",
+        "en": "4"
       },
       {
         "id": "D",
-        "en": "22"
+        "vi": "5",
+        "en": "5"
       }
     ],
     "answer": {
       "type": "single",
       "key": "A"
     },
+    "type": "Logic Thinking",
+    "figure": {},
     "id": "LH42"
   },
   {
-    "type": "Logic Thinking",
     "stem": {
-      "en": "If two days later is Wednesday, what day was yesterday?",
-      "vi": "Nếu hai ngày nữa là Thứ Tư, thì hôm qua là thứ mấy?"
+      "vi": "Nam thấy 8 hình có màu đỏ 🟥, 7 hình có màu vàng 🟨, trong đó có 3 hình có 2 màu vừa đỏ vừa vàng. Hỏi có bao nhiêu hình chỉ có một màu?",
+      "en": "Nam saw 8 shapes have red 🟥 and 7 shapes have yellow 🟨; 3 have both colors. How many have only one color?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "Sunday",
-        "vi": "Chủ Nhật"
+        "vi": "9",
+        "en": "9"
       },
       {
         "id": "B",
-        "en": "Monday",
-        "vi": "Thứ Hai"
+        "vi": "10",
+        "en": "10"
       },
       {
         "id": "C",
-        "en": "Tuesday",
-        "vi": "Thứ Ba"
+        "vi": "11",
+        "en": "11"
       },
       {
         "id": "D",
-        "en": "Wednesday",
-        "vi": "Thứ Tư"
+        "vi": "12",
+        "en": "12"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "A"
+      "key": "D"
     },
+    "type": "Logic Thinking",
+    "figure": {},
     "id": "LH43"
   },
   {
-    "type": "Logic Thinking",
     "stem": {
-      "en": "Given two balances below, find the heaviest type of fruit.",
-      "vi": "Cho hai chiếc cân thăng bằng dưới đây, tìm loại quả nặng nhất."
-    },
-    "figure": {
-      "renderer": "balances",
-      "params": {
-        "balances": [
-          [
-            [
-              "🍌",
-              "🍐"
-            ],
-            [
-              "🥭"
-            ]
-          ],
-          [
-            [
-              "🍌"
-            ],
-            [
-              "🍐",
-              "🍐"
-            ]
-          ]
-        ]
-      }
+      "vi": "Có 5 con biết bơi 🐟, 4 con biết bay 🐦, trong đó có 2 con vừa biết bơi vừa biết bay 🦆. Hỏi có bao nhiêu con chỉ biết bơi mà không biết bay?",
+      "en": "5 can swim 🐟, 4 can fly 🐦, 2 can do both 🦆. How many can swim only?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "Apple (Táo)"
+        "vi": "2",
+        "en": "2"
       },
       {
         "id": "B",
-        "en": "Orange (Cam)"
+        "vi": "3",
+        "en": "3"
       },
       {
         "id": "C",
-        "en": "Mango (Xoài)"
+        "vi": "4",
+        "en": "4"
       },
       {
         "id": "D",
-        "en": "None of them (Không có)"
+        "vi": "5",
+        "en": "5"
       }
     ],
     "answer": {
       "type": "single",
       "key": "B"
     },
+    "type": "Logic Thinking",
+    "figure": {},
     "id": "LH44"
+  },
+  {
+    "stem": {
+      "vi": "Có 3 bạn học Toán, 4 bạn học Tiếng Anh, trong đó lại có 2 bạn học cả hai môn. Hỏi có bao nhiêu bạn chỉ học một môn?",
+      "en": "3 students study Math, 4 study English, only 2 of them study both. How many study only one subject?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "vi": "3",
+        "en": "3"
+      },
+      {
+        "id": "B",
+        "vi": "4",
+        "en": "4"
+      },
+      {
+        "id": "C",
+        "vi": "5",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "vi": "6",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "type": "Logic Thinking",
+    "figure": {},
+    "id": "LH45"
   },
   {
     "type": "Logic Thinking",
     "stem": {
-      "en": "Which symbol should replace ?",
-      "vi": "Ký hiệu nào nên thay cho ?"
+      "vi": "Trong trang trại có 5 con biết bơi, 4 con có đuôi, trong đó có 2 con vừa biết bơi vừa có đuôi. Hỏi có bao nhiêu con KHÔNG có cả hai đặc điểm trên?",
+      "en": "In the farm, 5 animals can swim, 4 have tails, and 2 have both. How many do NOT have both features?"
     },
+    "choices": [
+      {
+        "id": "A",
+        "vi": "5",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "vi": "6",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "vi": "7",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "vi": "8",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {},
+    "id": "LH46"
+  },
+  {
     "figure": {
       "renderer": "symbolPattern",
       "params": {
         "grid": [
           [
-            "▲",
-            "●",
-            "◆",
-            "?",
-            "●",
-            "◆"
+            "🐸",
+            "🐢",
+            "🐍",
+            "🐸",
+            "🐢",
+            "🐍",
+            "🐸",
+            "🐢",
+            "____"
           ]
         ]
       }
@@ -1893,103 +1891,65 @@
     "choices": [
       {
         "id": "A",
-        "en": "●"
+        "en": "🐍"
       },
       {
         "id": "B",
-        "en": "★"
+        "en": "🐸"
       },
       {
         "id": "C",
-        "en": "▲"
+        "en": "🐢"
       },
       {
         "id": "D",
-        "en": "◆"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "C"
-    },
-    "id": "LH45"
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Find the 6th number of the sequence:",
-      "vi": "Tìm số thứ 6 trong dãy:"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "9, 12, 15, 18, 21, __, 27, 30"
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "22"
-      },
-      {
-        "id": "B",
-        "en": "26"
-      },
-      {
-        "id": "C",
-        "en": "24"
-      },
-      {
-        "id": "D",
-        "en": "19"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "C"
-    },
-    "id": "LH46"
-  },
-  {
-    "type": "Logic Thinking",
-    "stem": {
-      "en": "If two days later is Saturday, what day was yesterday?",
-      "vi": "Nếu hai ngày nữa là Thứ Bảy, thì hôm qua là thứ mấy?"
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "Wednesday",
-        "vi": "Thứ Tư"
-      },
-      {
-        "id": "B",
-        "en": "Thursday",
-        "vi": "Thứ Năm"
-      },
-      {
-        "id": "C",
-        "en": "Friday",
-        "vi": "Thứ Sáu"
-      },
-      {
-        "id": "D",
-        "en": "Saturday",
-        "vi": "Thứ Bảy"
+        "en": "🐟"
       }
     ],
     "answer": {
       "type": "single",
       "key": "A"
     },
+    "stem": {},
+    "type": "Logic Thinking",
     "id": "LH47"
   },
   {
-    "type": "Logic Thinking",
     "stem": {
-      "en": "Given two balances below, find the heaviest type of fruit.",
-      "vi": "Cho hai chiếc cân thăng bằng dưới đây, tìm loại quả nặng nhất."
+      "vi": "Các nhóm có số con 🐰 là: 1, 3, 6, ?, 15, 21. Hỏi nhóm bị thiếu có bao nhiêu con 🐰?",
+      "en": "Rabbit groups: 1, 3, 6, ?, 15, 21. How many rabbits in the missing group?"
     },
+    "choices": [
+      {
+        "id": "A",
+        "vi": "10",
+        "en": "10"
+      },
+      {
+        "id": "B",
+        "vi": "12",
+        "en": "12"
+      },
+      {
+        "id": "C",
+        "vi": "14",
+        "en": "14"
+      },
+      {
+        "id": "D",
+        "vi": "15",
+        "en": "15"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "type": "Logic Thinking",
+    "figure": {},
+    "id": "LH48"
+  },
+  {
     "figure": {
       "renderer": "balances",
       "params": {
@@ -1997,95 +1957,68 @@
           [
             [
               "🍎",
-              "🍊"
+              "🍎"
             ],
             [
-              "🍐"
+              "🍉"
             ]
           ],
           [
             [
-              "🍎"
+              "🍉"
             ],
             [
-              "🍊",
-              "🍊"
+              "🍋",
+              "🍎"
+            ]
+          ],
+          [
+            [
+              "🍋"
+            ],
+            [
+              "🍏",
+              "🍏"
             ]
           ]
         ]
       }
     },
+    "stem": {
+      "vi": "Dựa vào 3 cân trên, loại quả nào nặng nhất?",
+      "en": "Using all 3 balances, which fruit is the heaviest?"
+    },
     "choices": [
       {
         "id": "A",
-        "en": "Apple (Táo)"
+        "vi": "🍎",
+        "en": "Apple"
       },
       {
         "id": "B",
-        "en": "Orange (Cam)"
+        "vi": "🍋",
+        "en": "Lemon"
       },
       {
         "id": "C",
-        "en": "Mango (Xoài)"
+        "vi": "🍉",
+        "en": "Watermelon"
       },
       {
         "id": "D",
-        "en": "None of them (Không có)"
+        "vi": "🍏",
+        "en": "Green apple"
       }
     ],
     "answer": {
       "type": "single",
       "key": "C"
     },
-    "id": "LH48"
-  },
-  {
     "type": "Logic Thinking",
-    "stem": {
-      "en": "Which symbol should replace ?",
-      "vi": "Ký hiệu nào nên thay cho ?"
-    },
-    "figure": {
-      "renderer": "symbolPattern",
-      "params": {
-        "grid": [
-          [
-            "▲",
-            "●",
-            "◆",
-            "?",
-            "●",
-            "◆"
-          ]
-        ]
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "★"
-      },
-      {
-        "id": "B",
-        "en": "●"
-      },
-      {
-        "id": "C",
-        "en": "◆"
-      },
-      {
-        "id": "D",
-        "en": "▲"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "D"
-    },
     "id": "LH49"
   },
   {
-    "type": "Number Theory",
+    "type": "Logic Thinking",
     "stem": {
       "en": "Find the 4th number of the sequence:",
       "vi": "Tìm số thứ 4 trong dãy:"

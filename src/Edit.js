@@ -6,9 +6,9 @@ function Edit({ dataType = "preliminary" }) {
   const listQuestionFiles = [
     // "arithmetic",
     // "combinatorics",
-    "geometry",
+    // "geometry",
     // "logic-thinking",
-    // "number-theory",
+    "number-theory",
   ];
 
   const [questions, setQuestions] = useState([]);
@@ -92,14 +92,8 @@ function Edit({ dataType = "preliminary" }) {
     setQuestions((prev) => {
       const next = [...prev];
       const q = next[qIndex] || {};
-      try {
-        // Parse the newAnswer string to JSON
-        const answerObj = JSON.parse(newAnswer);
-        next[qIndex] = { ...q, answer: answerObj };
-      } catch (e) {
-        // If parsing fails, store as is
-        next[qIndex] = { ...q, answer: newAnswer };
-      }
+      const answerObj = { type: "single", key: newAnswer.toUpperCase() };
+      next[qIndex] = { ...q, answer: answerObj };
       setTmpAnswer(false);
       removeSaved(next[qIndex]?.id);
       return next;
@@ -126,6 +120,11 @@ function Edit({ dataType = "preliminary" }) {
       try {
         // Parse the newValue string to JSON
         let updatedQuestion = JSON.parse(newValue);
+
+        // Add default stem if missing
+        if (!updatedQuestion.stem) {
+          updatedQuestion.stem = {};
+        }
 
         // Add default type if missing
         if (!updatedQuestion.type) {
@@ -412,7 +411,9 @@ function Edit({ dataType = "preliminary" }) {
                             rows={10}
                             onFocus={(e) => e.target.select()}
                             value={
-                              tmpFigure ? tmpFigure : JSON.stringify(q.figure)
+                              tmpFigure
+                                ? tmpFigure
+                                : JSON.stringify(q.figure, null, 2)
                             }
                             onChange={(e) => {
                               setTmpFigure(e.target.value);
@@ -494,9 +495,7 @@ function Edit({ dataType = "preliminary" }) {
                           className="form-control"
                           rows={3}
                           onFocus={(e) => e.target.select()}
-                          value={
-                            tmpAnswer ? tmpAnswer : JSON.stringify(q.answer)
-                          }
+                          value={tmpAnswer ? tmpAnswer : q.answer.key}
                           onChange={(e) => {
                             setTmpAnswer(e.target.value);
                           }}

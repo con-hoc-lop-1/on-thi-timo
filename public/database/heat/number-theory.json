@@ -2,145 +2,139 @@
   {
     "type": "Number Theory",
     "stem": {
-      "en": "Is the result of operation odd or even?",
-      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+      "vi": "Điền dấu '+' hoặc '−' để phép tính đúng:",
+      "en": "Fill '+' or '−' to make the equation correct:"
     },
     "figure": {
       "renderer": "text",
       "params": {
-        "content": "6 - 6 - 3 - 8 + 2 - 8"
+        "content": "4 _ 7 _ 3 _ 2 = 6"
       }
     },
     "choices": [
       {
         "id": "A",
-        "en": "Even"
+        "en": "4+7−3−2"
       },
       {
         "id": "B",
-        "en": "Odd"
+        "en": "4−7+3+2"
       },
       {
         "id": "C",
-        "en": "Neither odd nor even"
+        "en": "4+7−3+2"
       },
       {
         "id": "D",
-        "en": "Both odd and even"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "B"
-    },
-    "id": "NH01"
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Move how many items from left(23) to right(7) to balance?",
-      "vi": "Phải chuyển bao nhiêu vật từ trái(23) sang phải(7) để bằng nhau?"
-    },
-    "figure": {
-      "renderer": "twoBins",
-      "params": {
-        "left": 23,
-        "right": 7,
-        "symbol": "🐟",
-        "labels": [
-          "Left",
-          "Right"
-        ]
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "10"
-      },
-      {
-        "id": "B",
-        "en": "8"
-      },
-      {
-        "id": "C",
-        "en": "9"
-      },
-      {
-        "id": "D",
-        "en": "6"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "B"
-    },
-    "id": "NH02"
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Find the 7th number of the sequence:",
-      "vi": "Tìm số thứ 7 trong dãy:"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "34, 40, 46, 52, 58, 64, __, 76"
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "70"
-      },
-      {
-        "id": "B",
-        "en": "71"
-      },
-      {
-        "id": "C",
-        "en": "67"
-      },
-      {
-        "id": "D",
-        "en": "76"
+        "en": "4−7−3+2"
       }
     ],
     "answer": {
       "type": "single",
       "key": "A"
     },
-    "id": "NH03"
+    "id": "NH01"
   },
   {
     "type": "Number Theory",
     "stem": {
-      "en": "Is the result of operation odd or even?",
-      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+      "vi": "Điền dấu '+' hoặc '−' để được 8:",
+      "en": "Fill '+' or '−' to get 8:"
     },
     "figure": {
       "renderer": "text",
       "params": {
-        "content": "3 + 7 + 3 + 4"
+        "content": "5 _ 4 _ 3 _ 2 = 8"
       }
     },
     "choices": [
       {
         "id": "A",
-        "en": "Even"
+        "en": "5+4−3+2"
       },
       {
         "id": "B",
-        "en": "Odd"
+        "en": "5−4+3+2"
       },
       {
         "id": "C",
-        "en": "Neither odd nor even"
+        "en": "5+4+3−2"
       },
       {
         "id": "D",
-        "en": "Both odd and even"
+        "en": "5−4−3+2"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "id": "NH02"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "vi": "Điền '+' hoặc '−' để được 10:",
+      "en": "Fill '+' or '−' to get 10:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "3 _ 5 _ 4 _ 2 _ 6 = 10"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "3+5+4−2−6"
+      },
+      {
+        "id": "B",
+        "en": "3+5−4+2+6"
+      },
+      {
+        "id": "C",
+        "en": "3−5+4+2+6"
+      },
+      {
+        "id": "D",
+        "en": "3+5−4−2+6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "NH03"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "vi": "Điền '+' hoặc '−' và ngoặc ( ) để phép tính đúng:",
+      "en": "Fill '+' or '−' and brackets ( ) to make the equation correct:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "(8 _ 5) _ 3 = 10"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "en": "(8−5)+3"
+      },
+      {
+        "id": "B",
+        "en": "(8+5)−3"
+      },
+      {
+        "id": "C",
+        "en": "(8−5)−3"
+      },
+      {
+        "id": "D",
+        "en": "(8+5)+3"
       }
     ],
     "answer": {
@@ -152,331 +146,345 @@
   {
     "type": "Number Theory",
     "stem": {
-      "en": "Is the result of operation odd or even?",
-      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+      "vi": "Điền '+' hoặc '−' để được 7:",
+      "en": "Fill '+' or '−' to get 7:"
     },
     "figure": {
       "renderer": "text",
       "params": {
-        "content": "8 - 9 - 9 - 3 - 6 + 6"
+        "content": "7 _ 7 _ 4 _ 3 = 7"
       }
     },
     "choices": [
       {
         "id": "A",
-        "en": "Even"
+        "en": "7−7+4+3"
       },
       {
         "id": "B",
-        "en": "Odd"
+        "en": "7+7−4−3"
       },
       {
         "id": "C",
-        "en": "Neither odd nor even"
+        "en": "7−7−4+3"
       },
       {
         "id": "D",
-        "en": "Both odd and even"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "B"
-    },
-    "id": "NH05"
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Move how many items from left(26) to right(16) to balance?",
-      "vi": "Phải chuyển bao nhiêu vật từ trái(26) sang phải(16) để bằng nhau?"
-    },
-    "figure": {
-      "renderer": "twoBins",
-      "params": {
-        "left": 26,
-        "right": 16,
-        "symbol": "🐸",
-        "labels": [
-          "Left",
-          "Right"
-        ]
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "7"
-      },
-      {
-        "id": "B",
-        "en": "3"
-      },
-      {
-        "id": "C",
-        "en": "5"
-      },
-      {
-        "id": "D",
-        "en": "6"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "C"
-    },
-    "id": "NH06"
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Find the 7th number of the sequence:",
-      "vi": "Tìm số thứ 7 trong dãy:"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "30, 34, 38, 42, 46, 50, __, 58"
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "57"
-      },
-      {
-        "id": "B",
-        "en": "49"
-      },
-      {
-        "id": "C",
-        "en": "61"
-      },
-      {
-        "id": "D",
-        "en": "54"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "D"
-    },
-    "id": "NH07"
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Is the result of operation odd or even?",
-      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "4 - 3 - 6 - 8"
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "Even"
-      },
-      {
-        "id": "B",
-        "en": "Odd"
-      },
-      {
-        "id": "C",
-        "en": "Neither odd nor even"
-      },
-      {
-        "id": "D",
-        "en": "Both odd and even"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "B"
-    },
-    "id": "NH08"
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Is the result of operation odd or even?",
-      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "9 + 2 - 7 - 9 + 6"
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "Even"
-      },
-      {
-        "id": "B",
-        "en": "Odd"
-      },
-      {
-        "id": "C",
-        "en": "Neither odd nor even"
-      },
-      {
-        "id": "D",
-        "en": "Both odd and even"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "B"
-    },
-    "id": "NH09"
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Move how many items from left(17) to right(11) to balance?",
-      "vi": "Phải chuyển bao nhiêu vật từ trái(17) sang phải(11) để bằng nhau?"
-    },
-    "figure": {
-      "renderer": "twoBins",
-      "params": {
-        "left": 17,
-        "right": 11,
-        "symbol": "🍪",
-        "labels": [
-          "Left",
-          "Right"
-        ]
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "5"
-      },
-      {
-        "id": "B",
-        "en": "2"
-      },
-      {
-        "id": "C",
-        "en": "3"
-      },
-      {
-        "id": "D",
-        "en": "1"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "C"
-    },
-    "id": "NH10"
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Find the 6th number of the sequence:",
-      "vi": "Tìm số thứ 6 trong dãy:"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "24, 30, 36, 42, 48, __, 60, 66"
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "54"
-      },
-      {
-        "id": "B",
-        "en": "59"
-      },
-      {
-        "id": "C",
-        "en": "50"
-      },
-      {
-        "id": "D",
-        "en": "49"
+        "en": "7+7−4+3"
       }
     ],
     "answer": {
       "type": "single",
       "key": "A"
     },
-    "id": "NH11"
+    "id": "NH05"
   },
   {
     "type": "Number Theory",
     "stem": {
-      "en": "Is the result of operation odd or even?",
-      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+      "vi": "Điền '+' hoặc '−' để được 0:",
+      "en": "Fill '+' or '−' to get 0:"
     },
     "figure": {
       "renderer": "text",
       "params": {
-        "content": "5 + 9 + 6 + 9"
+        "content": "6 _ 4 _ 3 _ 7 = 0"
       }
     },
     "choices": [
       {
         "id": "A",
-        "en": "Even"
+        "en": "6−4−3−7"
       },
       {
         "id": "B",
-        "en": "Odd"
+        "en": "6+4−3−7"
       },
       {
         "id": "C",
-        "en": "Neither odd nor even"
+        "en": "6−4+3−7"
       },
       {
         "id": "D",
-        "en": "Both odd and even"
+        "en": "6−4−3+7"
       }
     ],
     "answer": {
       "type": "single",
       "key": "B"
     },
-    "id": "NH12"
+    "id": "NH06"
   },
   {
     "type": "Number Theory",
     "stem": {
-      "en": "Is the result of operation odd or even?",
-      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+      "vi": "Điền số còn thiếu để phép tính đúng:",
+      "en": "Fill the missing number to make it correct:"
     },
     "figure": {
       "renderer": "text",
       "params": {
-        "content": "8 - 4 - 6 + 8 + 8 + 5"
+        "content": "7 + □ = 12"
       }
     },
     "choices": [
       {
         "id": "A",
+        "vi": "4",
+        "en": "4"
+      },
+      {
+        "id": "B",
+        "vi": "5",
+        "en": "5"
+      },
+      {
+        "id": "C",
+        "vi": "6",
+        "en": "6"
+      },
+      {
+        "id": "D",
+        "vi": "7",
+        "en": "7"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "id": "NH07"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "vi": "Dùng bốn trong năm số 2, 3, 5, 7, 8 để điền vào ô dưới cho phép tính đúng. Số nào không được dùng?",
+      "en": "Use four of five numbers 2, 3, 5, 7, 8 to fill boxes correctly. Which number is not used?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "□ + □ − □ = □"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "vi": "2",
+        "en": "2"
+      },
+      {
+        "id": "B",
+        "vi": "3",
+        "en": "3"
+      },
+      {
+        "id": "C",
+        "vi": "5",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "vi": "6",
+        "en": "7"
+      },
+      {
+        "id": "E",
+        "vi": "8",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "NH08"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "vi": "Tìm số còn thiếu trong dãy:",
+      "en": "Find the missing number in the sequence:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "5, 8, □, 14, 17"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "vi": "9",
+        "en": "9"
+      },
+      {
+        "id": "B",
+        "vi": "10",
+        "en": "10"
+      },
+      {
+        "id": "C",
+        "vi": "11",
+        "en": "11"
+      },
+      {
+        "id": "D",
+        "vi": "12",
+        "en": "12"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "NH09"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "vi": "□ − 5 = 9. Hỏi ô trống là số nào?",
+      "en": "□ − 5 = 9. What number should be in the box?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "vi": "13",
+        "en": "13"
+      },
+      {
+        "id": "B",
+        "vi": "14",
+        "en": "14"
+      },
+      {
+        "id": "C",
+        "vi": "15",
+        "en": "15"
+      },
+      {
+        "id": "D",
+        "vi": "16",
+        "en": "16"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {},
+    "id": "NH10"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "vi": "Hai số có tổng là 13 và hiệu là 3. Hỏi số lớn là bao nhiêu?",
+      "en": "Two numbers have sum 13 and difference 3. What is the bigger number?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "vi": "5",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "vi": "7",
+        "en": "7"
+      },
+      {
+        "id": "C",
+        "vi": "8",
+        "en": "8"
+      },
+      {
+        "id": "D",
+        "vi": "9",
+        "en": "9"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {},
+    "id": "NH11"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "vi": "Có 5 số 1, 3, 4, 6, 9. Dùng MỖI SỐ ĐÚNG 1 LẦN (không trùng) để điền vào hai phép tính dưới đây cho đúng. Hỏi SỐ NÀO KHÔNG ĐƯỢC DÙNG?",
+      "en": "There are five numbers 1, 3, 4, 6, 9. Use EACH NUMBER EXACTLY ONCE (no repeats) to fill both equations correctly. Which number is NOT used?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "□ + □ = 10  □ − □ = 3"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "vi": "1",
+        "en": "1"
+      },
+      {
+        "id": "B",
+        "vi": "3",
+        "en": "3"
+      },
+      {
+        "id": "C",
+        "vi": "4",
+        "en": "4"
+      },
+      {
+        "id": "D",
+        "vi": "6",
+        "en": "6"
+      },
+      {
+        "id": "E",
+        "vi": "9",
+        "en": "9"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "id": "NH12"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "vi": "Kết quả của 7 + 8 + 5 − 6 + 4 là số chẵn hay lẻ?",
+      "en": "Is 7 + 8 + 5 − 6 + 4 even or odd?"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "7 + 8 + 5 − 6 + 4 = ?"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "vi": "Chẵn",
         "en": "Even"
       },
       {
         "id": "B",
+        "vi": "Lẻ",
         "en": "Odd"
       },
       {
         "id": "C",
-        "en": "Neither odd nor even"
+        "en": "Unknow"
       },
       {
         "id": "D",
-        "en": "Both odd and even"
+        "en": "Both"
       }
     ],
     "answer": {
@@ -488,409 +496,410 @@
   {
     "type": "Number Theory",
     "stem": {
-      "en": "Move how many items from left(28) to right(10) to balance?",
-      "vi": "Phải chuyển bao nhiêu vật từ trái(28) sang phải(10) để bằng nhau?"
-    },
-    "figure": {
-      "renderer": "twoBins",
-      "params": {
-        "left": 28,
-        "right": 10,
-        "symbol": "🍎",
-        "labels": [
-          "Left",
-          "Right"
-        ]
-      }
+      "vi": "Điền số vào ô trống để 8 + 4 + □ là số CHẴN.",
+      "en": "Fill □ so that 8 + 4 + □ is EVEN."
     },
     "choices": [
       {
         "id": "A",
-        "en": "11"
+        "vi": "1",
+        "en": "1"
       },
       {
         "id": "B",
-        "en": "7"
+        "vi": "3",
+        "en": "3"
       },
       {
         "id": "C",
-        "en": "10"
+        "vi": "5",
+        "en": "5"
       },
       {
         "id": "D",
-        "en": "9"
+        "vi": "6",
+        "en": "6"
       }
     ],
     "answer": {
       "type": "single",
       "key": "D"
     },
+    "figure": {},
     "id": "NH14"
   },
   {
     "type": "Number Theory",
     "stem": {
-      "en": "Find the 6th number of the sequence:",
-      "vi": "Tìm số thứ 6 trong dãy:"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "25, 30, 35, 40, 45, __, 55, 60"
-      }
+      "vi": "Phép tính nào dưới đây cho kết quả là số LẺ?",
+      "en": "Which of the following gives an ODD result?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "46"
+        "vi": "6 + 7",
+        "en": "6 + 7"
       },
       {
         "id": "B",
-        "en": "58"
+        "vi": "9 + 5",
+        "en": "9 + 5"
       },
       {
         "id": "C",
-        "en": "55"
+        "vi": "8 + 6",
+        "en": "8 + 6"
       },
       {
         "id": "D",
-        "en": "50"
+        "vi": "4 + 4",
+        "en": "4 + 4"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "figure": {},
+    "id": "NH15"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "vi": "Điền số vào ô trống để 9 + 3 + □ là số LẺ.",
+      "en": "Fill □ so that 9 + 3 + □ is ODD."
+    },
+    "choices": [
+      {
+        "id": "A",
+        "vi": "2",
+        "en": "2"
+      },
+      {
+        "id": "B",
+        "vi": "4",
+        "en": "4"
+      },
+      {
+        "id": "C",
+        "vi": "6",
+        "en": "6"
+      },
+      {
+        "id": "D",
+        "vi": "7",
+        "en": "7"
       }
     ],
     "answer": {
       "type": "single",
       "key": "D"
     },
-    "id": "NH15"
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Is the result of operation odd or even?",
-      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "7 - 2 - 8 - 2"
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "Even"
-      },
-      {
-        "id": "B",
-        "en": "Odd"
-      },
-      {
-        "id": "C",
-        "en": "Neither odd nor even"
-      },
-      {
-        "id": "D",
-        "en": "Both odd and even"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "B"
-    },
+    "figure": {},
     "id": "NH16"
   },
   {
     "type": "Number Theory",
     "stem": {
-      "en": "Is the result of operation odd or even?",
-      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "7 - 2 + 6 - 4 + 1"
-      }
+      "vi": "Chọn số □ trong {1, 2, 3, 4} sao cho □ + 8 là số LẺ và □ lớn hơn 2.",
+      "en": "Choose □ from {1, 2, 3, 4} so that □ + 8 is ODD and □ must be greater than 2."
     },
     "choices": [
       {
         "id": "A",
-        "en": "Even"
+        "vi": "1",
+        "en": "1"
       },
       {
         "id": "B",
-        "en": "Odd"
+        "vi": "2",
+        "en": "2"
       },
       {
         "id": "C",
-        "en": "Neither odd nor even"
+        "vi": "3",
+        "en": "3"
       },
       {
         "id": "D",
-        "en": "Both odd and even"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "A"
-    },
-    "id": "NH17"
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Move how many items from left(16) to right(6) to balance?",
-      "vi": "Phải chuyển bao nhiêu vật từ trái(16) sang phải(6) để bằng nhau?"
-    },
-    "figure": {
-      "renderer": "twoBins",
-      "params": {
-        "left": 16,
-        "right": 6,
-        "symbol": "🐟",
-        "labels": [
-          "Left",
-          "Right"
-        ]
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "5"
-      },
-      {
-        "id": "B",
-        "en": "6"
-      },
-      {
-        "id": "C",
-        "en": "7"
-      },
-      {
-        "id": "D",
+        "vi": "4",
         "en": "4"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "A"
+      "key": "C"
     },
-    "id": "NH18"
+    "figure": {},
+    "id": "NH17"
   },
   {
     "type": "Number Theory",
     "stem": {
-      "en": "Find the 5th number of the sequence:",
-      "vi": "Tìm số thứ 5 trong dãy:"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "28, 32, 36, 40, __, 48, 52, 56"
-      }
+      "vi": "Trong các số 11, 12, 14, 17, 18, 21 có bao nhiêu số CHẴN?",
+      "en": "How many EVEN numbers are there among 11, 12, 14, 17, 18, 21?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "45"
+        "vi": "2",
+        "en": "2"
       },
       {
         "id": "B",
-        "en": "44"
+        "vi": "3",
+        "en": "3"
       },
       {
         "id": "C",
-        "en": "48"
+        "vi": "4",
+        "en": "4"
       },
       {
         "id": "D",
-        "en": "46"
+        "vi": "5",
+        "en": "5"
       }
     ],
     "answer": {
       "type": "single",
       "key": "B"
+    },
+    "figure": {},
+    "id": "NH18"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "vi": "Điền số còn thiếu:",
+      "en": "Fill the missing number:"
+    },
+    "figure": {
+      "renderer": "text",
+      "params": {
+        "content": "2, 5, 8, 11, □, 17"
+      }
+    },
+    "choices": [
+      {
+        "id": "A",
+        "vi": "12",
+        "en": "12"
+      },
+      {
+        "id": "B",
+        "vi": "13",
+        "en": "13"
+      },
+      {
+        "id": "C",
+        "vi": "14",
+        "en": "14"
+      },
+      {
+        "id": "D",
+        "vi": "15",
+        "en": "15"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
     },
     "id": "NH19"
   },
   {
     "type": "Number Theory",
     "stem": {
-      "en": "Fill '+' and '−' to make the equation correct:",
-      "vi": "Điền dấu '+' và '−' để phép tính đúng:"
+      "vi": "Chọn số tiếp theo:",
+      "en": "Choose the next number:"
     },
     "figure": {
       "renderer": "text",
       "params": {
-        "content": "5 _ 6 _ 3 _ 2 = 12"
+        "content": "1, 2, 4, 5, 7, 8, □"
       }
     },
     "choices": [
       {
         "id": "A",
-        "en": "5 + 6 + 3 - 2 = 12"
+        "vi": "9",
+        "en": "9"
       },
       {
         "id": "B",
-        "en": "5 + 6 + 3 + 2 = 12"
+        "vi": "10",
+        "en": "10"
       },
       {
         "id": "C",
-        "en": "5 - 6 - 3 - 2 = 12"
+        "vi": "11",
+        "en": "11"
       },
       {
         "id": "D",
-        "en": "5 + 6 - 3 + 2 = 12"
+        "vi": "12",
+        "en": "12"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "A"
+      "key": "B"
     },
     "id": "NH20"
   },
   {
     "type": "Number Theory",
     "stem": {
-      "en": "Is the result of operation odd or even?",
-      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+      "vi": "Điền số còn thiếu:",
+      "en": "Fill the missing number:"
     },
     "figure": {
       "renderer": "text",
       "params": {
-        "content": "8 + 2 + 2 - 8 - 9 + 1"
+        "content": "3, 4, 6, 9, 13, □"
       }
     },
     "choices": [
       {
         "id": "A",
-        "en": "Even"
+        "vi": "17",
+        "en": "17"
       },
       {
         "id": "B",
-        "en": "Odd"
+        "vi": "18",
+        "en": "18"
       },
       {
         "id": "C",
-        "en": "Neither odd nor even"
+        "vi": "19",
+        "en": "19"
       },
       {
         "id": "D",
-        "en": "Both odd and even"
+        "vi": "20",
+        "en": "20"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "A"
+      "key": "B"
     },
     "id": "NH21"
   },
   {
     "type": "Number Theory",
     "stem": {
-      "en": "Move how many items from left(23) to right(11) to balance?",
-      "vi": "Phải chuyển bao nhiêu vật từ trái(23) sang phải(11) để bằng nhau?"
+      "vi": "Điền số còn thiếu:",
+      "en": "Fill the missing number:"
     },
     "figure": {
-      "renderer": "twoBins",
+      "renderer": "text",
       "params": {
-        "left": 23,
-        "right": 11,
-        "symbol": "⚽",
-        "labels": [
-          "Left",
-          "Right"
-        ]
+        "content": "2, 5, 4, 7, 6, 9, □"
       }
     },
     "choices": [
       {
         "id": "A",
+        "vi": "7",
         "en": "7"
       },
       {
         "id": "B",
-        "en": "5"
+        "vi": "8",
+        "en": "8"
       },
       {
         "id": "C",
-        "en": "6"
+        "vi": "9",
+        "en": "9"
       },
       {
         "id": "D",
-        "en": "8"
+        "vi": "10",
+        "en": "10"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "C"
+      "key": "B"
     },
     "id": "NH22"
   },
   {
     "type": "Number Theory",
     "stem": {
-      "en": "Find the 7th number of the sequence:",
-      "vi": "Tìm số thứ 7 trong dãy:"
+      "vi": "Điền số còn thiếu:",
+      "en": "Fill the missing number:"
     },
     "figure": {
       "renderer": "text",
       "params": {
-        "content": "22, 28, 34, 40, 46, 52, __, 64"
+        "content": "1, 3, 6, 10, □, 21"
       }
     },
     "choices": [
       {
         "id": "A",
-        "en": "66"
+        "vi": "14",
+        "en": "14"
       },
       {
         "id": "B",
-        "en": "65"
+        "vi": "15",
+        "en": "15"
       },
       {
         "id": "C",
-        "en": "58"
+        "vi": "16",
+        "en": "16"
       },
       {
         "id": "D",
-        "en": "49"
+        "vi": "18",
+        "en": "18"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "C"
+      "key": "B"
     },
     "id": "NH23"
   },
   {
     "type": "Number Theory",
     "stem": {
-      "en": "Is the result of operation odd or even?",
-      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+      "vi": "Tìm số tiếp theo trong dãy sau:",
+      "en": "Find the next number in the sequence:"
     },
     "figure": {
       "renderer": "text",
       "params": {
-        "content": "8 + 7 + 6 + 2"
+        "content": "3, 4, 4, 5, 6, 6, 7, 8, 8, □"
       }
     },
     "choices": [
       {
         "id": "A",
-        "en": "Even"
+        "vi": "8",
+        "en": "8"
       },
       {
         "id": "B",
-        "en": "Odd"
+        "vi": "9",
+        "en": "9"
       },
       {
         "id": "C",
-        "en": "Neither odd nor even"
+        "vi": "10",
+        "en": "10"
       },
       {
         "id": "D",
-        "en": "Both odd and even"
+        "vi": "11",
+        "en": "11"
       }
     ],
     "answer": {
@@ -902,31 +911,41 @@
   {
     "type": "Number Theory",
     "stem": {
-      "en": "Is the result of operation odd or even?",
-      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+      "vi": "Hai giỏ dưới đây không cân. Hỏi cần chuyển 1 quả 🍎 từ giỏ nào sang giỏ nào để hai bên bằng nhau?",
+      "en": "The baskets below are not balanced. Move 1 🍎 from which basket to which to make them equal?"
     },
     "figure": {
-      "renderer": "text",
+      "renderer": "twoBins",
       "params": {
-        "content": "4 - 2 + 6 - 3 - 1 + 6"
+        "left": 14,
+        "right": 6,
+        "symbol": "🍎",
+        "labels": [
+          "Left",
+          "Right"
+        ]
       }
     },
     "choices": [
       {
         "id": "A",
-        "en": "Even"
+        "vi": "Chuyển 1 🍎 từ trái sang phải",
+        "en": "Move 4 🍎 left → right"
       },
       {
         "id": "B",
-        "en": "Odd"
+        "vi": "Chuyển 1 🍎 từ phải sang trái",
+        "en": "Move 4 🍎 right → left"
       },
       {
         "id": "C",
-        "en": "Neither odd nor even"
+        "vi": "Không cần chuyển",
+        "en": "No need to move"
       },
       {
         "id": "D",
-        "en": "Both odd and even"
+        "vi": "Phải bỏ đi 1 🍎",
+        "en": "Remove 2 🍎"
       }
     ],
     "answer": {
@@ -938,109 +957,156 @@
   {
     "type": "Number Theory",
     "stem": {
-      "en": "Move how many items from left(26) to right(8) to balance?",
-      "vi": "Phải chuyển bao nhiêu vật từ trái(26) sang phải(8) để bằng nhau?"
+      "vi": "Hai bên có số ⚽ khác nhau như hình. Hỏi cần chuyển bao nhiêu ⚽ từ bên trái sang bên phải để hai bên bằng nhau?",
+      "en": "The two sides have different numbers of ⚽ as shown. How many ⚽ should be moved from left to right to balance?"
     },
     "figure": {
       "renderer": "twoBins",
       "params": {
-        "left": 26,
-        "right": 8,
-        "symbol": "🍎",
-        "labels": [
-          "Left",
-          "Right"
-        ]
+        "left": 10,
+        "right": 4,
+        "symbol": "⚽"
       }
     },
     "choices": [
       {
         "id": "A",
-        "en": "9"
+        "vi": "1",
+        "en": "1"
       },
       {
         "id": "B",
-        "en": "10"
+        "vi": "2",
+        "en": "2"
       },
       {
         "id": "C",
-        "en": "7"
+        "vi": "3",
+        "en": "3"
       },
       {
         "id": "D",
-        "en": "8"
+        "vi": "4",
+        "en": "4"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "A"
+      "key": "C"
     },
     "id": "NH26"
   },
   {
     "type": "Number Theory",
     "stem": {
-      "en": "Find the 7th number of the sequence:",
-      "vi": "Tìm số thứ 7 trong dãy:"
+      "vi": "Cân 1: 🍎 = 🍋 + 🍋.  Cân 2: 🍋 + 🍋 = 🍊 + 🍊.  Hỏi vật nào nặng nhất?",
+      "en": "Balance1: 🍎 = 🍋 + 🍋.  Balance2: 🍋 + 🍋 = 🍊 + 🍊.  Which is the heaviest?"
     },
     "figure": {
-      "renderer": "text",
+      "renderer": "balances",
       "params": {
-        "content": "30, 35, 40, 45, 50, 55, __, 65"
+        "balances": [
+          [
+            [
+              "🍎"
+            ],
+            [
+              "🍋",
+              "🍋"
+            ]
+          ],
+          [
+            [
+              "🍋",
+              "🍋"
+            ],
+            [
+              "🍊",
+              "🍊"
+            ]
+          ]
+        ]
       }
     },
     "choices": [
       {
         "id": "A",
-        "en": "64"
+        "vi": "🍎",
+        "en": "🍎"
       },
       {
         "id": "B",
-        "en": "60"
+        "vi": "🍋",
+        "en": "🍋"
       },
       {
         "id": "C",
-        "en": "53"
+        "vi": "🍊",
+        "en": "🍊"
       },
       {
         "id": "D",
-        "en": "67"
+        "vi": "Bằng nhau",
+        "en": "Equal"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "B"
+      "key": "A"
     },
     "id": "NH27"
   },
   {
     "type": "Number Theory",
     "stem": {
-      "en": "Is the result of operation odd or even?",
-      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+      "vi": "Cân 1: 🐱 = 🐶 + 🐭.  Cân 2: 🐶 = 🐭 + 🐭.  Hỏi con vật nào nặng nhất?",
+      "en": "Balance 1: 🐱 = 🐶 + 🐭.  Balance 2: 🐶 = 🐭 + 🐭.  Which animal is the heaviest?"
     },
     "figure": {
-      "renderer": "text",
+      "renderer": "balances",
       "params": {
-        "content": "2 - 7 - 6 - 3"
+        "balances": [
+          [
+            [
+              "🐱"
+            ],
+            [
+              "🐶",
+              "🐭"
+            ]
+          ],
+          [
+            [
+              "🐶"
+            ],
+            [
+              "🐭",
+              "🐭"
+            ]
+          ]
+        ]
       }
     },
     "choices": [
       {
         "id": "A",
-        "en": "Even"
+        "vi": "🐱",
+        "en": "🐱"
       },
       {
         "id": "B",
-        "en": "Odd"
+        "vi": "🐶",
+        "en": "🐶"
       },
       {
         "id": "C",
-        "en": "Neither odd nor even"
+        "vi": "🐭",
+        "en": "🐭"
       },
       {
         "id": "D",
-        "en": "Both odd and even"
+        "vi": "Bằng nhau",
+        "en": "Equal"
       }
     ],
     "answer": {
@@ -1052,50 +1118,74 @@
   {
     "type": "Number Theory",
     "stem": {
-      "en": "Is the result of operation odd or even?",
-      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
+      "vi": "Cân 1: 🍉 + 🍋 = 🍎 + 🍎.  Cân 2: 🍎 = 🍋 + 🍋.  Hỏi vật nào nhẹ nhất?",
+      "en": "Balance1: 🍉 + 🍋 = 🍎 + 🍎.  Balance2: 🍎 = 🍋 + 🍋.  Which is the lightest?"
     },
     "figure": {
-      "renderer": "text",
+      "renderer": "balances",
       "params": {
-        "content": "8 - 7 - 6 + 3 - 8 + 8"
+        "balances": [
+          [
+            [
+              "🍉",
+              "🍋"
+            ],
+            [
+              "🍎",
+              "🍎"
+            ]
+          ],
+          [
+            [
+              "🍎"
+            ],
+            [
+              "🍋",
+              "🍋"
+            ]
+          ]
+        ]
       }
     },
     "choices": [
       {
         "id": "A",
-        "en": "Even"
+        "vi": "🍉",
+        "en": "🍉"
       },
       {
         "id": "B",
-        "en": "Odd"
+        "vi": "🍎",
+        "en": "🍎"
       },
       {
         "id": "C",
-        "en": "Neither odd nor even"
+        "vi": "🍋",
+        "en": "🍋"
       },
       {
         "id": "D",
-        "en": "Both odd and even"
+        "vi": "Bằng nhau",
+        "en": "Equal"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "A"
+      "key": "C"
     },
     "id": "NH29"
   },
   {
     "type": "Number Theory",
     "stem": {
-      "en": "Move how many items from left(21) to right(15) to balance?",
-      "vi": "Phải chuyển bao nhiêu vật từ trái(21) sang phải(15) để bằng nhau?"
+      "en": "Move how many items from left to right to balance?",
+      "vi": "Phải chuyển bao nhiêu vật từ trái sang phải để bằng nhau?"
     },
     "figure": {
       "renderer": "twoBins",
       "params": {
-        "left": 21,
-        "right": 15,
+        "left": 10,
+        "right": 6,
         "symbol": "⚽",
         "labels": [
           "Left",
@@ -1110,7 +1200,7 @@
       },
       {
         "id": "B",
-        "en": "3"
+        "en": "2"
       },
       {
         "id": "C",
@@ -1130,744 +1220,238 @@
   {
     "type": "Number Theory",
     "stem": {
-      "en": "Find the 5th number of the sequence:",
-      "vi": "Tìm số thứ 5 trong dãy:"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "31, 36, 41, 46, __, 56, 61, 66"
-      }
+      "vi": "Chữ số hàng đơn vị của tổng 27 + 35 + 18 là số nào?",
+      "en": "What is the ones digit of 27 + 35 + 18?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "54"
+        "vi": "0",
+        "en": "0"
       },
       {
         "id": "B",
-        "en": "51"
+        "vi": "1",
+        "en": "1"
       },
       {
         "id": "C",
-        "en": "44"
+        "vi": "2",
+        "en": "2"
       },
       {
         "id": "D",
-        "en": "56"
+        "vi": "3",
+        "en": "3"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "B"
+      "key": "A"
     },
+    "figure": {},
     "id": "NH31"
   },
   {
     "type": "Number Theory",
     "stem": {
-      "en": "Is the result of operation odd or even?",
-      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "7 - 4 - 2 - 4"
-      }
+      "vi": "Chữ số hàng đơn vị của 58 − 29 là bao nhiêu?",
+      "en": "What is the ones digit of 58 − 29?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "Even"
+        "vi": "7",
+        "en": "7"
       },
       {
         "id": "B",
-        "en": "Odd"
+        "vi": "8",
+        "en": "8"
       },
       {
         "id": "C",
-        "en": "Neither odd nor even"
+        "vi": "9",
+        "en": "9"
       },
       {
         "id": "D",
-        "en": "Both odd and even"
+        "vi": "0",
+        "en": "0"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "B"
+      "key": "C"
     },
+    "figure": {},
     "id": "NH32"
   },
   {
     "type": "Number Theory",
     "stem": {
-      "en": "Is the result of operation odd or even?",
-      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "3 - 2 + 4 + 6 - 6"
-      }
+      "vi": "Trong các số 21, 22, 23, 24, 25, có bao nhiêu số có chữ số hàng đơn vị lớn hơn 3?",
+      "en": "Among 21, 22, 23, 24, 25, how many have ones digit greater than 3?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "Even"
+        "vi": "1",
+        "en": "1"
       },
       {
         "id": "B",
-        "en": "Odd"
+        "vi": "2",
+        "en": "2"
       },
       {
         "id": "C",
-        "en": "Neither odd nor even"
+        "vi": "3",
+        "en": "3"
       },
       {
         "id": "D",
-        "en": "Both odd and even"
+        "vi": "4",
+        "en": "4"
       }
     ],
     "answer": {
       "type": "single",
       "key": "B"
     },
+    "figure": {},
     "id": "NH33"
   },
   {
     "type": "Number Theory",
     "stem": {
-      "en": "Move how many items from left(19) to right(11) to balance?",
-      "vi": "Phải chuyển bao nhiêu vật từ trái(19) sang phải(11) để bằng nhau?"
-    },
-    "figure": {
-      "renderer": "twoBins",
-      "params": {
-        "left": 19,
-        "right": 11,
-        "symbol": "🍪",
-        "labels": [
-          "Left",
-          "Right"
-        ]
-      }
+      "vi": "Nếu bắt đầu từ 3 và mỗi lần nhân đôi số trước đó, chữ số hàng đơn vị của số thứ 4 là bao nhiêu?",
+      "en": "Starting from 3, doubling each time, what is the ones digit of the 4th number?"
     },
     "choices": [
       {
         "id": "A",
+        "vi": "2",
         "en": "2"
       },
       {
         "id": "B",
-        "en": "6"
+        "vi": "4",
+        "en": "4"
       },
       {
         "id": "C",
-        "en": "3"
+        "vi": "6",
+        "en": "6"
       },
       {
         "id": "D",
-        "en": "4"
+        "vi": "8",
+        "en": "8"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "D"
+      "key": "B"
     },
+    "figure": {},
     "id": "NH34"
   },
   {
     "type": "Number Theory",
     "stem": {
-      "en": "Find the 5th number of the sequence:",
-      "vi": "Tìm số thứ 5 trong dãy:"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "28, 32, 36, 40, __, 48, 52, 56"
-      }
+      "vi": "Số nhỏ nhất lớn hơn 40 nhưng có chữ số hàng đơn vị là 7 là số nào?",
+      "en": "What is the smallest number greater than 40 whose ones digit is 7?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "48"
+        "vi": "41",
+        "en": "41"
       },
       {
         "id": "B",
-        "en": "44"
+        "vi": "42",
+        "en": "42"
       },
       {
         "id": "C",
-        "en": "37"
+        "vi": "47",
+        "en": "47"
       },
       {
         "id": "D",
-        "en": "39"
+        "vi": "57",
+        "en": "57"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "B"
+      "key": "C"
     },
+    "figure": {},
     "id": "NH35"
   },
   {
     "type": "Number Theory",
     "stem": {
-      "en": "Is the result of operation odd or even?",
-      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "3 - 6 - 6 - 9"
-      }
+      "vi": "Nếu ta viết dãy 2, 4, 6, 8, 0, 2, 4, 6, 8, 0,... Hỏi chữ số thứ 12 là bao nhiêu?",
+      "en": "If we repeat the sequence 2, 4, 6, 8, 0,... what is the 12th digit?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "Even"
+        "vi": "2",
+        "en": "2"
       },
       {
         "id": "B",
-        "en": "Odd"
+        "vi": "4",
+        "en": "4"
       },
       {
         "id": "C",
-        "en": "Neither odd nor even"
+        "vi": "6",
+        "en": "6"
       },
       {
         "id": "D",
-        "en": "Both odd and even"
+        "vi": "8",
+        "en": "8"
       }
     ],
     "answer": {
       "type": "single",
-      "key": "A"
+      "key": "B"
     },
+    "figure": {},
     "id": "NH36"
   },
   {
     "type": "Number Theory",
     "stem": {
-      "en": "Is the result of operation odd or even?",
-      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "4 - 2 + 3 - 2 - 8 + 3"
-      }
+      "vi": "Biết rằng □ + 4 = 11 và □ − 2 = △. Hỏi △ bằng bao nhiêu?",
+      "en": "It is known that □ + 4 = 11 and □ − 2 = △. What is △?"
     },
     "choices": [
       {
         "id": "A",
-        "en": "Even"
-      },
-      {
-        "id": "B",
-        "en": "Odd"
-      },
-      {
-        "id": "C",
-        "en": "Neither odd nor even"
-      },
-      {
-        "id": "D",
-        "en": "Both odd and even"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "A"
-    },
-    "id": "NH37"
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Move how many items from left(22) to right(14) to balance?",
-      "vi": "Phải chuyển bao nhiêu vật từ trái(22) sang phải(14) để bằng nhau?"
-    },
-    "figure": {
-      "renderer": "twoBins",
-      "params": {
-        "left": 22,
-        "right": 14,
-        "symbol": "🐟",
-        "labels": [
-          "Left",
-          "Right"
-        ]
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "6"
-      },
-      {
-        "id": "B",
+        "vi": "4",
         "en": "4"
       },
       {
-        "id": "C",
-        "en": "2"
-      },
-      {
-        "id": "D",
-        "en": "3"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "B"
-    },
-    "id": "NH38"
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Find the 6th number of the sequence:",
-      "vi": "Tìm số thứ 6 trong dãy:"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "35, 39, 43, 47, 51, __, 59, 63"
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "57"
-      },
-      {
         "id": "B",
-        "en": "56"
-      },
-      {
-        "id": "C",
-        "en": "53"
-      },
-      {
-        "id": "D",
-        "en": "55"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "D"
-    },
-    "id": "NH39"
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Is the result of operation odd or even?",
-      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "3 - 3 - 6 - 8"
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "Even"
-      },
-      {
-        "id": "B",
-        "en": "Odd"
-      },
-      {
-        "id": "C",
-        "en": "Neither odd nor even"
-      },
-      {
-        "id": "D",
-        "en": "Both odd and even"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "A"
-    },
-    "id": "NH40"
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Is the result of operation odd or even?",
-      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "7 - 2 - 3 + 6 + 2 + 8"
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "Even"
-      },
-      {
-        "id": "B",
-        "en": "Odd"
-      },
-      {
-        "id": "C",
-        "en": "Neither odd nor even"
-      },
-      {
-        "id": "D",
-        "en": "Both odd and even"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "A"
-    },
-    "id": "NH41"
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Move how many items from left(20) to right(14) to balance?",
-      "vi": "Phải chuyển bao nhiêu vật từ trái(20) sang phải(14) để bằng nhau?"
-    },
-    "figure": {
-      "renderer": "twoBins",
-      "params": {
-        "left": 20,
-        "right": 14,
-        "symbol": "🍎",
-        "labels": [
-          "Left",
-          "Right"
-        ]
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "2"
-      },
-      {
-        "id": "B",
+        "vi": "5",
         "en": "5"
       },
       {
         "id": "C",
-        "en": "1"
-      },
-      {
-        "id": "D",
-        "en": "3"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "D"
-    },
-    "id": "NH42"
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Find the 5th number of the sequence:",
-      "vi": "Tìm số thứ 5 trong dãy:"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "30, 36, 42, 48, __, 60, 66, 72"
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "47"
-      },
-      {
-        "id": "B",
-        "en": "61"
-      },
-      {
-        "id": "C",
-        "en": "56"
-      },
-      {
-        "id": "D",
-        "en": "54"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "D"
-    },
-    "id": "NH43"
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Is the result of operation odd or even?",
-      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "4 + 6 + 3 + 4"
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "Even"
-      },
-      {
-        "id": "B",
-        "en": "Odd"
-      },
-      {
-        "id": "C",
-        "en": "Neither odd nor even"
-      },
-      {
-        "id": "D",
-        "en": "Both odd and even"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "B"
-    },
-    "id": "NH44"
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Is the result of operation odd or even?",
-      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "6 - 1 + 1 - 2 + 1"
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "Even"
-      },
-      {
-        "id": "B",
-        "en": "Odd"
-      },
-      {
-        "id": "C",
-        "en": "Neither odd nor even"
-      },
-      {
-        "id": "D",
-        "en": "Both odd and even"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "B"
-    },
-    "id": "NH45"
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Move how many items from left(22) to right(16) to balance?",
-      "vi": "Phải chuyển bao nhiêu vật từ trái(22) sang phải(16) để bằng nhau?"
-    },
-    "figure": {
-      "renderer": "twoBins",
-      "params": {
-        "left": 22,
-        "right": 16,
-        "symbol": "🪵",
-        "labels": [
-          "Left",
-          "Right"
-        ]
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "3"
-      },
-      {
-        "id": "B",
-        "en": "2"
-      },
-      {
-        "id": "C",
-        "en": "4"
-      },
-      {
-        "id": "D",
-        "en": "1"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "A"
-    },
-    "id": "NH46"
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Find the 6th number of the sequence:",
-      "vi": "Tìm số thứ 6 trong dãy:"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "33, 38, 43, 48, 53, __, 63, 68"
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "56"
-      },
-      {
-        "id": "B",
-        "en": "58"
-      },
-      {
-        "id": "C",
-        "en": "54"
-      },
-      {
-        "id": "D",
-        "en": "60"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "B"
-    },
-    "id": "NH47"
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Is the result of operation odd or even?",
-      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "7 + 8 + 4 + 7"
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "Even"
-      },
-      {
-        "id": "B",
-        "en": "Odd"
-      },
-      {
-        "id": "C",
-        "en": "Neither odd nor even"
-      },
-      {
-        "id": "D",
-        "en": "Both odd and even"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "A"
-    },
-    "id": "NH48"
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Is the result of operation odd or even?",
-      "vi": "Kết quả của phép tính là số chẵn hay lẻ?"
-    },
-    "figure": {
-      "renderer": "text",
-      "params": {
-        "content": "4 + 8 + 2 + 5 - 8 - 4"
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "Even"
-      },
-      {
-        "id": "B",
-        "en": "Odd"
-      },
-      {
-        "id": "C",
-        "en": "Neither odd nor even"
-      },
-      {
-        "id": "D",
-        "en": "Both odd and even"
-      }
-    ],
-    "answer": {
-      "type": "single",
-      "key": "B"
-    },
-    "id": "NH49"
-  },
-  {
-    "type": "Number Theory",
-    "stem": {
-      "en": "Move how many items from left(27) to right(15) to balance?",
-      "vi": "Phải chuyển bao nhiêu vật từ trái(27) sang phải(15) để bằng nhau?"
-    },
-    "figure": {
-      "renderer": "twoBins",
-      "params": {
-        "left": 27,
-        "right": 15,
-        "symbol": "🍪",
-        "labels": [
-          "Left",
-          "Right"
-        ]
-      }
-    },
-    "choices": [
-      {
-        "id": "A",
-        "en": "8"
-      },
-      {
-        "id": "B",
+        "vi": "6",
         "en": "6"
       },
       {
-        "id": "C",
-        "en": "5"
-      },
-      {
         "id": "D",
+        "vi": "7",
         "en": "7"
       }
     ],
@@ -1875,6 +1459,462 @@
       "type": "single",
       "key": "B"
     },
+    "figure": {},
+    "id": "NH37"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "vi": "8 + □ = 15 − 3. Hỏi □ là bao nhiêu?",
+      "en": "8 + □ = 15 − 3. What is □?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "vi": "3",
+        "en": "3"
+      },
+      {
+        "id": "B",
+        "vi": "4",
+        "en": "4"
+      },
+      {
+        "id": "C",
+        "vi": "5",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "vi": "6",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {},
+    "id": "NH38"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "vi": "A + B = 10 và A = 4. Hỏi B là bao nhiêu?",
+      "en": "A + B = 10 and A = 4. What is B?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "vi": "4",
+        "en": "4"
+      },
+      {
+        "id": "B",
+        "vi": "5",
+        "en": "5"
+      },
+      {
+        "id": "C",
+        "vi": "6",
+        "en": "6"
+      },
+      {
+        "id": "D",
+        "vi": "7",
+        "en": "7"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {},
+    "id": "NH39"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "vi": "Nếu A + 3 = 8 thì A − 2 = ?",
+      "en": "If A + 3 = 8, then A − 2 = ?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "vi": "2",
+        "en": "2"
+      },
+      {
+        "id": "B",
+        "vi": "3",
+        "en": "3"
+      },
+      {
+        "id": "C",
+        "vi": "4",
+        "en": "4"
+      },
+      {
+        "id": "D",
+        "vi": "5",
+        "en": "5"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {},
+    "id": "NH40"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "vi": "Nếu A + 4 = 9 và B = A − 2 thì B bằng bao nhiêu?",
+      "en": "If A + 4 = 9 and B = A − 2, what is B?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "vi": "2",
+        "en": "2"
+      },
+      {
+        "id": "B",
+        "vi": "3",
+        "en": "3"
+      },
+      {
+        "id": "C",
+        "vi": "4",
+        "en": "4"
+      },
+      {
+        "id": "D",
+        "vi": "5",
+        "en": "5"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {},
+    "id": "NH41"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "vi": "□ + 7 = 19 − □. Hỏi □ là bao nhiêu?",
+      "en": "□ + 7 = 19 − □. What number is □?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "vi": "5",
+        "en": "5"
+      },
+      {
+        "id": "B",
+        "vi": "6",
+        "en": "6"
+      },
+      {
+        "id": "C",
+        "vi": "7",
+        "en": "7"
+      },
+      {
+        "id": "D",
+        "vi": "8",
+        "en": "8"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {},
+    "id": "NH42"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "vi": "Chọn phép tính có kết quả bằng 14:",
+      "en": "Choose the expression that equals 14:"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "vi": "7 + 7",
+        "en": "7 + 7"
+      },
+      {
+        "id": "B",
+        "vi": "9 + 6",
+        "en": "9 + 6"
+      },
+      {
+        "id": "C",
+        "vi": "16 − 1",
+        "en": "16 − 1"
+      },
+      {
+        "id": "D",
+        "vi": "10 + 5",
+        "en": "10 + 5"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "figure": {},
+    "id": "NH43"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "vi": "Chọn một CẶP số (không lặp) từ {2, 3, 4, 5, 6} để điền vào □ + □ = 11:",
+      "en": "Choose one PAIR (no repeats) from {2, 3, 4, 5, 6} for □ + □ = 11:"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "vi": "(5, 6)",
+        "en": "(5, 6)"
+      },
+      {
+        "id": "B",
+        "vi": "(2, 3)",
+        "en": "(2, 3)"
+      },
+      {
+        "id": "C",
+        "vi": "(4, 5)",
+        "en": "(4, 5)"
+      },
+      {
+        "id": "D",
+        "vi": "(3, 6)",
+        "en": "(3, 6)"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "figure": {},
+    "id": "NH44"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "vi": "Điền một số vào ô trống để hai vế bằng nhau: □ + 6 = 14 − □. Hỏi □ là bao nhiêu?",
+      "en": "Fill a number so that □ + 6 = 14 − □. What is □?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "vi": "3",
+        "en": "3"
+      },
+      {
+        "id": "B",
+        "vi": "4",
+        "en": "4"
+      },
+      {
+        "id": "C",
+        "vi": "5",
+        "en": "5"
+      },
+      {
+        "id": "D",
+        "vi": "6",
+        "en": "6"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "B"
+    },
+    "figure": {},
+    "id": "NH45"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "vi": "Dùng MỖI SỐ ĐÚNG 1 LẦN từ {1, 3, 5, 7} để điền vào □ + □ = 10. Cặp nào đúng?",
+      "en": "Use EACH number at most once from {1, 3, 5, 7} to fill □ + □ = 10. Which pair works?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "vi": "(3, 7)",
+        "en": "(3, 7)"
+      },
+      {
+        "id": "B",
+        "vi": "(5, 5)",
+        "en": "(5, 5)"
+      },
+      {
+        "id": "C",
+        "vi": "(1, 9)",
+        "en": "(1, 9)"
+      },
+      {
+        "id": "D",
+        "vi": "(1, 7)",
+        "en": "(1, 7)"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "figure": {},
+    "id": "NH46"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "vi": "So sánh 6 + 4 với 5 + 7. Chọn dấu đúng:",
+      "en": "Compare 6 + 4 and 5 + 7. Choose the correct sign:"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "vi": "6 + 4 > 5 + 7",
+        "en": "6 + 4 > 5 + 7"
+      },
+      {
+        "id": "B",
+        "vi": "6 + 4 = 5 + 7",
+        "en": "6 + 4 = 5 + 7"
+      },
+      {
+        "id": "C",
+        "vi": "6 + 4 < 5 + 7",
+        "en": "6 + 4 < 5 + 7"
+      },
+      {
+        "id": "D",
+        "vi": "Không xác định",
+        "en": "Cannot tell"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {},
+    "id": "NH47"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "vi": "Điền số còn thiếu trong dãy: 4, 6, 9, 13, □, 24",
+      "en": "Fill the missing number: 4, 6, 9, 13, □, 24"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "vi": "16",
+        "en": "16"
+      },
+      {
+        "id": "B",
+        "vi": "17",
+        "en": "17"
+      },
+      {
+        "id": "C",
+        "vi": "18",
+        "en": "18"
+      },
+      {
+        "id": "D",
+        "vi": "19",
+        "en": "19"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {},
+    "id": "NH48"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "vi": "Chọn một CẶP CÓ THỨ TỰ từ {2, 4, 6, 9} để điền □ − □ = 3:",
+      "en": "Choose an ORDERED pair from {2, 4, 6, 9} for □ − □ = 3:"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "vi": "9 − 6",
+        "en": "9 − 6"
+      },
+      {
+        "id": "B",
+        "vi": "6 − 4",
+        "en": "6 − 4"
+      },
+      {
+        "id": "C",
+        "vi": "4 − 2",
+        "en": "4 − 2"
+      },
+      {
+        "id": "D",
+        "vi": "9 − 2",
+        "en": "9 − 2"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "A"
+    },
+    "figure": {},
+    "id": "NH49"
+  },
+  {
+    "type": "Number Theory",
+    "stem": {
+      "vi": "Ba số tự nhiên LIÊN TIẾP có tổng bằng 24. Hỏi số LỚN NHẤT là bao nhiêu?",
+      "en": "Three consecutive natural numbers sum to 24. What is the largest number?"
+    },
+    "choices": [
+      {
+        "id": "A",
+        "vi": "7",
+        "en": "7"
+      },
+      {
+        "id": "B",
+        "vi": "8",
+        "en": "8"
+      },
+      {
+        "id": "C",
+        "vi": "9",
+        "en": "9"
+      },
+      {
+        "id": "D",
+        "vi": "10",
+        "en": "10"
+      }
+    ],
+    "answer": {
+      "type": "single",
+      "key": "C"
+    },
+    "figure": {},
     "id": "NH50"
   }
 ]

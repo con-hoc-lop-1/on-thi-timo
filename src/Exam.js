@@ -45,7 +45,7 @@ function Exam({ name, onFinish, paperMode, dataType = "preliminary" }) {
   }, [dataType]);
 
   useEffect(() => {
-    document.title = `${name} - TIMO TEST (${startDate})`;
+    document.title = `${name} - TIMO ${dataType.toUpperCase()} (${startDate})`;
   }, [startDate]);
 
   const handleAnswer = (val) => {
@@ -89,7 +89,7 @@ function Exam({ name, onFinish, paperMode, dataType = "preliminary" }) {
     return (
       <div className="container-fluid mt-4 paper-mode">
         <h3 className="m-3">
-          {name} - TIMO TEST ({startDate})
+          {name} - TIMO {dataType.toUpperCase()} ({startDate})
         </h3>
         {questions.map((q, qi) => (
           <div
@@ -99,10 +99,11 @@ function Exam({ name, onFinish, paperMode, dataType = "preliminary" }) {
             <div className="mb-2">
               <div className="question-title d-flex justify-content-between align-items-center">
                 <strong>
-                  Question {qi + 1} {showVi && <i>(Câu {qi + 1})</i>}:{" "}
+                  Question {qi + 1}
+                  {showVi && <i> (Câu {qi + 1})</i>}:{" "}
                 </strong>
                 <span className="ms-2">
-                  {name} - TIMO TEST ({startDate})
+                  {dataType.toUpperCase()}-{q.id}
                 </span>
               </div>
 
