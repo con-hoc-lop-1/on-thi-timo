@@ -1072,7 +1072,10 @@
       "type": "single",
       "key": "C"
     },
-    "stem": {},
+    "stem": {
+		"en":"How many ⭕ in group 7th?",
+		"vi":"Có bao nhiêu ⭕ trong nhóm 7?"
+	},
     "type": "Logic Thinking",
     "id": "LH26"
   },
@@ -1373,7 +1376,7 @@
     ],
     "answer": {
       "type": "single",
-      "key": "C"
+      "key": "B"
     },
     "type": "Logic Thinking",
     "figure": {},
@@ -1864,7 +1867,7 @@
     ],
     "answer": {
       "type": "single",
-      "key": "B"
+      "key": "A"
     },
     "figure": {},
     "id": "LH46"
